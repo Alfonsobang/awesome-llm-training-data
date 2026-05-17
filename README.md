@@ -163,6 +163,7 @@ Financial-domain resources should be public, reproducible, and useful for evalua
 
 - [LLM Training Data Quality Rubric](docs/data-quality-rubric.md) - A practical checklist for reviewing public LLM training, tuning, preference, synthetic, or evaluation datasets.
 - [Financial-domain LLM Evaluation Checklist](docs/financial-domain-llm-evaluation-checklist.md) - A governance-oriented checklist for financial-domain LLM evaluation without private data or investment claims.
+- [Upstream Contribution Shortlist](docs/upstream-contribution-shortlist.md) - A conservative plan for useful future contributions to public LLM data-quality projects.
 
 ## Data Governance
 

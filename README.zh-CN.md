@@ -163,6 +163,7 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 
 - [LLM 训练数据质量 Rubric](docs/data-quality-rubric.md) - 用于审查公开 LLM 训练、微调、偏好、合成或评测数据集的实践清单。
 - [金融领域 LLM 评测清单](docs/financial-domain-llm-evaluation-checklist.md) - 面向金融领域 LLM 评测的数据治理清单，避免私有数据和投资建议类表述。
+- [上游贡献候选清单](docs/upstream-contribution-shortlist.md) - 面向公开 LLM 数据质量项目的谨慎贡献计划，优先选择对维护者有实际价值的小改动。
 
 ## 数据治理
 
