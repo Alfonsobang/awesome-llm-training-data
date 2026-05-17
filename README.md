@@ -54,6 +54,7 @@ Financial-domain resources should be public, reproducible, and useful for evalua
 - [Synthetic Data](#synthetic-data)
 - [RAG Evaluation Data](#rag-evaluation-data)
 - [Financial-domain LLM Data](#financial-domain-llm-data)
+- [Practitioner Guides](#practitioner-guides)
 - [Data Governance](#data-governance)
 - [Privacy and Compliance](#privacy-and-compliance)
 - [Papers](#papers)
@@ -157,6 +158,11 @@ Financial-domain resources should be public, reproducible, and useful for evalua
 - [FinanceBench](https://github.com/patronus-ai/financebench) - Tag: [benchmark] - Benchmark for evaluating LLM performance on financial question-answering tasks grounded in public filings.
 - [FinQA](https://github.com/czyssrs/FinQA) - Tag: [dataset] - Dataset for numerical reasoning over financial reports.
 - [TAT-QA](https://github.com/NExTplusplus/TAT-QA) - Tag: [dataset] - Table-and-text question-answering dataset built around hybrid reasoning over financial reports.
+
+## Practitioner Guides
+
+- [LLM Training Data Quality Rubric](docs/data-quality-rubric.md) - A practical checklist for reviewing public LLM training, tuning, preference, synthetic, or evaluation datasets.
+- [Financial-domain LLM Evaluation Checklist](docs/financial-domain-llm-evaluation-checklist.md) - A governance-oriented checklist for financial-domain LLM evaluation without private data or investment claims.
 
 ## Data Governance
 

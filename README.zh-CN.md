@@ -54,6 +54,7 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 - [合成数据](#合成数据)
 - [RAG 评测数据](#rag-评测数据)
 - [金融领域 LLM 数据](#金融领域-llm-数据)
+- [实践指南](#实践指南)
 - [数据治理](#数据治理)
 - [隐私与合规](#隐私与合规)
 - [论文](#论文)
@@ -157,6 +158,11 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 - [FinanceBench](https://github.com/patronus-ai/financebench) - Tag: [benchmark] - 基于公开披露文件评估 LLM 金融问答能力的基准。
 - [FinQA](https://github.com/czyssrs/FinQA) - Tag: [dataset] - 面向金融报告数值推理的数据集。
 - [TAT-QA](https://github.com/NExTplusplus/TAT-QA) - Tag: [dataset] - 围绕金融报告中表格与文本混合推理构建的问答数据集。
+
+## 实践指南
+
+- [LLM 训练数据质量 Rubric](docs/data-quality-rubric.md) - 用于审查公开 LLM 训练、微调、偏好、合成或评测数据集的实践清单。
+- [金融领域 LLM 评测清单](docs/financial-domain-llm-evaluation-checklist.md) - 面向金融领域 LLM 评测的数据治理清单，避免私有数据和投资建议类表述。
 
 ## 数据治理
 
