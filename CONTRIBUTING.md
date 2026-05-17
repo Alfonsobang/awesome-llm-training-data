@@ -41,6 +41,7 @@ Allowed tags:
 - The description explains why the resource matters for LLM data work.
 - The resource helps with real workflows such as data collection, cleaning, deduplication, inspection, annotation, preference modeling, synthetic data generation, RAG evaluation, financial-domain evaluation, governance, privacy, or compliance.
 - The resource has a clear maintenance signal, stable publication venue, or lasting reference value.
+- The upstream license or terms are not hidden when they materially affect use.
 
 ## What Usually Does Not Fit
 
@@ -59,3 +60,7 @@ Allowed tags:
 - [ ] I added the resource to the most relevant section.
 - [ ] I noted access, license, or usage constraints when relevant.
 - [ ] I updated both `README.md` and `README.zh-CN.md` when appropriate.
+
+## License
+
+By contributing original text to this repository, you agree that your contribution is licensed under the repository license, [CC BY 4.0](LICENSE.md). Linked third-party resources keep their own licenses and terms.

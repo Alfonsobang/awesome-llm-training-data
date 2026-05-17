@@ -1,6 +1,7 @@
 # Awesome LLM Training Data
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE.md)
 
 A curated list of tools, papers, datasets, and best practices for LLM training data quality, annotation, preference data, synthetic data, data governance, and evaluation.
 
@@ -61,6 +62,7 @@ Financial-domain resources should be public, reproducible, and useful for evalua
 - [Open-source Tools](#open-source-tools)
 - [Reports and Playbooks](#reports-and-playbooks)
 - [Contributing](#contributing)
+- [License](#license)
 
 ## Start Here
 
@@ -163,6 +165,7 @@ Financial-domain resources should be public, reproducible, and useful for evalua
 
 - [LLM Training Data Quality Rubric](docs/data-quality-rubric.md) - A practical checklist for reviewing public LLM training, tuning, preference, synthetic, or evaluation datasets.
 - [Financial-domain LLM Evaluation Checklist](docs/financial-domain-llm-evaluation-checklist.md) - A governance-oriented checklist for financial-domain LLM evaluation without private data or investment claims.
+- [Annotation Quality and Adjudication Guide](docs/annotation-quality-guide.md) - A practical guide for calibration, agreement, adjudication, reviewer drift, and preference-data annotation quality.
 - [Upstream Contribution Shortlist](docs/upstream-contribution-shortlist.md) - A conservative plan for useful future contributions to public LLM data-quality projects.
 
 ## Data Governance
@@ -214,3 +217,7 @@ Financial-domain resources should be public, reproducible, and useful for evalua
 ## Contributing
 
 Contributions are welcome if they meet the [Quality Bar](#quality-bar). Please read [CONTRIBUTING.md](CONTRIBUTING.md) before opening an issue or pull request.
+
+## License
+
+This repository is licensed under [CC BY 4.0](LICENSE.md). Linked third-party resources keep their own licenses and terms.

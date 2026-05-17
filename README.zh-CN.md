@@ -1,6 +1,7 @@
 # Awesome LLM Training Data
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE.md)
 
 一个面向 LLM 训练数据工程的精选资源列表，覆盖数据质量、标注、偏好数据、合成数据、数据治理、隐私合规与评测。
 
@@ -61,6 +62,7 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 - [开源工具](#开源工具)
 - [报告与实践手册](#报告与实践手册)
 - [贡献指南](#贡献指南)
+- [许可证](#许可证)
 
 ## 入门资源
 
@@ -163,6 +165,7 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 
 - [LLM 训练数据质量 Rubric](docs/data-quality-rubric.md) - 用于审查公开 LLM 训练、微调、偏好、合成或评测数据集的实践清单。
 - [金融领域 LLM 评测清单](docs/financial-domain-llm-evaluation-checklist.md) - 面向金融领域 LLM 评测的数据治理清单，避免私有数据和投资建议类表述。
+- [标注质量与仲裁指南](docs/annotation-quality-guide.md) - 面向标注校准、一致性、仲裁、审核员漂移和偏好数据质量的实践指南。
 - [上游贡献候选清单](docs/upstream-contribution-shortlist.md) - 面向公开 LLM 数据质量项目的谨慎贡献计划，优先选择对维护者有实际价值的小改动。
 
 ## 数据治理
@@ -214,3 +217,7 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 ## 贡献指南
 
 欢迎提交符合[质量门槛](#质量门槛)的资源。提交 issue 或 pull request 前，请先阅读 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
+## 许可证
+
+本仓库采用 [CC BY 4.0](LICENSE.md) 许可证。被链接的第三方资源保留其各自的许可证和使用条款。

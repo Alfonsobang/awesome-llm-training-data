@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "Awesome LLM Training Data"
+message: "If this repository helps your work, please cite it as a curated public resource for LLM training data engineering."
+type: software
+authors:
+  - alias: "Alfonsobang"
+repository-code: "https://github.com/Alfonsobang/awesome-llm-training-data"
+url: "https://github.com/Alfonsobang/awesome-llm-training-data"
+abstract: "A curated bilingual resource list and practitioner guide collection for LLM training data quality, annotation, preference data, synthetic data, governance, and evaluation."
+keywords:
+  - llm
+  - training-data
+  - data-quality
+  - annotation
+  - preference-data
+  - synthetic-data
+  - data-governance
+  - financial-ai
+license: "CC-BY-4.0"
+
