@@ -18,7 +18,8 @@ This shortlist identifies public projects where future contributions could be us
 - Why it fits: DataTrove is directly relevant to large-scale corpus processing, filtering, and deduplication.
 - Possible contribution: Add or improve documentation around dataset-quality audit checkpoints in web-data pipelines, such as provenance, deduplication level, language filtering, and output metadata.
 - Maintainer value: Helps users treat data-processing pipelines as reviewable engineering artifacts rather than one-off scripts.
-- First step: Review current examples and open a small issue proposing a documentation addition before sending a PR.
+- Current status: Opened [huggingface/datatrove#485](https://github.com/huggingface/datatrove/issues/485) proposing a small dataset-audit example that combines filters, `exclusion_writer`, metadata, and summary statistics.
+- Next step: Wait for maintainer feedback before drafting a PR.
 
 ### ModelScope Data-Juicer
 
@@ -54,8 +55,7 @@ This shortlist identifies public projects where future contributions could be us
 
 ## Near-term Plan
 
-1. Start with one documentation-focused issue in DataTrove or Argilla.
-2. Wait for maintainer signal before opening a PR.
-3. Use the flagship repository to document the public rationale and final contribution link.
-4. Prefer a small accepted contribution over many unreviewed PRs.
-
+1. Wait for maintainer signal on [huggingface/datatrove#485](https://github.com/huggingface/datatrove/issues/485).
+2. If maintainers approve the direction, draft a small docs PR that matches DataTrove's README/examples style.
+3. If maintainers prefer a different scope, adapt the proposal before writing code.
+4. Prefer one small accepted contribution over many unreviewed PRs.
