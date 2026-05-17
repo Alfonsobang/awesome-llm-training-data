@@ -167,6 +167,7 @@ The repository also runs a lightweight [resource audit](tools/audit_resources.py
 
 ## Practitioner Guides
 
+- [LLM Training Data Operating Model](docs/llm-training-data-operating-model.md) - A practical operating loop for source review, profiling, filtering, annotation, evaluation, release, and governance.
 - [LLM Training Data Quality Rubric](docs/data-quality-rubric.md) - A practical checklist for reviewing public LLM training, tuning, preference, synthetic, or evaluation datasets.
 - [Financial-domain LLM Evaluation Checklist](docs/financial-domain-llm-evaluation-checklist.md) - A governance-oriented checklist for financial-domain LLM evaluation without private data or investment claims.
 - [Annotation Quality and Adjudication Guide](docs/annotation-quality-guide.md) - A practical guide for calibration, agreement, adjudication, reviewer drift, and preference-data annotation quality.

@@ -167,6 +167,7 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 
 ## 实践指南
 
+- [LLM 训练数据工程操作模型](docs/llm-training-data-operating-model.zh-CN.md) - 面向来源审查、画像检查、过滤去重、标注生成、评测发布与治理闭环的实践框架。
 - [LLM 训练数据质量 Rubric](docs/data-quality-rubric.md) - 用于审查公开 LLM 训练、微调、偏好、合成或评测数据集的实践清单。
 - [金融领域 LLM 评测清单](docs/financial-domain-llm-evaluation-checklist.md) - 面向金融领域 LLM 评测的数据治理清单，避免私有数据和投资建议类表述。
 - [标注质量与仲裁指南](docs/annotation-quality-guide.md) - 面向标注校准、一致性、仲裁、审核员漂移和偏好数据质量的实践指南。
