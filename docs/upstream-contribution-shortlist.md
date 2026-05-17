@@ -35,7 +35,8 @@ This shortlist identifies public projects where future contributions could be us
 - Why it fits: Argilla is closely aligned with annotation, feedback, preference data, and human-in-the-loop dataset curation.
 - Possible contribution: Improve documentation or examples around annotation QA workflows, including guideline calibration, disagreement review, and adjudication.
 - Maintainer value: Helps users move from collecting labels to managing label quality over time.
-- First step: Review the contributor guide and recent documentation PRs to match the project's tone and structure.
+- Current status: Opened [argilla-io/argilla#5861](https://github.com/argilla-io/argilla/issues/5861) proposing an annotation QA workflow guide that combines guidelines, suggestions, filters, draft/discarded states, and adjudication.
+- Next step: Wait for maintainer feedback before drafting a docs PR.
 
 ### Ragas
 
@@ -55,7 +56,7 @@ This shortlist identifies public projects where future contributions could be us
 
 ## Near-term Plan
 
-1. Wait for maintainer signal on [huggingface/datatrove#485](https://github.com/huggingface/datatrove/issues/485).
-2. If maintainers approve the direction, draft a small docs PR that matches DataTrove's README/examples style.
+1. Wait for maintainer signal on [huggingface/datatrove#485](https://github.com/huggingface/datatrove/issues/485) and [argilla-io/argilla#5861](https://github.com/argilla-io/argilla/issues/5861).
+2. If maintainers approve either direction, draft one small docs PR that matches that project's documentation style.
 3. If maintainers prefer a different scope, adapt the proposal before writing code.
 4. Prefer one small accepted contribution over many unreviewed PRs.
