@@ -1,0 +1,101 @@
+name: Add a resource
+description: Suggest a public resource for the Awesome list.
+title: "[Add Resource]: "
+labels: ["resource"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a resource. Please check the Quality Bar before submitting.
+  - type: input
+    id: name
+    attributes:
+      label: Resource name
+      description: The official name of the resource.
+      placeholder: "DataTrove"
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: Use an official repository, paper, dataset card, standard, or project page.
+      placeholder: "https://github.com/huggingface/datatrove"
+    validations:
+      required: true
+  - type: dropdown
+    id: tag
+    attributes:
+      label: Tag
+      options:
+        - tool
+        - paper
+        - dataset
+        - benchmark
+        - governance
+        - report
+        - platform
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Suggested section
+      options:
+        - Start Here
+        - Training Data Quality
+        - Data Cleaning and Deduplication
+        - Dataset Inspection Tools
+        - Annotation Platforms
+        - Annotation Quality and Agreement
+        - Human Preference Data
+        - RLHF / DPO / RLAIF Data
+        - Synthetic Data
+        - RAG Evaluation Data
+        - Financial-domain LLM Data
+        - Data Governance
+        - Privacy and Compliance
+        - Papers
+        - Open-source Tools
+        - Reports and Playbooks
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why should this be included?
+      description: Explain the practical value for LLM data teams.
+      placeholder: "It helps teams process web-scale pretraining data with reproducible filtering and deduplication pipelines."
+    validations:
+      required: true
+  - type: input
+    id: source-type
+    attributes:
+      label: Source type
+      description: Identify whether this is an official repository, paper, dataset card, standard, or project page.
+      placeholder: "Official GitHub repository"
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Access, license, or usage constraints
+      description: Note anything that affects practical use, such as registration, non-commercial terms, missing license, or restricted data access.
+      placeholder: "Apache-2.0 licensed code; dataset access requires accepting the Hugging Face dataset terms."
+    validations:
+      required: false
+  - type: checkboxes
+    id: quality
+    attributes:
+      label: Quality checks
+      options:
+        - label: The link is public and working.
+          required: true
+        - label: The link points to a primary or official source when one is available.
+          required: true
+        - label: The resource does not contain private company data, real user data, or proprietary workflows.
+          required: true
+        - label: This is not low-quality SEO content.
+          required: true
+        - label: The description avoids unsupported adoption numbers or marketing claims.
+          required: true

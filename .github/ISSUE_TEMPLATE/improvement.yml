@@ -1,0 +1,29 @@
+name: Improvement
+description: Suggest a structural, editorial, or governance improvement.
+title: "[Improvement]: "
+labels: ["improvement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What should be improved?
+      description: Describe the issue with the current list or repository structure.
+      placeholder: "The RAG Evaluation Data section should separate retrieval datasets from generation-evaluation frameworks."
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Explain the change you recommend.
+      placeholder: "Split the section into retrieval benchmarks, QA datasets, and RAG evaluation tools."
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: This change does not add private company data, real user data, or proprietary workflows.
+          required: true
+

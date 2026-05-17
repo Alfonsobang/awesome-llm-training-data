@@ -1,0 +1,36 @@
+name: Broken link
+description: Report a broken, redirected, or low-quality link.
+title: "[Broken Link]: "
+labels: ["broken-link"]
+body:
+  - type: input
+    id: link
+    attributes:
+      label: Broken link
+      description: Paste the URL that needs attention.
+      placeholder: "https://example.com"
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Where is it listed?
+      description: Section name or line reference if available.
+      placeholder: "Training Data Quality"
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What happened?
+      description: Describe the error, redirect, paywall, or quality issue.
+      placeholder: "The link returns 404."
+    validations:
+      required: true
+  - type: input
+    id: replacement
+    attributes:
+      label: Suggested replacement
+      description: Optional official replacement URL.
+      placeholder: "https://official-project-page.example"
+
