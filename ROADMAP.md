@@ -16,14 +16,14 @@ This roadmap keeps the project focused on practical LLM data engineering work. I
 ## v0.2 - Practitioner Guides
 
 - [x] Add annotation quality and adjudication guide.
-- [ ] Add preference data quality checklist.
+- [x] Add preference data quality checklist.
 - [ ] Add synthetic data validation checklist.
 - [ ] Add RAG evaluation data design guide.
-- [ ] Add financial-domain benchmark inclusion criteria.
+- [x] Add financial-domain benchmark inclusion criteria.
 
 ## v0.3 - Resource Quality
 
-- [ ] Add access and license notes to preference-data resources.
+- [ ] Add access and license notes to individual preference-data resources.
 - [ ] Split RAG resources into retrieval, generation, and citation faithfulness.
 - [ ] Add maintenance status notes for selected tools.
 - [ ] Review all financial-domain resources for scope and limitations.
@@ -41,4 +41,3 @@ This roadmap keeps the project focused on practical LLM data engineering work. I
 - Prefer a smaller number of high-quality resources over broad coverage.
 - Maintain bilingual documentation without diluting the English-first positioning.
 - Avoid private company data, real user data, proprietary workflows, and unsupported claims.
-

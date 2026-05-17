@@ -1,6 +1,7 @@
 # Awesome LLM Training Data
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![Markdown Links](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/link-check.yml/badge.svg)](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/link-check.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE.md)
 
 一个面向 LLM 训练数据工程的精选资源列表，覆盖数据质量、标注、偏好数据、合成数据、数据治理、隐私合规与评测。
@@ -166,6 +167,8 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 - [LLM 训练数据质量 Rubric](docs/data-quality-rubric.md) - 用于审查公开 LLM 训练、微调、偏好、合成或评测数据集的实践清单。
 - [金融领域 LLM 评测清单](docs/financial-domain-llm-evaluation-checklist.md) - 面向金融领域 LLM 评测的数据治理清单，避免私有数据和投资建议类表述。
 - [标注质量与仲裁指南](docs/annotation-quality-guide.md) - 面向标注校准、一致性、仲裁、审核员漂移和偏好数据质量的实践指南。
+- [偏好数据质量清单](docs/preference-data-quality-checklist.md) - 面向人类偏好数据、AI 反馈数据和 DPO/RLHF 数据适用性的审查清单。
+- [金融领域 Benchmark 收录标准](docs/financial-benchmark-inclusion-criteria.md) - 用于收录金融领域 LLM benchmark 和数据集的保守标准。
 - [上游贡献候选清单](docs/upstream-contribution-shortlist.md) - 面向公开 LLM 数据质量项目的谨慎贡献计划，优先选择对维护者有实际价值的小改动。
 
 ## 数据治理

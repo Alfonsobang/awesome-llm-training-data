@@ -1,6 +1,7 @@
 # Awesome LLM Training Data
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![Markdown Links](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/link-check.yml/badge.svg)](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/link-check.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE.md)
 
 A curated list of tools, papers, datasets, and best practices for LLM training data quality, annotation, preference data, synthetic data, data governance, and evaluation.
@@ -166,6 +167,8 @@ Financial-domain resources should be public, reproducible, and useful for evalua
 - [LLM Training Data Quality Rubric](docs/data-quality-rubric.md) - A practical checklist for reviewing public LLM training, tuning, preference, synthetic, or evaluation datasets.
 - [Financial-domain LLM Evaluation Checklist](docs/financial-domain-llm-evaluation-checklist.md) - A governance-oriented checklist for financial-domain LLM evaluation without private data or investment claims.
 - [Annotation Quality and Adjudication Guide](docs/annotation-quality-guide.md) - A practical guide for calibration, agreement, adjudication, reviewer drift, and preference-data annotation quality.
+- [Preference Data Quality Checklist](docs/preference-data-quality-checklist.md) - A review checklist for human preference data, AI feedback data, and DPO/RLHF dataset suitability.
+- [Financial-domain Benchmark Inclusion Criteria](docs/financial-benchmark-inclusion-criteria.md) - Conservative criteria for including financial-domain LLM benchmarks and datasets.
 - [Upstream Contribution Shortlist](docs/upstream-contribution-shortlist.md) - A conservative plan for useful future contributions to public LLM data-quality projects.
 
 ## Data Governance
