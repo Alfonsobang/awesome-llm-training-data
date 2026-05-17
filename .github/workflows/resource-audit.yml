@@ -1,0 +1,19 @@
+name: Resource Audit
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  resource-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Audit resource entries
+        run: python tools/audit_resources.py --root .
+

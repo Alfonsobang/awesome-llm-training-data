@@ -2,6 +2,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Markdown Links](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/link-check.yml/badge.svg)](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/link-check.yml)
+[![Resource Audit](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/resource-audit.yml/badge.svg)](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/resource-audit.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE.md)
 
 A curated list of tools, papers, datasets, and best practices for LLM training data quality, annotation, preference data, synthetic data, data governance, and evaluation.
@@ -40,6 +41,8 @@ Financial-domain resources should be public, reproducible, and useful for evalua
 - Prefer primary sources, official repositories, dataset cards, papers, and standards.
 - Include a resource only when its relevance to LLM data engineering is clear.
 - Include access, license, or usage constraints in the description when they are material.
+
+The repository also runs a lightweight [resource audit](tools/audit_resources.py) to check resource format, allowed tags, placeholder links, duplicate-link risk, and English/Chinese resource-count consistency.
 
 ## Contents
 
@@ -204,7 +207,7 @@ Financial-domain resources should be public, reproducible, and useful for evalua
 - [DataTrove](https://github.com/huggingface/datatrove) - Tag: [tool] - Large-scale text data processing framework for LLM corpus preparation.
 - [Data-Juicer](https://github.com/modelscope/data-juicer) - Tag: [tool] - Data processing and quality-analysis toolkit for LLM and multimodal data.
 - [Dolma Toolkit](https://github.com/allenai/dolma) - Tag: [tool] - AI2 toolkit for building and analyzing large pretraining corpora.
-- [Label Studio](https://github.com/HumanSignal/label-studio) - Tag: [platform] - General-purpose open-source annotation platform.
+- [Label Studio](https://github.com/HumanSignal/label-studio) - Tag: [platform] - General-purpose open-source annotation platform for multimodal labeling workflows.
 - [Argilla](https://github.com/argilla-io/argilla) - Tag: [platform] - Feedback and annotation platform for LLM data workflows.
 - [Ragas](https://github.com/explodinggradients/ragas) - Tag: [tool] - RAG evaluation library for retrieval and generation metrics.
 - [TRL](https://github.com/huggingface/trl) - Tag: [tool] - Preference optimization and alignment training library.

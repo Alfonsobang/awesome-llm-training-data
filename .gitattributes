@@ -3,3 +3,4 @@
 *.yml text eol=lf
 *.json text eol=lf
 *.cff text eol=lf
+*.py text eol=lf

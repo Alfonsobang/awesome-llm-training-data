@@ -2,6 +2,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Markdown Links](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/link-check.yml/badge.svg)](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/link-check.yml)
+[![Resource Audit](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/resource-audit.yml/badge.svg)](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/resource-audit.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE.md)
 
 一个面向 LLM 训练数据工程的精选资源列表，覆盖数据质量、标注、偏好数据、合成数据、数据治理、隐私合规与评测。
@@ -40,6 +41,8 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 - 优先收录一手来源、官方仓库、数据集卡、论文和标准。
 - 只有当资源与 LLM 数据工程的关系清晰时才收录。
 - 如果访问权限、许可证或使用限制会影响实践使用，需要在说明中写清楚。
+
+本仓库也运行轻量级 [resource audit](tools/audit_resources.py)，检查资源格式、允许的标签、占位链接、重复链接风险，以及中英文资源数量是否一致。
 
 ## 目录
 
@@ -204,7 +207,7 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 - [DataTrove](https://github.com/huggingface/datatrove) - Tag: [tool] - 面向 LLM 语料准备的大规模文本数据处理框架。
 - [Data-Juicer](https://github.com/modelscope/data-juicer) - Tag: [tool] - 面向 LLM 和多模态数据的数据处理与质量分析工具包。
 - [Dolma Toolkit](https://github.com/allenai/dolma) - Tag: [tool] - AI2 用于构建和分析大规模预训练语料的工具包。
-- [Label Studio](https://github.com/HumanSignal/label-studio) - Tag: [platform] - 通用开源标注平台。
+- [Label Studio](https://github.com/HumanSignal/label-studio) - Tag: [platform] - 面向多模态标注工作流的通用开源标注平台。
 - [Argilla](https://github.com/argilla-io/argilla) - Tag: [platform] - 面向 LLM 数据工作流的反馈和标注平台。
 - [Ragas](https://github.com/explodinggradients/ragas) - Tag: [tool] - 用于检索和生成指标的 RAG 评测库。
 - [TRL](https://github.com/huggingface/trl) - Tag: [tool] - 偏好优化和对齐训练库。
