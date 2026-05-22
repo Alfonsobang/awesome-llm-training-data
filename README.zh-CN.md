@@ -58,6 +58,7 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 - [RLHF / DPO / RLAIF 数据](#rlhf--dpo--rlaif-数据)
 - [合成数据](#合成数据)
 - [RAG 评测数据](#rag-评测数据)
+- [Agent 评测与轨迹数据](#agent-评测与轨迹数据)
 - [金融领域 LLM 数据](#金融领域-llm-数据)
 - [实践指南](#实践指南)
 - [数据治理](#数据治理)
@@ -155,6 +156,15 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 - [HotpotQA](https://hotpotqa.github.io/) - Tag: [dataset] - 多跳问答数据集，适合检索和证据链评估。
 - [Natural Questions](https://ai.google.com/research/NaturalQuestions) - Tag: [dataset] - 常用于开放域问答、检索和 QA 评测的数据集。
 
+## Agent 评测与轨迹数据
+
+- [Harbor](https://github.com/harbor-framework/harbor) - Tag: [tool] - 用于运行 Agent 评测、采集轨迹并构建沙箱化 RL 环境的框架。
+- [Claw-Eval](https://github.com/claw-eval/claw-eval) - Tag: [benchmark] - 强调轨迹感知评分、安全评估和多次运行鲁棒性的自主 Agent 评测套件。
+- [Terminal-Bench](https://github.com/laude-institute/terminal-bench) - Tag: [benchmark] - 使用可执行环境和 verifier 评估 Agent 终端任务能力的基准。
+- [SWE-Bench](https://github.com/swe-bench/SWE-bench) - Tag: [benchmark] - 用真实 GitHub issue 修复任务评估软件工程 Agent 的基准。
+- [WebArena](https://github.com/web-arena-x/webarena) - Tag: [benchmark] - 在模拟网站中评估交互式任务完成能力的 Web Agent 基准。
+- [OSWorld](https://github.com/xlang-ai/OSWorld) - Tag: [benchmark] - 在桌面操作系统环境中评估多模态计算机使用 Agent 的基准。
+
 ## 金融领域 LLM 数据
 
 - [FinEval](https://github.com/SUFE-AIFLM-Lab/FinEval) - Tag: [benchmark] - 用于评估 LLM 金融知识和安全性的中文金融领域基准。
@@ -167,6 +177,7 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 
 ## 实践指南
 
+- [Claw-style Agent 评测笔记](docs/claw-style-agent-evaluation-notes.zh-CN.md) - 关于轨迹感知评分、多次运行、安全证据以及 Harbor 如何承载这类评测模式的笔记。
 - [LLM 训练数据工程操作模型](docs/llm-training-data-operating-model.zh-CN.md) - 面向来源审查、画像检查、过滤去重、标注生成、评测发布与治理闭环的实践框架。
 - [LLM 训练数据质量 Rubric](docs/data-quality-rubric.md) - 用于审查公开 LLM 训练、微调、偏好、合成或评测数据集的实践清单。
 - [金融领域 LLM 评测清单](docs/financial-domain-llm-evaluation-checklist.md) - 面向金融领域 LLM 评测的数据治理清单，避免私有数据和投资建议类表述。

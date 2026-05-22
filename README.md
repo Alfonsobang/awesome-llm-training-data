@@ -58,6 +58,7 @@ The repository also runs a lightweight [resource audit](tools/audit_resources.py
 - [RLHF / DPO / RLAIF Data](#rlhf--dpo--rlaif-data)
 - [Synthetic Data](#synthetic-data)
 - [RAG Evaluation Data](#rag-evaluation-data)
+- [Agent Evaluation and Trajectory Data](#agent-evaluation-and-trajectory-data)
 - [Financial-domain LLM Data](#financial-domain-llm-data)
 - [Practitioner Guides](#practitioner-guides)
 - [Data Governance](#data-governance)
@@ -155,6 +156,15 @@ The repository also runs a lightweight [resource audit](tools/audit_resources.py
 - [HotpotQA](https://hotpotqa.github.io/) - Tag: [dataset] - Multi-hop question-answering dataset useful for retrieval and evidence-chain evaluation.
 - [Natural Questions](https://ai.google.com/research/NaturalQuestions) - Tag: [dataset] - Open-domain question-answering dataset frequently used in retrieval and QA evaluation.
 
+## Agent Evaluation and Trajectory Data
+
+- [Harbor](https://github.com/harbor-framework/harbor) - Tag: [tool] - Framework for running agent evaluations, collecting trajectories, and creating RL environments in sandboxed settings.
+- [Claw-Eval](https://github.com/claw-eval/claw-eval) - Tag: [benchmark] - Autonomous-agent evaluation suite emphasizing trajectory-aware grading, safety assessment, and repeated-trial robustness.
+- [Terminal-Bench](https://github.com/laude-institute/terminal-bench) - Tag: [benchmark] - Benchmark for evaluating agents on terminal-based tasks with executable environments and verifiers.
+- [SWE-Bench](https://github.com/swe-bench/SWE-bench) - Tag: [benchmark] - Software engineering benchmark for evaluating agents on real GitHub issue resolution tasks.
+- [WebArena](https://github.com/web-arena-x/webarena) - Tag: [benchmark] - Web-based agent benchmark for evaluating interactive task completion in simulated websites.
+- [OSWorld](https://github.com/xlang-ai/OSWorld) - Tag: [benchmark] - Computer-use benchmark for evaluating multimodal agents in desktop operating-system environments.
+
 ## Financial-domain LLM Data
 
 - [FinEval](https://github.com/SUFE-AIFLM-Lab/FinEval) - Tag: [benchmark] - Chinese financial-domain benchmark for evaluating LLM financial knowledge and safety.
@@ -167,6 +177,7 @@ The repository also runs a lightweight [resource audit](tools/audit_resources.py
 
 ## Practitioner Guides
 
+- [Claw-style Agent Evaluation Notes](docs/claw-style-agent-evaluation-notes.md) - Notes on trajectory-aware grading, repeated trials, safety evidence, and how Harbor maps to this evaluation pattern.
 - [LLM Training Data Operating Model](docs/llm-training-data-operating-model.md) - A practical operating loop for source review, profiling, filtering, annotation, evaluation, release, and governance.
 - [LLM Training Data Quality Rubric](docs/data-quality-rubric.md) - A practical checklist for reviewing public LLM training, tuning, preference, synthetic, or evaluation datasets.
 - [Financial-domain LLM Evaluation Checklist](docs/financial-domain-llm-evaluation-checklist.md) - A governance-oriented checklist for financial-domain LLM evaluation without private data or investment claims.
