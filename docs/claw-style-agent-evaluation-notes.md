@@ -94,6 +94,7 @@ Harbor already has several primitives that fit this pattern:
 - Rewardkit judge criteria with `atif-trajectory` for process-aware LLM or agent judging.
 - Custom `metric.py` for dataset-level aggregation beyond average reward.
 - `pass_at_k` utilities for repeated-run success summaries when rewards are binary.
+- A small public example in this repository: [Harbor repeated-trial metric](../examples/harbor-repeated-trial-metric).
 
 ## Practical Harbor Recipe
 

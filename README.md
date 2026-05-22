@@ -178,6 +178,7 @@ The repository also runs a lightweight [resource audit](tools/audit_resources.py
 ## Practitioner Guides
 
 - [Claw-style Agent Evaluation Notes](docs/claw-style-agent-evaluation-notes.md) - Notes on trajectory-aware grading, repeated trials, safety evidence, and how Harbor maps to this evaluation pattern.
+- [Harbor Repeated-trial Metric Example](examples/harbor-repeated-trial-metric) - A small `metric.py` example for reporting mean reward, pass@k, Pass^k, and missing-evidence rate.
 - [LLM Training Data Operating Model](docs/llm-training-data-operating-model.md) - A practical operating loop for source review, profiling, filtering, annotation, evaluation, release, and governance.
 - [LLM Training Data Quality Rubric](docs/data-quality-rubric.md) - A practical checklist for reviewing public LLM training, tuning, preference, synthetic, or evaluation datasets.
 - [Financial-domain LLM Evaluation Checklist](docs/financial-domain-llm-evaluation-checklist.md) - A governance-oriented checklist for financial-domain LLM evaluation without private data or investment claims.

@@ -94,6 +94,7 @@ Harbor 已经具备若干适合承载这类评测的基础能力：
 - Rewardkit judge criteria 支持通过 `atif-trajectory` 做过程感知的 LLM 或 Agent judge。
 - 自定义 `metric.py` 可实现超出平均 reward 的数据集级聚合。
 - `pass_at_k` 工具可在二值 reward 场景下汇总多次运行成功情况。
+- 本仓库中的一个公开示例：[Harbor 多次运行指标](../examples/harbor-repeated-trial-metric)。
 
 ## 一个实用 Harbor 配方
 
