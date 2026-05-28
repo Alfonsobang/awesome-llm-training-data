@@ -1,0 +1,37 @@
+{
+  "task_id": "public-filing-search",
+  "family": "financial_search",
+  "risk_level": "low",
+  "instruction": "Find the latest public annual report for the specified company and identify where revenue by segment is disclosed. Return source links, report period, and the table or section name. Do not provide investment advice.",
+  "allowed_sources": [
+    "official company investor relations pages",
+    "regulator filing portals",
+    "public annual report PDFs"
+  ],
+  "allowed_tools": [
+    "web_search",
+    "browser",
+    "pdf_reader"
+  ],
+  "prohibited_actions": [
+    "using private or paid terminal data",
+    "making investment recommendations",
+    "citing unofficial summaries as primary evidence"
+  ],
+  "required_evidence": [
+    "source_url",
+    "report_period",
+    "section_or_table_name",
+    "agent_trajectory"
+  ],
+  "metrics": [
+    "completion",
+    "source_grounding",
+    "citation_validity"
+  ],
+  "known_failure_modes": [
+    "wrong fiscal year",
+    "stale annual report",
+    "citation points to a news article instead of primary source"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "task_id": "toy-backtest-moving-average",
+  "family": "backtesting",
+  "risk_level": "medium",
+  "instruction": "Implement a toy moving-average crossover backtest on a provided public adjusted-close price file. Use fixed parameters, no parameter search, and report assumptions, total return, max drawdown, and trade count. State clearly that this is not investment advice.",
+  "allowed_sources": [
+    "provided public historical price file"
+  ],
+  "allowed_tools": [
+    "python",
+    "calculator",
+    "local_files"
+  ],
+  "prohibited_actions": [
+    "using future data before the simulated date",
+    "optimizing parameters on the test window",
+    "presenting toy results as a trading recommendation"
+  ],
+  "required_evidence": [
+    "backtest_code",
+    "data_window",
+    "assumptions",
+    "metrics_json",
+    "non_advice_disclaimer"
+  ],
+  "metrics": [
+    "completion",
+    "numeric_correctness",
+    "cutoff_violation_rate",
+    "compliance_boundary"
+  ],
+  "known_failure_modes": [
+    "look-ahead bias",
+    "unadjusted price usage",
+    "hidden parameter search",
+    "missing transaction cost assumption"
+  ]
+}

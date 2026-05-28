@@ -1,0 +1,37 @@
+{
+  "task_id": "filing-grounded-margin-explanation",
+  "family": "filing_qa",
+  "risk_level": "medium",
+  "instruction": "Using only provided public annual reports, explain the year-over-year change in operating margin. Cite exact source passages and show the margin calculation. Avoid stock-price opinions or investment recommendations.",
+  "allowed_sources": [
+    "provided public annual report PDFs"
+  ],
+  "allowed_tools": [
+    "pdf_reader",
+    "calculator",
+    "spreadsheet"
+  ],
+  "prohibited_actions": [
+    "uncited causal claims",
+    "future stock price prediction",
+    "investment recommendation"
+  ],
+  "required_evidence": [
+    "cited_passages",
+    "calculation_table",
+    "limitations_statement",
+    "agent_trajectory",
+    "verifier_output"
+  ],
+  "metrics": [
+    "completion",
+    "source_grounding",
+    "numeric_correctness",
+    "compliance_boundary"
+  ],
+  "known_failure_modes": [
+    "hallucinated management commentary",
+    "wrong denominator for margin",
+    "unsupported causal explanation"
+  ]
+}

@@ -1,0 +1,22 @@
+name: Financial Agent Seed
+
+on:
+  push:
+    paths:
+      - "examples/financial-agent-eval-seed/**"
+      - ".github/workflows/financial-agent-seed.yml"
+  pull_request:
+    paths:
+      - "examples/financial-agent-eval-seed/**"
+      - ".github/workflows/financial-agent-seed.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Validate financial agent evaluation seed
+        run: python examples/financial-agent-eval-seed/validate_specs.py

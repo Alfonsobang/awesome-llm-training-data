@@ -151,10 +151,13 @@ metrics:
 5. Draft a minimal public benchmark seed with 10-20 tasks.
 6. Invite feedback from agent-evaluation and financial-data practitioners.
 
+Initial seed work is available in [Financial Agent Evaluation Seed](../examples/financial-agent-eval-seed).
+
 ## Related Resources
 
 - [Financial-domain LLM Evaluation Checklist](financial-domain-llm-evaluation-checklist.md)
 - [2026 Agent Evaluation Radar](2026-agent-evaluation-radar.md)
 - [Claw-style Agent Evaluation Notes](claw-style-agent-evaluation-notes.md)
 - [Harbor repeated-trial metric example](../examples/harbor-repeated-trial-metric)
+- [Financial Agent Evaluation Seed](../examples/financial-agent-eval-seed)
 - [中文版本](financial-agent-evaluation-agenda.zh-CN.md)

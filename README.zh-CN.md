@@ -3,6 +3,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Markdown Links](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/link-check.yml/badge.svg)](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/link-check.yml)
 [![Resource Audit](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/resource-audit.yml/badge.svg)](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/resource-audit.yml)
+[![Financial Agent Seed](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/financial-agent-seed.yml/badge.svg)](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/financial-agent-seed.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE.md)
 
 一个面向 LLM 训练数据工程的精选资源列表，覆盖数据质量、标注、偏好数据、合成数据、数据治理、隐私合规与评测。
@@ -34,6 +35,7 @@
 
 - 从 [2026 Agent Evaluation Radar](docs/2026-agent-evaluation-radar.zh-CN.md) 开始。
 - 阅读 [金融 Agent 评测课题框架](docs/financial-agent-evaluation-agenda.zh-CN.md)。
+- 查看 [金融 Agent 评测种子集](examples/financial-agent-eval-seed)。
 - 阅读 [Claw-style Agent 评测笔记](docs/claw-style-agent-evaluation-notes.zh-CN.md)。
 - 试用 [Harbor 多次运行指标示例](examples/harbor-repeated-trial-metric)。
 - 关注 Harbor 上游讨论：[harbor-framework/harbor#1700](https://github.com/harbor-framework/harbor/issues/1700)。
@@ -211,6 +213,7 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 
 - [Claw-style Agent 评测笔记](docs/claw-style-agent-evaluation-notes.zh-CN.md) - 关于轨迹感知评分、多次运行、安全证据以及 Harbor 如何承载这类评测模式的笔记。
 - [金融 Agent 评测课题框架](docs/financial-agent-evaluation-agenda.zh-CN.md) - 面向金融搜索、查数、回测、预测、合规与证据链 Agent 评测的大课题框架。
+- [金融 Agent 评测种子集](examples/financial-agent-eval-seed) - 面向金融 Agent benchmark seed 的公开数据任务规格、数据集卡和轨迹安全 rubric。
 - [Harbor 多次运行指标示例](examples/harbor-repeated-trial-metric) - 用于报告 mean reward、pass@k、Pass^k 和缺失证据比例的小型 `metric.py` 示例。
 - [LLM 训练数据工程操作模型](docs/llm-training-data-operating-model.zh-CN.md) - 面向来源审查、画像检查、过滤去重、标注生成、评测发布与治理闭环的实践框架。
 - [LLM 训练数据质量 Rubric](docs/data-quality-rubric.md) - 用于审查公开 LLM 训练、微调、偏好、合成或评测数据集的实践清单。

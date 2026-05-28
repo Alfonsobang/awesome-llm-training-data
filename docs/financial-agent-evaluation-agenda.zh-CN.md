@@ -151,10 +151,13 @@ metrics:
 5. 草拟一个 10-20 个任务的最小公开 benchmark seed。
 6. 邀请 Agent 评测和金融数据实践者反馈。
 
+初始种子集见 [金融 Agent 评测种子集](../examples/financial-agent-eval-seed)。
+
 ## 相关资源
 
 - [金融领域 LLM 评测清单](financial-domain-llm-evaluation-checklist.md)
 - [2026 Agent Evaluation Radar](2026-agent-evaluation-radar.zh-CN.md)
 - [Claw-style Agent 评测笔记](claw-style-agent-evaluation-notes.zh-CN.md)
 - [Harbor 多次运行指标示例](../examples/harbor-repeated-trial-metric)
+- [金融 Agent 评测种子集](../examples/financial-agent-eval-seed)
 - [English version](financial-agent-evaluation-agenda.md)
