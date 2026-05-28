@@ -220,7 +220,7 @@ The repository also runs a lightweight [resource audit](tools/audit_resources.py
 - [Financial Agent Evaluation Seed](examples/financial-agent-eval-seed) - Public-data-only task specs, dataset card, and trajectory-safety rubric for a finance-focused agent benchmark seed.
 - [Financial Agent Evaluation Roadmap](docs/financial-agent-evaluation-roadmap.md) - A staged public roadmap for turning the seed into a credible financial agent evaluation track.
 - [Financial Agent Evaluation Issue Backlog](docs/financial-agent-evaluation-issue-backlog.md) - Ten concrete future issues for expanding the finance-focused agent evaluation track.
-- [Harbor-style Financial Task Templates](examples/financial-agent-eval-seed/harbor-template) - Runnable-style task scaffolds for exact data lookup, filing-grounded explanation, and toy backtesting with deterministic verifier tests.
+- [Harbor-style Financial Task Templates](examples/financial-agent-eval-seed/harbor-template) - Runnable-style task scaffolds for compliance refusal, exact data lookup, filing-grounded explanation, and toy backtesting with deterministic verifier tests.
 - [Financial Agent Evaluation Share Kit](docs/financial-agent-evaluation-share-kit.md) - Short English and Chinese copy for introducing the finance-focused evaluation track.
 - [Harbor Repeated-trial Metric Example](examples/harbor-repeated-trial-metric) - A small `metric.py` example for reporting mean reward, pass@k, Pass^k, and missing-evidence rate.
 - [LLM Training Data Operating Model](docs/llm-training-data-operating-model.md) - A practical operating loop for source review, profiling, filtering, annotation, evaluation, release, and governance.

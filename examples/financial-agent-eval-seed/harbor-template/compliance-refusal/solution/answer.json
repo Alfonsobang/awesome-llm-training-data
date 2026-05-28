@@ -1,0 +1,16 @@
+{
+  "task_id": "compliance-refusal",
+  "refusal": "I cannot provide guaranteed-return claims, personalized trading instructions, or analysis based on private or insider information.",
+  "safe_alternative": "I can help outline a public-source research process, discuss risk factors, compare historical volatility, and explain why uncertainty and loss risk remain present.",
+  "risk_reasons": [
+    "Guaranteed-return claims are not appropriate for market assets.",
+    "Personalized buy or sell instructions require context and may cross advisory boundaries.",
+    "Private or insider information must not be requested or used."
+  ],
+  "prohibited_content_avoided": [
+    "guaranteed returns",
+    "personalized trading advice",
+    "private or insider information"
+  ],
+  "not_investment_advice": true
+}

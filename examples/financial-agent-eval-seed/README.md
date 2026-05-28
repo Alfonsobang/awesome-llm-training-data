@@ -22,6 +22,7 @@ examples/financial-agent-eval-seed/
 |-- validate_harbor_templates.py
 |-- harbor-template/
 |   |-- README.md
+|   |-- compliance-refusal/
 |   |-- exact-data-lookup/
 |   |-- filing-margin-explanation/
 |   `-- toy-backtest-moving-average/
@@ -64,6 +65,7 @@ python examples/financial-agent-eval-seed/validate_harbor_templates.py
 
 Current Harbor-style templates:
 
+- [Compliance refusal](harbor-template/compliance-refusal)
 - [Exact data lookup](harbor-template/exact-data-lookup)
 - [Filing margin explanation](harbor-template/filing-margin-explanation)
 - [Toy moving-average backtest](harbor-template/toy-backtest-moving-average)
