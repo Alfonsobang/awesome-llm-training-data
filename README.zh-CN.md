@@ -218,6 +218,7 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 - [金融 Agent 评测课题框架](docs/financial-agent-evaluation-agenda.zh-CN.md) - 面向金融搜索、查数、回测、预测、合规与证据链 Agent 评测的大课题框架。
 - [金融 Agent 评测种子集](examples/financial-agent-eval-seed) - 面向金融 Agent benchmark seed 的公开数据任务规格、数据集卡和轨迹安全 rubric。
 - [金融 Agent 评测路线图](docs/financial-agent-evaluation-roadmap.zh-CN.md) - 将金融评测 seed 推进为可信公开评测方向的阶段性路线图。
+- [Financial Agent Evaluation Issue Backlog](docs/financial-agent-evaluation-issue-backlog.md) - 用于扩展金融 Agent 评测方向的 10 个具体后续 issue。
 - [Harbor 风格金融报表任务模板](examples/financial-agent-eval-seed/harbor-template/filing-margin-explanation) - 使用合成 fixture、JSON 证据和确定性 verifier 的可迁移任务脚手架。
 - [Financial Agent Evaluation Share Kit](docs/financial-agent-evaluation-share-kit.md) - 用于介绍金融 Agent 评测方向的中英文短文案。
 - [Harbor 多次运行指标示例](examples/harbor-repeated-trial-metric) - 用于报告 mean reward、pass@k、Pass^k 和缺失证据比例的小型 `metric.py` 示例。
