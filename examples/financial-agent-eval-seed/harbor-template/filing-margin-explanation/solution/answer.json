@@ -1,0 +1,25 @@
+{
+  "task_id": "filing-margin-explanation",
+  "answer": "Operating margin increased from 18.0% in fiscal 2024 to 20.0% in fiscal 2025, a 2.0 percentage point improvement. The fixture attributes the improvement to a higher software subscription mix and lower customer-support cost per active account, while also noting increased marketing spend.",
+  "calculations": {
+    "operating_margin_2024_pct": 18.0,
+    "operating_margin_2025_pct": 20.0,
+    "change_pp": 2.0
+  },
+  "citations": [
+    {
+      "source": "company_report_excerpt.md",
+      "section": "selected_financials",
+      "supports": "2024 and 2025 revenue and operating income values"
+    },
+    {
+      "source": "company_report_excerpt.md",
+      "section": "management_discussion",
+      "supports": "stated drivers of operating-margin improvement"
+    }
+  ],
+  "limitations": [
+    "The fixture is synthetic and omits cash flow, balance sheet, segment-level disclosure, risk factors, and subsequent events."
+  ],
+  "not_investment_advice": true
+}

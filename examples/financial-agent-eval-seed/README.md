@@ -16,17 +16,24 @@ It deliberately avoids private company data, real user data, internal workflows,
 
 ```text
 examples/financial-agent-eval-seed/
-├── README.md
-├── dataset-card.md
-├── validate_specs.py
-├── rubrics/
-│   └── trajectory-finance-safety.toml
-└── task-specs/
-    ├── compliance-refusal-guaranteed-return.json
-    ├── exact-data-lookup-public-filing.json
-    ├── filing-grounded-margin-explanation.json
-    ├── public-filing-search.json
-    └── toy-backtest-moving-average.json
+|-- README.md
+|-- dataset-card.md
+|-- validate_specs.py
+|-- harbor-template/
+|   `-- filing-margin-explanation/
+|       |-- instruction.md
+|       |-- task.toml
+|       |-- fixtures/
+|       |-- solution/
+|       `-- tests/
+|-- rubrics/
+|   `-- trajectory-finance-safety.toml
+`-- task-specs/
+    |-- compliance-refusal-guaranteed-return.json
+    |-- exact-data-lookup-public-filing.json
+    |-- filing-grounded-margin-explanation.json
+    |-- public-filing-search.json
+    `-- toy-backtest-moving-average.json
 ```
 
 ## Task Spec Shape
@@ -50,13 +57,20 @@ Run the local validator:
 python examples/financial-agent-eval-seed/validate_specs.py
 ```
 
+Validate the Harbor-style example verifier against the included reference output:
+
+```bash
+python -m unittest discover -s examples/financial-agent-eval-seed/harbor-template/filing-margin-explanation/tests -p "test_*.py"
+```
+
 ## How To Use This Seed
 
 1. Review the task specs and adapt them to public data sources your team is allowed to use.
-2. Convert each task into a Harbor task directory with an environment, instruction, verifier, and artifact requirements.
-3. Run each task with repeated attempts.
-4. Use the [Harbor repeated-trial metric example](../harbor-repeated-trial-metric) for pass@k, Pass^k, and missing-evidence reporting.
-5. Add a trajectory-aware judge rubric for finance-specific process safety.
+2. Start from the [Harbor-style filing task template](harbor-template/filing-margin-explanation) when converting a task into an executable task directory.
+3. Add an environment, instruction, verifier, fixture policy, and artifact requirements for each task.
+4. Run each task with repeated attempts.
+5. Use the [Harbor repeated-trial metric example](../harbor-repeated-trial-metric) for pass@k, Pass^k, and missing-evidence reporting.
+6. Add a trajectory-aware judge rubric for finance-specific process safety.
 
 ## What This Seed Is Not
 

@@ -36,10 +36,13 @@ The hottest evaluation shift right now is from static answer grading to trajecto
 - Start with the [2026 Agent Evaluation Radar](docs/2026-agent-evaluation-radar.md).
 - Explore the [Financial Agent Evaluation Agenda](docs/financial-agent-evaluation-agenda.md).
 - Inspect the [Financial Agent Evaluation Seed](examples/financial-agent-eval-seed).
+- Review the [Financial Agent Evaluation Roadmap](docs/financial-agent-evaluation-roadmap.md).
+- Adapt the [Harbor-style financial filing task template](examples/financial-agent-eval-seed/harbor-template/filing-margin-explanation).
 - Read the [Claw-style Agent Evaluation Notes](docs/claw-style-agent-evaluation-notes.md).
 - Try the [Harbor repeated-trial metric example](examples/harbor-repeated-trial-metric).
 - Follow the upstream Harbor discussion: [harbor-framework/harbor#1700](https://github.com/harbor-framework/harbor/issues/1700).
 - Share the repo using the [Launch and Share Kit](docs/launch-and-share-kit.md).
+- Share the finance track using the [Financial Agent Evaluation Share Kit](docs/financial-agent-evaluation-share-kit.md).
 - Start a community thread with the [Agent Evaluation Discussion Seed](docs/discussion-seed-agent-evaluation.md).
 
 ## Why Training Data Quality Deserves First-Class Engineering
@@ -215,6 +218,9 @@ The repository also runs a lightweight [resource audit](tools/audit_resources.py
 - [Claw-style Agent Evaluation Notes](docs/claw-style-agent-evaluation-notes.md) - Notes on trajectory-aware grading, repeated trials, safety evidence, and how Harbor maps to this evaluation pattern.
 - [Financial Agent Evaluation Agenda](docs/financial-agent-evaluation-agenda.md) - A large-topic agenda for financial search, data lookup, backtesting, forecasting, compliance, and evidence-grounded agent evaluation.
 - [Financial Agent Evaluation Seed](examples/financial-agent-eval-seed) - Public-data-only task specs, dataset card, and trajectory-safety rubric for a finance-focused agent benchmark seed.
+- [Financial Agent Evaluation Roadmap](docs/financial-agent-evaluation-roadmap.md) - A staged public roadmap for turning the seed into a credible financial agent evaluation track.
+- [Harbor-style Financial Filing Task Template](examples/financial-agent-eval-seed/harbor-template/filing-margin-explanation) - A runnable-style task scaffold with synthetic fixture data, JSON evidence, and deterministic verifier tests.
+- [Financial Agent Evaluation Share Kit](docs/financial-agent-evaluation-share-kit.md) - Short English and Chinese copy for introducing the finance-focused evaluation track.
 - [Harbor Repeated-trial Metric Example](examples/harbor-repeated-trial-metric) - A small `metric.py` example for reporting mean reward, pass@k, Pass^k, and missing-evidence rate.
 - [LLM Training Data Operating Model](docs/llm-training-data-operating-model.md) - A practical operating loop for source review, profiling, filtering, annotation, evaluation, release, and governance.
 - [LLM Training Data Quality Rubric](docs/data-quality-rubric.md) - A practical checklist for reviewing public LLM training, tuning, preference, synthetic, or evaluation datasets.

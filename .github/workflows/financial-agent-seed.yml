@@ -20,3 +20,5 @@ jobs:
           python-version: "3.12"
       - name: Validate financial agent evaluation seed
         run: python examples/financial-agent-eval-seed/validate_specs.py
+      - name: Validate Harbor-style financial task template
+        run: python -m unittest discover -s examples/financial-agent-eval-seed/harbor-template/filing-margin-explanation/tests -p "test_*.py"
