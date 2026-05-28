@@ -1,4 +1,4 @@
-# Awesome LLM Training Data
+# Awesome LLM Training Data & Agent Evaluation
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Markdown Links](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/link-check.yml/badge.svg)](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/link-check.yml)
@@ -7,17 +7,36 @@
 
 一个面向 LLM 训练数据工程的精选资源列表，覆盖数据质量、标注、偏好数据、合成数据、数据治理、隐私合规与评测。
 
-本项目面向需要选择、审计或治理 LLM 数据集的实践者，不是泛泛的 AI 资料收藏夹。
+2026 重点关注：Agent 评测、轨迹感知评分、Claw-style benchmark、Harbor 工作流，以及让 Agent 结果可审计的数据证据。
+
+本项目面向需要选择、审计或治理 LLM 数据集和 Agent 评测数据的实践者，不是泛泛的 AI 资料收藏夹。
 
 你可以用它来：
 
 - 查找用于清洗、去重、检查、标注、偏好数据、合成数据和 RAG 评测的公开工具。
 - 在建设内部数据流水线前，对比数据质量与治理方面的公开参考。
 - 查找公开的金融领域 LLM 基准和数据集，同时避免混入私有或专有材料。
+- 跟踪快速变化的 Agent 评测栈：Harbor、Claw-style 轨迹评分、多次运行指标和过程安全证据。
+
+如果你关注这些问题，欢迎 star：
+
+- 不只看最终答案，而是检查完整轨迹的 Agent 评测。
+- 面向训练、微调、偏好、合成、RAG 和评测数据的数据质量与治理。
+- 真实 LLM 数据和评测团队可复用的实践示例。
 
 英文主文档：[README.md](README.md)。
 
 > 免责声明：This repository does not contain private company data, real user data, or proprietary workflows.
+
+## 2026 Agent Evaluation Radar
+
+当前最热的评测变化，是从静态答案评分转向轨迹感知的 Agent 评测：多次运行、过程安全、verifier 证据、artifact 和可审计 trace。
+
+- 从 [2026 Agent Evaluation Radar](docs/2026-agent-evaluation-radar.zh-CN.md) 开始。
+- 阅读 [Claw-style Agent 评测笔记](docs/claw-style-agent-evaluation-notes.zh-CN.md)。
+- 试用 [Harbor 多次运行指标示例](examples/harbor-repeated-trial-metric)。
+- 关注 Harbor 上游讨论：[harbor-framework/harbor#1700](https://github.com/harbor-framework/harbor/issues/1700)。
+- 使用 [Launch and Share Kit](docs/launch-and-share-kit.md) 分享本仓库。
 
 ## 为什么训练数据质量需要一流工程能力
 
@@ -47,6 +66,7 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 ## 目录
 
 - [范围](#范围)
+- [2026 Agent Evaluation Radar](#2026-agent-evaluation-radar)
 - [金融与强监管领域说明](#金融与强监管领域说明)
 - [入门资源](#入门资源)
 - [训练数据质量](#训练数据质量)

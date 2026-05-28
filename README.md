@@ -1,4 +1,4 @@
-# Awesome LLM Training Data
+# Awesome LLM Training Data & Agent Evaluation
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Markdown Links](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/link-check.yml/badge.svg)](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/link-check.yml)
@@ -7,17 +7,36 @@
 
 A curated list of tools, papers, datasets, and best practices for LLM training data quality, annotation, preference data, synthetic data, data governance, and evaluation.
 
-Built for practitioners who need to choose, audit, or govern LLM datasets. This is not a general AI bookmark dump.
+2026 focus: agent evaluation, trajectory-aware grading, Claw-style benchmarks, Harbor workflows, and the data evidence needed to make agent results auditable.
+
+Built for practitioners who need to choose, audit, or govern LLM datasets and agent evaluation data. This is not a general AI bookmark dump.
 
 Use this repo to:
 
 - Find public tools for cleaning, deduplication, inspection, annotation, preference data, synthetic data, and RAG evaluation.
 - Compare dataset-quality and governance references before building internal data pipelines.
 - Locate public financial-domain LLM benchmarks and datasets without mixing in private or proprietary material.
+- Track the fast-moving agent evaluation stack: Harbor, Claw-style trajectory scoring, repeated-trial metrics, and process-safety evidence.
+
+Star this repo if you care about:
+
+- Agent evaluation that inspects trajectories, not just final answers.
+- Data quality and governance for training, tuning, preference, synthetic, RAG, and evaluation datasets.
+- Practical examples that real LLM data and evaluation teams can reuse.
 
 English first. Complete Chinese version: [README.zh-CN.md](README.zh-CN.md).
 
 > Disclaimer: This repository does not contain private company data, real user data, or proprietary workflows.
+
+## 2026 Agent Evaluation Radar
+
+The hottest evaluation shift right now is from static answer grading to trajectory-aware agent evaluation: repeated attempts, process safety, verifier evidence, artifacts, and auditable traces.
+
+- Start with the [2026 Agent Evaluation Radar](docs/2026-agent-evaluation-radar.md).
+- Read the [Claw-style Agent Evaluation Notes](docs/claw-style-agent-evaluation-notes.md).
+- Try the [Harbor repeated-trial metric example](examples/harbor-repeated-trial-metric).
+- Follow the upstream Harbor discussion: [harbor-framework/harbor#1700](https://github.com/harbor-framework/harbor/issues/1700).
+- Share the repo using the [Launch and Share Kit](docs/launch-and-share-kit.md).
 
 ## Why Training Data Quality Deserves First-Class Engineering
 
@@ -47,6 +66,7 @@ The repository also runs a lightweight [resource audit](tools/audit_resources.py
 ## Contents
 
 - [Scope](#scope)
+- [2026 Agent Evaluation Radar](#2026-agent-evaluation-radar)
 - [Financial and Regulated-Domain Note](#financial-and-regulated-domain-note)
 - [Start Here](#start-here)
 - [Training Data Quality](#training-data-quality)
