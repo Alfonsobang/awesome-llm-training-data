@@ -13,7 +13,7 @@ Initial artifacts:
 - Financial Agent Evaluation Agenda
 - Financial Agent Evaluation Roadmap
 - Public-data-only task specs
-- Harbor-style filing task template with synthetic fixture data and deterministic verifier tests
+- Harbor-style financial task templates with synthetic fixture data and deterministic verifier tests
 
 The design principle is simple: no private data, no real user data, no investment advice, and no production-readiness claims. The useful benchmark is the one that leaves enough evidence for another evaluator to understand what happened.
 
@@ -30,7 +30,7 @@ Repo: https://github.com/Alfonsobang/awesome-llm-training-data
 - 金融 Agent 评测课题框架
 - 金融 Agent 评测路线图
 - 公开数据任务规格
-- Harbor 风格金融报表任务模板，包含合成 fixture 和确定性 verifier tests
+- Harbor 风格金融任务模板，包含合成 fixture 和确定性 verifier tests
 
 基本原则很清楚：不使用私有数据，不使用真实用户数据，不提供投资建议，不声称生产可用。真正有价值的金融 Agent benchmark，应该能留下足够证据，让另一个评测者看懂任务是怎么完成或失败的。
 

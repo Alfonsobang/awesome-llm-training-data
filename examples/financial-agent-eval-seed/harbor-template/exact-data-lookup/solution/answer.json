@@ -1,0 +1,21 @@
+{
+  "task_id": "exact-data-lookup",
+  "company_id": "SYNTH-FIN-001",
+  "fiscal_year": 2025,
+  "currency": "USD",
+  "values": {
+    "revenue": 1250000,
+    "net_income": 132000,
+    "diluted_shares": 500000
+  },
+  "citations": [
+    {
+      "source": "financial_statement_excerpt.json",
+      "path": "$.annual_facts[0]"
+    }
+  ],
+  "limitations": [
+    "The fixture is synthetic, contains a single fiscal year, and omits segment, cash flow, balance sheet, and market data."
+  ],
+  "not_investment_advice": true
+}

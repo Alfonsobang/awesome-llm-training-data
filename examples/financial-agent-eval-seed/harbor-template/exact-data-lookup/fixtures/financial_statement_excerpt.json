@@ -1,0 +1,20 @@
+{
+  "fixture_notice": "Synthetic public-example-only data for benchmark scaffolding. Not financial analysis.",
+  "company_id": "SYNTH-FIN-001",
+  "annual_facts": [
+    {
+      "fiscal_year": 2025,
+      "currency": "USD",
+      "revenue": 1250000,
+      "operating_income": 250000,
+      "net_income": 132000,
+      "diluted_shares": 500000,
+      "period_end": "2025-12-31"
+    }
+  ],
+  "limitations": [
+    "Synthetic fixture",
+    "Single fiscal year only",
+    "No segment, cash flow, balance sheet, or market data"
+  ]
+}

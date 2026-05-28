@@ -37,7 +37,7 @@
 - 阅读 [金融 Agent 评测课题框架](docs/financial-agent-evaluation-agenda.zh-CN.md)。
 - 查看 [金融 Agent 评测种子集](examples/financial-agent-eval-seed)。
 - 查看 [金融 Agent 评测路线图](docs/financial-agent-evaluation-roadmap.zh-CN.md)。
-- 参考 [Harbor 风格金融报表任务模板](examples/financial-agent-eval-seed/harbor-template/filing-margin-explanation)。
+- 参考 [Harbor 风格金融任务模板](examples/financial-agent-eval-seed/harbor-template)。
 - 阅读 [Claw-style Agent 评测笔记](docs/claw-style-agent-evaluation-notes.zh-CN.md)。
 - 试用 [Harbor 多次运行指标示例](examples/harbor-repeated-trial-metric)。
 - 关注 Harbor 上游讨论：[harbor-framework/harbor#1700](https://github.com/harbor-framework/harbor/issues/1700)。
@@ -219,7 +219,7 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 - [金融 Agent 评测种子集](examples/financial-agent-eval-seed) - 面向金融 Agent benchmark seed 的公开数据任务规格、数据集卡和轨迹安全 rubric。
 - [金融 Agent 评测路线图](docs/financial-agent-evaluation-roadmap.zh-CN.md) - 将金融评测 seed 推进为可信公开评测方向的阶段性路线图。
 - [Financial Agent Evaluation Issue Backlog](docs/financial-agent-evaluation-issue-backlog.md) - 用于扩展金融 Agent 评测方向的 10 个具体后续 issue。
-- [Harbor 风格金融报表任务模板](examples/financial-agent-eval-seed/harbor-template/filing-margin-explanation) - 使用合成 fixture、JSON 证据和确定性 verifier 的可迁移任务脚手架。
+- [Harbor 风格金融任务模板](examples/financial-agent-eval-seed/harbor-template) - 面向精确查数、报表依据解释和玩具回测的可迁移任务脚手架，使用合成 fixture、JSON 证据和确定性 verifier。
 - [Financial Agent Evaluation Share Kit](docs/financial-agent-evaluation-share-kit.md) - 用于介绍金融 Agent 评测方向的中英文短文案。
 - [Harbor 多次运行指标示例](examples/harbor-repeated-trial-metric) - 用于报告 mean reward、pass@k、Pass^k 和缺失证据比例的小型 `metric.py` 示例。
 - [LLM 训练数据工程操作模型](docs/llm-training-data-operating-model.zh-CN.md) - 面向来源审查、画像检查、过滤去重、标注生成、评测发布与治理闭环的实践框架。

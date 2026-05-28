@@ -19,13 +19,12 @@ examples/financial-agent-eval-seed/
 |-- README.md
 |-- dataset-card.md
 |-- validate_specs.py
+|-- validate_harbor_templates.py
 |-- harbor-template/
-|   `-- filing-margin-explanation/
-|       |-- instruction.md
-|       |-- task.toml
-|       |-- fixtures/
-|       |-- solution/
-|       `-- tests/
+|   |-- README.md
+|   |-- exact-data-lookup/
+|   |-- filing-margin-explanation/
+|   `-- toy-backtest-moving-average/
 |-- rubrics/
 |   `-- trajectory-finance-safety.toml
 `-- task-specs/
@@ -57,16 +56,22 @@ Run the local validator:
 python examples/financial-agent-eval-seed/validate_specs.py
 ```
 
-Validate the Harbor-style example verifier against the included reference output:
+Validate all Harbor-style example verifiers against the included reference outputs:
 
 ```bash
-python -m unittest discover -s examples/financial-agent-eval-seed/harbor-template/filing-margin-explanation/tests -p "test_*.py"
+python examples/financial-agent-eval-seed/validate_harbor_templates.py
 ```
+
+Current Harbor-style templates:
+
+- [Exact data lookup](harbor-template/exact-data-lookup)
+- [Filing margin explanation](harbor-template/filing-margin-explanation)
+- [Toy moving-average backtest](harbor-template/toy-backtest-moving-average)
 
 ## How To Use This Seed
 
 1. Review the task specs and adapt them to public data sources your team is allowed to use.
-2. Start from the [Harbor-style filing task template](harbor-template/filing-margin-explanation) when converting a task into an executable task directory.
+2. Start from the [Harbor-style task templates](harbor-template) when converting a task into an executable task directory.
 3. Add an environment, instruction, verifier, fixture policy, and artifact requirements for each task.
 4. Run each task with repeated attempts.
 5. Use the [Harbor repeated-trial metric example](../harbor-repeated-trial-metric) for pass@k, Pass^k, and missing-evidence reporting.
