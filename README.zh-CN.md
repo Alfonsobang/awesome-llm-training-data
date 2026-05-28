@@ -33,6 +33,7 @@
 当前最热的评测变化，是从静态答案评分转向轨迹感知的 Agent 评测：多次运行、过程安全、verifier 证据、artifact 和可审计 trace。
 
 - 从 [2026 Agent Evaluation Radar](docs/2026-agent-evaluation-radar.zh-CN.md) 开始。
+- 阅读 [金融 Agent 评测课题框架](docs/financial-agent-evaluation-agenda.zh-CN.md)。
 - 阅读 [Claw-style Agent 评测笔记](docs/claw-style-agent-evaluation-notes.zh-CN.md)。
 - 试用 [Harbor 多次运行指标示例](examples/harbor-repeated-trial-metric)。
 - 关注 Harbor 上游讨论：[harbor-framework/harbor#1700](https://github.com/harbor-framework/harbor/issues/1700)。
@@ -79,6 +80,7 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 - [合成数据](#合成数据)
 - [RAG 评测数据](#rag-评测数据)
 - [Agent 评测与轨迹数据](#agent-评测与轨迹数据)
+- [金融 Agent 评测](#金融-agent-评测)
 - [金融领域 LLM 数据](#金融领域-llm-数据)
 - [实践指南](#实践指南)
 - [数据治理](#数据治理)
@@ -185,6 +187,16 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 - [WebArena](https://github.com/web-arena-x/webarena) - Tag: [benchmark] - 在模拟网站中评估交互式任务完成能力的 Web Agent 基准。
 - [OSWorld](https://github.com/xlang-ai/OSWorld) - Tag: [benchmark] - 在桌面操作系统环境中评估多模态计算机使用 Agent 的基准。
 
+## 金融 Agent 评测
+
+- [FinToolBench](https://github.com/Double-wk/FinToolBench) - Tag: [benchmark] - 用于评估金融工具使用 Agent 的可运行 benchmark，覆盖真实任务与监管对齐维度。
+- [Finance Agent Benchmark](https://arxiv.org/abs/2508.00828) - Tag: [paper] - 面向 LLM 金融 Agent 真实金融研究任务的 benchmark 论文。
+- [FinAgentBench](https://arxiv.org/abs/2508.14052) - Tag: [paper] - 面向金融问答中 agentic retrieval 和多步推理的 benchmark 论文。
+- [QFBench](https://www.qfbench.com/) - Tag: [benchmark] - 用于评估 Agent 编写和执行量化金融代码能力的 benchmark。
+- [CryptoBench](https://cryptobench.space/) - Tag: [benchmark] - 面向加密资产和市场情报 Agent 工作流的动态 benchmark。
+- [OpenBB](https://github.com/openbb-finance/OpenBB) - Tag: [tool] - 可用于构建公开数据查数和分析 Agent 的开源金融数据平台。
+- [FinRL](https://github.com/AI4Finance-Foundation/FinRL) - Tag: [tool] - 面向金融强化学习、市场环境和回测式工作流的开源框架。
+
 ## 金融领域 LLM 数据
 
 - [FinEval](https://github.com/SUFE-AIFLM-Lab/FinEval) - Tag: [benchmark] - 用于评估 LLM 金融知识和安全性的中文金融领域基准。
@@ -198,6 +210,7 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 ## 实践指南
 
 - [Claw-style Agent 评测笔记](docs/claw-style-agent-evaluation-notes.zh-CN.md) - 关于轨迹感知评分、多次运行、安全证据以及 Harbor 如何承载这类评测模式的笔记。
+- [金融 Agent 评测课题框架](docs/financial-agent-evaluation-agenda.zh-CN.md) - 面向金融搜索、查数、回测、预测、合规与证据链 Agent 评测的大课题框架。
 - [Harbor 多次运行指标示例](examples/harbor-repeated-trial-metric) - 用于报告 mean reward、pass@k、Pass^k 和缺失证据比例的小型 `metric.py` 示例。
 - [LLM 训练数据工程操作模型](docs/llm-training-data-operating-model.zh-CN.md) - 面向来源审查、画像检查、过滤去重、标注生成、评测发布与治理闭环的实践框架。
 - [LLM 训练数据质量 Rubric](docs/data-quality-rubric.md) - 用于审查公开 LLM 训练、微调、偏好、合成或评测数据集的实践清单。

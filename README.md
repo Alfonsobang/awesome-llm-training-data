@@ -33,6 +33,7 @@ English first. Complete Chinese version: [README.zh-CN.md](README.zh-CN.md).
 The hottest evaluation shift right now is from static answer grading to trajectory-aware agent evaluation: repeated attempts, process safety, verifier evidence, artifacts, and auditable traces.
 
 - Start with the [2026 Agent Evaluation Radar](docs/2026-agent-evaluation-radar.md).
+- Explore the [Financial Agent Evaluation Agenda](docs/financial-agent-evaluation-agenda.md).
 - Read the [Claw-style Agent Evaluation Notes](docs/claw-style-agent-evaluation-notes.md).
 - Try the [Harbor repeated-trial metric example](examples/harbor-repeated-trial-metric).
 - Follow the upstream Harbor discussion: [harbor-framework/harbor#1700](https://github.com/harbor-framework/harbor/issues/1700).
@@ -80,6 +81,7 @@ The repository also runs a lightweight [resource audit](tools/audit_resources.py
 - [Synthetic Data](#synthetic-data)
 - [RAG Evaluation Data](#rag-evaluation-data)
 - [Agent Evaluation and Trajectory Data](#agent-evaluation-and-trajectory-data)
+- [Financial Agent Evaluation](#financial-agent-evaluation)
 - [Financial-domain LLM Data](#financial-domain-llm-data)
 - [Practitioner Guides](#practitioner-guides)
 - [Data Governance](#data-governance)
@@ -186,6 +188,16 @@ The repository also runs a lightweight [resource audit](tools/audit_resources.py
 - [WebArena](https://github.com/web-arena-x/webarena) - Tag: [benchmark] - Web-based agent benchmark for evaluating interactive task completion in simulated websites.
 - [OSWorld](https://github.com/xlang-ai/OSWorld) - Tag: [benchmark] - Computer-use benchmark for evaluating multimodal agents in desktop operating-system environments.
 
+## Financial Agent Evaluation
+
+- [FinToolBench](https://github.com/Double-wk/FinToolBench) - Tag: [benchmark] - Runnable benchmark for evaluating financial tool-use agents across realistic task and regulatory-alignment dimensions.
+- [Finance Agent Benchmark](https://arxiv.org/abs/2508.00828) - Tag: [paper] - Benchmark paper focused on real-world financial research tasks for LLM-driven finance agents.
+- [FinAgentBench](https://arxiv.org/abs/2508.14052) - Tag: [paper] - Benchmark paper for agentic retrieval in financial question answering with multi-step reasoning.
+- [QFBench](https://www.qfbench.com/) - Tag: [benchmark] - Quantitative finance benchmark for evaluating agents that write and execute numerical finance code.
+- [CryptoBench](https://cryptobench.space/) - Tag: [benchmark] - Dynamic benchmark for expert-level crypto and market-intelligence agent workflows.
+- [OpenBB](https://github.com/openbb-finance/OpenBB) - Tag: [tool] - Open-source financial data platform useful for building public-data lookup and analysis agents.
+- [FinRL](https://github.com/AI4Finance-Foundation/FinRL) - Tag: [tool] - Open-source framework for financial reinforcement learning, market environments, and backtesting-style workflows.
+
 ## Financial-domain LLM Data
 
 - [FinEval](https://github.com/SUFE-AIFLM-Lab/FinEval) - Tag: [benchmark] - Chinese financial-domain benchmark for evaluating LLM financial knowledge and safety.
@@ -199,6 +211,7 @@ The repository also runs a lightweight [resource audit](tools/audit_resources.py
 ## Practitioner Guides
 
 - [Claw-style Agent Evaluation Notes](docs/claw-style-agent-evaluation-notes.md) - Notes on trajectory-aware grading, repeated trials, safety evidence, and how Harbor maps to this evaluation pattern.
+- [Financial Agent Evaluation Agenda](docs/financial-agent-evaluation-agenda.md) - A large-topic agenda for financial search, data lookup, backtesting, forecasting, compliance, and evidence-grounded agent evaluation.
 - [Harbor Repeated-trial Metric Example](examples/harbor-repeated-trial-metric) - A small `metric.py` example for reporting mean reward, pass@k, Pass^k, and missing-evidence rate.
 - [LLM Training Data Operating Model](docs/llm-training-data-operating-model.md) - A practical operating loop for source review, profiling, filtering, annotation, evaluation, release, and governance.
 - [LLM Training Data Quality Rubric](docs/data-quality-rubric.md) - A practical checklist for reviewing public LLM training, tuning, preference, synthetic, or evaluation datasets.
