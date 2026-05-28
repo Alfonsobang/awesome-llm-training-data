@@ -37,6 +37,7 @@ The hottest evaluation shift right now is from static answer grading to trajecto
 - Try the [Harbor repeated-trial metric example](examples/harbor-repeated-trial-metric).
 - Follow the upstream Harbor discussion: [harbor-framework/harbor#1700](https://github.com/harbor-framework/harbor/issues/1700).
 - Share the repo using the [Launch and Share Kit](docs/launch-and-share-kit.md).
+- Start a community thread with the [Agent Evaluation Discussion Seed](docs/discussion-seed-agent-evaluation.md).
 
 ## Why Training Data Quality Deserves First-Class Engineering
 

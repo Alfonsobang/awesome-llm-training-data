@@ -69,6 +69,7 @@ Repo: https://github.com/Alfonsobang/awesome-llm-training-data
 - LinkedIn post with the technical framing.
 - X thread with the short post and repo link.
 - Chinese technical communities focused on LLM evaluation, agent systems, and data governance.
+- GitHub Discussions or issue threads using [Discussion Seed: What Should Agent Evaluation Measure In 2026?](discussion-seed-agent-evaluation.md)
 
 Do not spam maintainers or unrelated projects. Share only where the audience cares about agent evaluation, benchmark design, data quality, or governance.
 
