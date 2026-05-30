@@ -20,8 +20,11 @@ Final-answer correctness is not enough for financial agents. A useful evaluation
 ```text
 examples/harbor-openclaw-finance-trajectory-audit/
 |-- README.md
+|-- aggregate_audits.py
 |-- audit_trajectory.py
 |-- sample-openclaw-finance-trajectory.json
+|-- sample-trial-audits.jsonl
+|-- test_aggregate_audits.py
 `-- test_audit_trajectory.py
 ```
 
@@ -40,6 +43,13 @@ python -m unittest discover \
   -p "test_*.py"
 ```
 
+Aggregate repeated-trial reports:
+
+```bash
+python examples/harbor-openclaw-finance-trajectory-audit/aggregate_audits.py \
+  examples/harbor-openclaw-finance-trajectory-audit/sample-trial-audits.jsonl
+```
+
 ## Example Report
 
 The included synthetic trajectory should produce a `pass` verdict with:
@@ -51,6 +61,15 @@ The included synthetic trajectory should produce a `pass` verdict with:
 - zero cutoff violations,
 - zero prohibited tool calls,
 - a visible non-investment-advice boundary.
+
+The included repeated-trial sample reports:
+
+- attempt pass rate,
+- pass@k task rate,
+- Pass^k / all-attempts-pass task rate,
+- missing-evidence rate,
+- cutoff-violation rate,
+- prohibited-tool-call rate.
 
 ## Relationship To Harbor Validation
 

@@ -223,7 +223,7 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 - [金融 Agent 评测路线图](docs/financial-agent-evaluation-roadmap.zh-CN.md) - 将金融评测 seed 推进为可信公开评测方向的阶段性路线图。
 - [Financial Agent Evaluation Issue Backlog](docs/financial-agent-evaluation-issue-backlog.md) - 用于扩展金融 Agent 评测方向的 10 个具体后续 issue。
 - [Harbor 风格金融任务模板](examples/financial-agent-eval-seed/harbor-template) - 面向合规拒答、精确查数、报表依据解释和玩具回测的可迁移任务脚手架，使用合成 fixture、JSON 证据和确定性 verifier。
-- [Harbor OpenClaw Financial Trajectory Audit](examples/harbor-openclaw-finance-trajectory-audit) - 合成 ATIF-v1.7 轨迹、金融审计脚本和证据边界确定性测试。
+- [Harbor OpenClaw Financial Trajectory Audit](examples/harbor-openclaw-finance-trajectory-audit) - 合成 ATIF-v1.7 轨迹、金融审计脚本、repeated-trial 聚合和证据边界确定性测试。
 - [Harbor、OpenClaw 与 ATIF 金融轨迹评测笔记](docs/harbor-openclaw-atif-financial-evaluation.zh-CN.md) - 基于公开来源说明如何使用 Harbor 轨迹证据审计金融 Agent。
 - [Financial Agent Evaluation Share Kit](docs/financial-agent-evaluation-share-kit.md) - 用于介绍金融 Agent 评测方向的中英文短文案。
 - [Harbor 多次运行指标示例](examples/harbor-repeated-trial-metric) - 用于报告 mean reward、pass@k、Pass^k 和缺失证据比例的小型 `metric.py` 示例。

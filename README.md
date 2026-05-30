@@ -224,7 +224,7 @@ The repository also runs a lightweight [resource audit](tools/audit_resources.py
 - [Financial Agent Evaluation Roadmap](docs/financial-agent-evaluation-roadmap.md) - A staged public roadmap for turning the seed into a credible financial agent evaluation track.
 - [Financial Agent Evaluation Issue Backlog](docs/financial-agent-evaluation-issue-backlog.md) - Ten concrete future issues for expanding the finance-focused agent evaluation track.
 - [Harbor-style Financial Task Templates](examples/financial-agent-eval-seed/harbor-template) - Runnable-style task scaffolds for compliance refusal, exact data lookup, filing-grounded explanation, and toy backtesting with deterministic verifier tests.
-- [Harbor OpenClaw Financial Trajectory Audit](examples/harbor-openclaw-finance-trajectory-audit) - A synthetic ATIF-v1.7 trajectory, finance-specific audit script, and deterministic evidence-boundary tests.
+- [Harbor OpenClaw Financial Trajectory Audit](examples/harbor-openclaw-finance-trajectory-audit) - A synthetic ATIF-v1.7 trajectory, finance-specific audit script, repeated-trial aggregation, and deterministic evidence-boundary tests.
 - [Harbor, OpenClaw, and ATIF for Financial Agent Evaluation](docs/harbor-openclaw-atif-financial-evaluation.md) - Source-backed notes on using Harbor trajectory evidence for finance-specific agent audits.
 - [Financial Agent Evaluation Share Kit](docs/financial-agent-evaluation-share-kit.md) - Short English and Chinese copy for introducing the finance-focused evaluation track.
 - [Harbor Repeated-trial Metric Example](examples/harbor-repeated-trial-metric) - A small `metric.py` example for reporting mean reward, pass@k, Pass^k, and missing-evidence rate.

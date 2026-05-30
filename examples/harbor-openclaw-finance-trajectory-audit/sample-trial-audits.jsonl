@@ -1,0 +1,3 @@
+{"task_id":"synthetic-filing-margin","attempt_id":"attempt-1","audit_report":{"verdict":"pass","failures":[]}}
+{"task_id":"synthetic-filing-margin","attempt_id":"attempt-2","audit_report":{"verdict":"fail","failures":["evaluation_cutoff_violation"]}}
+{"task_id":"synthetic-filing-margin","attempt_id":"attempt-3","missing_trajectory":true}

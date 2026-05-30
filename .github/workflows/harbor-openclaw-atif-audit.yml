@@ -22,3 +22,5 @@ jobs:
         run: python examples/harbor-openclaw-finance-trajectory-audit/audit_trajectory.py examples/harbor-openclaw-finance-trajectory-audit/sample-openclaw-finance-trajectory.json
       - name: Test finance-specific ATIF audit rules
         run: python -m unittest discover -s examples/harbor-openclaw-finance-trajectory-audit -p "test_*.py"
+      - name: Aggregate repeated-trial finance audit reports
+        run: python examples/harbor-openclaw-finance-trajectory-audit/aggregate_audits.py examples/harbor-openclaw-finance-trajectory-audit/sample-trial-audits.jsonl

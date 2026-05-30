@@ -45,6 +45,7 @@ ATIF 用结构化方式记录 step、tool call、observation 和元数据，使�
 - 一条合成 OpenClaw 风格 ATIF-v1.7 轨迹，
 - 一个零依赖审计脚本，
 - 面向时间泄漏、禁用工具、缺失来源元数据和缺失非投资建议边界的确定性测试。
+- 一个 repeated-trial 聚合示例，用于报告 pass rate、pass@k、Pass^k、缺失证据、时间截点违规和禁用工具调用。
 
 ## 不做出的声明
 

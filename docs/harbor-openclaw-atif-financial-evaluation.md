@@ -45,6 +45,7 @@ The [Harbor OpenClaw Financial Trajectory Audit](../examples/harbor-openclaw-fin
 - a synthetic OpenClaw-style ATIF-v1.7 trajectory,
 - a zero-dependency audit script,
 - deterministic tests for time leakage, prohibited tools, missing source metadata, and missing non-advice framing.
+- a repeated-trial aggregation example for pass rate, pass@k, Pass^k, missing evidence, cutoff violations, and prohibited tool calls.
 
 ## What This Does Not Claim
 
