@@ -17,6 +17,7 @@ LLM evaluation is moving from answer-only grading to agent-run evaluation:
 
 | Topic | Why it matters | Public entry points |
 | --- | --- | --- |
+| Harbor OpenClaw ATIF trajectories | Makes OpenClaw-style user messages, tool calls, observations, and metadata inspectable as structured evidence. | [Harbor OpenClaw financial ATIF audit](../examples/harbor-openclaw-finance-trajectory-audit), [OpenClaw integration](https://github.com/harbor-framework/harbor/blob/main/src/harbor/agents/installed/openclaw.py) |
 | Trajectory-aware grading | Judges the full process, not only final output. | [Claw-Eval](https://github.com/claw-eval/claw-eval), [Harbor ATIF docs](https://harborframework.com/docs/agents/trajectory-format) |
 | Repeated-trial robustness | Separates lucky success from consistent behavior. | [Harbor repeated-trial metric example](../examples/harbor-repeated-trial-metric), [Harbor pass@k utility](https://github.com/harbor-framework/harbor/blob/main/src/harbor/utils/pass_at_k.py) |
 | Sandboxed agent environments | Makes tool-using agent runs reproducible and inspectable. | [Harbor](https://github.com/harbor-framework/harbor), [Terminal-Bench](https://github.com/laude-institute/terminal-bench) |
@@ -71,6 +72,8 @@ This is why this repository now includes a [Harbor repeated-trial metric example
 ## Related
 
 - [Claw-style Agent Evaluation Notes](claw-style-agent-evaluation-notes.md)
+- [Harbor, OpenClaw, and ATIF for Financial Agent Evaluation](harbor-openclaw-atif-financial-evaluation.md)
+- [Harbor OpenClaw Financial Trajectory Audit](../examples/harbor-openclaw-finance-trajectory-audit)
 - [Harbor Repeated-trial Metric Example](../examples/harbor-repeated-trial-metric)
 - [Financial-domain LLM Evaluation Checklist](financial-domain-llm-evaluation-checklist.md)
 - [中文版本](2026-agent-evaluation-radar.zh-CN.md)

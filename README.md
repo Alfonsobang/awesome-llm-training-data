@@ -4,6 +4,7 @@
 [![Markdown Links](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/link-check.yml/badge.svg)](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/link-check.yml)
 [![Resource Audit](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/resource-audit.yml/badge.svg)](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/resource-audit.yml)
 [![Financial Agent Seed](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/financial-agent-seed.yml/badge.svg)](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/financial-agent-seed.yml)
+[![Harbor OpenClaw ATIF Audit](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/harbor-openclaw-atif-audit.yml/badge.svg)](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/harbor-openclaw-atif-audit.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE.md)
 
 A curated list of tools, papers, datasets, and best practices for LLM training data quality, annotation, preference data, synthetic data, data governance, and evaluation.
@@ -38,6 +39,8 @@ The hottest evaluation shift right now is from static answer grading to trajecto
 - Inspect the [Financial Agent Evaluation Seed](examples/financial-agent-eval-seed).
 - Review the [Financial Agent Evaluation Roadmap](docs/financial-agent-evaluation-roadmap.md).
 - Adapt the [Harbor-style financial task templates](examples/financial-agent-eval-seed/harbor-template).
+- Audit a synthetic [Harbor OpenClaw financial ATIF trajectory](examples/harbor-openclaw-finance-trajectory-audit).
+- Read the [Harbor, OpenClaw, and ATIF financial evaluation note](docs/harbor-openclaw-atif-financial-evaluation.md).
 - Read the [Claw-style Agent Evaluation Notes](docs/claw-style-agent-evaluation-notes.md).
 - Try the [Harbor repeated-trial metric example](examples/harbor-repeated-trial-metric).
 - Follow the upstream Harbor discussion: [harbor-framework/harbor#1700](https://github.com/harbor-framework/harbor/issues/1700).
@@ -221,6 +224,8 @@ The repository also runs a lightweight [resource audit](tools/audit_resources.py
 - [Financial Agent Evaluation Roadmap](docs/financial-agent-evaluation-roadmap.md) - A staged public roadmap for turning the seed into a credible financial agent evaluation track.
 - [Financial Agent Evaluation Issue Backlog](docs/financial-agent-evaluation-issue-backlog.md) - Ten concrete future issues for expanding the finance-focused agent evaluation track.
 - [Harbor-style Financial Task Templates](examples/financial-agent-eval-seed/harbor-template) - Runnable-style task scaffolds for compliance refusal, exact data lookup, filing-grounded explanation, and toy backtesting with deterministic verifier tests.
+- [Harbor OpenClaw Financial Trajectory Audit](examples/harbor-openclaw-finance-trajectory-audit) - A synthetic ATIF-v1.7 trajectory, finance-specific audit script, and deterministic evidence-boundary tests.
+- [Harbor, OpenClaw, and ATIF for Financial Agent Evaluation](docs/harbor-openclaw-atif-financial-evaluation.md) - Source-backed notes on using Harbor trajectory evidence for finance-specific agent audits.
 - [Financial Agent Evaluation Share Kit](docs/financial-agent-evaluation-share-kit.md) - Short English and Chinese copy for introducing the finance-focused evaluation track.
 - [Harbor Repeated-trial Metric Example](examples/harbor-repeated-trial-metric) - A small `metric.py` example for reporting mean reward, pass@k, Pass^k, and missing-evidence rate.
 - [LLM Training Data Operating Model](docs/llm-training-data-operating-model.md) - A practical operating loop for source review, profiling, filtering, annotation, evaluation, release, and governance.

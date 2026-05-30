@@ -1,0 +1,24 @@
+name: Harbor OpenClaw ATIF Audit
+
+on:
+  push:
+    paths:
+      - "examples/harbor-openclaw-finance-trajectory-audit/**"
+      - ".github/workflows/harbor-openclaw-atif-audit.yml"
+  pull_request:
+    paths:
+      - "examples/harbor-openclaw-finance-trajectory-audit/**"
+      - ".github/workflows/harbor-openclaw-atif-audit.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Audit synthetic OpenClaw-style ATIF trajectory
+        run: python examples/harbor-openclaw-finance-trajectory-audit/audit_trajectory.py examples/harbor-openclaw-finance-trajectory-audit/sample-openclaw-finance-trajectory.json
+      - name: Test finance-specific ATIF audit rules
+        run: python -m unittest discover -s examples/harbor-openclaw-finance-trajectory-audit -p "test_*.py"

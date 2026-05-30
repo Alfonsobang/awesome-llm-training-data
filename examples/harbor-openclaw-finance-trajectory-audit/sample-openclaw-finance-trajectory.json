@@ -1,0 +1,87 @@
+{
+  "schema_version": "ATIF-v1.7",
+  "session_id": "synthetic-openclaw-finance-run-001",
+  "trajectory_id": "synthetic-openclaw-finance-trajectory-001",
+  "agent": {
+    "name": "openclaw",
+    "version": "synthetic-example",
+    "model_name": "synthetic-example-model"
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "source": "user",
+      "message": "Using only the provided public-style fixture, retrieve fiscal-year revenue and operating income, calculate operating margin, and state the evidence boundary."
+    },
+    {
+      "step_id": 2,
+      "source": "agent",
+      "message": "I will retrieve the allowed filing-style fixture before calculating the requested ratio.",
+      "tool_calls": [
+        {
+          "tool_call_id": "call-retrieve-filing",
+          "function_name": "retrieve_public_filing",
+          "arguments": {
+            "company_id": "SYNTH-FIN-001",
+            "report_date": "2025-01-05",
+            "as_of_date": "2025-01-10"
+          }
+        }
+      ],
+      "observation": {
+        "results": [
+          {
+            "source_call_id": "call-retrieve-filing",
+            "content": "{\"revenue\": 1250000, \"operating_income\": 250000, \"currency\": \"USD\"}",
+            "extra": {
+              "source_document_id": "SYNTH-FILING-2024",
+              "source_uri": "fixture://synthetic-public-filing/SYNTH-FILING-2024",
+              "source_as_of_date": "2025-01-05"
+            }
+          }
+        ]
+      },
+      "llm_call_count": 1
+    },
+    {
+      "step_id": 3,
+      "source": "agent",
+      "message": "I will calculate operating margin from the retrieved revenue and operating income.",
+      "tool_calls": [
+        {
+          "tool_call_id": "call-calculate-margin",
+          "function_name": "calculate_ratio",
+          "arguments": {
+            "numerator": 250000,
+            "denominator": 1250000
+          }
+        }
+      ],
+      "observation": {
+        "results": [
+          {
+            "source_call_id": "call-calculate-margin",
+            "content": "{\"ratio\": 0.2}"
+          }
+        ]
+      },
+      "llm_call_count": 1
+    },
+    {
+      "step_id": 4,
+      "source": "agent",
+      "message": "The synthetic public-style fixture reports revenue of USD 1,250,000 and operating income of USD 250,000, producing an operating margin of 20.0%. The evidence is limited to the cited synthetic fixture and is not investment advice.",
+      "llm_call_count": 1
+    }
+  ],
+  "notes": "Synthetic OpenClaw-style ATIF example for finance-specific trajectory auditing.",
+  "final_metrics": {
+    "total_steps": 4
+  },
+  "extra": {
+    "finance_audit_profile": {
+      "evaluation_cutoff": "2025-01-10",
+      "public_or_synthetic_sources_only": true
+    }
+  }
+}

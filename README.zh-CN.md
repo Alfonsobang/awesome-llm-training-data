@@ -4,6 +4,7 @@
 [![Markdown Links](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/link-check.yml/badge.svg)](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/link-check.yml)
 [![Resource Audit](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/resource-audit.yml/badge.svg)](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/resource-audit.yml)
 [![Financial Agent Seed](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/financial-agent-seed.yml/badge.svg)](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/financial-agent-seed.yml)
+[![Harbor OpenClaw ATIF Audit](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/harbor-openclaw-atif-audit.yml/badge.svg)](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/harbor-openclaw-atif-audit.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE.md)
 
 一个面向 LLM 训练数据工程的精选资源列表，覆盖数据质量、标注、偏好数据、合成数据、数据治理、隐私合规与评测。
@@ -38,6 +39,8 @@
 - 查看 [金融 Agent 评测种子集](examples/financial-agent-eval-seed)。
 - 查看 [金融 Agent 评测路线图](docs/financial-agent-evaluation-roadmap.zh-CN.md)。
 - 参考 [Harbor 风格金融任务模板](examples/financial-agent-eval-seed/harbor-template)。
+- 审计一条合成 [Harbor OpenClaw 金融 ATIF 轨迹](examples/harbor-openclaw-finance-trajectory-audit)。
+- 阅读 [Harbor、OpenClaw 与 ATIF 金融轨迹评测笔记](docs/harbor-openclaw-atif-financial-evaluation.zh-CN.md)。
 - 阅读 [Claw-style Agent 评测笔记](docs/claw-style-agent-evaluation-notes.zh-CN.md)。
 - 试用 [Harbor 多次运行指标示例](examples/harbor-repeated-trial-metric)。
 - 关注 Harbor 上游讨论：[harbor-framework/harbor#1700](https://github.com/harbor-framework/harbor/issues/1700)。
@@ -220,6 +223,8 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 - [金融 Agent 评测路线图](docs/financial-agent-evaluation-roadmap.zh-CN.md) - 将金融评测 seed 推进为可信公开评测方向的阶段性路线图。
 - [Financial Agent Evaluation Issue Backlog](docs/financial-agent-evaluation-issue-backlog.md) - 用于扩展金融 Agent 评测方向的 10 个具体后续 issue。
 - [Harbor 风格金融任务模板](examples/financial-agent-eval-seed/harbor-template) - 面向合规拒答、精确查数、报表依据解释和玩具回测的可迁移任务脚手架，使用合成 fixture、JSON 证据和确定性 verifier。
+- [Harbor OpenClaw Financial Trajectory Audit](examples/harbor-openclaw-finance-trajectory-audit) - 合成 ATIF-v1.7 轨迹、金融审计脚本和证据边界确定性测试。
+- [Harbor、OpenClaw 与 ATIF 金融轨迹评测笔记](docs/harbor-openclaw-atif-financial-evaluation.zh-CN.md) - 基于公开来源说明如何使用 Harbor 轨迹证据审计金融 Agent。
 - [Financial Agent Evaluation Share Kit](docs/financial-agent-evaluation-share-kit.md) - 用于介绍金融 Agent 评测方向的中英文短文案。
 - [Harbor 多次运行指标示例](examples/harbor-repeated-trial-metric) - 用于报告 mean reward、pass@k、Pass^k 和缺失证据比例的小型 `metric.py` 示例。
 - [LLM 训练数据工程操作模型](docs/llm-training-data-operating-model.zh-CN.md) - 面向来源审查、画像检查、过滤去重、标注生成、评测发布与治理闭环的实践框架。
