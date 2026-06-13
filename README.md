@@ -15,7 +15,9 @@ The most useful part is the runnable **Financial Agent Eval Seed**: a small, pub
 python examples/financial-agent-eval-seed/run_finance_eval.py
 ```
 
-See the [example report](examples/financial-agent-eval-seed/results/example-report.md) generated from the included reference solutions.
+Start with the [60-second quickstart](QUICKSTART.md), inspect the passing [example report](examples/financial-agent-eval-seed/results/example-report.md), and compare it with a known-bad [failure report](examples/financial-agent-eval-seed/results/bad-finance-agent-report.md).
+
+For AI coding agents and LLM-based repo readers, see [llms.txt](llms.txt) and [AGENTS.md](AGENTS.md).
 
 Use this repo when you need:
 
@@ -35,7 +37,9 @@ English first. Complete Chinese version: [README.zh-CN.md](README.zh-CN.md).
 The hottest evaluation shift right now is from static answer grading to trajectory-aware agent evaluation: repeated attempts, process safety, verifier evidence, artifacts, and auditable traces.
 
 - Run the [Financial Agent Eval Seed](examples/financial-agent-eval-seed): `python examples/financial-agent-eval-seed/run_finance_eval.py`.
+- Use the [60-second quickstart](QUICKSTART.md).
 - Inspect the seed [example report](examples/financial-agent-eval-seed/results/example-report.md).
+- Inspect the known-bad [failure report](examples/financial-agent-eval-seed/results/bad-finance-agent-report.md).
 - Start with the [2026 Agent Evaluation Radar](docs/2026-agent-evaluation-radar.md).
 - Explore the [Financial Agent Evaluation Agenda](docs/financial-agent-evaluation-agenda.md).
 - Inspect the [Financial Agent Evaluation Seed](examples/financial-agent-eval-seed).

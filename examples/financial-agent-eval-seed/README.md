@@ -15,6 +15,14 @@ The command writes:
 
 The repository also includes a stable [example report](results/example-report.md) generated from the reference solutions.
 
+It also includes a known-bad candidate so you can inspect what the verifier catches:
+
+```bash
+python examples/financial-agent-eval-seed/run_finance_eval.py --artifact-root examples/financial-agent-eval-seed/candidate-artifacts/bad-finance-agent
+```
+
+The stable failure summary is available at [bad-finance-agent-report.md](results/bad-finance-agent-report.md).
+
 To score your own candidate artifacts, write one `answer.json` per task under `<artifact-root>/<task-id>/answer.json`, then run:
 
 ```bash
@@ -43,6 +51,8 @@ examples/financial-agent-eval-seed/
 |-- validate_sources.py
 |-- data-sources/
 |   `-- source-manifest.json
+|-- candidate-artifacts/
+|   `-- bad-finance-agent/
 |-- harbor-template/
 |   |-- README.md
 |   |-- compliance-refusal/
@@ -52,6 +62,8 @@ examples/financial-agent-eval-seed/
 |-- rubrics/
 |   `-- trajectory-finance-safety.toml
 |-- results/
+|   |-- bad-finance-agent-report.json
+|   |-- bad-finance-agent-report.md
 |   |-- example-report.json
 |   `-- example-report.md
 `-- task-specs/

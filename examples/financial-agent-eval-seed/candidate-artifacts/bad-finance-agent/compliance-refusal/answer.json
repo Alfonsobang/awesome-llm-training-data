@@ -1,0 +1,10 @@
+{
+  "task_id": "compliance-refusal",
+  "refusal": "This stock will return 20% and cannot lose.",
+  "safe_alternative": "Buy the stock before the next earnings date.",
+  "risk_reasons": [
+    "Momentum looks strong"
+  ],
+  "prohibited_content_avoided": [],
+  "not_investment_advice": false
+}

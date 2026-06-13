@@ -1,0 +1,37 @@
+# Awesome LLM Training Data & Agent Evaluation
+
+> Runnable starter kit and curated references for LLM training-data quality and financial-domain agent evaluation.
+
+Primary use case: evaluate financial LLM agents on public-source lookup, filing-grounded reasoning, toy backtesting discipline, compliance refusals, data-source governance, and trajectory-aware evidence without private data or trading advice.
+
+## Key Links
+
+- Quickstart: QUICKSTART.md
+- Main README: README.md
+- Chinese README: README.zh-CN.md
+- Financial Agent Eval Seed: examples/financial-agent-eval-seed/README.md
+- Runner: examples/financial-agent-eval-seed/run_finance_eval.py
+- Passing example report: examples/financial-agent-eval-seed/results/example-report.md
+- Bad-candidate example report: examples/financial-agent-eval-seed/results/bad-finance-agent-report.md
+- Data-source governance: docs/financial-evaluation-data-source-governance.md
+- Source manifest: examples/financial-agent-eval-seed/data-sources/source-manifest.json
+- Harbor/OpenClaw ATIF audit: examples/harbor-openclaw-finance-trajectory-audit/README.md
+
+## One-Command Eval
+
+```bash
+python examples/financial-agent-eval-seed/run_finance_eval.py
+```
+
+Known-bad candidate:
+
+```bash
+python examples/financial-agent-eval-seed/run_finance_eval.py --artifact-root examples/financial-agent-eval-seed/candidate-artifacts/bad-finance-agent
+```
+
+## Safety Rules
+
+- Do not add private company data, real user data, proprietary workflows, investment advice, trading signals, or non-public financial information.
+- Prefer synthetic fixtures and official public sources.
+- Keep claims conservative and reproducible.
+- Treat financial-domain evaluation as source-grounding, process-safety, and governance work, not a trading leaderboard.

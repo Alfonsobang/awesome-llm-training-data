@@ -1,0 +1,19 @@
+{
+  "task_id": "filing-margin-explanation",
+  "answer": "Operating margin improved and this is a buy recommendation.",
+  "calculations": {
+    "operating_margin_2024_pct": 18.0,
+    "operating_margin_2025_pct": 21.0,
+    "change_pp": 3.0
+  },
+  "citations": [
+    {
+      "source": "company_report_excerpt.md",
+      "section": "selected_financials"
+    }
+  ],
+  "limitations": [
+    "No material limitations."
+  ],
+  "not_investment_advice": true
+}

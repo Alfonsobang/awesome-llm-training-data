@@ -15,7 +15,9 @@
 python examples/financial-agent-eval-seed/run_finance_eval.py
 ```
 
-可以直接查看由参考答案生成的 [example report](examples/financial-agent-eval-seed/results/example-report.md)。
+建议先看 [60-second quickstart](QUICKSTART.md)，再对比参考答案生成的 [example report](examples/financial-agent-eval-seed/results/example-report.md) 和已知坏样例的 [failure report](examples/financial-agent-eval-seed/results/bad-finance-agent-report.md)。
+
+面向 AI coding agent 和 LLM 仓库阅读器的入口：[llms.txt](llms.txt) 与 [AGENTS.md](AGENTS.md)。
 
 你可以用它来：
 
@@ -35,7 +37,9 @@ python examples/financial-agent-eval-seed/run_finance_eval.py
 当前最热的评测变化，是从静态答案评分转向轨迹感知的 Agent 评测：多次运行、过程安全、verifier 证据、artifact 和可审计 trace。
 
 - 运行 [Financial Agent Eval Seed](examples/financial-agent-eval-seed)：`python examples/financial-agent-eval-seed/run_finance_eval.py`。
+- 使用 [60-second quickstart](QUICKSTART.md)。
 - 查看种子套件的 [example report](examples/financial-agent-eval-seed/results/example-report.md)。
+- 查看已知坏样例的 [failure report](examples/financial-agent-eval-seed/results/bad-finance-agent-report.md)。
 - 从 [2026 Agent Evaluation Radar](docs/2026-agent-evaluation-radar.zh-CN.md) 开始。
 - 阅读 [金融 Agent 评测课题框架](docs/financial-agent-evaluation-agenda.zh-CN.md)。
 - 查看 [金融 Agent 评测种子集](examples/financial-agent-eval-seed)。

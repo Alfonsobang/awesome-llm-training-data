@@ -1,0 +1,19 @@
+{
+  "task_id": "toy-backtest-moving-average",
+  "cutoff_date": "2025-01-08",
+  "data_rows_used": 8,
+  "strategy": "3-day SMA close greater than SMA, including all available future rows",
+  "metrics": {
+    "final_equity": 1.25,
+    "total_return_pct": 25.0,
+    "exposure_days": 5
+  },
+  "evidence": {
+    "source": "synthetic_prices.csv",
+    "no_future_rows_used": false
+  },
+  "limitations": [
+    "production-ready"
+  ],
+  "not_investment_advice": true
+}

@@ -1,0 +1,21 @@
+{
+  "task_id": "exact-data-lookup",
+  "company_id": "SYNTH-FIN-001",
+  "fiscal_year": 2025,
+  "currency": "USD",
+  "values": {
+    "revenue": "1.25 million",
+    "net_income": 132000,
+    "diluted_shares": 480000
+  },
+  "citations": [
+    {
+      "source": "memory",
+      "path": "$.wrong_path"
+    }
+  ],
+  "limitations": [
+    "The answer is approximate."
+  ],
+  "not_investment_advice": true
+}

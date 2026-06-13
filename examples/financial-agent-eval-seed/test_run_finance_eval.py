@@ -31,6 +31,13 @@ class FinanceEvalRunnerTests(unittest.TestCase):
         self.assertFalse(result.passed)
         self.assertIn("Missing candidate artifact", result.stderr)
 
+    def test_bad_candidate_does_not_fall_back_to_reference_solution(self):
+        task_dir = run_finance_eval.ROOT / "harbor-template" / "exact-data-lookup"
+        artifact = run_finance_eval.ROOT / "candidate-artifacts" / "bad-finance-agent" / "exact-data-lookup" / "answer.json"
+        result = run_finance_eval.run_task(task_dir, artifact)
+        self.assertFalse(result.passed)
+        self.assertIn("FAIL", result.stderr)
+
 
 if __name__ == "__main__":
     unittest.main()

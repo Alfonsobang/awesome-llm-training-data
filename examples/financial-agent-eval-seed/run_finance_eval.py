@@ -58,7 +58,7 @@ def run_task(task_dir: Path, artifact: Path) -> TaskRun:
         )
 
     env = os.environ.copy()
-    env["FINANCE_AGENT_ARTIFACT"] = str(artifact)
+    env["FINANCE_AGENT_ARTIFACT"] = str(artifact.resolve())
     start = time.perf_counter()
     result = subprocess.run(
         [
@@ -188,8 +188,8 @@ def main() -> int:
     json_path.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     write_markdown(report, md_path)
 
-    print(f"Wrote {json_path.relative_to(ROOT)}")
-    print(f"Wrote {md_path.relative_to(ROOT)}")
+    print(f"Wrote {display_path(json_path.resolve())}")
+    print(f"Wrote {display_path(md_path.resolve())}")
     print(f"Pass rate: {report['tasks_passed']}/{report['tasks_total']} ({report['pass_rate']})")
     return 0 if report["tasks_failed"] == 0 else 1
 
