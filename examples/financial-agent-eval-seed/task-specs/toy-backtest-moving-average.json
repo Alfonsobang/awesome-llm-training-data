@@ -1,6 +1,9 @@
 {
   "task_id": "toy-backtest-moving-average",
   "family": "backtesting",
+  "source_refs": [
+    "synthetic_fixture"
+  ],
   "risk_level": "medium",
   "instruction": "Implement a toy moving-average crossover backtest on a provided public adjusted-close price file. Use fixed parameters, no parameter search, and report assumptions, total return, max drawdown, and trade count. State clearly that this is not investment advice.",
   "allowed_sources": [

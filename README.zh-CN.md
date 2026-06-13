@@ -7,24 +7,24 @@
 [![Harbor OpenClaw ATIF Audit](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/harbor-openclaw-atif-audit.yml/badge.svg)](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/harbor-openclaw-atif-audit.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE.md)
 
-一个面向 LLM 训练数据工程的精选资源列表，覆盖数据质量、标注、偏好数据、合成数据、数据治理、隐私合规与评测。
+这是一个面向 LLM 数据与 Agent 评测团队的实践仓库，当前重点放在金融场景 Agent 评测：公开来源查数、公告/财报依据推理、玩具回测、合规拒答、数据来源治理，以及轨迹可审计证据。
 
-2026 重点关注：Agent 评测、轨迹感知评分、Claw-style benchmark、Harbor 工作流，以及让 Agent 结果可审计的数据证据。
+仓库里最有复用价值的部分是可运行的 **Financial Agent Eval Seed**：它包含任务规格、合成 fixture、Harbor 风格任务模板、确定性 verifier、数据来源治理元数据和自动生成的评测报告。
 
-本项目面向需要选择、审计或治理 LLM 数据集和 Agent 评测数据的实践者，不是泛泛的 AI 资料收藏夹。
+```bash
+python examples/financial-agent-eval-seed/run_finance_eval.py
+```
+
+可以直接查看由参考答案生成的 [example report](examples/financial-agent-eval-seed/results/example-report.md)。
 
 你可以用它来：
 
-- 查找用于清洗、去重、检查、标注、偏好数据、合成数据和 RAG 评测的公开工具。
-- 在建设内部数据流水线前，对比数据质量与治理方面的公开参考。
-- 查找公开的金融领域 LLM 基准和数据集，同时避免混入私有或专有材料。
-- 跟踪快速变化的 Agent 评测栈：Harbor、Claw-style 轨迹评分、多次运行指标和过程安全证据。
+- 快速搭建一个不依赖私有数据、不输出投资建议的金融 Agent 评测起点。
+- 复用搜索、查数、公告依据问答、回测纪律、合规拒答和数据来源治理的任务模式。
+- 参考 Harbor / OpenClaw / ATIF 方向下的金融 Agent 轨迹评测样例。
+- 查找 LLM 训练数据工程相关的公开工具、论文、数据集和实践资料。
 
-如果你关注这些问题，欢迎 star：
-
-- 不只看最终答案，而是检查完整轨迹的 Agent 评测。
-- 面向训练、微调、偏好、合成、RAG 和评测数据的数据质量与治理。
-- 真实 LLM 数据和评测团队可复用的实践示例。
+如果你想要的是一个可运行、可审计、可逐步扩展的金融 Agent 评测方向，而不是又一个泛泛的 AI 收藏夹，可以关注这个仓库。
 
 英文主文档：[README.md](README.md)。
 
@@ -34,9 +34,12 @@
 
 当前最热的评测变化，是从静态答案评分转向轨迹感知的 Agent 评测：多次运行、过程安全、verifier 证据、artifact 和可审计 trace。
 
+- 运行 [Financial Agent Eval Seed](examples/financial-agent-eval-seed)：`python examples/financial-agent-eval-seed/run_finance_eval.py`。
+- 查看种子套件的 [example report](examples/financial-agent-eval-seed/results/example-report.md)。
 - 从 [2026 Agent Evaluation Radar](docs/2026-agent-evaluation-radar.zh-CN.md) 开始。
 - 阅读 [金融 Agent 评测课题框架](docs/financial-agent-evaluation-agenda.zh-CN.md)。
 - 查看 [金融 Agent 评测种子集](examples/financial-agent-eval-seed)。
+- 查看 [金融评测数据来源治理](docs/financial-evaluation-data-source-governance.zh-CN.md)。
 - 查看 [金融 Agent 评测路线图](docs/financial-agent-evaluation-roadmap.zh-CN.md)。
 - 参考 [Harbor 风格金融任务模板](examples/financial-agent-eval-seed/harbor-template)。
 - 审计一条合成 [Harbor OpenClaw 金融 ATIF 轨迹](examples/harbor-openclaw-finance-trajectory-audit)。
@@ -220,6 +223,7 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 - [Claw-style Agent 评测笔记](docs/claw-style-agent-evaluation-notes.zh-CN.md) - 关于轨迹感知评分、多次运行、安全证据以及 Harbor 如何承载这类评测模式的笔记。
 - [金融 Agent 评测课题框架](docs/financial-agent-evaluation-agenda.zh-CN.md) - 面向金融搜索、查数、回测、预测、合规与证据链 Agent 评测的大课题框架。
 - [金融 Agent 评测种子集](examples/financial-agent-eval-seed) - 面向金融 Agent benchmark seed 的公开数据任务规格、数据集卡和轨迹安全 rubric。
+- [金融评测数据来源治理](docs/financial-evaluation-data-source-governance.zh-CN.md) - 面向公开来源、合成 fixture、时间字段、引用证据和再分发边界的机器可校验 source manifest 策略。
 - [金融 Agent 评测路线图](docs/financial-agent-evaluation-roadmap.zh-CN.md) - 将金融评测 seed 推进为可信公开评测方向的阶段性路线图。
 - [Financial Agent Evaluation Issue Backlog](docs/financial-agent-evaluation-issue-backlog.md) - 用于扩展金融 Agent 评测方向的 10 个具体后续 issue。
 - [Harbor 风格金融任务模板](examples/financial-agent-eval-seed/harbor-template) - 面向合规拒答、精确查数、报表依据解释和玩具回测的可迁移任务脚手架，使用合成 fixture、JSON 证据和确定性 verifier。

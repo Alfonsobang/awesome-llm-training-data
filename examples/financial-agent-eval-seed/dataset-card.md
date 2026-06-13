@@ -26,6 +26,8 @@ Task specs should use only public sources with clear access terms, such as publi
 
 This seed does not package third-party data files.
 
+The governed source index is stored in [data-sources/source-manifest.json](data-sources/source-manifest.json). External sources default to `reference_only`; repository-owned synthetic fixtures are the safe default for bundled examples.
+
 ## Evaluation Evidence
 
 Recommended evidence for each run:
@@ -41,6 +43,7 @@ Recommended evidence for each run:
 ## Known Risks
 
 - Public sources can change location or formatting.
+- Public accessibility does not automatically grant redistribution rights.
 - Market data licensing varies by source.
 - Backtesting tasks are easy to misinterpret as trading advice.
 - Forecasting tasks can leak future information if cutoffs are not enforced.

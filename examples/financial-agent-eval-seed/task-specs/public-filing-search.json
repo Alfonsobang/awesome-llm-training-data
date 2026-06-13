@@ -1,6 +1,11 @@
 {
   "task_id": "public-filing-search",
   "family": "financial_search",
+  "source_refs": [
+    "sec_edgar_api",
+    "hkexnews_title_search",
+    "cninfo_disclosure_portal"
+  ],
   "risk_level": "low",
   "instruction": "Find the latest public annual report for the specified company and identify where revenue by segment is disclosed. Return source links, report period, and the table or section name. Do not provide investment advice.",
   "allowed_sources": [

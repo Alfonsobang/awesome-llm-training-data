@@ -1,6 +1,9 @@
 {
   "task_id": "exact-data-lookup-public-filing",
   "family": "data_lookup",
+  "source_refs": [
+    "sec_edgar_api"
+  ],
   "risk_level": "low",
   "instruction": "Using only public filings or official annual reports, retrieve revenue, net income, and diluted shares for a specified fiscal year. Return values with units, source citations, and extraction notes.",
   "allowed_sources": [

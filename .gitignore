@@ -1,2 +1,3 @@
 __pycache__/
 *.py[cod]
+examples/financial-agent-eval-seed/results/latest-report.*

@@ -65,6 +65,7 @@ task_id:
 family:
 risk_level: low | medium | high
 public_sources:
+source_refs:
 allowed_tools:
 prohibited_actions:
 information_cutoff:
@@ -73,3 +74,5 @@ verifier:
 metrics:
 known_failure_modes:
 ```
+
+Use `source_refs` to bind task specs to the governed [financial data-source manifest](../examples/financial-agent-eval-seed/data-sources/source-manifest.json).

@@ -1,0 +1,171 @@
+{
+  "manifest_version": "1.0",
+  "reviewed_on": "2026-05-31",
+  "policy": {
+    "default_external_packaging_policy": "reference_only",
+    "bundle_third_party_data_by_default": false,
+    "notes": "Public accessibility does not automatically grant redistribution rights. Review current terms before collecting, storing, or redistributing third-party data."
+  },
+  "sources": [
+    {
+      "source_id": "synthetic_fixture",
+      "name": "Repository synthetic fixtures",
+      "source_type": "synthetic_fixture",
+      "official_url": "fixture://financial-agent-eval-seed",
+      "access_method": "bundled_fixture",
+      "packaging_policy": "bundled_synthetic_only",
+      "terms_review_required": false,
+      "allowed_task_families": [
+        "backtesting",
+        "compliance_boundary",
+        "data_lookup",
+        "filing_qa",
+        "financial_search",
+        "forecasting"
+      ],
+      "temporal_fields": [
+        "fixture_as_of_date",
+        "evaluation_cutoff"
+      ],
+      "required_citation_fields": [
+        "source_id",
+        "fixture_path",
+        "fixture_as_of_date"
+      ],
+      "notes": "Safe default for examples when third-party licensing, privacy, or market-data terms are unclear."
+    },
+    {
+      "source_id": "sec_edgar_api",
+      "name": "SEC EDGAR APIs",
+      "source_type": "regulator_filing_api",
+      "official_url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+      "access_method": "public_http_api",
+      "packaging_policy": "reference_only",
+      "terms_review_required": true,
+      "allowed_task_families": [
+        "data_lookup",
+        "filing_qa",
+        "financial_search"
+      ],
+      "temporal_fields": [
+        "filed",
+        "fy",
+        "fp",
+        "frame",
+        "start",
+        "end",
+        "retrieved_at"
+      ],
+      "required_citation_fields": [
+        "source_id",
+        "endpoint",
+        "cik",
+        "filing_or_fact_period",
+        "retrieved_at"
+      ],
+      "notes": "Use SEC developer resources and current automated-access requirements. Do not package fetched filings or API payloads in this seed by default."
+    },
+    {
+      "source_id": "fred_series_observations",
+      "name": "FRED Series Observations API",
+      "source_type": "macro_time_series_api",
+      "official_url": "https://fred.stlouisfed.org/docs/api/fred/series_observations.html",
+      "access_method": "registered_api_key",
+      "packaging_policy": "reference_only",
+      "terms_review_required": true,
+      "allowed_task_families": [
+        "data_lookup",
+        "forecasting"
+      ],
+      "temporal_fields": [
+        "observation_start",
+        "observation_end",
+        "realtime_start",
+        "realtime_end",
+        "vintage_dates",
+        "retrieved_at"
+      ],
+      "required_citation_fields": [
+        "source_id",
+        "series_id",
+        "observation_date",
+        "vintage_or_realtime_period",
+        "retrieved_at"
+      ],
+      "notes": "Use vintage or real-time fields for cutoff-sensitive tasks. Do not commit API keys or fetched payloads."
+    },
+    {
+      "source_id": "world_bank_indicators_api",
+      "name": "World Bank Indicators API",
+      "source_type": "macro_indicator_api",
+      "official_url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation",
+      "access_method": "public_http_api",
+      "packaging_policy": "reference_only",
+      "terms_review_required": true,
+      "allowed_task_families": [
+        "data_lookup",
+        "forecasting"
+      ],
+      "temporal_fields": [
+        "date",
+        "retrieved_at"
+      ],
+      "required_citation_fields": [
+        "source_id",
+        "indicator_id",
+        "economy_id",
+        "observation_date",
+        "retrieved_at"
+      ],
+      "notes": "API access does not require authentication, but current website terms still need review before redistribution."
+    },
+    {
+      "source_id": "hkexnews_title_search",
+      "name": "HKEXnews Listed Company Information Title Search",
+      "source_type": "exchange_disclosure_portal",
+      "official_url": "https://www1.hkexnews.hk/search/titlesearch.xhtml?lang=en",
+      "access_method": "manual_or_browser_search",
+      "packaging_policy": "do_not_package_without_review",
+      "terms_review_required": true,
+      "allowed_task_families": [
+        "filing_qa",
+        "financial_search"
+      ],
+      "temporal_fields": [
+        "publication_date",
+        "retrieved_at"
+      ],
+      "required_citation_fields": [
+        "source_id",
+        "document_url",
+        "publication_date",
+        "retrieved_at"
+      ],
+      "notes": "Use as a reference portal for evaluation design. Review current terms before automated collection or redistribution."
+    },
+    {
+      "source_id": "cninfo_disclosure_portal",
+      "name": "CNINFO Disclosure Portal",
+      "source_type": "regulator_disclosure_portal",
+      "official_url": "https://www.cninfo.com.cn/new/index",
+      "access_method": "manual_or_browser_search",
+      "packaging_policy": "do_not_package_without_review",
+      "terms_review_required": true,
+      "allowed_task_families": [
+        "filing_qa",
+        "financial_search"
+      ],
+      "temporal_fields": [
+        "publication_date",
+        "retrieved_at"
+      ],
+      "required_citation_fields": [
+        "source_id",
+        "document_url",
+        "publication_date",
+        "retrieved_at"
+      ],
+      "notes": "Use as a reference portal for evaluation design. Review current terms before automated collection or redistribution."
+    }
+  ]
+}

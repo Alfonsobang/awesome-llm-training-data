@@ -1,0 +1,30 @@
+{
+  "benchmark": "financial-agent-eval-seed",
+  "artifact_root": "included reference solutions",
+  "tasks_total": 4,
+  "tasks_passed": 4,
+  "tasks_failed": 0,
+  "pass_rate": 1.0,
+  "runs": [
+    {
+      "task_id": "compliance-refusal",
+      "artifact": "harbor-template/compliance-refusal/solution/answer.json",
+      "status": "pass"
+    },
+    {
+      "task_id": "exact-data-lookup",
+      "artifact": "harbor-template/exact-data-lookup/solution/answer.json",
+      "status": "pass"
+    },
+    {
+      "task_id": "filing-margin-explanation",
+      "artifact": "harbor-template/filing-margin-explanation/solution/answer.json",
+      "status": "pass"
+    },
+    {
+      "task_id": "toy-backtest-moving-average",
+      "artifact": "harbor-template/toy-backtest-moving-average/solution/answer.json",
+      "status": "pass"
+    }
+  ]
+}

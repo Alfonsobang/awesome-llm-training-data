@@ -7,24 +7,24 @@
 [![Harbor OpenClaw ATIF Audit](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/harbor-openclaw-atif-audit.yml/badge.svg)](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/harbor-openclaw-atif-audit.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE.md)
 
-A curated list of tools, papers, datasets, and best practices for LLM training data quality, annotation, preference data, synthetic data, data governance, and evaluation.
+A practical repo for LLM data and agent-evaluation teams, with a growing focus on financial-domain agent evaluation: public-source lookup, filing-grounded reasoning, toy backtesting, compliance refusals, source governance, and trajectory-aware evidence.
 
-2026 focus: agent evaluation, trajectory-aware grading, Claw-style benchmarks, Harbor workflows, and the data evidence needed to make agent results auditable.
+The most useful part is the runnable **Financial Agent Eval Seed**: a small, public-safe starter kit with task specs, synthetic fixtures, Harbor-style task templates, deterministic verifiers, source-governance metadata, and generated reports.
 
-Built for practitioners who need to choose, audit, or govern LLM datasets and agent evaluation data. This is not a general AI bookmark dump.
+```bash
+python examples/financial-agent-eval-seed/run_finance_eval.py
+```
 
-Use this repo to:
+See the [example report](examples/financial-agent-eval-seed/results/example-report.md) generated from the included reference solutions.
 
-- Find public tools for cleaning, deduplication, inspection, annotation, preference data, synthetic data, and RAG evaluation.
-- Compare dataset-quality and governance references before building internal data pipelines.
-- Locate public financial-domain LLM benchmarks and datasets without mixing in private or proprietary material.
-- Track the fast-moving agent evaluation stack: Harbor, Claw-style trajectory scoring, repeated-trial metrics, and process-safety evidence.
+Use this repo when you need:
 
-Star this repo if you care about:
+- A concrete starting point for evaluating financial LLM agents without private data or trading advice.
+- Task patterns for search, lookup, filings, backtesting discipline, refusal boundaries, and source governance.
+- Harbor/OpenClaw/ATIF-oriented examples for trajectory-aware financial-agent evaluation.
+- A curated list of public tools, papers, datasets, and best practices for LLM training-data engineering.
 
-- Agent evaluation that inspects trajectories, not just final answers.
-- Data quality and governance for training, tuning, preference, synthetic, RAG, and evaluation datasets.
-- Practical examples that real LLM data and evaluation teams can reuse.
+Star this repo if you want a practical, reproducible finance-agent evaluation track rather than another generic AI bookmark list.
 
 English first. Complete Chinese version: [README.zh-CN.md](README.zh-CN.md).
 
@@ -34,9 +34,12 @@ English first. Complete Chinese version: [README.zh-CN.md](README.zh-CN.md).
 
 The hottest evaluation shift right now is from static answer grading to trajectory-aware agent evaluation: repeated attempts, process safety, verifier evidence, artifacts, and auditable traces.
 
+- Run the [Financial Agent Eval Seed](examples/financial-agent-eval-seed): `python examples/financial-agent-eval-seed/run_finance_eval.py`.
+- Inspect the seed [example report](examples/financial-agent-eval-seed/results/example-report.md).
 - Start with the [2026 Agent Evaluation Radar](docs/2026-agent-evaluation-radar.md).
 - Explore the [Financial Agent Evaluation Agenda](docs/financial-agent-evaluation-agenda.md).
 - Inspect the [Financial Agent Evaluation Seed](examples/financial-agent-eval-seed).
+- Review the [Financial Evaluation Data Source Governance](docs/financial-evaluation-data-source-governance.md) layer.
 - Review the [Financial Agent Evaluation Roadmap](docs/financial-agent-evaluation-roadmap.md).
 - Adapt the [Harbor-style financial task templates](examples/financial-agent-eval-seed/harbor-template).
 - Audit a synthetic [Harbor OpenClaw financial ATIF trajectory](examples/harbor-openclaw-finance-trajectory-audit).
@@ -221,6 +224,7 @@ The repository also runs a lightweight [resource audit](tools/audit_resources.py
 - [Claw-style Agent Evaluation Notes](docs/claw-style-agent-evaluation-notes.md) - Notes on trajectory-aware grading, repeated trials, safety evidence, and how Harbor maps to this evaluation pattern.
 - [Financial Agent Evaluation Agenda](docs/financial-agent-evaluation-agenda.md) - A large-topic agenda for financial search, data lookup, backtesting, forecasting, compliance, and evidence-grounded agent evaluation.
 - [Financial Agent Evaluation Seed](examples/financial-agent-eval-seed) - Public-data-only task specs, dataset card, and trajectory-safety rubric for a finance-focused agent benchmark seed.
+- [Financial Evaluation Data Source Governance](docs/financial-evaluation-data-source-governance.md) - A machine-checkable source-manifest policy for public references, synthetic fixtures, temporal fields, citation evidence, and redistribution boundaries.
 - [Financial Agent Evaluation Roadmap](docs/financial-agent-evaluation-roadmap.md) - A staged public roadmap for turning the seed into a credible financial agent evaluation track.
 - [Financial Agent Evaluation Issue Backlog](docs/financial-agent-evaluation-issue-backlog.md) - Ten concrete future issues for expanding the finance-focused agent evaluation track.
 - [Harbor-style Financial Task Templates](examples/financial-agent-eval-seed/harbor-template) - Runnable-style task scaffolds for compliance refusal, exact data lookup, filing-grounded explanation, and toy backtesting with deterministic verifier tests.
