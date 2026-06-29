@@ -7,7 +7,11 @@
 [![Harbor OpenClaw ATIF Audit](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/harbor-openclaw-atif-audit.yml/badge.svg)](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/harbor-openclaw-atif-audit.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE.md)
 
-这是一个面向 LLM 数据与 Agent 评测团队的实践仓库，当前重点放在金融场景 Agent 评测：公开来源查数、公告/财报依据推理、玩具回测、合规拒答、数据来源治理，以及轨迹可审计证据。
+这是一个面向 LLM 数据与 Agent 评测团队的实践仓库，现在重新聚焦在一个更明确的命题上：
+
+> 金融 Agent 的失败，往往不是普通 Q&A 基准能发现的：错来源、错单位、未来数据泄漏、不安全投资建议、缺少引用、工具轨迹不稳定。
+
+这个仓库正在朝一个公开安全、可运行、可审计的金融 Agent 评测 starter harness 演进。
 
 仓库里最有复用价值的部分是可运行的 **Financial Agent Eval Seed**：它包含任务规格、合成 fixture、Harbor 风格任务模板、确定性 verifier、数据来源治理元数据和自动生成的评测报告。
 
@@ -17,6 +21,8 @@ python examples/financial-agent-eval-seed/run_finance_eval.py
 
 建议先看 [60-second quickstart](QUICKSTART.md)，再对比参考答案生成的 [example report](examples/financial-agent-eval-seed/results/example-report.md) 和已知坏样例的 [failure report](examples/financial-agent-eval-seed/results/bad-finance-agent-report.md)。
 
+如果你想理解这个项目接下来应该做成什么，请先看 [Financial Agent Evaluation Positioning Thesis](docs/financial-agent-eval-positioning.md) 和 [FinAgentBench Seed Spec](docs/finagentbench-seed-spec.md)。
+
 面向 AI coding agent 和 LLM 仓库阅读器的入口：[llms.txt](llms.txt) 与 [AGENTS.md](AGENTS.md)。
 
 你可以用它来：
@@ -24,7 +30,7 @@ python examples/financial-agent-eval-seed/run_finance_eval.py
 - 快速搭建一个不依赖私有数据、不输出投资建议的金融 Agent 评测起点。
 - 复用搜索、查数、公告依据问答、回测纪律、合规拒答和数据来源治理的任务模式。
 - 参考 Harbor / OpenClaw / ATIF 方向下的金融 Agent 轨迹评测样例。
-- 查找 LLM 训练数据工程相关的公开工具、论文、数据集和实践资料。
+- 沿着一个小而清晰的金融 Agent benchmark seed 方向继续扩展，而不是继续做泛泛的 AI 收藏夹。
 
 如果你想要的是一个可运行、可审计、可逐步扩展的金融 Agent 评测方向，而不是又一个泛泛的 AI 收藏夹，可以关注这个仓库。
 
@@ -36,6 +42,8 @@ python examples/financial-agent-eval-seed/run_finance_eval.py
 
 当前最热的评测变化，是从静态答案评分转向轨迹感知的 Agent 评测：多次运行、过程安全、verifier 证据、artifact 和可审计 trace。
 
+- 阅读 [Financial Agent Evaluation Positioning Thesis](docs/financial-agent-eval-positioning.md)。
+- 查看 [FinAgentBench Seed Spec](docs/finagentbench-seed-spec.md)。
 - 运行 [Financial Agent Eval Seed](examples/financial-agent-eval-seed)：`python examples/financial-agent-eval-seed/run_finance_eval.py`。
 - 使用 [60-second quickstart](QUICKSTART.md)。
 - 查看种子套件的 [example report](examples/financial-agent-eval-seed/results/example-report.md)。

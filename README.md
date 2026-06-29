@@ -7,7 +7,11 @@
 [![Harbor OpenClaw ATIF Audit](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/harbor-openclaw-atif-audit.yml/badge.svg)](https://github.com/Alfonsobang/awesome-llm-training-data/actions/workflows/harbor-openclaw-atif-audit.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE.md)
 
-A practical repo for LLM data and agent-evaluation teams, with a growing focus on financial-domain agent evaluation: public-source lookup, filing-grounded reasoning, toy backtesting, compliance refusals, source governance, and trajectory-aware evidence.
+A practical repo for LLM data and agent-evaluation teams, now being refocused around one sharp thesis:
+
+> Financial agents fail in ways that normal Q&A benchmarks miss: wrong sources, wrong units, future-data leakage, unsafe advice, missing citations, and unstable tool trajectories.
+
+This repo is moving toward a public-safe starter harness for testing those failures.
 
 The most useful part is the runnable **Financial Agent Eval Seed**: a small, public-safe starter kit with task specs, synthetic fixtures, Harbor-style task templates, deterministic verifiers, source-governance metadata, and generated reports.
 
@@ -17,6 +21,8 @@ python examples/financial-agent-eval-seed/run_finance_eval.py
 
 Start with the [60-second quickstart](QUICKSTART.md), inspect the passing [example report](examples/financial-agent-eval-seed/results/example-report.md), and compare it with a known-bad [failure report](examples/financial-agent-eval-seed/results/bad-finance-agent-report.md).
 
+Read the new [Financial Agent Evaluation Positioning Thesis](docs/financial-agent-eval-positioning.md) and [FinAgentBench Seed Spec](docs/finagentbench-seed-spec.md) if you want to understand where this project is going.
+
 For AI coding agents and LLM-based repo readers, see [llms.txt](llms.txt) and [AGENTS.md](AGENTS.md).
 
 Use this repo when you need:
@@ -24,7 +30,7 @@ Use this repo when you need:
 - A concrete starting point for evaluating financial LLM agents without private data or trading advice.
 - Task patterns for search, lookup, filings, backtesting discipline, refusal boundaries, and source governance.
 - Harbor/OpenClaw/ATIF-oriented examples for trajectory-aware financial-agent evaluation.
-- A curated list of public tools, papers, datasets, and best practices for LLM training-data engineering.
+- A roadmap toward a small finance-agent benchmark seed, not another generic AI bookmark list.
 
 Star this repo if you want a practical, reproducible finance-agent evaluation track rather than another generic AI bookmark list.
 
@@ -36,6 +42,8 @@ English first. Complete Chinese version: [README.zh-CN.md](README.zh-CN.md).
 
 The hottest evaluation shift right now is from static answer grading to trajectory-aware agent evaluation: repeated attempts, process safety, verifier evidence, artifacts, and auditable traces.
 
+- Read the [Financial Agent Evaluation Positioning Thesis](docs/financial-agent-eval-positioning.md).
+- Review the [FinAgentBench Seed Spec](docs/finagentbench-seed-spec.md).
 - Run the [Financial Agent Eval Seed](examples/financial-agent-eval-seed): `python examples/financial-agent-eval-seed/run_finance_eval.py`.
 - Use the [60-second quickstart](QUICKSTART.md).
 - Inspect the seed [example report](examples/financial-agent-eval-seed/results/example-report.md).

@@ -1,6 +1,12 @@
 # Roadmap
 
-This roadmap keeps the project focused on practical LLM data engineering work. It favors useful documentation and public, verifiable resources over broad link collection.
+This roadmap reflects the project's new direction: move from a broad awesome list toward a runnable, public-safe financial agent evaluation seed.
+
+The strongest thesis is:
+
+> Financial agents fail through source, unit, cutoff, citation, compliance, and trajectory errors that normal Q&A benchmarks miss.
+
+The project should now prioritize executable tasks, deterministic verifiers, known-bad examples, source governance, and trajectory-aware reports.
 
 ## v0.1 - Foundation
 
@@ -13,31 +19,44 @@ This roadmap keeps the project focused on practical LLM data engineering work. I
 - [x] Add upstream contribution shortlist.
 - [x] Open first upstream discussion with a relevant public project.
 
-## v0.2 - Practitioner Guides
+## v0.2 - Runnable Financial Agent Eval Seed
 
-- [x] Add annotation quality and adjudication guide.
-- [x] Add preference data quality checklist.
-- [ ] Add synthetic data validation checklist.
-- [ ] Add RAG evaluation data design guide.
-- [x] Add financial-domain benchmark inclusion criteria.
+- [x] Add deterministic Harbor-style financial task templates.
+- [x] Add one-command local runner.
+- [x] Add passing example report.
+- [x] Add known-bad candidate artifacts and failure report.
+- [x] Add data-source governance manifest.
+- [x] Add AI-agent-friendly `llms.txt` and `AGENTS.md`.
+- [ ] Add one public-source search task scaffold.
+- [ ] Add one citation-quality verifier that checks source, section, and extraction note.
+- [ ] Add one repeated-trial report that combines verifier failures and trajectory failures.
 
-## v0.3 - Resource Quality
+## v0.3 - FinAgentBench Seed
 
-- [ ] Add access and license notes to individual preference-data resources.
-- [ ] Split RAG resources into retrieval, generation, and citation faithfulness.
-- [ ] Add maintenance status notes for selected tools.
+- [ ] Publish `FinAgentBench Seed` as the primary project surface.
+- [ ] Grow to 8-12 runnable tasks across search, lookup, filing QA, toy backtesting, compliance, and trajectory audit.
+- [ ] Add at least two known-bad artifacts per task family.
+- [ ] Add task-card diagrams and artifact schemas for every task family.
+- [ ] Add JSON summary output that can be consumed by other eval harnesses.
+- [ ] Add a small public launch note explaining why finance-agent evaluation needs source, unit, cutoff, and trajectory checks.
+
+## v0.4 - Agent Evaluation Integration
+
+- [ ] Keep Harbor/OpenClaw examples current with upstream trajectory format changes.
+- [ ] Add a conversion note for using the seed with agent frameworks that emit traces.
+- [ ] Add repeated-attempt metrics: pass@k, all-attempts-pass, missing-evidence rate, cutoff-violation rate, prohibited-claim rate.
+- [ ] Open one high-quality upstream docs discussion only when the seed has a reusable artifact to point to.
+
+## v0.5 - Resource Curation As Support, Not Core
+
+- [ ] Keep the curated list clean and link-checked.
+- [ ] Add access and license notes only where they support the benchmark seed.
+- [ ] Split RAG resources into retrieval, generation, and citation faithfulness only if they support financial-agent eval tasks.
 - [ ] Review all financial-domain resources for scope and limitations.
-
-## v0.4 - Upstream Contributions
-
-- [ ] Follow up on DataTrove dataset-audit documentation proposal.
-- [ ] Prepare one small docs PR if maintainers approve the direction.
-- [ ] Identify one annotation-quality documentation contribution in Argilla.
-- [ ] Track accepted upstream contributions from this repository.
 
 ## Long-term Direction
 
-- Keep the list useful for practitioners who build, audit, or govern LLM datasets.
-- Prefer a smaller number of high-quality resources over broad coverage.
+- Build a small, memorable benchmark seed before adding broad documentation.
+- Prefer runnable artifacts over abstract essays.
 - Maintain bilingual documentation without diluting the English-first positioning.
-- Avoid private company data, real user data, proprietary workflows, and unsupported claims.
+- Avoid private company data, real user data, proprietary workflows, unsupported claims, investment advice, and trading signals.

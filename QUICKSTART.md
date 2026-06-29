@@ -2,6 +2,11 @@
 
 This repo is most useful as a small financial agent evaluation starter kit. It gives you runnable tasks, synthetic fixtures, deterministic verifier tests, source-governance metadata, and example reports.
 
+The current direction is documented in:
+
+- `docs/financial-agent-eval-positioning.md`
+- `docs/finagentbench-seed-spec.md`
+
 ## Run The Passing Reference Suite
 
 ```bash
