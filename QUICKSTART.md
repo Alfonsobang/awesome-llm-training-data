@@ -4,6 +4,7 @@ This repo is most useful as a small financial agent evaluation starter kit. It g
 
 The current direction is documented in:
 
+- `docs/README.md`
 - `docs/financial-agent-eval-positioning.md`
 - `docs/finagentbench-seed-spec.md`
 

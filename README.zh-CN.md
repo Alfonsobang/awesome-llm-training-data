@@ -25,6 +25,18 @@ python examples/financial-agent-eval-seed/run_finance_eval.py
 
 面向 AI coding agent 和 LLM 仓库阅读器的入口：[llms.txt](llms.txt) 与 [AGENTS.md](AGENTS.md)。
 
+## Project Pages
+
+这个仓库不再只押一个页面，而是围绕金融 Agent 评测主线，拆成多个可以独立传播和复用的专题页：
+
+- [Project Pages Index](docs/README.md) - 仓库核心页面导航。
+- [Financial Agent Failure Gallery](docs/financial-agent-failure-gallery.md) - 来源、单位、引用、cutoff、合规边界和轨迹失败模式。
+- [Financial RAG Evaluation Playbook](docs/financial-rag-evaluation-playbook.md) - 金融 RAG 的检索、引用、抽取、计算和拒答评测。
+- [Financial Data Governance Control Plane](docs/financial-data-governance-control-plane.md) - 来源 manifest、打包策略、cutoff 与再分发边界。
+- [Synthetic Financial Evaluation Data Playbook](docs/synthetic-financial-evaluation-data-playbook.md) - 如何安全使用合成金融 fixture，避免虚假真实感。
+- [Annotation and Preference Quality for Finance](docs/annotation-preference-quality-finance.md) - 金融偏好数据、人工反馈和 adjudication 的质量维度。
+- [Agent Benchmark Lessons](docs/agent-benchmark-lessons.md) - 从 SWE-bench、WebArena、OSWorld、FinanceBench 学到的项目形态。
+
 你可以用它来：
 
 - 快速搭建一个不依赖私有数据、不输出投资建议的金融 Agent 评测起点。
@@ -44,6 +56,7 @@ python examples/financial-agent-eval-seed/run_finance_eval.py
 
 - 阅读 [Financial Agent Evaluation Positioning Thesis](docs/financial-agent-eval-positioning.md)。
 - 查看 [FinAgentBench Seed Spec](docs/finagentbench-seed-spec.md)。
+- 浏览 [Project Pages Index](docs/README.md)。
 - 运行 [Financial Agent Eval Seed](examples/financial-agent-eval-seed)：`python examples/financial-agent-eval-seed/run_finance_eval.py`。
 - 使用 [60-second quickstart](QUICKSTART.md)。
 - 查看种子套件的 [example report](examples/financial-agent-eval-seed/results/example-report.md)。
@@ -91,6 +104,7 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 
 - [范围](#范围)
 - [2026 Agent Evaluation Radar](#2026-agent-evaluation-radar)
+- [Project Pages](#project-pages)
 - [金融与强监管领域说明](#金融与强监管领域说明)
 - [入门资源](#入门资源)
 - [训练数据质量](#训练数据质量)

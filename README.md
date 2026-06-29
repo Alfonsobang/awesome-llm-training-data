@@ -25,6 +25,18 @@ Read the new [Financial Agent Evaluation Positioning Thesis](docs/financial-agen
 
 For AI coding agents and LLM-based repo readers, see [llms.txt](llms.txt) and [AGENTS.md](AGENTS.md).
 
+## Project Pages
+
+This repo now has multiple useful surfaces instead of a single bet:
+
+- [Project Pages Index](docs/README.md) - A guided map of the strongest pages in the repo.
+- [Financial Agent Failure Gallery](docs/financial-agent-failure-gallery.md) - Source, unit, citation, cutoff, advice-boundary, and trace failures to turn into tests.
+- [Financial RAG Evaluation Playbook](docs/financial-rag-evaluation-playbook.md) - Retrieval, citation, extraction, calculation, and refusal checks for finance RAG.
+- [Financial Data Governance Control Plane](docs/financial-data-governance-control-plane.md) - Source manifest, packaging policy, cutoff, and redistribution controls.
+- [Synthetic Financial Evaluation Data Playbook](docs/synthetic-financial-evaluation-data-playbook.md) - How to publish safe synthetic fixtures without fake realism.
+- [Annotation and Preference Quality for Finance](docs/annotation-preference-quality-finance.md) - Review dimensions for finance-specific preference and feedback data.
+- [Agent Benchmark Lessons](docs/agent-benchmark-lessons.md) - What this project should learn from SWE-bench, WebArena, OSWorld, and FinanceBench.
+
 Use this repo when you need:
 
 - A concrete starting point for evaluating financial LLM agents without private data or trading advice.
@@ -44,6 +56,7 @@ The hottest evaluation shift right now is from static answer grading to trajecto
 
 - Read the [Financial Agent Evaluation Positioning Thesis](docs/financial-agent-eval-positioning.md).
 - Review the [FinAgentBench Seed Spec](docs/finagentbench-seed-spec.md).
+- Browse the [Project Pages Index](docs/README.md).
 - Run the [Financial Agent Eval Seed](examples/financial-agent-eval-seed): `python examples/financial-agent-eval-seed/run_finance_eval.py`.
 - Use the [60-second quickstart](QUICKSTART.md).
 - Inspect the seed [example report](examples/financial-agent-eval-seed/results/example-report.md).
@@ -92,6 +105,7 @@ The repository also runs a lightweight [resource audit](tools/audit_resources.py
 
 - [Scope](#scope)
 - [2026 Agent Evaluation Radar](#2026-agent-evaluation-radar)
+- [Project Pages](#project-pages)
 - [Financial and Regulated-Domain Note](#financial-and-regulated-domain-note)
 - [Start Here](#start-here)
 - [Training Data Quality](#training-data-quality)

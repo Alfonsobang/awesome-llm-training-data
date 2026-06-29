@@ -11,9 +11,16 @@ Project thesis: financial agents fail through source, unit, cutoff, citation, co
 - Quickstart: QUICKSTART.md
 - Main README: README.md
 - Chinese README: README.zh-CN.md
+- Project pages index: docs/README.md
 - Financial Agent Eval Seed: examples/financial-agent-eval-seed/README.md
 - Positioning thesis: docs/financial-agent-eval-positioning.md
 - FinAgentBench Seed spec: docs/finagentbench-seed-spec.md
+- Financial Agent Failure Gallery: docs/financial-agent-failure-gallery.md
+- Financial RAG Evaluation Playbook: docs/financial-rag-evaluation-playbook.md
+- Financial Data Governance Control Plane: docs/financial-data-governance-control-plane.md
+- Synthetic Financial Evaluation Data Playbook: docs/synthetic-financial-evaluation-data-playbook.md
+- Annotation and Preference Quality for Finance: docs/annotation-preference-quality-finance.md
+- Agent Benchmark Lessons: docs/agent-benchmark-lessons.md
 - Runner: examples/financial-agent-eval-seed/run_finance_eval.py
 - Passing example report: examples/financial-agent-eval-seed/results/example-report.md
 - Bad-candidate example report: examples/financial-agent-eval-seed/results/bad-finance-agent-report.md

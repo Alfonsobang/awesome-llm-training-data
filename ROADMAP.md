@@ -27,27 +27,37 @@ The project should now prioritize executable tasks, deterministic verifiers, kno
 - [x] Add known-bad candidate artifacts and failure report.
 - [x] Add data-source governance manifest.
 - [x] Add AI-agent-friendly `llms.txt` and `AGENTS.md`.
+- [x] Add multi-track project pages for failures, RAG evaluation, governance, synthetic fixtures, annotation quality, and benchmark lessons.
 - [ ] Add one public-source search task scaffold.
 - [ ] Add one citation-quality verifier that checks source, section, and extraction note.
 - [ ] Add one repeated-trial report that combines verifier failures and trajectory failures.
 
-## v0.3 - FinAgentBench Seed
+## v0.3 - Multi-Track Expansion
+
+- [ ] Turn the Financial Agent Failure Gallery into at least three new known-bad artifacts.
+- [ ] Turn the Financial RAG Evaluation Playbook into one runnable RAG-style task.
+- [ ] Turn the Data Governance Control Plane into a generated governance summary report.
+- [ ] Turn the Synthetic Financial Evaluation Data Playbook into fixture authoring rules and validator checks.
+- [ ] Turn the Annotation and Preference Quality page into a review rubric JSON schema.
+- [ ] Turn Agent Benchmark Lessons into a concise public launch note.
+
+## v0.4 - FinAgentBench Seed
 
 - [ ] Publish `FinAgentBench Seed` as the primary project surface.
 - [ ] Grow to 8-12 runnable tasks across search, lookup, filing QA, toy backtesting, compliance, and trajectory audit.
 - [ ] Add at least two known-bad artifacts per task family.
 - [ ] Add task-card diagrams and artifact schemas for every task family.
 - [ ] Add JSON summary output that can be consumed by other eval harnesses.
-- [ ] Add a small public launch note explaining why finance-agent evaluation needs source, unit, cutoff, and trajectory checks.
+- [ ] Add a small public launch note explaining why finance-agent evaluation needs source, unit, cutoff, citation, compliance, and trajectory checks.
 
-## v0.4 - Agent Evaluation Integration
+## v0.5 - Agent Evaluation Integration
 
 - [ ] Keep Harbor/OpenClaw examples current with upstream trajectory format changes.
 - [ ] Add a conversion note for using the seed with agent frameworks that emit traces.
 - [ ] Add repeated-attempt metrics: pass@k, all-attempts-pass, missing-evidence rate, cutoff-violation rate, prohibited-claim rate.
 - [ ] Open one high-quality upstream docs discussion only when the seed has a reusable artifact to point to.
 
-## v0.5 - Resource Curation As Support, Not Core
+## v0.6 - Resource Curation As Support, Not Core
 
 - [ ] Keep the curated list clean and link-checked.
 - [ ] Add access and license notes only where they support the benchmark seed.
