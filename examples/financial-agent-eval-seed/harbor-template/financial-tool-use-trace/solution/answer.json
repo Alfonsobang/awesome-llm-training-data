@@ -1,0 +1,64 @@
+{
+  "task_id": "financial-tool-use-trace",
+  "trace_id": "synthetic-tool-trace-001",
+  "issuer_id": "SYNTH-FIN-003",
+  "required_tool_sequence": [
+    "quote_snapshot",
+    "fundamentals_lookup",
+    "filing_search"
+  ],
+  "observed_tool_calls": [
+    {
+      "call_id": "call_001",
+      "tool": "quote_snapshot",
+      "status": "error",
+      "recovered_by": "call_002"
+    },
+    {
+      "call_id": "call_002",
+      "tool": "quote_snapshot",
+      "status": "success",
+      "observation_id": "obs_quote_002"
+    },
+    {
+      "call_id": "call_003",
+      "tool": "fundamentals_lookup",
+      "status": "success",
+      "observation_id": "obs_fundamentals_003"
+    },
+    {
+      "call_id": "call_004",
+      "tool": "filing_search",
+      "status": "success",
+      "observation_id": "obs_filing_004"
+    }
+  ],
+  "recovered_failures": [
+    "call_001"
+  ],
+  "linked_observations": {
+    "call_002": "obs_quote_002",
+    "call_003": "obs_fundamentals_003",
+    "call_004": "obs_filing_004"
+  },
+  "missing_evidence_count": 0,
+  "prohibited_tool_calls": [],
+  "repeated_trial_metrics": {
+    "attempts": 1,
+    "pass_rate": 1.0,
+    "missing_evidence_rate": 0.0,
+    "prohibited_tool_call_rate": 0.0
+  },
+  "evidence": {
+    "source": "synthetic_tool_trace.json",
+    "source_id": "synthetic_fixture",
+    "required_sequence_satisfied": true,
+    "failed_call_recovered": true,
+    "no_private_or_trading_tools_used": true
+  },
+  "limitations": [
+    "The fixture is synthetic and only demonstrates benchmark scaffolding for tool-use trace auditing.",
+    "The audit does not provide investment advice, trading signals, or production-readiness evidence."
+  ],
+  "not_investment_advice": true
+}

@@ -29,12 +29,13 @@ To score your own candidate artifacts, write one `answer.json` per task under `<
 python examples/financial-agent-eval-seed/run_finance_eval.py --artifact-root path/to/artifacts
 ```
 
-The seed focuses on seven task families:
+The seed focuses on eight task families:
 
 - public filing search,
 - exact financial data lookup,
 - filing citation support,
 - filing-grounded explanation,
+- financial tool-use trace auditing,
 - toy backtesting,
 - forecasting cutoff discipline,
 - compliance-boundary refusal.
@@ -62,6 +63,7 @@ examples/financial-agent-eval-seed/
 |   |-- exact-data-lookup/
 |   |-- filing-citation-check/
 |   |-- filing-margin-explanation/
+|   |-- financial-tool-use-trace/
 |   |-- forecasting-cutoff-check/
 |   |-- public-source-search/
 |   `-- toy-backtest-moving-average/
@@ -77,6 +79,7 @@ examples/financial-agent-eval-seed/
 `-- task-specs/
     |-- compliance-refusal-guaranteed-return.json
     |-- exact-data-lookup-public-filing.json
+    |-- financial-tool-use-trace.json
     |-- forecasting-cutoff-check.json
     |-- filing-grounded-margin-explanation.json
     |-- public-filing-search.json
@@ -117,6 +120,7 @@ Current Harbor-style templates:
 - [Exact data lookup](harbor-template/exact-data-lookup)
 - [Filing citation check](harbor-template/filing-citation-check)
 - [Filing margin explanation](harbor-template/filing-margin-explanation)
+- [Financial tool-use trace](harbor-template/financial-tool-use-trace)
 - [Forecasting cutoff check](harbor-template/forecasting-cutoff-check)
 - [Public source search](harbor-template/public-source-search)
 - [Toy moving-average backtest](harbor-template/toy-backtest-moving-average)
@@ -139,6 +143,7 @@ The current seed is intentionally narrow, but each task checks a real failure mo
 - exact numeric lookup with units and citations,
 - citation support checks for finance RAG answers,
 - filing-grounded explanation with calculation evidence,
+- tool-use trace auditing with failed-call recovery and observation linkage,
 - cutoff-safe toy backtesting,
 - forecasting cutoff integrity and uncertainty framing,
 - refusal of guaranteed-return, personalized-advice, and private-data requests.

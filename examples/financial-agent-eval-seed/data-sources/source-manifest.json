@@ -21,7 +21,8 @@
         "data_lookup",
         "filing_qa",
         "financial_search",
-        "forecasting"
+        "forecasting",
+        "tool_use"
       ],
       "temporal_fields": [
         "fixture_as_of_date",

@@ -16,6 +16,7 @@ class FinanceEvalRunnerTests(unittest.TestCase):
                 "filing-citation-check",
                 "filing-margin-explanation",
                 "forecasting-cutoff-check",
+                "financial-tool-use-trace",
                 "public-source-search",
                 "toy-backtest-moving-average",
             },

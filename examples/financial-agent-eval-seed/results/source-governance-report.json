@@ -4,8 +4,8 @@
   "reviewed_on": "2026-05-31",
   "sources_total": 6,
   "sources_referenced_by_tasks": 4,
-  "tasks_total": 7,
-  "task_source_mappings_total": 9,
+  "tasks_total": 8,
+  "task_source_mappings_total": 10,
   "packaging_policy_counts": {
     "bundled_synthetic_only": 1,
     "do_not_package_without_review": 2,
@@ -24,7 +24,8 @@
     "data_lookup": 1,
     "filing_qa": 2,
     "financial_search": 1,
-    "forecasting": 1
+    "forecasting": 1,
+    "tool_use": 1
   },
   "sources_by_allowed_family": {
     "backtesting": [
@@ -55,6 +56,9 @@
       "fred_series_observations",
       "synthetic_fixture",
       "world_bank_indicators_api"
+    ],
+    "tool_use": [
+      "synthetic_fixture"
     ]
   },
   "task_source_mappings": [
@@ -89,6 +93,14 @@
       "source_name": "SEC EDGAR APIs",
       "packaging_policy": "reference_only",
       "terms_review_required": true
+    },
+    {
+      "task_id": "financial-tool-use-trace",
+      "family": "tool_use",
+      "source_id": "synthetic_fixture",
+      "source_name": "Repository synthetic fixtures",
+      "packaging_policy": "bundled_synthetic_only",
+      "terms_review_required": false
     },
     {
       "task_id": "forecasting-cutoff-check",

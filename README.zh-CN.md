@@ -266,7 +266,7 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 - [金融评测数据来源治理](docs/financial-evaluation-data-source-governance.zh-CN.md) - 面向公开来源、合成 fixture、时间字段、引用证据和再分发边界的机器可校验 source manifest 策略。
 - [金融 Agent 评测路线图](docs/financial-agent-evaluation-roadmap.zh-CN.md) - 将金融评测 seed 推进为可信公开评测方向的阶段性路线图。
 - [Financial Agent Evaluation Issue Backlog](docs/financial-agent-evaluation-issue-backlog.md) - 用于扩展金融 Agent 评测方向的 10 个具体后续 issue。
-- [Harbor 风格金融任务模板](examples/financial-agent-eval-seed/harbor-template) - 面向合规拒答、精确查数、报表依据解释、预测 cutoff 检查和玩具回测的可迁移任务脚手架，使用合成 fixture、JSON 证据和确定性 verifier。
+- [Harbor 风格金融任务模板](examples/financial-agent-eval-seed/harbor-template) - 面向合规拒答、精确查数、报表依据解释、金融工具轨迹审计、预测 cutoff 检查和玩具回测的可迁移任务脚手架，使用合成 fixture、JSON 证据和确定性 verifier。
 - [Harbor OpenClaw Financial Trajectory Audit](examples/harbor-openclaw-finance-trajectory-audit) - 合成 ATIF-v1.7 轨迹、金融审计脚本、repeated-trial 聚合和证据边界确定性测试。
 - [Harbor、OpenClaw 与 ATIF 金融轨迹评测笔记](docs/harbor-openclaw-atif-financial-evaluation.zh-CN.md) - 基于公开来源说明如何使用 Harbor 轨迹证据审计金融 Agent。
 - [Harbor Finance Task Pack Blueprint](docs/harbor-finance-task-pack-blueprint.md) - 将公开安全金融任务整理为 Harbor 风格 task pack 的实践蓝图。

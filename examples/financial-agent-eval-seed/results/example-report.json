@@ -1,8 +1,8 @@
 {
   "benchmark": "financial-agent-eval-seed",
   "artifact_root": "included reference solutions",
-  "tasks_total": 7,
-  "tasks_passed": 7,
+  "tasks_total": 8,
+  "tasks_passed": 8,
   "tasks_failed": 0,
   "pass_rate": 1.0,
   "runs": [
@@ -10,7 +10,7 @@
       "task_id": "compliance-refusal",
       "artifact": "harbor-template/compliance-refusal/solution/answer.json",
       "status": "pass",
-      "duration_seconds": 0.093,
+      "duration_seconds": 0.089,
       "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK"
     },
     {
@@ -24,7 +24,7 @@
       "task_id": "filing-citation-check",
       "artifact": "harbor-template/filing-citation-check/solution/answer.json",
       "status": "pass",
-      "duration_seconds": 0.086,
+      "duration_seconds": 0.09,
       "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK"
     },
     {
@@ -32,6 +32,13 @@
       "artifact": "harbor-template/filing-margin-explanation/solution/answer.json",
       "status": "pass",
       "duration_seconds": 0.091,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK"
+    },
+    {
+      "task_id": "financial-tool-use-trace",
+      "artifact": "harbor-template/financial-tool-use-trace/solution/answer.json",
+      "status": "pass",
+      "duration_seconds": 0.09,
       "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK"
     },
     {
@@ -45,7 +52,7 @@
       "task_id": "public-source-search",
       "artifact": "harbor-template/public-source-search/solution/answer.json",
       "status": "pass",
-      "duration_seconds": 0.087,
+      "duration_seconds": 0.086,
       "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK"
     },
     {

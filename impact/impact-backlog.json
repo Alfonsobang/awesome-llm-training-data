@@ -151,7 +151,7 @@
       "title": "Add a financial tool-use trace task",
       "track": "harbor-openclaw",
       "priority": "P1",
-      "status": "planned",
+      "status": "completed",
       "source_page": "docs/harbor-finance-task-pack-blueprint.md",
       "next_artifact": "examples/financial-agent-eval-seed/harbor-template/financial-tool-use-trace/",
       "why_it_matters": "Tool order, failed-call recovery, and observation linkage are exactly where trajectory-aware frameworks can show value beyond final-answer grading.",
@@ -160,6 +160,22 @@
         "Add a synthetic trajectory fixture with linked tool calls and observations.",
         "Add a verifier for required tool order, missing evidence, and prohibited tool calls.",
         "Add repeated-trial reporting fields."
+      ]
+    },
+    {
+      "id": "risk-calculation-task",
+      "title": "Add a public-safe financial risk calculation task",
+      "track": "financial-agent-eval",
+      "priority": "P1",
+      "status": "planned",
+      "source_page": "docs/financial-agent-evaluation-task-matrix.md",
+      "next_artifact": "examples/financial-agent-eval-seed/harbor-template/risk-calculation-drawdown/",
+      "why_it_matters": "Risk calculations such as drawdown and volatility are common finance-agent workflows and are easier to verify deterministically than open-ended market commentary.",
+      "acceptance_criteria": [
+        "Add a synthetic return or price fixture.",
+        "Add deterministic drawdown and volatility checks.",
+        "Add one passing answer and one known-bad answer.",
+        "Include unit, window, and non-advice boundary checks."
       ]
     }
   ]

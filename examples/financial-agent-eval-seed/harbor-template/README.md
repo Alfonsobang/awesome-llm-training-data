@@ -12,6 +12,7 @@ These templates use synthetic fixtures. They do not contain private company data
 | [Exact data lookup](exact-data-lookup) | Exact extraction from a financial statement fixture. | Required JSON shape, exact values, citations, numeric types, safety boundary. |
 | [Filing citation check](filing-citation-check) | Finance RAG answer with citations that must support the claim. | Citation source, section IDs, calculation notes, unsupported claims, safety boundary. |
 | [Filing margin explanation](filing-margin-explanation) | Filing-grounded explanation with margin calculations. | Margin values, citation sections, limitations, disallowed financial claims. |
+| [Financial tool-use trace](financial-tool-use-trace) | Synthetic tool trajectory audit for finance-agent process evidence. | Tool order, failed-call recovery, observation linkage, missing evidence, prohibited tools. |
 | [Forecasting cutoff check](forecasting-cutoff-check) | Bounded synthetic forecast that must respect an information cutoff. | Pre-cutoff evidence, excluded post-cutoff observations, forecast range, uncertainty, non-advice framing. |
 | [Public source search](public-source-search) | Selection of the correct public-safe source from candidate sources. | Official source selection, rejected weak sources, citation path, safety boundary. |
 | [Toy moving-average backtest](toy-backtest-moving-average) | Fixed-rule toy backtest with cutoff discipline. | Cutoff date, rows used, final equity, exposure days, non-advice framing. |

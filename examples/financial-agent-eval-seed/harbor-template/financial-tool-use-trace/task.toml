@@ -1,0 +1,36 @@
+schema_version = "1.2"
+
+artifacts = ["/logs/artifacts/answer.json"]
+
+[task]
+name = "financial-agent-eval/financial-tool-use-trace"
+description = "Synthetic financial-agent tool-use trace audit for evaluating tool order, failed-call recovery, observation linkage, and prohibited tool boundaries."
+authors = []
+keywords = ["finance", "agent-evaluation", "tool-use", "trajectory", "harbor-template"]
+
+[metadata]
+difficulty = "medium"
+category = "financial-agent-evaluation"
+tags = ["finance", "tool-use", "trajectory", "evidence-grounding"]
+
+[verifier]
+timeout_sec = 120.0
+
+[agent]
+timeout_sec = 300.0
+
+[environment]
+build_timeout_sec = 600.0
+docker_image = "python:3.12-slim"
+cpus = 1
+memory_mb = 2048
+storage_mb = 10240
+gpus = 0
+allow_internet = false
+mcp_servers = []
+
+[verifier.env]
+
+[environment.env]
+
+[solution.env]

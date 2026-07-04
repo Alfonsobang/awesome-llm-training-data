@@ -7,8 +7,8 @@ class SourceGovernanceReportTests(unittest.TestCase):
     def test_report_counts_current_sources_tasks_and_mappings(self):
         data = report.build_report()
         self.assertEqual(data["sources_total"], 6)
-        self.assertEqual(data["tasks_total"], 7)
-        self.assertGreaterEqual(data["task_source_mappings_total"], 7)
+        self.assertEqual(data["tasks_total"], 8)
+        self.assertGreaterEqual(data["task_source_mappings_total"], 8)
         self.assertEqual(data["packaging_policy_counts"]["reference_only"], 3)
         self.assertEqual(data["packaging_policy_counts"]["do_not_package_without_review"], 2)
         self.assertEqual(data["packaging_policy_counts"]["bundled_synthetic_only"], 1)

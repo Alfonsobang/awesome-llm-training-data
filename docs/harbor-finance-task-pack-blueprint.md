@@ -47,6 +47,11 @@ finance-agent-eval/
       fixture.json
       reference-answer.json
       verifier.py
+    financial-tool-use-trace/
+      task.yaml
+      fixture.json
+      reference-answer.json
+      verifier.py
     toy-backtest-moving-average/
       task.yaml
       fixture.json

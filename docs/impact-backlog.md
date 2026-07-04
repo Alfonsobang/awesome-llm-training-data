@@ -19,7 +19,8 @@ Machine-readable source: [`impact/impact-backlog.json`](../impact/impact-backlog
 | P1 | Completed | Financial agent eval | Task-family matrix | Turns the big topic into multiple reusable task surfaces. |
 | P1 | Completed | Harbor/OpenCLAW | Harbor-style finance task-pack blueprint | Connects the finance track to a visible agent-evaluation framework without claiming official support. |
 | P1 | Completed | Financial agent eval | Forecasting / pastcasting cutoff task | Tests one of the most important finance-specific leakage risks. |
-| P1 | Planned | Harbor/OpenCLAW | Financial tool-use trace task | Makes tool order, observation linkage, and missing evidence measurable. |
+| P1 | Completed | Harbor/OpenCLAW | Financial tool-use trace task | Makes tool order, observation linkage, and missing evidence measurable. |
+| P1 | Planned | Financial agent eval | Risk calculation task | Adds deterministic finance math beyond lookup, RAG, forecasting, and backtesting. |
 
 ## Why This Backlog Exists
 
@@ -43,6 +44,6 @@ Each item in the backlog must have:
 
 Next:
 
-> Add a financial tool-use trace task
+> Add a public-safe financial risk calculation task
 
-The public-source search task, finance RAG citation verifier, source-governance report, synthetic fixture validator, finance preference-review schema, public launch note, task matrix, Harbor task-pack blueprint, and forecasting cutoff task are now implemented. The next highest-leverage item is a financial tool-use trace task that makes tool order, failed-call recovery, observation linkage, and missing evidence measurable.
+The public-source search task, finance RAG citation verifier, source-governance report, synthetic fixture validator, finance preference-review schema, public launch note, task matrix, Harbor task-pack blueprint, forecasting cutoff task, and financial tool-use trace task are now implemented. The next highest-leverage item is a risk calculation task that adds deterministic drawdown or volatility checks without turning the project into a trading leaderboard.
