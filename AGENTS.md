@@ -19,6 +19,7 @@ Run:
 ```bash
 python examples/financial-agent-eval-seed/validate_specs.py
 python examples/financial-agent-eval-seed/validate_sources.py
+python examples/financial-agent-eval-seed/generate_source_governance_report.py
 python examples/financial-agent-eval-seed/run_finance_eval.py
 python -m unittest discover -s examples/financial-agent-eval-seed -p "test_*.py"
 python examples/financial-agent-eval-seed/validate_harbor_templates.py

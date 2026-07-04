@@ -41,7 +41,7 @@
       "title": "Generate a financial data-governance summary report",
       "track": "data-governance",
       "priority": "P1",
-      "status": "planned",
+      "status": "completed",
       "source_page": "docs/financial-data-governance-control-plane.md",
       "next_artifact": "examples/financial-agent-eval-seed/results/source-governance-report.md",
       "why_it_matters": "Data leads need visible evidence that public sources, synthetic fixtures, and redistribution boundaries are controlled.",

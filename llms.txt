@@ -26,6 +26,7 @@ Project thesis: financial agents fail through source, unit, cutoff, citation, co
 - Runner: examples/financial-agent-eval-seed/run_finance_eval.py
 - Passing example report: examples/financial-agent-eval-seed/results/example-report.md
 - Bad-candidate example report: examples/financial-agent-eval-seed/results/bad-finance-agent-report.md
+- Source governance report: examples/financial-agent-eval-seed/results/source-governance-report.md
 - Data-source governance: docs/financial-evaluation-data-source-governance.md
 - Source manifest: examples/financial-agent-eval-seed/data-sources/source-manifest.json
 - Harbor/OpenClaw ATIF audit: examples/harbor-openclaw-finance-trajectory-audit/README.md

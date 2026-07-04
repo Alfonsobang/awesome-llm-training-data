@@ -50,11 +50,12 @@ The seed already includes:
 
 - [source-manifest.json](../examples/financial-agent-eval-seed/data-sources/source-manifest.json),
 - [validate_sources.py](../examples/financial-agent-eval-seed/validate_sources.py),
+- [source-governance-report.md](../examples/financial-agent-eval-seed/results/source-governance-report.md),
 - and [Financial Evaluation Data Source Governance](financial-evaluation-data-source-governance.md).
 
 ## Next Step
 
-Add a source-governance badge or report section that summarizes:
+Extend the source-governance report so it summarizes:
 
 - sources referenced,
 - packaging policies,

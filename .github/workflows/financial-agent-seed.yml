@@ -22,6 +22,8 @@ jobs:
         run: python examples/financial-agent-eval-seed/validate_specs.py
       - name: Validate financial data-source governance
         run: python examples/financial-agent-eval-seed/validate_sources.py
+      - name: Generate financial data-source governance report
+        run: python examples/financial-agent-eval-seed/generate_source_governance_report.py
       - name: Run financial agent eval seed
         run: python examples/financial-agent-eval-seed/run_finance_eval.py
       - name: Test financial agent eval runner

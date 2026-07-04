@@ -36,6 +36,7 @@ python examples/financial-agent-eval-seed/run_finance_eval.py
 - [Financial Agent Failure Gallery](docs/financial-agent-failure-gallery.md) - 来源、单位、引用、cutoff、合规边界和轨迹失败模式。
 - [Financial RAG Evaluation Playbook](docs/financial-rag-evaluation-playbook.md) - 金融 RAG 的检索、引用、抽取、计算和拒答评测。
 - [Financial Data Governance Control Plane](docs/financial-data-governance-control-plane.md) - 来源 manifest、打包策略、cutoff 与再分发边界。
+- [Source Governance Report](examples/financial-agent-eval-seed/results/source-governance-report.md) - 来源策略与 task-source 映射的生成报告。
 - [Synthetic Financial Evaluation Data Playbook](docs/synthetic-financial-evaluation-data-playbook.md) - 如何安全使用合成金融 fixture，避免虚假真实感。
 - [Annotation and Preference Quality for Finance](docs/annotation-preference-quality-finance.md) - 金融偏好数据、人工反馈和 adjudication 的质量维度。
 - [Agent Benchmark Lessons](docs/agent-benchmark-lessons.md) - 从 SWE-bench、WebArena、OSWorld、FinanceBench 学到的项目形态。

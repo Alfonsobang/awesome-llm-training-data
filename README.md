@@ -36,6 +36,7 @@ This repo now has multiple useful surfaces instead of a single bet:
 - [Financial Agent Failure Gallery](docs/financial-agent-failure-gallery.md) - Source, unit, citation, cutoff, advice-boundary, and trace failures to turn into tests.
 - [Financial RAG Evaluation Playbook](docs/financial-rag-evaluation-playbook.md) - Retrieval, citation, extraction, calculation, and refusal checks for finance RAG.
 - [Financial Data Governance Control Plane](docs/financial-data-governance-control-plane.md) - Source manifest, packaging policy, cutoff, and redistribution controls.
+- [Source Governance Report](examples/financial-agent-eval-seed/results/source-governance-report.md) - Generated report for source policies and task-source mappings.
 - [Synthetic Financial Evaluation Data Playbook](docs/synthetic-financial-evaluation-data-playbook.md) - How to publish safe synthetic fixtures without fake realism.
 - [Annotation and Preference Quality for Finance](docs/annotation-preference-quality-finance.md) - Review dimensions for finance-specific preference and feedback data.
 - [Agent Benchmark Lessons](docs/agent-benchmark-lessons.md) - What this project should learn from SWE-bench, WebArena, OSWorld, and FinanceBench.

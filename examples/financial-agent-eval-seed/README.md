@@ -46,6 +46,7 @@ It deliberately avoids private company data, real user data, internal workflows,
 examples/financial-agent-eval-seed/
 |-- README.md
 |-- dataset-card.md
+|-- generate_source_governance_report.py
 |-- run_finance_eval.py
 |-- validate_specs.py
 |-- validate_harbor_templates.py
@@ -68,7 +69,9 @@ examples/financial-agent-eval-seed/
 |   |-- bad-finance-agent-report.json
 |   |-- bad-finance-agent-report.md
 |   |-- example-report.json
-|   `-- example-report.md
+|   |-- example-report.md
+|   |-- source-governance-report.json
+|   `-- source-governance-report.md
 `-- task-specs/
     |-- compliance-refusal-guaranteed-return.json
     |-- exact-data-lookup-public-filing.json
@@ -115,6 +118,14 @@ Current Harbor-style templates:
 - [Toy moving-average backtest](harbor-template/toy-backtest-moving-average)
 
 Review the governed [financial data-source manifest](data-sources/source-manifest.json) before adding or adapting tasks.
+
+Generate the stable source-governance report:
+
+```bash
+python examples/financial-agent-eval-seed/generate_source_governance_report.py
+```
+
+See [source-governance-report.md](results/source-governance-report.md).
 
 ## What It Measures
 
