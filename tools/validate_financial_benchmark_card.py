@@ -66,6 +66,7 @@ REQUIRED_REPORTS = {
     "passing_report",
     "known_bad_report",
     "source_governance_report",
+    "repeated_trial_report",
 }
 REQUIRED_LIMITATIONS = {
     "benchmark_limits",
@@ -198,12 +199,17 @@ def validate_card(card: dict) -> list[str]:
     passing_report = load_json(REPORT_DIR / "example-report.json")
     bad_report = load_json(REPORT_DIR / "bad-finance-agent-report.json")
     governance_report = load_json(REPORT_DIR / "source-governance-report.json")
+    repeated_trial_report = load_json(REPORT_DIR / "repeated-trial-example-report.json")
     if passing_report.get("tasks_total") != len(specs) or passing_report.get("tasks_failed") != 0:
         errors.append("reports.passing_report: stable passing report must cover all tasks with zero failures.")
     if bad_report.get("tasks_total") != len(specs) or bad_report.get("tasks_passed") != 0:
         errors.append("reports.known_bad_report: known-bad report must cover all tasks with zero passes.")
     if governance_report.get("tasks_total") != len(specs):
         errors.append("reports.source_governance_report: task count must match task specs.")
+    if repeated_trial_report.get("tasks_total") != len(specs):
+        errors.append("reports.repeated_trial_report: task count must match task specs.")
+    if "pass_at_k" not in repeated_trial_report or "pass_pow_k" not in repeated_trial_report:
+        errors.append("reports.repeated_trial_report: must include pass_at_k and pass_pow_k.")
 
     combined = json.dumps(card, ensure_ascii=False).lower()
     for phrase in sorted(DISALLOWED_CLAIMS):

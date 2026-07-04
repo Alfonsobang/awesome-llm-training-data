@@ -32,6 +32,8 @@ Add a benchmark card for `examples/financial-agent-eval-seed` based on `docs/fin
 
 ## Issue 2: Add Repeated-trial Reporting For The Financial-agent Eval Seed
 
+Status: implemented in-repo. Keep this draft as provenance for why repeated-trial reporting exists and as a checklist for future stability metrics.
+
 ### Why
 
 Single-run pass/fail reports are useful, but financial-agent evaluation should also show stability across repeated attempts. Repeated-trial reporting is especially useful for tool use, cutoff discipline, refusal boundaries, and missing evidence.

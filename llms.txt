@@ -39,6 +39,7 @@ Project thesis: financial agents fail through source, unit, cutoff, citation, co
 - Passing example report: examples/financial-agent-eval-seed/results/example-report.md
 - Bad-candidate example report: examples/financial-agent-eval-seed/results/bad-finance-agent-report.md
 - Source governance report: examples/financial-agent-eval-seed/results/source-governance-report.md
+- Repeated-trial report: examples/financial-agent-eval-seed/results/repeated-trial-example-report.md
 - Benchmark card validator: tools/validate_financial_benchmark_card.py
 - Synthetic fixture validator: tools/validate_synthetic_fixtures.py
 - Finance preference-review schema: schemas/finance-preference-review.schema.json

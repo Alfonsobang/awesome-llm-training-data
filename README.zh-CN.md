@@ -36,6 +36,7 @@ python examples/financial-agent-eval-seed/run_finance_eval.py
 - [Financial Tool-use Evaluation Playbook](docs/financial-tool-use-evaluation-playbook.md) - 工具调用顺序、观测结果引用、失败调用恢复和多次运行稳定性。
 - [Financial Benchmark Card Template](docs/financial-benchmark-card-template.md) - 面向来源、泄漏、治理、指标和限制说明的 benchmark card 模板。
 - [Financial Agent Eval Seed Benchmark Card](examples/financial-agent-eval-seed/benchmark-card.yml) - 可机器校验的 benchmark card，覆盖用途、来源策略、泄漏风险、报告和限制说明。
+- [Repeated-trial Report](examples/financial-agent-eval-seed/results/repeated-trial-example-report.md) - 展示 pass@k、Pass^k、缺失证据率和稳定性信号的聚合报告。
 - 当前可运行样例已覆盖组合分析边界拒答、预测 cutoff、风险计算和金融工具调用轨迹。
 
 这个仓库不再只押一个页面，而是围绕金融 Agent 评测主线，拆成多个可以独立传播和复用的专题页：

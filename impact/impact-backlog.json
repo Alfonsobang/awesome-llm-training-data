@@ -215,7 +215,7 @@
       "title": "Add repeated-trial reporting for the financial-agent eval seed",
       "track": "harbor-openclaw",
       "priority": "P1",
-      "status": "planned",
+      "status": "completed",
       "source_page": "docs/financial-tool-use-evaluation-playbook.md",
       "next_artifact": "examples/financial-agent-eval-seed/aggregate_trial_reports.py",
       "why_it_matters": "Repeated-trial reporting makes instability, missing evidence, and unsafe behavior visible beyond a single lucky pass.",
@@ -224,6 +224,22 @@
         "Report pass rate, pass@k, Pass^k, missing-evidence rate, and unsafe-output rate where applicable.",
         "Add a stable repeated-trial example report.",
         "Document the workflow without ranking models or claiming production readiness."
+      ]
+    },
+    {
+      "id": "harbor-task-pack-manifest",
+      "title": "Add a Harbor-style task-pack export manifest",
+      "track": "harbor-openclaw",
+      "priority": "P1",
+      "status": "planned",
+      "source_page": "docs/harbor-finance-task-pack-blueprint.md",
+      "next_artifact": "examples/financial-agent-eval-seed/harbor-template/task-pack-manifest.json",
+      "why_it_matters": "A task-pack manifest makes the 10 finance tasks easier for agent-framework maintainers to inspect, adapt, or discuss upstream.",
+      "acceptance_criteria": [
+        "List all current Harbor-style tasks with fixture, solution, verifier, task metadata, source refs, and safety boundary.",
+        "Add a validator that fails if any task directory is missing required files or metadata.",
+        "Link the manifest from the Harbor finance blueprint and seed README.",
+        "State clearly that this is a public-safe example, not an official Harbor adapter."
       ]
     }
   ]

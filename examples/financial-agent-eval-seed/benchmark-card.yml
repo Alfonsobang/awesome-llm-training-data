@@ -109,7 +109,8 @@
   "reports": {
     "passing_report": "results/example-report.md",
     "known_bad_report": "results/bad-finance-agent-report.md",
-    "source_governance_report": "results/source-governance-report.md"
+    "source_governance_report": "results/source-governance-report.md",
+    "repeated_trial_report": "results/repeated-trial-example-report.md"
   },
   "limitations": {
     "benchmark_limits": [

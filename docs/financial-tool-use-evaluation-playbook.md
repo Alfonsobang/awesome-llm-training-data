@@ -29,6 +29,7 @@ Good tasks check:
 ## Current Repo Assets
 
 - [Financial tool-use trace task](../examples/financial-agent-eval-seed/harbor-template/financial-tool-use-trace).
+- [Financial Agent Eval Seed repeated-trial report](../examples/financial-agent-eval-seed/results/repeated-trial-example-report.md).
 - [Harbor Finance Task Pack Blueprint](harbor-finance-task-pack-blueprint.md).
 - [Harbor OpenClaw ATIF trajectory audit](../examples/harbor-openclaw-finance-trajectory-audit).
 - [Harbor repeated-trial metric example](../examples/harbor-repeated-trial-metric).
@@ -70,4 +71,3 @@ Reject:
 - Did it handle errors or missing data honestly?
 - Can the trace be audited without a private account?
 - Does repeated-trial reporting reveal instability that one run hides?
-

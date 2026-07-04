@@ -12,6 +12,7 @@ The current direction is documented in:
 
 ```bash
 python examples/financial-agent-eval-seed/run_finance_eval.py
+python examples/financial-agent-eval-seed/aggregate_trial_reports.py
 python tools/validate_financial_benchmark_card.py
 ```
 
@@ -19,6 +20,7 @@ Expected result:
 
 ```text
 Pass rate: 10/10 (1.0)
+Repeated-trial report: 10 tasks, 20 task trials
 Validated financial benchmark card with 10 task specs.
 ```
 
@@ -26,6 +28,8 @@ The command writes:
 
 - `examples/financial-agent-eval-seed/results/latest-report.json`
 - `examples/financial-agent-eval-seed/results/latest-report.md`
+- `examples/financial-agent-eval-seed/results/repeated-trial-example-report.json`
+- `examples/financial-agent-eval-seed/results/repeated-trial-example-report.md`
 
 ## Run A Known-Bad Candidate
 

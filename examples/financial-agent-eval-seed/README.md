@@ -25,6 +25,12 @@ python examples/financial-agent-eval-seed/run_finance_eval.py --artifact-root ex
 
 The stable failure summary is available at [bad-finance-agent-report.md](results/bad-finance-agent-report.md).
 
+For repeated-attempt evaluation, generate the stable [repeated-trial report](results/repeated-trial-example-report.md):
+
+```bash
+python examples/financial-agent-eval-seed/aggregate_trial_reports.py
+```
+
 To score your own candidate artifacts, write one `answer.json` per task under `<artifact-root>/<task-id>/answer.json`, then run:
 
 ```bash
@@ -53,6 +59,7 @@ examples/financial-agent-eval-seed/
 |-- README.md
 |-- dataset-card.md
 |-- generate_source_governance_report.py
+|-- aggregate_trial_reports.py
 |-- run_finance_eval.py
 |-- validate_specs.py
 |-- validate_harbor_templates.py
@@ -80,6 +87,8 @@ examples/financial-agent-eval-seed/
 |   |-- bad-finance-agent-report.md
 |   |-- example-report.json
 |   |-- example-report.md
+|   |-- repeated-trial-example-report.json
+|   |-- repeated-trial-example-report.md
 |   |-- source-governance-report.json
 |   `-- source-governance-report.md
 `-- task-specs/

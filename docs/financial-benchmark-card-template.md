@@ -84,5 +84,6 @@ Do not publish a financial benchmark artifact unless it has:
 - [Financial Agent Eval Seed dataset card](../examples/financial-agent-eval-seed/dataset-card.md).
 - [Financial Agent Eval Seed benchmark card](../examples/financial-agent-eval-seed/benchmark-card.yml).
 - [Financial Agent Eval Seed reports](../examples/financial-agent-eval-seed/results/example-report.md).
+- [Financial Agent Eval Seed repeated-trial report](../examples/financial-agent-eval-seed/results/repeated-trial-example-report.md).
 - [Source governance report](../examples/financial-agent-eval-seed/results/source-governance-report.md).
 - [Finance preference-review schema](../schemas/finance-preference-review.schema.json).

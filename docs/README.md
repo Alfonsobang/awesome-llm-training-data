@@ -35,6 +35,7 @@ The project still has one core direction: public-safe financial agent evaluation
 
 - [Financial Evaluation Data Source Governance](financial-evaluation-data-source-governance.md) - Source-manifest rules and public-source review.
 - [Source Governance Report](../examples/financial-agent-eval-seed/results/source-governance-report.md) - Generated source-policy and task-source mapping report.
+- [Repeated-trial Report](../examples/financial-agent-eval-seed/results/repeated-trial-example-report.md) - Example aggregate for pass@k, Pass^k, missing-evidence rate, and stability signals.
 - [Synthetic Fixture Validator](../tools/validate_synthetic_fixtures.py) - Machine check for synthetic fixture labels, limitations, and non-advice boundaries.
 - [Benchmark Card Validator](../tools/validate_financial_benchmark_card.py) - Machine check for the Financial Agent Eval Seed benchmark card.
 - [Finance Preference Review Schema](../schemas/finance-preference-review.schema.json) - Multi-axis schema for finance-specific preference and feedback review.

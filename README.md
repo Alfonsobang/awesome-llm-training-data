@@ -47,6 +47,7 @@ This repo now has multiple useful surfaces instead of a single bet:
 - [Financial RAG Evaluation Playbook](docs/financial-rag-evaluation-playbook.md) - Retrieval, citation, extraction, calculation, and refusal checks for finance RAG.
 - [Financial Data Governance Control Plane](docs/financial-data-governance-control-plane.md) - Source manifest, packaging policy, cutoff, and redistribution controls.
 - [Source Governance Report](examples/financial-agent-eval-seed/results/source-governance-report.md) - Generated report for source policies and task-source mappings.
+- [Repeated-trial Report](examples/financial-agent-eval-seed/results/repeated-trial-example-report.md) - Example aggregate showing pass@k, Pass^k, missing-evidence rate, and stability signals.
 - [Synthetic Financial Evaluation Data Playbook](docs/synthetic-financial-evaluation-data-playbook.md) - How to publish safe synthetic fixtures without fake realism.
 - [Synthetic Fixture Validator](tools/validate_synthetic_fixtures.py) - Machine check for synthetic labels, limitations, and non-advice boundaries.
 - [Annotation and Preference Quality for Finance](docs/annotation-preference-quality-finance.md) - Review dimensions for finance-specific preference and feedback data.
