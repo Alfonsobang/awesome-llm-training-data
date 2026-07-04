@@ -42,8 +42,11 @@ The project still has one core direction: public-safe financial agent evaluation
 - [Financial Evaluation Data Source Governance](financial-evaluation-data-source-governance.md) - Source-manifest rules and public-source review.
 - [Source Governance Report](../examples/financial-agent-eval-seed/results/source-governance-report.md) - Generated source-policy and task-source mapping report.
 - [Repeated-trial Report](../examples/financial-agent-eval-seed/results/repeated-trial-example-report.md) - Example aggregate for pass@k, Pass^k, missing-evidence rate, and stability signals.
+- [Generated Reference Scorecard](../examples/financial-agent-eval-seed/results/example-scorecard.md) - Public-safe scorecard generated from the reference verifier report.
+- [Generated Known-bad Scorecard](../examples/financial-agent-eval-seed/results/bad-finance-agent-scorecard.md) - Scorecard showing red-flag behavior from the known-bad candidate.
 - [Synthetic Fixture Validator](../tools/validate_synthetic_fixtures.py) - Machine check for synthetic fixture labels, limitations, and non-advice boundaries.
 - [Benchmark Card Validator](../tools/validate_financial_benchmark_card.py) - Machine check for the Financial Agent Eval Seed benchmark card.
+- [Scorecard Builder](../examples/financial-agent-eval-seed/build_scorecard.py) - Machine-generated review scorecards from verifier reports.
 - [Repository Metadata Validator](../tools/validate_repo_metadata.py) - Machine check for the desired public repository description and topics.
 - [Task-pack Manifest Validator](../examples/financial-agent-eval-seed/validate_task_pack_manifest.py) - Machine check for the Harbor-style finance task-pack manifest.
 - [Finance Preference Review Schema](../schemas/finance-preference-review.schema.json) - Multi-axis schema for finance-specific preference and feedback review.

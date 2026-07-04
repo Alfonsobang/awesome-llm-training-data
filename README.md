@@ -35,6 +35,7 @@ This repo now has multiple useful surfaces instead of a single bet:
 - [Financial Agent Evaluation Portfolio](docs/financial-agent-evaluation-portfolio.md) / [Chinese](docs/financial-agent-evaluation-portfolio.zh-CN.md) - Multi-entry strategy for runnable tasks, scorecards, governance, Harbor-style packaging, and public positioning.
 - [Financial Agent Evaluation Task Zoo](docs/financial-agent-evaluation-task-zoo.md) - Implemented and next finance-agent task families across search, lookup, RAG, forecasting, tool use, risk, refusal, and governance.
 - [Financial Agent Evaluation Scorecard](docs/financial-agent-evaluation-scorecard.md) - Reusable scorecard for reviewing public-safe financial-agent behavior without creating a leaderboard.
+- [Generated Reference Scorecard](examples/financial-agent-eval-seed/results/example-scorecard.md) / [Known-bad Scorecard](examples/financial-agent-eval-seed/results/bad-finance-agent-scorecard.md) - Concrete scorecard outputs generated from deterministic verifier reports.
 - [Financial Agent Evaluation Opportunity Map](docs/financial-agent-evaluation-opportunity-map.md) - Where this project can contribute in the agent-evaluation market without overclaiming.
 - [Financial Agent Evaluation Track Map](docs/financial-agent-evaluation-track-map.md) / [Chinese](docs/financial-agent-evaluation-track-map.zh-CN.md) - Multi-track map for search, lookup, backtesting, forecasting, tool use, governance, and preference quality.
 - [Financial Search and Lookup Evaluation Playbook](docs/financial-search-and-lookup-evaluation-playbook.md) - Source selection, exact-field lookup, citation support, and period/unit checks.
@@ -55,6 +56,7 @@ This repo now has multiple useful surfaces instead of a single bet:
 - [Financial Data Governance Control Plane](docs/financial-data-governance-control-plane.md) - Source manifest, packaging policy, cutoff, and redistribution controls.
 - [Source Governance Report](examples/financial-agent-eval-seed/results/source-governance-report.md) - Generated report for source policies and task-source mappings.
 - [Repeated-trial Report](examples/financial-agent-eval-seed/results/repeated-trial-example-report.md) - Example aggregate showing pass@k, Pass^k, missing-evidence rate, and stability signals.
+- [Scorecard Builder](examples/financial-agent-eval-seed/build_scorecard.py) - Converts a verifier report into a public-safe finance-agent review scorecard.
 - [Synthetic Financial Evaluation Data Playbook](docs/synthetic-financial-evaluation-data-playbook.md) - How to publish safe synthetic fixtures without fake realism.
 - [Synthetic Fixture Validator](tools/validate_synthetic_fixtures.py) - Machine check for synthetic labels, limitations, and non-advice boundaries.
 - [Annotation and Preference Quality for Finance](docs/annotation-preference-quality-finance.md) - Review dimensions for finance-specific preference and feedback data.
@@ -84,6 +86,7 @@ The hottest evaluation shift right now is from static answer grading to trajecto
 - Start from the [Financial Agent Evaluation Track Map](docs/financial-agent-evaluation-track-map.md).
 - Browse the [Financial Agent Evaluation Task Zoo](docs/financial-agent-evaluation-task-zoo.md).
 - Use the [Financial Agent Evaluation Scorecard](docs/financial-agent-evaluation-scorecard.md).
+- Inspect the generated [reference scorecard](examples/financial-agent-eval-seed/results/example-scorecard.md) and [known-bad scorecard](examples/financial-agent-eval-seed/results/bad-finance-agent-scorecard.md).
 - Review the [Financial Agent Evaluation Opportunity Map](docs/financial-agent-evaluation-opportunity-map.md).
 - Review the [FinAgentBench Seed Spec](docs/finagentbench-seed-spec.md).
 - Browse the [Project Pages Index](docs/README.md).
@@ -287,6 +290,7 @@ The repository also runs a lightweight [resource audit](tools/audit_resources.py
 - [Financial Agent Evaluation Portfolio](docs/financial-agent-evaluation-portfolio.md) - Multi-entry project strategy for different audiences.
 - [Financial Agent Evaluation Task Zoo](docs/financial-agent-evaluation-task-zoo.md) - Implemented and next finance-agent task families.
 - [Financial Agent Evaluation Scorecard](docs/financial-agent-evaluation-scorecard.md) - Conservative review template for public-safe financial-agent behavior.
+- [Financial Agent Eval Seed Scorecards](examples/financial-agent-eval-seed/results/example-scorecard.md) - Generated scorecard examples for reference and known-bad candidate behavior.
 - [Financial Agent Evaluation Opportunity Map](docs/financial-agent-evaluation-opportunity-map.md) - Market-aware map of where this project can be useful.
 - [Financial Agent Evaluation Task Matrix](docs/financial-agent-evaluation-task-matrix.md) - Task-family map for turning finance-agent evaluation ideas into runnable checks.
 - [Financial Agent Evaluation Seed](examples/financial-agent-eval-seed) - Public-data-only task specs, dataset card, and trajectory-safety rubric for a finance-focused agent benchmark seed.

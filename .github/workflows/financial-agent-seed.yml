@@ -28,6 +28,8 @@ jobs:
         run: python examples/financial-agent-eval-seed/generate_source_governance_report.py
       - name: Generate repeated-trial example report
         run: python examples/financial-agent-eval-seed/aggregate_trial_reports.py
+      - name: Generate financial-agent scorecard example
+        run: python examples/financial-agent-eval-seed/build_scorecard.py --report examples/financial-agent-eval-seed/results/example-report.json --candidate reference-solutions --output-prefix examples/financial-agent-eval-seed/results/example-scorecard
       - name: Validate financial benchmark card
         run: python tools/validate_financial_benchmark_card.py
       - name: Run financial agent eval seed

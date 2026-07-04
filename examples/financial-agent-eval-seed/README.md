@@ -27,6 +27,19 @@ python examples/financial-agent-eval-seed/run_finance_eval.py --artifact-root ex
 
 The stable failure summary is available at [bad-finance-agent-report.md](results/bad-finance-agent-report.md).
 
+Turn a verifier report into a review scorecard:
+
+```bash
+python examples/financial-agent-eval-seed/build_scorecard.py --report examples/financial-agent-eval-seed/results/example-report.json --candidate reference-solutions --output-prefix examples/financial-agent-eval-seed/results/example-scorecard
+```
+
+Stable scorecard examples:
+
+- [reference solution scorecard](results/example-scorecard.md)
+- [known-bad candidate scorecard](results/bad-finance-agent-scorecard.md)
+
+The scorecard command exits non-zero when red flags are present so it can be used as a CI gate. Use `--allow-red-flags` only when intentionally generating a known-bad example.
+
 For repeated-attempt evaluation, generate the stable [repeated-trial report](results/repeated-trial-example-report.md):
 
 ```bash
@@ -62,6 +75,7 @@ examples/financial-agent-eval-seed/
 |-- dataset-card.md
 |-- generate_source_governance_report.py
 |-- aggregate_trial_reports.py
+|-- build_scorecard.py
 |-- run_finance_eval.py
 |-- validate_specs.py
 |-- validate_harbor_templates.py
@@ -89,8 +103,12 @@ examples/financial-agent-eval-seed/
 |-- results/
 |   |-- bad-finance-agent-report.json
 |   |-- bad-finance-agent-report.md
+|   |-- bad-finance-agent-scorecard.json
+|   |-- bad-finance-agent-scorecard.md
 |   |-- example-report.json
 |   |-- example-report.md
+|   |-- example-scorecard.json
+|   |-- example-scorecard.md
 |   |-- repeated-trial-example-report.json
 |   |-- repeated-trial-example-report.md
 |   |-- source-governance-report.json

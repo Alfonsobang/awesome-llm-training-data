@@ -79,5 +79,12 @@ Suggested next verifier:
    ```
 
 2. Compare the generated report with the [known-bad report](../examples/financial-agent-eval-seed/results/bad-finance-agent-report.md).
-3. Fill this scorecard from verifier evidence, not from model fluency.
-4. If repeated trials are available, inspect [Repeated-trial Report](../examples/financial-agent-eval-seed/results/repeated-trial-example-report.md).
+3. Generate a scorecard from the report:
+
+   ```bash
+   python examples/financial-agent-eval-seed/build_scorecard.py --report examples/financial-agent-eval-seed/results/latest-report.json --candidate candidate --output-prefix examples/financial-agent-eval-seed/results/latest-scorecard
+   ```
+
+4. Compare the stable [reference scorecard](../examples/financial-agent-eval-seed/results/example-scorecard.md) with the [known-bad scorecard](../examples/financial-agent-eval-seed/results/bad-finance-agent-scorecard.md).
+5. Fill any remaining human review notes from verifier evidence, not from model fluency.
+6. If repeated trials are available, inspect [Repeated-trial Report](../examples/financial-agent-eval-seed/results/repeated-trial-example-report.md).

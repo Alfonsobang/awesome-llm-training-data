@@ -319,6 +319,23 @@
       ]
     },
     {
+      "id": "financial-agent-scorecard-builder",
+      "title": "Add a generated financial-agent evaluation scorecard builder",
+      "track": "financial-agent-eval",
+      "priority": "P0",
+      "status": "completed",
+      "source_page": "docs/financial-agent-evaluation-scorecard.md",
+      "next_artifact": "examples/financial-agent-eval-seed/build_scorecard.py",
+      "why_it_matters": "A generated scorecard turns verifier output into a shareable review artifact that is easier to understand than raw pass/fail reports.",
+      "acceptance_criteria": [
+        "Convert run_finance_eval.py JSON reports into Markdown and JSON scorecards.",
+        "Map task outcomes to finance-specific review dimensions such as source selection, citation support, numeric correctness, temporal discipline, tool trajectory, and safety boundary.",
+        "Emit red-flag evidence for unsafe or unsupported behavior without creating a leaderboard.",
+        "Include stable reference and known-bad scorecard examples.",
+        "Add unit tests and CI coverage."
+      ]
+    },
+    {
       "id": "repo-metadata-repositioning",
       "title": "Reposition public repository metadata around financial-agent evaluation",
       "track": "distribution",

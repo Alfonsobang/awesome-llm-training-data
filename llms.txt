@@ -45,8 +45,11 @@ Project thesis: financial agents fail through source, unit, cutoff, citation, co
 - Annotation and Preference Quality for Finance: docs/annotation-preference-quality-finance.md
 - Agent Benchmark Lessons: docs/agent-benchmark-lessons.md
 - Runner: examples/financial-agent-eval-seed/run_finance_eval.py
+- Scorecard builder: examples/financial-agent-eval-seed/build_scorecard.py
 - Passing example report: examples/financial-agent-eval-seed/results/example-report.md
 - Bad-candidate example report: examples/financial-agent-eval-seed/results/bad-finance-agent-report.md
+- Reference scorecard: examples/financial-agent-eval-seed/results/example-scorecard.md
+- Known-bad candidate scorecard: examples/financial-agent-eval-seed/results/bad-finance-agent-scorecard.md
 - Source governance report: examples/financial-agent-eval-seed/results/source-governance-report.md
 - Repeated-trial report: examples/financial-agent-eval-seed/results/repeated-trial-example-report.md
 - Benchmark card validator: tools/validate_financial_benchmark_card.py

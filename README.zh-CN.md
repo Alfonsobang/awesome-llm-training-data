@@ -32,6 +32,7 @@ python examples/financial-agent-eval-seed/run_finance_eval.py
 - [Financial Agent Evaluation Portfolio](docs/financial-agent-evaluation-portfolio.md) / [中文](docs/financial-agent-evaluation-portfolio.zh-CN.md) - 面向可运行任务、scorecard、治理、Harbor 风格打包和对外定位的多入口策略。
 - [Financial Agent Evaluation Task Zoo](docs/financial-agent-evaluation-task-zoo.md) - 已实现和下一步可扩展的金融 Agent 任务家族，覆盖搜索、查数、RAG、预测、工具调用、风险、拒答和治理。
 - [Financial Agent Evaluation Scorecard](docs/financial-agent-evaluation-scorecard.md) - 不做 leaderboard 的金融 Agent 行为评审模板。
+- [Generated Reference Scorecard](examples/financial-agent-eval-seed/results/example-scorecard.md) / [Known-bad Scorecard](examples/financial-agent-eval-seed/results/bad-finance-agent-scorecard.md) - 基于确定性 verifier report 生成的 scorecard 样例。
 - [Financial Agent Evaluation Opportunity Map](docs/financial-agent-evaluation-opportunity-map.md) - 说明这个项目如何在 Agent 评测热点里找到公开安全、可复用的位置。
 - [Financial Agent Evaluation Track Map](docs/financial-agent-evaluation-track-map.md) / [中文](docs/financial-agent-evaluation-track-map.zh-CN.md) - 金融 Agent 评测多赛道地图，覆盖搜索、查数、回测、预测、工具调用、治理和偏好质量。
 - [Financial Search and Lookup Evaluation Playbook](docs/financial-search-and-lookup-evaluation-playbook.md) - 金融搜索、精确查数、来源选择、引用支撑和单位/期间检查。
@@ -85,6 +86,7 @@ python examples/financial-agent-eval-seed/run_finance_eval.py
 - 查看 [FinAgentBench Seed Spec](docs/finagentbench-seed-spec.md)。
 - 浏览 [Financial Agent Evaluation Task Zoo](docs/financial-agent-evaluation-task-zoo.md)。
 - 使用 [Financial Agent Evaluation Scorecard](docs/financial-agent-evaluation-scorecard.md)。
+- 对比生成的 [reference scorecard](examples/financial-agent-eval-seed/results/example-scorecard.md) 和 [known-bad scorecard](examples/financial-agent-eval-seed/results/bad-finance-agent-scorecard.md)。
 - 查看 [Financial Agent Evaluation Opportunity Map](docs/financial-agent-evaluation-opportunity-map.md)。
 - 浏览 [Project Pages Index](docs/README.md)。
 - 使用 [Financial Agent Evaluation Task Matrix](docs/financial-agent-evaluation-task-matrix.md) 选择下一个可运行任务家族。
@@ -285,6 +287,7 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 - [金融 Agent 评测项目组合](docs/financial-agent-evaluation-portfolio.zh-CN.md) - 面向不同读者的多入口项目策略。
 - [Financial Agent Evaluation Task Zoo](docs/financial-agent-evaluation-task-zoo.md) - 已实现和下一步可扩展的金融 Agent 任务家族。
 - [Financial Agent Evaluation Scorecard](docs/financial-agent-evaluation-scorecard.md) - 公开安全金融 Agent 行为评审模板。
+- [Financial Agent Eval Seed Scorecards](examples/financial-agent-eval-seed/results/example-scorecard.md) - reference 和 known-bad candidate 的生成式 scorecard 样例。
 - [Financial Agent Evaluation Opportunity Map](docs/financial-agent-evaluation-opportunity-map.md) - 金融 Agent 评测方向的机会地图。
 - [Financial Agent Evaluation Task Matrix](docs/financial-agent-evaluation-task-matrix.md) - 将金融 Agent 评测想法转成可运行检查项的任务矩阵。
 - [金融 Agent 评测种子集](examples/financial-agent-eval-seed) - 面向金融 Agent benchmark seed 的公开数据任务规格、数据集卡和轨迹安全 rubric。
