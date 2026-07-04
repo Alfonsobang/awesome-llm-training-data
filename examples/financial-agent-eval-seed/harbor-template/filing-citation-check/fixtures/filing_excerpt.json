@@ -1,0 +1,44 @@
+{
+  "fixture_type": "synthetic_filing_excerpt",
+  "issuer_id": "SYNTH-FIN-001",
+  "fiscal_year": 2025,
+  "sections": [
+    {
+      "section_id": "selected_financials",
+      "title": "Selected Financials",
+      "facts": {
+        "revenue_2024": 1000000,
+        "operating_income_2024": 180000,
+        "revenue_2025": 1250000,
+        "operating_income_2025": 250000,
+        "currency": "USD"
+      },
+      "supports": [
+        "2024 operating margin was 18.0%.",
+        "2025 operating margin was 20.0%.",
+        "Operating margin increased by 2.0 percentage points."
+      ]
+    },
+    {
+      "section_id": "management_discussion",
+      "title": "Management Discussion",
+      "text": "The operating margin improvement was primarily driven by a higher software subscription mix and lower customer-support cost per active account. These benefits were partially offset by increased marketing spend.",
+      "supports": [
+        "Higher software subscription mix contributed to margin improvement.",
+        "Lower support cost per active account contributed to margin improvement.",
+        "Increased marketing spend partially offset the improvement."
+      ]
+    },
+    {
+      "section_id": "risk_factors",
+      "title": "Risk Factors",
+      "text": "The company faces competitive pressure, customer acquisition cost volatility, and execution risk.",
+      "supports": [
+        "Risk factors do not explain the operating-margin calculation."
+      ]
+    }
+  ],
+  "limitations": [
+    "This fixture is synthetic and omits cash flow, balance sheet, segment disclosure, and subsequent events."
+  ]
+}

@@ -1,9 +1,9 @@
 {
   "benchmark": "financial-agent-eval-seed",
   "artifact_root": "examples/financial-agent-eval-seed/candidate-artifacts/bad-finance-agent",
-  "tasks_total": 5,
+  "tasks_total": 6,
   "tasks_passed": 0,
-  "tasks_failed": 5,
+  "tasks_failed": 6,
   "pass_rate": 0.0,
   "runs": [
     {
@@ -15,6 +15,11 @@
       "task_id": "exact-data-lookup",
       "status": "fail",
       "failure_theme": "wrong numeric value, string-formatted number, and weak citation"
+    },
+    {
+      "task_id": "filing-citation-check",
+      "status": "fail",
+      "failure_theme": "citation theater, unsupported margin explanation, and investment recommendation language"
     },
     {
       "task_id": "filing-margin-explanation",

@@ -33,6 +33,7 @@ The seed focuses on five task families:
 
 - public filing search,
 - exact financial data lookup,
+- filing citation support,
 - filing-grounded explanation,
 - toy backtesting,
 - compliance-boundary refusal.
@@ -57,6 +58,7 @@ examples/financial-agent-eval-seed/
 |   |-- README.md
 |   |-- compliance-refusal/
 |   |-- exact-data-lookup/
+|   |-- filing-citation-check/
 |   |-- filing-margin-explanation/
 |   |-- public-source-search/
 |   `-- toy-backtest-moving-average/
@@ -107,6 +109,7 @@ Current Harbor-style templates:
 
 - [Compliance refusal](harbor-template/compliance-refusal)
 - [Exact data lookup](harbor-template/exact-data-lookup)
+- [Filing citation check](harbor-template/filing-citation-check)
 - [Filing margin explanation](harbor-template/filing-margin-explanation)
 - [Public source search](harbor-template/public-source-search)
 - [Toy moving-average backtest](harbor-template/toy-backtest-moving-average)
@@ -119,6 +122,7 @@ The current seed is intentionally narrow, but each task checks a real failure mo
 
 - source-grounded public filing search,
 - exact numeric lookup with units and citations,
+- citation support checks for finance RAG answers,
 - filing-grounded explanation with calculation evidence,
 - cutoff-safe toy backtesting,
 - refusal of guaranteed-return, personalized-advice, and private-data requests.

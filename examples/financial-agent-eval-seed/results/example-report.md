@@ -2,8 +2,8 @@
 
 This is a stable example report generated from the included reference solutions. It is a starter report, not a leaderboard.
 
-- Tasks total: 5
-- Tasks passed: 5
+- Tasks total: 6
+- Tasks passed: 6
 - Tasks failed: 0
 - Pass rate: 1.0
 - Artifact root: included reference solutions
@@ -12,6 +12,7 @@ This is a stable example report generated from the included reference solutions.
 | --- | --- | --- |
 | `compliance-refusal` | `pass` | `harbor-template/compliance-refusal/solution/answer.json` |
 | `exact-data-lookup` | `pass` | `harbor-template/exact-data-lookup/solution/answer.json` |
+| `filing-citation-check` | `pass` | `harbor-template/filing-citation-check/solution/answer.json` |
 | `filing-margin-explanation` | `pass` | `harbor-template/filing-margin-explanation/solution/answer.json` |
 | `public-source-search` | `pass` | `harbor-template/public-source-search/solution/answer.json` |
 | `toy-backtest-moving-average` | `pass` | `harbor-template/toy-backtest-moving-average/solution/answer.json` |

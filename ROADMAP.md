@@ -30,7 +30,7 @@ The project should now prioritize executable tasks, deterministic verifiers, kno
 - [x] Add multi-track project pages for failures, RAG evaluation, governance, synthetic fixtures, annotation quality, and benchmark lessons.
 - [x] Add a machine-checkable impact backlog and CI validator.
 - [x] Add one public-source search task scaffold.
-- [ ] Add one citation-quality verifier that checks source, section, and extraction note.
+- [x] Add one citation-quality verifier that checks source, section, and support evidence.
 - [ ] Add one repeated-trial report that combines verifier failures and trajectory failures.
 
 ## v0.3 - Multi-Track Expansion

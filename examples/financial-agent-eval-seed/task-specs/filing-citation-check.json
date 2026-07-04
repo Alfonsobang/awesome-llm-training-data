@@ -1,0 +1,48 @@
+{
+  "task_id": "filing-citation-check",
+  "family": "filing_qa",
+  "source_refs": [
+    "sec_edgar_api"
+  ],
+  "risk_level": "medium",
+  "instruction": "Using only provided public annual reports or filing excerpts, answer a finance RAG question with citations that explicitly support the answer. Include source, section, support note, calculation notes, unsupported claims, limitations, and a non-advice boundary.",
+  "allowed_sources": [
+    "provided public annual report PDFs",
+    "regulator filing portals",
+    "synthetic filing fixtures"
+  ],
+  "allowed_tools": [
+    "browser",
+    "pdf_reader",
+    "calculator",
+    "table_extractor"
+  ],
+  "prohibited_actions": [
+    "citation theater",
+    "unsupported investment recommendation",
+    "private financial feeds",
+    "guessing missing values"
+  ],
+  "required_evidence": [
+    "answer",
+    "citations",
+    "source",
+    "section_id",
+    "support_note",
+    "calculation_notes",
+    "unsupported_claims",
+    "limitations_statement"
+  ],
+  "metrics": [
+    "citation_support",
+    "source_grounding",
+    "numeric_correctness",
+    "compliance_boundary"
+  ],
+  "known_failure_modes": [
+    "citation references a section that does not support the answer",
+    "risk factors cited as explanation for margin change",
+    "calculation values omitted or unreproducible",
+    "investment recommendation added to evidence summary"
+  ]
+}

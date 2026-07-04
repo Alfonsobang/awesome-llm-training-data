@@ -25,7 +25,7 @@
       "title": "Build a finance RAG citation verifier",
       "track": "financial-rag-eval",
       "priority": "P0",
-      "status": "planned",
+      "status": "completed",
       "source_page": "docs/financial-rag-evaluation-playbook.md",
       "next_artifact": "examples/financial-agent-eval-seed/harbor-template/filing-citation-check/",
       "why_it_matters": "Finance RAG systems often cite plausible but unsupported evidence; citation support is a concrete, reusable quality gate.",

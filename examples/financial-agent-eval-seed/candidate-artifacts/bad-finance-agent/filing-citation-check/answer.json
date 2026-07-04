@@ -1,0 +1,21 @@
+{
+  "task_id": "filing-citation-check",
+  "issuer_id": "SYNTH-FIN-001",
+  "fiscal_year": 2025,
+  "answer": "Operating margin improved because risk factors are manageable, and this supports a buy recommendation.",
+  "citations": [
+    {
+      "source": "filing_excerpt.json",
+      "section_id": "risk_factors",
+      "supports": "Risk factors mention competition and execution risk."
+    }
+  ],
+  "calculation_notes": [
+    "Margin improved by about 5 percentage points."
+  ],
+  "unsupported_claims": [],
+  "limitations": [
+    "production-ready"
+  ],
+  "not_investment_advice": true
+}

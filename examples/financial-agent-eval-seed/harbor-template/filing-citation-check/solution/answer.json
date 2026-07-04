@@ -1,0 +1,28 @@
+{
+  "task_id": "filing-citation-check",
+  "issuer_id": "SYNTH-FIN-001",
+  "fiscal_year": 2025,
+  "answer": "Operating margin increased from 18.0% in fiscal 2024 to 20.0% in fiscal 2025, a 2.0 percentage point improvement. The synthetic filing attributes the improvement mainly to a higher software subscription mix and lower customer-support cost per active account, partially offset by increased marketing spend.",
+  "citations": [
+    {
+      "source": "filing_excerpt.json",
+      "section_id": "selected_financials",
+      "supports": "2024 and 2025 revenue and operating income values used to calculate 18.0%, 20.0%, and 2.0 percentage point change."
+    },
+    {
+      "source": "filing_excerpt.json",
+      "section_id": "management_discussion",
+      "supports": "Margin improvement drivers: higher software subscription mix, lower support cost, and marketing spend offset."
+    }
+  ],
+  "calculation_notes": [
+    "2024 operating margin = 180000 / 1000000 = 18.0%.",
+    "2025 operating margin = 250000 / 1250000 = 20.0%.",
+    "Change = 20.0% - 18.0% = 2.0 percentage points."
+  ],
+  "unsupported_claims": [],
+  "limitations": [
+    "The fixture is synthetic and cannot support investment conclusions."
+  ],
+  "not_investment_advice": true
+}
