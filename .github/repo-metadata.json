@@ -1,0 +1,26 @@
+{
+  "repository": "Alfonsobang/awesome-llm-training-data",
+  "description": "Public-safe financial LLM agent evaluation seed with runnable tasks, verifiers, governance, and Harbor-style templates.",
+  "homepage": "",
+  "topics": [
+    "agent-evaluation",
+    "data-governance",
+    "evaluation",
+    "financial-ai",
+    "harbor",
+    "llm",
+    "openclaw",
+    "rag-evaluation",
+    "synthetic-data",
+    "training-data"
+  ],
+  "must_not_claim": [
+    "official Harbor support",
+    "production readiness",
+    "investment advice",
+    "trading signals",
+    "adoption numbers"
+  ],
+  "notes": "Keep the public GitHub first screen aligned with the current financial-agent evaluation seed, not the original generic Awesome-list positioning."
+}
+

@@ -29,6 +29,10 @@ python examples/financial-agent-eval-seed/run_finance_eval.py
 
 ## Project Pages
 
+- [Financial Agent Evaluation Portfolio](docs/financial-agent-evaluation-portfolio.md) / [中文](docs/financial-agent-evaluation-portfolio.zh-CN.md) - 面向可运行任务、scorecard、治理、Harbor 风格打包和对外定位的多入口策略。
+- [Financial Agent Evaluation Task Zoo](docs/financial-agent-evaluation-task-zoo.md) - 已实现和下一步可扩展的金融 Agent 任务家族，覆盖搜索、查数、RAG、预测、工具调用、风险、拒答和治理。
+- [Financial Agent Evaluation Scorecard](docs/financial-agent-evaluation-scorecard.md) - 不做 leaderboard 的金融 Agent 行为评审模板。
+- [Financial Agent Evaluation Opportunity Map](docs/financial-agent-evaluation-opportunity-map.md) - 说明这个项目如何在 Agent 评测热点里找到公开安全、可复用的位置。
 - [Financial Agent Evaluation Track Map](docs/financial-agent-evaluation-track-map.md) / [中文](docs/financial-agent-evaluation-track-map.zh-CN.md) - 金融 Agent 评测多赛道地图，覆盖搜索、查数、回测、预测、工具调用、治理和偏好质量。
 - [Financial Search and Lookup Evaluation Playbook](docs/financial-search-and-lookup-evaluation-playbook.md) - 金融搜索、精确查数、来源选择、引用支撑和单位/期间检查。
 - [Financial Backtesting Evaluation Playbook](docs/financial-backtesting-evaluation-playbook.md) - Toy backtest、风险指标、假设审查和非投资建议边界。
@@ -44,6 +48,7 @@ python examples/financial-agent-eval-seed/run_finance_eval.py
 
 - [Project Pages Index](docs/README.md) - 仓库核心页面导航。
 - [Impact Backlog](docs/impact-backlog.md) - 多线策略的机器可检查下一步 artifact。
+- [Repository Metadata Update](docs/repo-metadata-update.md) - GitHub 仓库描述和 topics 的目标版本及校验器。
 - [Financial Agent Evaluation Task Matrix](docs/financial-agent-evaluation-task-matrix.md) - 覆盖搜索、查数、公告 QA、回测、预测、工具调用、拒答、偏好评审和治理的任务矩阵。
 - [Harbor Finance Task Pack Blueprint](docs/harbor-finance-task-pack-blueprint.md) - 将金融任务整理成 Harbor 风格 task pack 的实践蓝图。
 - [Harbor Upstream Discussion Brief](docs/harbor-upstream-discussion-brief.md) - 面向 Harbor maintainer 的上游讨论草稿，强调公开安全、格式反馈和不声称官方支持。
@@ -76,7 +81,11 @@ python examples/financial-agent-eval-seed/run_finance_eval.py
 当前最热的评测变化，是从静态答案评分转向轨迹感知的 Agent 评测：多次运行、过程安全、verifier 证据、artifact 和可审计 trace。
 
 - 阅读 [Financial Agent Evaluation Positioning Thesis](docs/financial-agent-eval-positioning.md)。
+- 先看 [Financial Agent Evaluation Portfolio](docs/financial-agent-evaluation-portfolio.zh-CN.md)。
 - 查看 [FinAgentBench Seed Spec](docs/finagentbench-seed-spec.md)。
+- 浏览 [Financial Agent Evaluation Task Zoo](docs/financial-agent-evaluation-task-zoo.md)。
+- 使用 [Financial Agent Evaluation Scorecard](docs/financial-agent-evaluation-scorecard.md)。
+- 查看 [Financial Agent Evaluation Opportunity Map](docs/financial-agent-evaluation-opportunity-map.md)。
 - 浏览 [Project Pages Index](docs/README.md)。
 - 使用 [Financial Agent Evaluation Task Matrix](docs/financial-agent-evaluation-task-matrix.md) 选择下一个可运行任务家族。
 - 阅读 [Harbor Finance Task Pack Blueprint](docs/harbor-finance-task-pack-blueprint.md) 了解面向框架的任务打包方式。
@@ -273,6 +282,10 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 
 - [Claw-style Agent 评测笔记](docs/claw-style-agent-evaluation-notes.zh-CN.md) - 关于轨迹感知评分、多次运行、安全证据以及 Harbor 如何承载这类评测模式的笔记。
 - [金融 Agent 评测课题框架](docs/financial-agent-evaluation-agenda.zh-CN.md) - 面向金融搜索、查数、回测、预测、合规与证据链 Agent 评测的大课题框架。
+- [金融 Agent 评测项目组合](docs/financial-agent-evaluation-portfolio.zh-CN.md) - 面向不同读者的多入口项目策略。
+- [Financial Agent Evaluation Task Zoo](docs/financial-agent-evaluation-task-zoo.md) - 已实现和下一步可扩展的金融 Agent 任务家族。
+- [Financial Agent Evaluation Scorecard](docs/financial-agent-evaluation-scorecard.md) - 公开安全金融 Agent 行为评审模板。
+- [Financial Agent Evaluation Opportunity Map](docs/financial-agent-evaluation-opportunity-map.md) - 金融 Agent 评测方向的机会地图。
 - [Financial Agent Evaluation Task Matrix](docs/financial-agent-evaluation-task-matrix.md) - 将金融 Agent 评测想法转成可运行检查项的任务矩阵。
 - [金融 Agent 评测种子集](examples/financial-agent-eval-seed) - 面向金融 Agent benchmark seed 的公开数据任务规格、数据集卡和轨迹安全 rubric。
 - [金融评测数据来源治理](docs/financial-evaluation-data-source-governance.zh-CN.md) - 面向公开来源、合成 fixture、时间字段、引用证据和再分发边界的机器可校验 source manifest 策略。

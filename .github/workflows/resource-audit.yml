@@ -22,3 +22,6 @@ jobs:
 
       - name: Validate finance preference-review examples
         run: python tools/validate_finance_preference_reviews.py
+
+      - name: Validate desired repository metadata
+        run: python tools/validate_repo_metadata.py

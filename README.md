@@ -32,6 +32,10 @@ For AI coding agents and LLM-based repo readers, see [llms.txt](llms.txt) and [A
 This repo now has multiple useful surfaces instead of a single bet:
 
 - [Project Pages Index](docs/README.md) - A guided map of the strongest pages in the repo.
+- [Financial Agent Evaluation Portfolio](docs/financial-agent-evaluation-portfolio.md) / [Chinese](docs/financial-agent-evaluation-portfolio.zh-CN.md) - Multi-entry strategy for runnable tasks, scorecards, governance, Harbor-style packaging, and public positioning.
+- [Financial Agent Evaluation Task Zoo](docs/financial-agent-evaluation-task-zoo.md) - Implemented and next finance-agent task families across search, lookup, RAG, forecasting, tool use, risk, refusal, and governance.
+- [Financial Agent Evaluation Scorecard](docs/financial-agent-evaluation-scorecard.md) - Reusable scorecard for reviewing public-safe financial-agent behavior without creating a leaderboard.
+- [Financial Agent Evaluation Opportunity Map](docs/financial-agent-evaluation-opportunity-map.md) - Where this project can contribute in the agent-evaluation market without overclaiming.
 - [Financial Agent Evaluation Track Map](docs/financial-agent-evaluation-track-map.md) / [Chinese](docs/financial-agent-evaluation-track-map.zh-CN.md) - Multi-track map for search, lookup, backtesting, forecasting, tool use, governance, and preference quality.
 - [Financial Search and Lookup Evaluation Playbook](docs/financial-search-and-lookup-evaluation-playbook.md) - Source selection, exact-field lookup, citation support, and period/unit checks.
 - [Financial Backtesting Evaluation Playbook](docs/financial-backtesting-evaluation-playbook.md) - Toy backtests, drawdown checks, assumptions, and non-advice boundaries.
@@ -41,6 +45,7 @@ This repo now has multiple useful surfaces instead of a single bet:
 - [Financial Agent Eval Seed Benchmark Card](examples/financial-agent-eval-seed/benchmark-card.yml) - Machine-checkable benchmark card for intended use, source policy, leakage risks, reports, and limitations.
 - [Harbor-style Task-pack Manifest](examples/financial-agent-eval-seed/harbor-template/task-pack-manifest.json) - Machine-checkable manifest for the 10 public-safe finance task templates.
 - [Impact Backlog](docs/impact-backlog.md) - Machine-checkable next artifacts for the multi-track strategy.
+- [Repository Metadata Update](docs/repo-metadata-update.md) - Desired GitHub description/topics plus a validator for the repo first screen.
 - [Financial Agent Evaluation Task Matrix](docs/financial-agent-evaluation-task-matrix.md) - Task-family map for search, lookup, filing QA, backtesting, forecasting, tool use, refusal, preference review, and governance.
 - [Harbor Finance Task Pack Blueprint](docs/harbor-finance-task-pack-blueprint.md) - Practical blueprint for shaping finance tasks into Harbor-style task packs.
 - [Harbor Upstream Discussion Brief](docs/harbor-upstream-discussion-brief.md) - Maintainer-friendly brief for asking how a public-safe finance task pack should align with Harbor.
@@ -75,7 +80,11 @@ English first. Complete Chinese version: [README.zh-CN.md](README.zh-CN.md).
 The hottest evaluation shift right now is from static answer grading to trajectory-aware agent evaluation: repeated attempts, process safety, verifier evidence, artifacts, and auditable traces.
 
 - Read the [Financial Agent Evaluation Positioning Thesis](docs/financial-agent-eval-positioning.md).
+- Start from the [Financial Agent Evaluation Portfolio](docs/financial-agent-evaluation-portfolio.md).
 - Start from the [Financial Agent Evaluation Track Map](docs/financial-agent-evaluation-track-map.md).
+- Browse the [Financial Agent Evaluation Task Zoo](docs/financial-agent-evaluation-task-zoo.md).
+- Use the [Financial Agent Evaluation Scorecard](docs/financial-agent-evaluation-scorecard.md).
+- Review the [Financial Agent Evaluation Opportunity Map](docs/financial-agent-evaluation-opportunity-map.md).
 - Review the [FinAgentBench Seed Spec](docs/finagentbench-seed-spec.md).
 - Browse the [Project Pages Index](docs/README.md).
 - Use the [Financial Agent Evaluation Task Matrix](docs/financial-agent-evaluation-task-matrix.md) to choose the next runnable task family.
@@ -275,6 +284,10 @@ The repository also runs a lightweight [resource audit](tools/audit_resources.py
 
 - [Claw-style Agent Evaluation Notes](docs/claw-style-agent-evaluation-notes.md) - Notes on trajectory-aware grading, repeated trials, safety evidence, and how Harbor maps to this evaluation pattern.
 - [Financial Agent Evaluation Agenda](docs/financial-agent-evaluation-agenda.md) - A large-topic agenda for financial search, data lookup, backtesting, forecasting, compliance, and evidence-grounded agent evaluation.
+- [Financial Agent Evaluation Portfolio](docs/financial-agent-evaluation-portfolio.md) - Multi-entry project strategy for different audiences.
+- [Financial Agent Evaluation Task Zoo](docs/financial-agent-evaluation-task-zoo.md) - Implemented and next finance-agent task families.
+- [Financial Agent Evaluation Scorecard](docs/financial-agent-evaluation-scorecard.md) - Conservative review template for public-safe financial-agent behavior.
+- [Financial Agent Evaluation Opportunity Map](docs/financial-agent-evaluation-opportunity-map.md) - Market-aware map of where this project can be useful.
 - [Financial Agent Evaluation Task Matrix](docs/financial-agent-evaluation-task-matrix.md) - Task-family map for turning finance-agent evaluation ideas into runnable checks.
 - [Financial Agent Evaluation Seed](examples/financial-agent-eval-seed) - Public-data-only task specs, dataset card, and trajectory-safety rubric for a finance-focused agent benchmark seed.
 - [Financial Evaluation Data Source Governance](docs/financial-evaluation-data-source-governance.md) - A machine-checkable source-manifest policy for public references, synthetic fixtures, temporal fields, citation evidence, and redistribution boundaries.

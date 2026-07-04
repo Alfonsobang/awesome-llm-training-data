@@ -12,8 +12,15 @@ Project thesis: financial agents fail through source, unit, cutoff, citation, co
 - Main README: README.md
 - Chinese README: README.zh-CN.md
 - Project pages index: docs/README.md
+- Financial Agent Evaluation Portfolio: docs/financial-agent-evaluation-portfolio.md
+- Chinese Financial Agent Evaluation Portfolio: docs/financial-agent-evaluation-portfolio.zh-CN.md
+- Financial Agent Evaluation Task Zoo: docs/financial-agent-evaluation-task-zoo.md
+- Financial Agent Evaluation Scorecard: docs/financial-agent-evaluation-scorecard.md
+- Financial Agent Evaluation Opportunity Map: docs/financial-agent-evaluation-opportunity-map.md
 - Impact backlog: docs/impact-backlog.md
 - Machine-readable impact backlog: impact/impact-backlog.json
+- Repository metadata spec: .github/repo-metadata.json
+- Repository metadata update guide: docs/repo-metadata-update.md
 - Financial Agent Evaluation Track Map: docs/financial-agent-evaluation-track-map.md
 - Chinese Track Map: docs/financial-agent-evaluation-track-map.zh-CN.md
 - Financial Search and Lookup Evaluation Playbook: docs/financial-search-and-lookup-evaluation-playbook.md
@@ -43,6 +50,7 @@ Project thesis: financial agents fail through source, unit, cutoff, citation, co
 - Source governance report: examples/financial-agent-eval-seed/results/source-governance-report.md
 - Repeated-trial report: examples/financial-agent-eval-seed/results/repeated-trial-example-report.md
 - Benchmark card validator: tools/validate_financial_benchmark_card.py
+- Repository metadata validator: tools/validate_repo_metadata.py
 - Task-pack manifest validator: examples/financial-agent-eval-seed/validate_task_pack_manifest.py
 - Synthetic fixture validator: tools/validate_synthetic_fixtures.py
 - Finance preference-review schema: schemas/finance-preference-review.schema.json

@@ -7,12 +7,17 @@ The project still has one core direction: public-safe financial agent evaluation
 ## Core Direction
 
 - [Financial Agent Evaluation Positioning Thesis](financial-agent-eval-positioning.md) - Why this project should focus on auditable financial-agent tool-use evaluation instead of another generic awesome list.
+- [Financial Agent Evaluation Portfolio](financial-agent-evaluation-portfolio.md) / [中文](financial-agent-evaluation-portfolio.zh-CN.md) - Multi-entry strategy for runnable tasks, scorecards, governance, Harbor-style packaging, and public positioning.
+- [Financial Agent Evaluation Opportunity Map](financial-agent-evaluation-opportunity-map.md) - Where this project can contribute in the agent-evaluation market without overclaiming.
 - [Financial Agent Evaluation Track Map](financial-agent-evaluation-track-map.md) / [中文](financial-agent-evaluation-track-map.zh-CN.md) - Multi-track map for search, lookup, backtesting, forecasting, tool use, governance, and preference quality.
 - [FinAgentBench Seed Spec](finagentbench-seed-spec.md) - Proposed shape of the runnable benchmark seed.
 - [Impact Backlog](impact-backlog.md) - Machine-checkable next artifacts for turning pages into tasks, verifiers, schemas, and reports.
+- [Repository Metadata Update](repo-metadata-update.md) - Desired GitHub description/topics plus a validator for the public first screen.
 - [Roadmap Issue Drafts](roadmap-issues/README.md) - Ready-to-open issue drafts for benchmark cards, repeated-trial reports, and task-pack manifests.
 - [Financial Agent Evaluation Agenda](financial-agent-evaluation-agenda.md) - Topic map for search, lookup, filing QA, backtesting, forecasting, compliance, and evidence-grounded agent evaluation.
 - [Financial Agent Evaluation Task Matrix](financial-agent-evaluation-task-matrix.md) - Task-family map for turning finance-agent ideas into runnable checks.
+- [Financial Agent Evaluation Task Zoo](financial-agent-evaluation-task-zoo.md) - Implemented and next task families across search, lookup, RAG, forecasting, tool use, risk, refusal, and governance.
+- [Financial Agent Evaluation Scorecard](financial-agent-evaluation-scorecard.md) - Reusable scorecard for reviewing public-safe financial-agent behavior.
 - [Financial Agent Evaluation Roadmap](financial-agent-evaluation-roadmap.md) - Longer project direction for the finance track.
 
 ## Multi-Track Pages
@@ -39,6 +44,7 @@ The project still has one core direction: public-safe financial agent evaluation
 - [Repeated-trial Report](../examples/financial-agent-eval-seed/results/repeated-trial-example-report.md) - Example aggregate for pass@k, Pass^k, missing-evidence rate, and stability signals.
 - [Synthetic Fixture Validator](../tools/validate_synthetic_fixtures.py) - Machine check for synthetic fixture labels, limitations, and non-advice boundaries.
 - [Benchmark Card Validator](../tools/validate_financial_benchmark_card.py) - Machine check for the Financial Agent Eval Seed benchmark card.
+- [Repository Metadata Validator](../tools/validate_repo_metadata.py) - Machine check for the desired public repository description and topics.
 - [Task-pack Manifest Validator](../examples/financial-agent-eval-seed/validate_task_pack_manifest.py) - Machine check for the Harbor-style finance task-pack manifest.
 - [Finance Preference Review Schema](../schemas/finance-preference-review.schema.json) - Multi-axis schema for finance-specific preference and feedback review.
 - [Financial Agent Evaluation Task Cards](financial-agent-evaluation-task-cards.md) - Task-card fields and review checklist.

@@ -28,7 +28,11 @@ Roadmap issue drafts: [`docs/roadmap-issues/README.md`](roadmap-issues/README.md
 | P1 | Completed | Harbor/OpenCLAW | Repeated-trial reporting | Makes instability, missing evidence, and unsafe behavior visible beyond a single lucky pass. |
 | P1 | Completed | Harbor/OpenCLAW | Harbor-style task-pack export manifest | Makes the 10 finance tasks easier for framework maintainers to inspect and adapt. |
 | P2 | Completed | Distribution | Harbor upstream discussion brief | Prepares a concise, maintainer-friendly path for external discussion without claiming official support. |
-| P0 | Planned | Distribution | Repo metadata repositioning | Fixes the public GitHub first-screen mismatch between the old Awesome-list description and the current finance-agent eval project. |
+| P1 | Completed | Distribution | Financial-agent evaluation portfolio page | Gives different audiences independent entry points instead of forcing one bet. |
+| P1 | Completed | Financial agent eval | Financial-agent evaluation task zoo | Turns the broad thesis into implemented and next task families. |
+| P1 | Completed | Financial agent eval | Financial-agent evaluation scorecard | Gives applied teams a conservative review template without creating a leaderboard. |
+| P1 | Completed | Distribution | Financial-agent evaluation opportunity map | Explains where the project can contribute in the agent-evaluation market without overclaiming. |
+| P0 | In progress | Distribution | Repo metadata repositioning | Fixes the public GitHub first-screen mismatch between the old Awesome-list description and the current finance-agent eval project. |
 
 ## Why This Backlog Exists
 
@@ -54,8 +58,8 @@ Next:
 
 > Reposition public repository metadata around financial-agent evaluation
 
-The public-source search task, finance RAG citation verifier, source-governance report, synthetic fixture validator, finance preference-review schema, public launch note, task matrix, Harbor task-pack blueprint, forecasting cutoff task, financial tool-use trace task, risk calculation task, portfolio-boundary refusal task, benchmark-card validator, repeated-trial reporting, task-pack manifest, and Harbor upstream discussion brief are now implemented.
+The public-source search task, finance RAG citation verifier, source-governance report, synthetic fixture validator, finance preference-review schema, public launch note, task matrix, Harbor task-pack blueprint, forecasting cutoff task, financial tool-use trace task, risk calculation task, portfolio-boundary refusal task, benchmark-card validator, repeated-trial reporting, task-pack manifest, Harbor upstream discussion brief, portfolio page, task zoo, scorecard, and opportunity map are now implemented.
 
-The next highest-leverage item is repository metadata repositioning. The public GitHub description still presents the repo as a generic curated list, while the actual project has become a public-safe financial-agent evaluation seed.
+The next highest-leverage item is finishing repository metadata repositioning. The desired metadata is documented in [Repository Metadata Update](repo-metadata-update.md) and checked by `python tools/validate_repo_metadata.py`, but the live GitHub description still presents the repo as a generic curated list.
 
 Issue-write permission was not available during the latest maintenance pass, so the next issues are kept as ready-to-open drafts in [Roadmap Issue Drafts](roadmap-issues/README.md).
