@@ -44,6 +44,7 @@ The project still has one core direction: public-safe financial agent evaluation
 - [Financial Agent Evaluation Task Cards](financial-agent-evaluation-task-cards.md) - Task-card fields and review checklist.
 - [Harbor, OpenClaw, and ATIF Financial Evaluation](harbor-openclaw-atif-financial-evaluation.md) - Synthetic trajectory audit notes.
 - [Harbor Finance Task Pack Blueprint](harbor-finance-task-pack-blueprint.md) - A practical blueprint for shaping finance tasks into Harbor-style task packs.
+- [Harbor Upstream Discussion Brief](harbor-upstream-discussion-brief.md) - Maintainer-friendly brief for asking how a public-safe finance task pack should align with Harbor.
 - [Claw-style Agent Evaluation Notes](claw-style-agent-evaluation-notes.md) - Repeated attempts, process safety, and trace-based evaluation.
 
 ## What Not To Add

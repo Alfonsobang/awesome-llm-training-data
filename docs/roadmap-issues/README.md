@@ -4,6 +4,29 @@ These drafts are ready to open as GitHub issues when issue-write permission is a
 
 The repository currently has runnable financial-agent evaluation tasks, source-governance reports, and known-good / known-bad reports. The next useful issues should turn that seed into a more inspectable and reusable benchmark artifact.
 
+## Issue 4: Prepare A Harbor Upstream Discussion Brief
+
+Status: implemented in-repo. Keep this draft as provenance for the maintainer-facing discussion brief.
+
+### Why
+
+The finance task pack now has runnable tasks, a task-pack manifest, a benchmark card, and repeated-trial reports. Before opening an upstream Harbor discussion, the ask should be narrow, respectful, and useful to maintainers.
+
+### Scope
+
+Add a short brief that can be used to ask Harbor maintainers whether this finance-domain example belongs as external reference material, docs, or a minimal example task pack.
+
+### Proposed Artifact
+
+- `docs/harbor-upstream-discussion-brief.md`
+
+### Acceptance Criteria
+
+- States that this is not an official Harbor adapter.
+- Links task-pack manifest, benchmark card, repeated-trial report, source-governance report, and verifier commands.
+- Asks a specific maintainer-friendly format question.
+- Avoids promotional language, adoption claims, private data, investment advice, and production-readiness claims.
+
 ## Issue 1: Add Benchmark-card Validator And Generated Seed Benchmark Card
 
 Status: implemented in-repo. Keep this draft as provenance for why the benchmark card exists and as a checklist for future benchmark-card changes.

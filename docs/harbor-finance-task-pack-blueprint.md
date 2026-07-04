@@ -128,4 +128,5 @@ The current finance seed also includes a machine-checkable [Harbor-style task-pa
 - [Financial Agent Eval Seed](../examples/financial-agent-eval-seed)
 - [Harbor-style Financial Task Templates](../examples/financial-agent-eval-seed/harbor-template)
 - [Harbor-style Task-pack Manifest](../examples/financial-agent-eval-seed/harbor-template/task-pack-manifest.json)
+- [Harbor Upstream Discussion Brief](harbor-upstream-discussion-brief.md)
 - [Harbor OpenClaw Financial Trajectory Audit](../examples/harbor-openclaw-finance-trajectory-audit)

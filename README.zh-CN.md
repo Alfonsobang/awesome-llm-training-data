@@ -46,6 +46,7 @@ python examples/financial-agent-eval-seed/run_finance_eval.py
 - [Impact Backlog](docs/impact-backlog.md) - 多线策略的机器可检查下一步 artifact。
 - [Financial Agent Evaluation Task Matrix](docs/financial-agent-evaluation-task-matrix.md) - 覆盖搜索、查数、公告 QA、回测、预测、工具调用、拒答、偏好评审和治理的任务矩阵。
 - [Harbor Finance Task Pack Blueprint](docs/harbor-finance-task-pack-blueprint.md) - 将金融任务整理成 Harbor 风格 task pack 的实践蓝图。
+- [Harbor Upstream Discussion Brief](docs/harbor-upstream-discussion-brief.md) - 面向 Harbor maintainer 的上游讨论草稿，强调公开安全、格式反馈和不声称官方支持。
 - [Public Launch Note](docs/public-launch-note.md) / [中文](docs/public-launch-note.zh-CN.md) - 金融 Agent 评测方向的可分享说明。
 - [Financial Agent Failure Gallery](docs/financial-agent-failure-gallery.md) - 来源、单位、引用、cutoff、合规边界和轨迹失败模式。
 - [Financial RAG Evaluation Playbook](docs/financial-rag-evaluation-playbook.md) - 金融 RAG 的检索、引用、抽取、计算和拒答评测。

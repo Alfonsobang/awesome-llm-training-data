@@ -43,6 +43,7 @@ This repo now has multiple useful surfaces instead of a single bet:
 - [Impact Backlog](docs/impact-backlog.md) - Machine-checkable next artifacts for the multi-track strategy.
 - [Financial Agent Evaluation Task Matrix](docs/financial-agent-evaluation-task-matrix.md) - Task-family map for search, lookup, filing QA, backtesting, forecasting, tool use, refusal, preference review, and governance.
 - [Harbor Finance Task Pack Blueprint](docs/harbor-finance-task-pack-blueprint.md) - Practical blueprint for shaping finance tasks into Harbor-style task packs.
+- [Harbor Upstream Discussion Brief](docs/harbor-upstream-discussion-brief.md) - Maintainer-friendly brief for asking how a public-safe finance task pack should align with Harbor.
 - [Public Launch Note](docs/public-launch-note.md) / [中文](docs/public-launch-note.zh-CN.md) - Shareable narrative for the finance-agent evaluation direction.
 - [Financial Agent Failure Gallery](docs/financial-agent-failure-gallery.md) - Source, unit, citation, cutoff, advice-boundary, and trace failures to turn into tests.
 - [Financial RAG Evaluation Playbook](docs/financial-rag-evaluation-playbook.md) - Retrieval, citation, extraction, calculation, and refusal checks for finance RAG.
@@ -79,6 +80,7 @@ The hottest evaluation shift right now is from static answer grading to trajecto
 - Browse the [Project Pages Index](docs/README.md).
 - Use the [Financial Agent Evaluation Task Matrix](docs/financial-agent-evaluation-task-matrix.md) to choose the next runnable task family.
 - Read the [Harbor Finance Task Pack Blueprint](docs/harbor-finance-task-pack-blueprint.md) for framework-oriented packaging.
+- Review the [Harbor Upstream Discussion Brief](docs/harbor-upstream-discussion-brief.md) before opening any external discussion.
 - Share the [Public Launch Note](docs/public-launch-note.md) or [Chinese launch note](docs/public-launch-note.zh-CN.md).
 - Review the [Impact Backlog](docs/impact-backlog.md).
 - Run the [Financial Agent Eval Seed](examples/financial-agent-eval-seed): `python examples/financial-agent-eval-seed/run_finance_eval.py`.
