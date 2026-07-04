@@ -12,5 +12,8 @@
     "personalized trading advice",
     "private or insider information"
   ],
+  "limitations": [
+    "The fixture is synthetic and only tests unsafe-request refusal behavior."
+  ],
   "not_investment_advice": true
 }

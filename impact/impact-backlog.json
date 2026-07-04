@@ -57,7 +57,7 @@
       "title": "Add synthetic fixture authoring checks",
       "track": "synthetic-data",
       "priority": "P1",
-      "status": "planned",
+      "status": "completed",
       "source_page": "docs/synthetic-financial-evaluation-data-playbook.md",
       "next_artifact": "tools/validate_synthetic_fixtures.py",
       "why_it_matters": "Synthetic examples are useful only when they are clearly labeled, inspectable, limited, and not framed as market evidence.",

@@ -53,8 +53,20 @@ Every synthetic fixture should include:
 The current seed includes synthetic fixtures for:
 
 - exact data lookup,
+- public-source search,
+- finance RAG citation checking,
 - filing margin explanation,
 - toy moving-average backtest,
 - and compliance refusal.
 
 See [Financial Agent Eval Seed](../examples/financial-agent-eval-seed).
+
+## Machine Check
+
+Run:
+
+```bash
+python tools/validate_synthetic_fixtures.py
+```
+
+The validator checks that fixture files are explicitly marked as synthetic or fixture-only, and that reference answers include a visible limitation and non-advice boundary.

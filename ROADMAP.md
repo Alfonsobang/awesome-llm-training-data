@@ -38,7 +38,7 @@ The project should now prioritize executable tasks, deterministic verifiers, kno
 - [ ] Turn the Financial Agent Failure Gallery into at least three new known-bad artifacts.
 - [ ] Turn the Financial RAG Evaluation Playbook into one runnable RAG-style task.
 - [x] Turn the Data Governance Control Plane into a generated governance summary report.
-- [ ] Turn the Synthetic Financial Evaluation Data Playbook into fixture authoring rules and validator checks.
+- [x] Turn the Synthetic Financial Evaluation Data Playbook into fixture authoring rules and validator checks.
 - [ ] Turn the Annotation and Preference Quality page into a review rubric JSON schema.
 - [ ] Turn Agent Benchmark Lessons into a concise public launch note.
 

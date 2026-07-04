@@ -17,3 +17,5 @@ jobs:
       - name: Audit resource entries
         run: python tools/audit_resources.py --root .
 
+      - name: Validate synthetic financial fixtures
+        run: python tools/validate_synthetic_fixtures.py

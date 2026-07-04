@@ -13,7 +13,7 @@ Machine-readable source: [`impact/impact-backlog.json`](../impact/impact-backlog
 | P0 | Completed | Financial agent eval | Public-source search task | Search is the first tool-use failure surface in many financial agents. |
 | P0 | Completed | Financial RAG eval | Citation verifier | Unsupported citations are common, concrete, and easy to evaluate. |
 | P1 | Completed | Data governance | Source-governance report | Makes source policy visible to data leads and reviewers. |
-| P1 | Planned | Synthetic data | Synthetic fixture validator | Keeps public examples useful without fake realism. |
+| P1 | Completed | Synthetic data | Synthetic fixture validator | Keeps public examples useful without fake realism. |
 | P1 | Planned | Annotation/preference | Finance preference-review rubric schema | Prevents preference data from rewarding unsupported confidence. |
 | P2 | Planned | Distribution | Public launch note | Gives the project a crisp narrative for outreach. |
 
@@ -39,6 +39,6 @@ Each item in the backlog must have:
 
 Next:
 
-> Add synthetic fixture authoring checks
+> Publish a finance preference-review rubric schema
 
-The public-source search task, finance RAG citation verifier, and source-governance report are now implemented. The next highest-leverage item is synthetic fixture validation: it keeps public examples useful without creating fake realism.
+The public-source search task, finance RAG citation verifier, source-governance report, and synthetic fixture validator are now implemented. The next highest-leverage item is a finance preference-review rubric schema: it makes annotation and preference-data quality concrete.
