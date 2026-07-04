@@ -73,7 +73,7 @@
       "title": "Publish a finance preference-review rubric schema",
       "track": "annotation-preference-quality",
       "priority": "P1",
-      "status": "planned",
+      "status": "completed",
       "source_page": "docs/annotation-preference-quality-finance.md",
       "next_artifact": "schemas/finance-preference-review.schema.json",
       "why_it_matters": "Preference data in finance can reward confident but unsupported answers; a multi-axis rubric is more useful than a single winner label.",

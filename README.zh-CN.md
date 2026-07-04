@@ -40,6 +40,7 @@ python examples/financial-agent-eval-seed/run_finance_eval.py
 - [Synthetic Financial Evaluation Data Playbook](docs/synthetic-financial-evaluation-data-playbook.md) - 如何安全使用合成金融 fixture，避免虚假真实感。
 - [Synthetic Fixture Validator](tools/validate_synthetic_fixtures.py) - 检查 synthetic 标识、limitations 和非投资建议边界。
 - [Annotation and Preference Quality for Finance](docs/annotation-preference-quality-finance.md) - 金融偏好数据、人工反馈和 adjudication 的质量维度。
+- [Finance Preference Review Schema](schemas/finance-preference-review.schema.json) - 面向金融偏好/反馈数据的多维 review schema。
 - [Agent Benchmark Lessons](docs/agent-benchmark-lessons.md) - 从 SWE-bench、WebArena、OSWorld、FinanceBench 学到的项目形态。
 
 你可以用它来：

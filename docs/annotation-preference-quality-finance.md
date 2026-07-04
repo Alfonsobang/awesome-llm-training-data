@@ -25,16 +25,29 @@ Finance-specific annotation and preference data should be evaluated differently 
 
 ## Better Label Schema
 
-Use multi-axis labels instead of a single "better answer" choice:
+Use multi-axis labels instead of a single "better answer" choice. This repository now includes:
+
+- [finance-preference-review.schema.json](../schemas/finance-preference-review.schema.json)
+- [passing-review.json](../examples/finance-preference-reviews/passing-review.json)
+- [failing-review.json](../examples/finance-preference-reviews/failing-review.json)
+- [validate_finance_preference_reviews.py](../tools/validate_finance_preference_reviews.py)
 
 ```json
 {
-  "evidence_grounding": "pass",
-  "numeric_correctness": "fail",
-  "safety_boundary": "pass",
-  "citation_support": "partial",
+  "axis_labels": {
+    "evidence_grounding": "pass",
+    "numeric_correctness": "fail",
+    "safety_boundary": "pass",
+    "citation_support": "partial"
+  },
   "reviewer_notes": "Value is correct but period is ambiguous."
 }
+```
+
+Validate examples:
+
+```bash
+python tools/validate_finance_preference_reviews.py
 ```
 
 ## Adjudication Rules

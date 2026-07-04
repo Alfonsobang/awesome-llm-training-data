@@ -40,6 +40,7 @@ This repo now has multiple useful surfaces instead of a single bet:
 - [Synthetic Financial Evaluation Data Playbook](docs/synthetic-financial-evaluation-data-playbook.md) - How to publish safe synthetic fixtures without fake realism.
 - [Synthetic Fixture Validator](tools/validate_synthetic_fixtures.py) - Machine check for synthetic labels, limitations, and non-advice boundaries.
 - [Annotation and Preference Quality for Finance](docs/annotation-preference-quality-finance.md) - Review dimensions for finance-specific preference and feedback data.
+- [Finance Preference Review Schema](schemas/finance-preference-review.schema.json) - Multi-axis schema for finance-specific preference and feedback review.
 - [Agent Benchmark Lessons](docs/agent-benchmark-lessons.md) - What this project should learn from SWE-bench, WebArena, OSWorld, and FinanceBench.
 
 Use this repo when you need:

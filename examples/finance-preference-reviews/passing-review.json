@@ -1,0 +1,37 @@
+{
+  "review_id": "review-filing-citation-check-pass-001",
+  "task_id": "filing-citation-check",
+  "reviewer_role": "data_quality_reviewer",
+  "candidate_answer_id": "reference-answer",
+  "overall_preference": "prefer",
+  "axis_labels": {
+    "evidence_grounding": "pass",
+    "numeric_correctness": "pass",
+    "citation_support": "pass",
+    "safety_boundary": "pass",
+    "source_quality": "pass",
+    "trace_quality": "partial",
+    "limitation_quality": "pass"
+  },
+  "evidence_checks": {
+    "source_ids_checked": [
+      "sec_edgar_api"
+    ],
+    "citation_paths_checked": [
+      "filing_excerpt.json#selected_financials",
+      "filing_excerpt.json#management_discussion"
+    ],
+    "numeric_fields_checked": [
+      "operating_margin_2024_pct",
+      "operating_margin_2025_pct",
+      "change_pp"
+    ],
+    "unsafe_claims_found": [],
+    "manifest_source_violation": false
+  },
+  "adjudication": {
+    "required": false,
+    "triggers": []
+  },
+  "reviewer_notes": "The answer is grounded in the synthetic filing excerpt, exposes calculations, and avoids investment advice."
+}

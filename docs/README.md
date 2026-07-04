@@ -26,6 +26,7 @@ The project still has one core direction: public-safe financial agent evaluation
 - [Financial Evaluation Data Source Governance](financial-evaluation-data-source-governance.md) - Source-manifest rules and public-source review.
 - [Source Governance Report](../examples/financial-agent-eval-seed/results/source-governance-report.md) - Generated source-policy and task-source mapping report.
 - [Synthetic Fixture Validator](../tools/validate_synthetic_fixtures.py) - Machine check for synthetic fixture labels, limitations, and non-advice boundaries.
+- [Finance Preference Review Schema](../schemas/finance-preference-review.schema.json) - Multi-axis schema for finance-specific preference and feedback review.
 - [Financial Agent Evaluation Task Cards](financial-agent-evaluation-task-cards.md) - Task-card fields and review checklist.
 - [Harbor, OpenClaw, and ATIF Financial Evaluation](harbor-openclaw-atif-financial-evaluation.md) - Synthetic trajectory audit notes.
 - [Claw-style Agent Evaluation Notes](claw-style-agent-evaluation-notes.md) - Repeated attempts, process safety, and trace-based evaluation.

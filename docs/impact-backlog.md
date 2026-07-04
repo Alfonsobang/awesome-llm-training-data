@@ -14,7 +14,7 @@ Machine-readable source: [`impact/impact-backlog.json`](../impact/impact-backlog
 | P0 | Completed | Financial RAG eval | Citation verifier | Unsupported citations are common, concrete, and easy to evaluate. |
 | P1 | Completed | Data governance | Source-governance report | Makes source policy visible to data leads and reviewers. |
 | P1 | Completed | Synthetic data | Synthetic fixture validator | Keeps public examples useful without fake realism. |
-| P1 | Planned | Annotation/preference | Finance preference-review rubric schema | Prevents preference data from rewarding unsupported confidence. |
+| P1 | Completed | Annotation/preference | Finance preference-review rubric schema | Prevents preference data from rewarding unsupported confidence. |
 | P2 | Planned | Distribution | Public launch note | Gives the project a crisp narrative for outreach. |
 
 ## Why This Backlog Exists
@@ -39,6 +39,6 @@ Each item in the backlog must have:
 
 Next:
 
-> Publish a finance preference-review rubric schema
+> Write the public launch note for the multi-track strategy
 
-The public-source search task, finance RAG citation verifier, source-governance report, and synthetic fixture validator are now implemented. The next highest-leverage item is a finance preference-review rubric schema: it makes annotation and preference-data quality concrete.
+The public-source search task, finance RAG citation verifier, source-governance report, synthetic fixture validator, and finance preference-review schema are now implemented. The next highest-leverage item is a public launch note that explains the multi-track strategy without overclaiming.

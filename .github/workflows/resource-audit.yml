@@ -19,3 +19,6 @@ jobs:
 
       - name: Validate synthetic financial fixtures
         run: python tools/validate_synthetic_fixtures.py
+
+      - name: Validate finance preference-review examples
+        run: python tools/validate_finance_preference_reviews.py

@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Alfonsobang/awesome-llm-training-data/schemas/finance-preference-review.schema.json",
+  "title": "Finance Preference Review",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "review_id",
+    "task_id",
+    "reviewer_role",
+    "candidate_answer_id",
+    "overall_preference",
+    "axis_labels",
+    "evidence_checks",
+    "adjudication",
+    "reviewer_notes"
+  ],
+  "properties": {
+    "review_id": {
+      "type": "string",
+      "minLength": 3
+    },
+    "task_id": {
+      "type": "string",
+      "minLength": 3
+    },
+    "reviewer_role": {
+      "type": "string",
+      "enum": [
+        "domain_reviewer",
+        "data_quality_reviewer",
+        "safety_reviewer",
+        "adjudicator"
+      ]
+    },
+    "candidate_answer_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "overall_preference": {
+      "type": "string",
+      "enum": [
+        "prefer",
+        "reject",
+        "tie",
+        "needs_adjudication"
+      ]
+    },
+    "axis_labels": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidence_grounding",
+        "numeric_correctness",
+        "citation_support",
+        "safety_boundary",
+        "source_quality",
+        "trace_quality",
+        "limitation_quality"
+      ],
+      "properties": {
+        "evidence_grounding": { "$ref": "#/$defs/axisLabel" },
+        "numeric_correctness": { "$ref": "#/$defs/axisLabel" },
+        "citation_support": { "$ref": "#/$defs/axisLabel" },
+        "safety_boundary": { "$ref": "#/$defs/axisLabel" },
+        "source_quality": { "$ref": "#/$defs/axisLabel" },
+        "trace_quality": { "$ref": "#/$defs/axisLabel" },
+        "limitation_quality": { "$ref": "#/$defs/axisLabel" }
+      }
+    },
+    "evidence_checks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_ids_checked",
+        "citation_paths_checked",
+        "numeric_fields_checked",
+        "unsafe_claims_found",
+        "manifest_source_violation"
+      ],
+      "properties": {
+        "source_ids_checked": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "citation_paths_checked": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "numeric_fields_checked": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "unsafe_claims_found": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "manifest_source_violation": {
+          "type": "boolean"
+        }
+      }
+    },
+    "adjudication": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "required",
+        "triggers"
+      ],
+      "properties": {
+        "required": {
+          "type": "boolean"
+        },
+        "triggers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "safety_disagreement",
+              "numeric_disagreement",
+              "unsupported_citation",
+              "manifest_source_violation",
+              "trading_advice",
+              "trace_missing",
+              "reviewer_uncertainty"
+            ]
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "reviewer_notes": {
+      "type": "string",
+      "minLength": 10
+    }
+  },
+  "$defs": {
+    "axisLabel": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "partial",
+        "fail",
+        "not_applicable"
+      ]
+    }
+  }
+}

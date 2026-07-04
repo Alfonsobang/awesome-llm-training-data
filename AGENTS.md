@@ -26,6 +26,7 @@ python examples/financial-agent-eval-seed/validate_harbor_templates.py
 python -m unittest discover -s examples/harbor-openclaw-finance-trajectory-audit -p "test_*.py"
 python tools/audit_resources.py --root .
 python tools/validate_synthetic_fixtures.py
+python tools/validate_finance_preference_reviews.py
 ```
 
 ## Content Rules
