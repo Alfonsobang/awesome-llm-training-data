@@ -1,0 +1,26 @@
+name: Impact Backlog
+
+on:
+  pull_request:
+    paths:
+      - "impact/**"
+      - "docs/impact-backlog.md"
+      - "tools/validate_impact_backlog.py"
+      - ".github/workflows/impact-backlog.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "impact/**"
+      - "docs/impact-backlog.md"
+      - "tools/validate_impact_backlog.py"
+      - ".github/workflows/impact-backlog.yml"
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Validate impact backlog
+        run: python tools/validate_impact_backlog.py

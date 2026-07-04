@@ -12,6 +12,8 @@ Project thesis: financial agents fail through source, unit, cutoff, citation, co
 - Main README: README.md
 - Chinese README: README.zh-CN.md
 - Project pages index: docs/README.md
+- Impact backlog: docs/impact-backlog.md
+- Machine-readable impact backlog: impact/impact-backlog.json
 - Financial Agent Eval Seed: examples/financial-agent-eval-seed/README.md
 - Positioning thesis: docs/financial-agent-eval-positioning.md
 - FinAgentBench Seed spec: docs/finagentbench-seed-spec.md

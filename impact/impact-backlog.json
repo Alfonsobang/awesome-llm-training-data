@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "updated_on": "2026-07-04",
+  "positioning": "A portfolio of public-safe financial AI evaluation assets, anchored by runnable financial agent evaluation.",
+  "tracks": [
+    {
+      "id": "finagentbench-search-task",
+      "title": "Add the first public-source financial search task",
+      "track": "financial-agent-eval",
+      "priority": "P0",
+      "source_page": "docs/financial-agent-failure-gallery.md",
+      "next_artifact": "examples/financial-agent-eval-seed/harbor-template/public-source-search/",
+      "why_it_matters": "Search is the first tool-use step in many financial agents; wrong-source failures are easy to understand and easy to share.",
+      "acceptance_criteria": [
+        "Add a task spec for public-source search.",
+        "Add a synthetic or public-safe fixture with at least three candidate sources.",
+        "Add a deterministic verifier that checks selected source, source type, period, and citation evidence.",
+        "Add one passing answer and one known-bad answer.",
+        "Include the task in the local runner and CI."
+      ]
+    },
+    {
+      "id": "finance-rag-citation-verifier",
+      "title": "Build a finance RAG citation verifier",
+      "track": "financial-rag-eval",
+      "priority": "P0",
+      "source_page": "docs/financial-rag-evaluation-playbook.md",
+      "next_artifact": "examples/financial-agent-eval-seed/harbor-template/filing-citation-check/",
+      "why_it_matters": "Finance RAG systems often cite plausible but unsupported evidence; citation support is a concrete, reusable quality gate.",
+      "acceptance_criteria": [
+        "Define a structured answer schema with citations, section IDs, and support notes.",
+        "Add a verifier that fails unsupported citations.",
+        "Add a known-bad answer with citation theater.",
+        "Add a stable Markdown report showing pass and fail behavior."
+      ]
+    },
+    {
+      "id": "governance-summary-report",
+      "title": "Generate a financial data-governance summary report",
+      "track": "data-governance",
+      "priority": "P1",
+      "source_page": "docs/financial-data-governance-control-plane.md",
+      "next_artifact": "examples/financial-agent-eval-seed/results/source-governance-report.md",
+      "why_it_matters": "Data leads need visible evidence that public sources, synthetic fixtures, and redistribution boundaries are controlled.",
+      "acceptance_criteria": [
+        "Read source-manifest.json.",
+        "Summarize source IDs, packaging policies, review dates, allowed task families, and citation fields.",
+        "Fail validation if any task references an ungoverned source.",
+        "Write a stable Markdown report."
+      ]
+    },
+    {
+      "id": "synthetic-fixture-validator",
+      "title": "Add synthetic fixture authoring checks",
+      "track": "synthetic-data",
+      "priority": "P1",
+      "source_page": "docs/synthetic-financial-evaluation-data-playbook.md",
+      "next_artifact": "tools/validate_synthetic_fixtures.py",
+      "why_it_matters": "Synthetic examples are useful only when they are clearly labeled, inspectable, limited, and not framed as market evidence.",
+      "acceptance_criteria": [
+        "Check fixture files for explicit synthetic labeling or dataset-card coverage.",
+        "Check expected answers for limitations and non-advice boundary.",
+        "Fail if production-readiness or investment recommendation language appears in reference answers.",
+        "Add CI coverage."
+      ]
+    },
+    {
+      "id": "finance-preference-rubric-schema",
+      "title": "Publish a finance preference-review rubric schema",
+      "track": "annotation-preference-quality",
+      "priority": "P1",
+      "source_page": "docs/annotation-preference-quality-finance.md",
+      "next_artifact": "schemas/finance-preference-review.schema.json",
+      "why_it_matters": "Preference data in finance can reward confident but unsupported answers; a multi-axis rubric is more useful than a single winner label.",
+      "acceptance_criteria": [
+        "Define JSON fields for evidence grounding, numeric correctness, safety boundary, citation support, and reviewer notes.",
+        "Add one passing and one failing sample review.",
+        "Add a lightweight schema validator.",
+        "Document adjudication triggers."
+      ]
+    },
+    {
+      "id": "agent-benchmark-launch-note",
+      "title": "Write the public launch note for the multi-track strategy",
+      "track": "distribution",
+      "priority": "P2",
+      "source_page": "docs/agent-benchmark-lessons.md",
+      "next_artifact": "docs/public-launch-note.md",
+      "why_it_matters": "The project needs a crisp shareable narrative before outreach; the note should explain the gap without overclaiming.",
+      "acceptance_criteria": [
+        "Explain why static finance QA is not enough for agent evaluation.",
+        "Link the runnable seed, failure gallery, RAG playbook, and governance control plane.",
+        "Avoid leaderboard and production-readiness claims.",
+        "Include a short call for issue/PR contributions."
+      ]
+    }
+  ]
+}

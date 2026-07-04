@@ -23,6 +23,8 @@ python examples/financial-agent-eval-seed/run_finance_eval.py
 
 如果你想理解这个项目接下来应该做成什么，请先看 [Financial Agent Evaluation Positioning Thesis](docs/financial-agent-eval-positioning.md) 和 [FinAgentBench Seed Spec](docs/finagentbench-seed-spec.md)。
 
+当前执行 backlog：[Impact Backlog](docs/impact-backlog.md)。
+
 面向 AI coding agent 和 LLM 仓库阅读器的入口：[llms.txt](llms.txt) 与 [AGENTS.md](AGENTS.md)。
 
 ## Project Pages
@@ -30,6 +32,7 @@ python examples/financial-agent-eval-seed/run_finance_eval.py
 这个仓库不再只押一个页面，而是围绕金融 Agent 评测主线，拆成多个可以独立传播和复用的专题页：
 
 - [Project Pages Index](docs/README.md) - 仓库核心页面导航。
+- [Impact Backlog](docs/impact-backlog.md) - 多线策略的机器可检查下一步 artifact。
 - [Financial Agent Failure Gallery](docs/financial-agent-failure-gallery.md) - 来源、单位、引用、cutoff、合规边界和轨迹失败模式。
 - [Financial RAG Evaluation Playbook](docs/financial-rag-evaluation-playbook.md) - 金融 RAG 的检索、引用、抽取、计算和拒答评测。
 - [Financial Data Governance Control Plane](docs/financial-data-governance-control-plane.md) - 来源 manifest、打包策略、cutoff 与再分发边界。
@@ -57,6 +60,7 @@ python examples/financial-agent-eval-seed/run_finance_eval.py
 - 阅读 [Financial Agent Evaluation Positioning Thesis](docs/financial-agent-eval-positioning.md)。
 - 查看 [FinAgentBench Seed Spec](docs/finagentbench-seed-spec.md)。
 - 浏览 [Project Pages Index](docs/README.md)。
+- 查看 [Impact Backlog](docs/impact-backlog.md)。
 - 运行 [Financial Agent Eval Seed](examples/financial-agent-eval-seed)：`python examples/financial-agent-eval-seed/run_finance_eval.py`。
 - 使用 [60-second quickstart](QUICKSTART.md)。
 - 查看种子套件的 [example report](examples/financial-agent-eval-seed/results/example-report.md)。

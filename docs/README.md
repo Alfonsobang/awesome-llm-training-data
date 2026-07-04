@@ -8,6 +8,7 @@ The project still has one core direction: public-safe financial agent evaluation
 
 - [Financial Agent Evaluation Positioning Thesis](financial-agent-eval-positioning.md) - Why this project should focus on auditable financial-agent tool-use evaluation instead of another generic awesome list.
 - [FinAgentBench Seed Spec](finagentbench-seed-spec.md) - Proposed shape of the runnable benchmark seed.
+- [Impact Backlog](impact-backlog.md) - Machine-checkable next artifacts for turning pages into tasks, verifiers, schemas, and reports.
 - [Financial Agent Evaluation Agenda](financial-agent-evaluation-agenda.md) - Topic map for search, lookup, filing QA, backtesting, forecasting, compliance, and evidence-grounded agent evaluation.
 - [Financial Agent Evaluation Roadmap](financial-agent-evaluation-roadmap.md) - Longer project direction for the finance track.
 

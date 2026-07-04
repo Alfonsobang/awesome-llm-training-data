@@ -28,6 +28,7 @@ The project should now prioritize executable tasks, deterministic verifiers, kno
 - [x] Add data-source governance manifest.
 - [x] Add AI-agent-friendly `llms.txt` and `AGENTS.md`.
 - [x] Add multi-track project pages for failures, RAG evaluation, governance, synthetic fixtures, annotation quality, and benchmark lessons.
+- [x] Add a machine-checkable impact backlog and CI validator.
 - [ ] Add one public-source search task scaffold.
 - [ ] Add one citation-quality verifier that checks source, section, and extraction note.
 - [ ] Add one repeated-trial report that combines verifier failures and trajectory failures.

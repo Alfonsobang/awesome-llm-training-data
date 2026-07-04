@@ -23,6 +23,8 @@ Start with the [60-second quickstart](QUICKSTART.md), inspect the passing [examp
 
 Read the new [Financial Agent Evaluation Positioning Thesis](docs/financial-agent-eval-positioning.md) and [FinAgentBench Seed Spec](docs/finagentbench-seed-spec.md) if you want to understand where this project is going.
 
+Current execution backlog: [Impact Backlog](docs/impact-backlog.md).
+
 For AI coding agents and LLM-based repo readers, see [llms.txt](llms.txt) and [AGENTS.md](AGENTS.md).
 
 ## Project Pages
@@ -30,6 +32,7 @@ For AI coding agents and LLM-based repo readers, see [llms.txt](llms.txt) and [A
 This repo now has multiple useful surfaces instead of a single bet:
 
 - [Project Pages Index](docs/README.md) - A guided map of the strongest pages in the repo.
+- [Impact Backlog](docs/impact-backlog.md) - Machine-checkable next artifacts for the multi-track strategy.
 - [Financial Agent Failure Gallery](docs/financial-agent-failure-gallery.md) - Source, unit, citation, cutoff, advice-boundary, and trace failures to turn into tests.
 - [Financial RAG Evaluation Playbook](docs/financial-rag-evaluation-playbook.md) - Retrieval, citation, extraction, calculation, and refusal checks for finance RAG.
 - [Financial Data Governance Control Plane](docs/financial-data-governance-control-plane.md) - Source manifest, packaging policy, cutoff, and redistribution controls.
@@ -57,6 +60,7 @@ The hottest evaluation shift right now is from static answer grading to trajecto
 - Read the [Financial Agent Evaluation Positioning Thesis](docs/financial-agent-eval-positioning.md).
 - Review the [FinAgentBench Seed Spec](docs/finagentbench-seed-spec.md).
 - Browse the [Project Pages Index](docs/README.md).
+- Review the [Impact Backlog](docs/impact-backlog.md).
 - Run the [Financial Agent Eval Seed](examples/financial-agent-eval-seed): `python examples/financial-agent-eval-seed/run_finance_eval.py`.
 - Use the [60-second quickstart](QUICKSTART.md).
 - Inspect the seed [example report](examples/financial-agent-eval-seed/results/example-report.md).
