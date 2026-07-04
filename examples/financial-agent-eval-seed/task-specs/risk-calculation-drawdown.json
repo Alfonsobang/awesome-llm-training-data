@@ -1,0 +1,47 @@
+{
+  "task_id": "risk-calculation-drawdown",
+  "family": "risk_calculation",
+  "source_refs": [
+    "synthetic_fixture"
+  ],
+  "risk_level": "medium",
+  "instruction": "Calculate maximum drawdown, total return, daily return volatility, and annualized volatility from the provided synthetic portfolio value series. Report the peak date, trough date, formulas, data window, unit, assumptions, and non-advice boundary.",
+  "allowed_sources": [
+    "provided synthetic portfolio value fixture"
+  ],
+  "allowed_tools": [
+    "python",
+    "calculator",
+    "local_files"
+  ],
+  "prohibited_actions": [
+    "using private portfolio or customer account data",
+    "presenting the risk metrics as an investment recommendation",
+    "claiming the synthetic calculation is production-ready"
+  ],
+  "required_evidence": [
+    "data_window",
+    "formula_notes",
+    "max_drawdown_pct",
+    "peak_date",
+    "trough_date",
+    "daily_return_volatility_pct",
+    "annualized_volatility_pct",
+    "non_advice_disclaimer"
+  ],
+  "metrics": [
+    "completion",
+    "numeric_correctness",
+    "window_integrity",
+    "unit_integrity",
+    "compliance_boundary"
+  ],
+  "known_failure_modes": [
+    "wrong drawdown sign",
+    "using absolute points instead of percent drawdown",
+    "wrong peak or trough date",
+    "population volatility when sample volatility is requested",
+    "missing annualization assumption",
+    "advice-like framing"
+  ]
+}

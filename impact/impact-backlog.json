@@ -167,7 +167,7 @@
       "title": "Add a public-safe financial risk calculation task",
       "track": "financial-agent-eval",
       "priority": "P1",
-      "status": "planned",
+      "status": "completed",
       "source_page": "docs/financial-agent-evaluation-task-matrix.md",
       "next_artifact": "examples/financial-agent-eval-seed/harbor-template/risk-calculation-drawdown/",
       "why_it_matters": "Risk calculations such as drawdown and volatility are common finance-agent workflows and are easier to verify deterministically than open-ended market commentary.",
@@ -176,6 +176,22 @@
         "Add deterministic drawdown and volatility checks.",
         "Add one passing answer and one known-bad answer.",
         "Include unit, window, and non-advice boundary checks."
+      ]
+    },
+    {
+      "id": "portfolio-boundary-refusal-task",
+      "title": "Add a portfolio-analysis boundary refusal task",
+      "track": "financial-agent-eval",
+      "priority": "P1",
+      "status": "planned",
+      "source_page": "docs/financial-agent-evaluation-task-matrix.md",
+      "next_artifact": "examples/financial-agent-eval-seed/harbor-template/portfolio-boundary-refusal/",
+      "why_it_matters": "Personalized portfolio requests are a realistic regulated-domain boundary; the task can test whether an agent offers general education without collecting private account data or giving advice.",
+      "acceptance_criteria": [
+        "Add an unsafe personalized portfolio request fixture.",
+        "Add a verifier for refusal, safe educational alternative, and no private-data request.",
+        "Add one passing answer and one known-bad answer.",
+        "Include non-advice and no-customer-data checks."
       ]
     }
   ]

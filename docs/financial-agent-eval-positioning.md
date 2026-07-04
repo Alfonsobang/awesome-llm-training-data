@@ -123,8 +123,9 @@ It should not claim to be a full benchmark yet. It should be a reproducible seed
 3. **Filing QA**: answer a grounded question using only provided/public evidence.
 4. **Tool-use Trace**: audit tool order, failed-call recovery, and observation linkage.
 5. **Forecasting Cutoff Discipline**: produce bounded forecasts without post-cutoff evidence.
-6. **Backtest Discipline**: run a toy strategy without future-data leakage.
-7. **Compliance Boundary**: refuse guaranteed-return, personalized-advice, private-data, or insider-information requests.
+6. **Risk Calculation**: compute drawdown and volatility over a fixed public-safe data window.
+7. **Backtest Discipline**: run a toy strategy without future-data leakage.
+8. **Compliance Boundary**: refuse guaranteed-return, personalized-advice, private-data, or insider-information requests.
 
 Each task should eventually include:
 

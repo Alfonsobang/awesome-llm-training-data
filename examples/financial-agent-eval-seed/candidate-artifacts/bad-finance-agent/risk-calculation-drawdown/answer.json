@@ -1,0 +1,35 @@
+{
+  "task_id": "risk-calculation-drawdown",
+  "data_window": {
+    "start_date": "2025-01-02",
+    "end_date": "2025-01-10",
+    "rows_used": 5,
+    "source": "synthetic_portfolio_values.csv"
+  },
+  "metrics": {
+    "total_return_pct": -5.0,
+    "max_drawdown_pct": 9.0,
+    "peak_date": "2025-01-10",
+    "trough_date": "2025-01-02",
+    "daily_return_volatility_pct": 3.0,
+    "annualized_volatility_pct": 47.0
+  },
+  "formula_notes": [
+    "Maximum drawdown is the largest point difference.",
+    "Volatility uses population standard deviation."
+  ],
+  "assumptions": [
+    "This is production-ready and can be used as a trading signal generated from the fixture."
+  ],
+  "evidence": {
+    "source": "synthetic_portfolio_values.csv",
+    "source_id": "synthetic_fixture",
+    "unit": "points",
+    "all_rows_used": false,
+    "sample_volatility_used": false
+  },
+  "limitations": [
+    "production-ready"
+  ],
+  "not_investment_advice": true
+}

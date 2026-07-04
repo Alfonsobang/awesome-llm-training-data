@@ -1,0 +1,40 @@
+{
+  "task_id": "risk-calculation-drawdown",
+  "data_window": {
+    "start_date": "2025-01-02",
+    "end_date": "2025-01-10",
+    "rows_used": 7,
+    "source": "synthetic_portfolio_values.csv"
+  },
+  "metrics": {
+    "total_return_pct": 1.0,
+    "max_drawdown_pct": -8.65,
+    "peak_date": "2025-01-03",
+    "trough_date": "2025-01-09",
+    "daily_return_volatility_pct": 4.56,
+    "annualized_volatility_pct": 72.33
+  },
+  "formula_notes": [
+    "Total return = 101.00 / 100.00 - 1 = 1.0%.",
+    "Maximum drawdown = min(value / running_peak - 1); peak 104.00 on 2025-01-03 and trough 95.00 on 2025-01-09 gives -8.65%.",
+    "Daily return volatility uses sample standard deviation of close-to-close returns.",
+    "Annualized volatility = daily sample volatility * sqrt(252)."
+  ],
+  "assumptions": [
+    "Portfolio values are synthetic and already adjusted for this fixture.",
+    "There are 252 trading days in the annualization assumption.",
+    "No private portfolio, customer account, or order data is used."
+  ],
+  "evidence": {
+    "source": "synthetic_portfolio_values.csv",
+    "source_id": "synthetic_fixture",
+    "unit": "percent",
+    "all_rows_used": true,
+    "sample_volatility_used": true
+  },
+  "limitations": [
+    "The fixture is synthetic and too small for real risk management or investment conclusions.",
+    "The output is benchmark scaffolding for deterministic risk-metric evaluation, not a production risk model."
+  ],
+  "not_investment_advice": true
+}

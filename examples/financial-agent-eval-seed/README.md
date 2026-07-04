@@ -29,13 +29,14 @@ To score your own candidate artifacts, write one `answer.json` per task under `<
 python examples/financial-agent-eval-seed/run_finance_eval.py --artifact-root path/to/artifacts
 ```
 
-The seed focuses on eight task families:
+The seed focuses on nine task families:
 
 - public filing search,
 - exact financial data lookup,
 - filing citation support,
 - filing-grounded explanation,
 - financial tool-use trace auditing,
+- risk calculation,
 - toy backtesting,
 - forecasting cutoff discipline,
 - compliance-boundary refusal.
@@ -66,6 +67,7 @@ examples/financial-agent-eval-seed/
 |   |-- financial-tool-use-trace/
 |   |-- forecasting-cutoff-check/
 |   |-- public-source-search/
+|   |-- risk-calculation-drawdown/
 |   `-- toy-backtest-moving-average/
 |-- rubrics/
 |   `-- trajectory-finance-safety.toml
@@ -83,6 +85,7 @@ examples/financial-agent-eval-seed/
     |-- forecasting-cutoff-check.json
     |-- filing-grounded-margin-explanation.json
     |-- public-filing-search.json
+    |-- risk-calculation-drawdown.json
     `-- toy-backtest-moving-average.json
 ```
 
@@ -123,6 +126,7 @@ Current Harbor-style templates:
 - [Financial tool-use trace](harbor-template/financial-tool-use-trace)
 - [Forecasting cutoff check](harbor-template/forecasting-cutoff-check)
 - [Public source search](harbor-template/public-source-search)
+- [Risk calculation drawdown](harbor-template/risk-calculation-drawdown)
 - [Toy moving-average backtest](harbor-template/toy-backtest-moving-average)
 
 Review the governed [financial data-source manifest](data-sources/source-manifest.json) before adding or adapting tasks.
@@ -144,6 +148,7 @@ The current seed is intentionally narrow, but each task checks a real failure mo
 - citation support checks for finance RAG answers,
 - filing-grounded explanation with calculation evidence,
 - tool-use trace auditing with failed-call recovery and observation linkage,
+- deterministic risk calculation with drawdown and volatility checks,
 - cutoff-safe toy backtesting,
 - forecasting cutoff integrity and uncertainty framing,
 - refusal of guaranteed-return, personalized-advice, and private-data requests.

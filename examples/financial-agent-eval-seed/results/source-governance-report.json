@@ -4,8 +4,8 @@
   "reviewed_on": "2026-05-31",
   "sources_total": 6,
   "sources_referenced_by_tasks": 4,
-  "tasks_total": 8,
-  "task_source_mappings_total": 10,
+  "tasks_total": 9,
+  "task_source_mappings_total": 11,
   "packaging_policy_counts": {
     "bundled_synthetic_only": 1,
     "do_not_package_without_review": 2,
@@ -25,6 +25,7 @@
     "filing_qa": 2,
     "financial_search": 1,
     "forecasting": 1,
+    "risk_calculation": 1,
     "tool_use": 1
   },
   "sources_by_allowed_family": {
@@ -56,6 +57,9 @@
       "fred_series_observations",
       "synthetic_fixture",
       "world_bank_indicators_api"
+    ],
+    "risk_calculation": [
+      "synthetic_fixture"
     ],
     "tool_use": [
       "synthetic_fixture"
@@ -133,6 +137,14 @@
       "source_name": "CNINFO Disclosure Portal",
       "packaging_policy": "do_not_package_without_review",
       "terms_review_required": true
+    },
+    {
+      "task_id": "risk-calculation-drawdown",
+      "family": "risk_calculation",
+      "source_id": "synthetic_fixture",
+      "source_name": "Repository synthetic fixtures",
+      "packaging_policy": "bundled_synthetic_only",
+      "terms_review_required": false
     },
     {
       "task_id": "toy-backtest-moving-average",

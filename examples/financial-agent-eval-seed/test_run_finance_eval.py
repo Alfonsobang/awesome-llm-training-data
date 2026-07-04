@@ -18,6 +18,7 @@ class FinanceEvalRunnerTests(unittest.TestCase):
                 "forecasting-cutoff-check",
                 "financial-tool-use-trace",
                 "public-source-search",
+                "risk-calculation-drawdown",
                 "toy-backtest-moving-average",
             },
         )
