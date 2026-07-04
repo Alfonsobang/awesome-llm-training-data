@@ -27,6 +27,7 @@ Project thesis: financial agents fail through source, unit, cutoff, citation, co
 - Chinese public launch note: docs/public-launch-note.zh-CN.md
 - Financial Agent Eval Seed: examples/financial-agent-eval-seed/README.md
 - Financial Agent Eval Seed benchmark card: examples/financial-agent-eval-seed/benchmark-card.yml
+- Harbor-style task-pack manifest: examples/financial-agent-eval-seed/harbor-template/task-pack-manifest.json
 - Positioning thesis: docs/financial-agent-eval-positioning.md
 - FinAgentBench Seed spec: docs/finagentbench-seed-spec.md
 - Financial Agent Failure Gallery: docs/financial-agent-failure-gallery.md
@@ -41,6 +42,7 @@ Project thesis: financial agents fail through source, unit, cutoff, citation, co
 - Source governance report: examples/financial-agent-eval-seed/results/source-governance-report.md
 - Repeated-trial report: examples/financial-agent-eval-seed/results/repeated-trial-example-report.md
 - Benchmark card validator: tools/validate_financial_benchmark_card.py
+- Task-pack manifest validator: examples/financial-agent-eval-seed/validate_task_pack_manifest.py
 - Synthetic fixture validator: tools/validate_synthetic_fixtures.py
 - Finance preference-review schema: schemas/finance-preference-review.schema.json
 - Finance preference-review validator: tools/validate_finance_preference_reviews.py

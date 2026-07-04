@@ -39,6 +39,7 @@ This repo now has multiple useful surfaces instead of a single bet:
 - [Financial Tool-use Evaluation Playbook](docs/financial-tool-use-evaluation-playbook.md) - Tool order, observation linkage, failed-call recovery, and repeated-trial stability.
 - [Financial Benchmark Card Template](docs/financial-benchmark-card-template.md) - A reusable card for provenance, leakage, source policy, metrics, and limitations.
 - [Financial Agent Eval Seed Benchmark Card](examples/financial-agent-eval-seed/benchmark-card.yml) - Machine-checkable benchmark card for intended use, source policy, leakage risks, reports, and limitations.
+- [Harbor-style Task-pack Manifest](examples/financial-agent-eval-seed/harbor-template/task-pack-manifest.json) - Machine-checkable manifest for the 10 public-safe finance task templates.
 - [Impact Backlog](docs/impact-backlog.md) - Machine-checkable next artifacts for the multi-track strategy.
 - [Financial Agent Evaluation Task Matrix](docs/financial-agent-evaluation-task-matrix.md) - Task-family map for search, lookup, filing QA, backtesting, forecasting, tool use, refusal, preference review, and governance.
 - [Harbor Finance Task Pack Blueprint](docs/harbor-finance-task-pack-blueprint.md) - Practical blueprint for shaping finance tasks into Harbor-style task packs.

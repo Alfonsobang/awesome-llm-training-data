@@ -26,7 +26,8 @@ Roadmap issue drafts: [`docs/roadmap-issues/README.md`](roadmap-issues/README.md
 | P1 | Completed | Financial agent eval | Portfolio boundary refusal task | Tests a realistic regulated-domain boundary without collecting private account data. |
 | P1 | Completed | Data governance | Benchmark-card validator and generated card | Makes the seed easier to inspect, cite, and adapt as a benchmark artifact. |
 | P1 | Completed | Harbor/OpenCLAW | Repeated-trial reporting | Makes instability, missing evidence, and unsafe behavior visible beyond a single lucky pass. |
-| P1 | Planned | Harbor/OpenCLAW | Harbor-style task-pack export manifest | Makes the 10 finance tasks easier for framework maintainers to inspect and adapt. |
+| P1 | Completed | Harbor/OpenCLAW | Harbor-style task-pack export manifest | Makes the 10 finance tasks easier for framework maintainers to inspect and adapt. |
+| P2 | Planned | Distribution | Harbor upstream discussion brief | Prepares a concise, maintainer-friendly path for external discussion without claiming official support. |
 
 ## Why This Backlog Exists
 
@@ -50,10 +51,10 @@ Each item in the backlog must have:
 
 Next:
 
-> Add a Harbor-style task-pack export manifest
+> Prepare a Harbor upstream discussion brief
 
-The public-source search task, finance RAG citation verifier, source-governance report, synthetic fixture validator, finance preference-review schema, public launch note, task matrix, Harbor task-pack blueprint, forecasting cutoff task, financial tool-use trace task, risk calculation task, portfolio-boundary refusal task, benchmark-card validator, and repeated-trial reporting are now implemented.
+The public-source search task, finance RAG citation verifier, source-governance report, synthetic fixture validator, finance preference-review schema, public launch note, task matrix, Harbor task-pack blueprint, forecasting cutoff task, financial tool-use trace task, risk calculation task, portfolio-boundary refusal task, benchmark-card validator, repeated-trial reporting, and task-pack manifest are now implemented.
 
-The next highest-leverage item is a Harbor-style task-pack export manifest. It should make the 10 finance tasks easy to inspect as a coherent public-safe task pack without claiming official Harbor support.
+The next highest-leverage item is a Harbor upstream discussion brief. It should make the finance task pack easy to discuss with maintainers without promotional language, adoption claims, or any claim of official support.
 
 Issue-write permission was not available during the latest maintenance pass, so the next issues are kept as ready-to-open drafts in [Roadmap Issue Drafts](roadmap-issues/README.md).

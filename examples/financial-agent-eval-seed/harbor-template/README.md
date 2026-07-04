@@ -4,6 +4,8 @@ This directory contains small Harbor-style task scaffolds for financial agent ev
 
 These templates use synthetic fixtures. They do not contain private company data, real user data, investment advice, trading signals, or proprietary workflows.
 
+The full template set is summarized in [task-pack-manifest.json](task-pack-manifest.json). The manifest is a public-safe example for inspection and adaptation; it is not an official Harbor adapter.
+
 ## Templates
 
 | Template | What it evaluates | Main verifier checks |
@@ -25,6 +27,7 @@ From the repository root:
 
 ```bash
 python examples/financial-agent-eval-seed/validate_harbor_templates.py
+python examples/financial-agent-eval-seed/validate_task_pack_manifest.py
 ```
 
 ## Design Principles

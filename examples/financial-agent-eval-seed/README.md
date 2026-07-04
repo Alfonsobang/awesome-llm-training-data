@@ -17,6 +17,8 @@ The repository also includes a stable [example report](results/example-report.md
 
 The seed now has a machine-checkable [benchmark card](benchmark-card.yml) covering intended use, source policy, leakage risks, verifier coverage, reports, limitations, and the non-advice boundary.
 
+The Harbor-style task templates are summarized in a machine-checkable [task-pack manifest](harbor-template/task-pack-manifest.json). This is a public-safe example manifest, not an official Harbor adapter.
+
 It also includes a known-bad candidate so you can inspect what the verifier catches:
 
 ```bash
@@ -63,6 +65,7 @@ examples/financial-agent-eval-seed/
 |-- run_finance_eval.py
 |-- validate_specs.py
 |-- validate_harbor_templates.py
+|-- validate_task_pack_manifest.py
 |-- validate_sources.py
 |-- data-sources/
 |   `-- source-manifest.json
@@ -70,6 +73,7 @@ examples/financial-agent-eval-seed/
 |   `-- bad-finance-agent/
 |-- harbor-template/
 |   |-- README.md
+|   |-- task-pack-manifest.json
 |   |-- compliance-refusal/
 |   |-- exact-data-lookup/
 |   |-- filing-citation-check/
@@ -123,6 +127,7 @@ Run the local validator:
 ```bash
 python examples/financial-agent-eval-seed/validate_specs.py
 python examples/financial-agent-eval-seed/validate_sources.py
+python examples/financial-agent-eval-seed/validate_task_pack_manifest.py
 python tools/validate_financial_benchmark_card.py
 ```
 

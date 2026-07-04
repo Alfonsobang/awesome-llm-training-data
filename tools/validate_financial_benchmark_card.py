@@ -79,6 +79,7 @@ REQUIRED_VISIBLE_EVIDENCE = {
     "reference_answers",
     "known_bad_answers",
     "source_manifest",
+    "task_pack_manifest",
     "stable_reports",
 }
 
@@ -148,6 +149,7 @@ def validate_card(card: dict) -> list[str]:
     evaluation = card["evaluation"]
     reports = card["reports"]
     limitations = card["limitations"]
+    visible_evidence = card["visible_evidence"]
 
     errors.extend(require_non_empty_list(purpose.get("intended_users"), "purpose.intended_users", 3))
     errors.extend(require_non_empty_list(purpose.get("out_of_scope"), "purpose.out_of_scope", 5))
@@ -190,6 +192,11 @@ def validate_card(card: dict) -> list[str]:
     missing_sources = sorted(set(data.get("source_manifest_refs", [])) - source_ids)
     if missing_sources:
         errors.append(f"data.source_manifest_refs: unknown source ids: {', '.join(missing_sources)}")
+
+    for evidence_key in ("task_specs", "harbor_style_templates", "source_manifest", "task_pack_manifest", "stable_reports"):
+        evidence_path = SEED_DIR / visible_evidence[evidence_key]
+        if not evidence_path.exists():
+            errors.append(f"visible_evidence.{evidence_key}: missing path: {visible_evidence[evidence_key]}")
 
     for label, relative_path in reports.items():
         report_path = SEED_DIR / relative_path

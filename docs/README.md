@@ -23,6 +23,7 @@ The project still has one core direction: public-safe financial agent evaluation
 - [Financial Tool-use Evaluation Playbook](financial-tool-use-evaluation-playbook.md) - Tool order, observation linkage, failed-call recovery, and repeated-trial stability.
 - [Financial Benchmark Card Template](financial-benchmark-card-template.md) - Reusable benchmark-card fields for provenance, leakage, source policy, metrics, and limitations.
 - [Financial Agent Eval Seed Benchmark Card](../examples/financial-agent-eval-seed/benchmark-card.yml) - Machine-checkable card for intended use, source policy, leakage risks, reports, and limitations.
+- [Harbor-style Task-pack Manifest](../examples/financial-agent-eval-seed/harbor-template/task-pack-manifest.json) - Machine-checkable manifest for the 10 finance task templates.
 - [Financial Agent Failure Gallery](financial-agent-failure-gallery.md) - Common failure modes that static QA misses.
 - [Financial RAG Evaluation Playbook](financial-rag-evaluation-playbook.md) - How to evaluate retrieval, citation, extraction, and answer faithfulness in finance workflows.
 - [Financial Data Governance Control Plane](financial-data-governance-control-plane.md) - A public-safe governance model for sources, licenses, cutoffs, and redistribution boundaries.
@@ -38,6 +39,7 @@ The project still has one core direction: public-safe financial agent evaluation
 - [Repeated-trial Report](../examples/financial-agent-eval-seed/results/repeated-trial-example-report.md) - Example aggregate for pass@k, Pass^k, missing-evidence rate, and stability signals.
 - [Synthetic Fixture Validator](../tools/validate_synthetic_fixtures.py) - Machine check for synthetic fixture labels, limitations, and non-advice boundaries.
 - [Benchmark Card Validator](../tools/validate_financial_benchmark_card.py) - Machine check for the Financial Agent Eval Seed benchmark card.
+- [Task-pack Manifest Validator](../examples/financial-agent-eval-seed/validate_task_pack_manifest.py) - Machine check for the Harbor-style finance task-pack manifest.
 - [Finance Preference Review Schema](../schemas/finance-preference-review.schema.json) - Multi-axis schema for finance-specific preference and feedback review.
 - [Financial Agent Evaluation Task Cards](financial-agent-evaluation-task-cards.md) - Task-card fields and review checklist.
 - [Harbor, OpenClaw, and ATIF Financial Evaluation](harbor-openclaw-atif-financial-evaluation.md) - Synthetic trajectory audit notes.

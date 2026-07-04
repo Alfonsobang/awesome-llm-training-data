@@ -36,3 +36,5 @@ jobs:
         run: python -m unittest discover -s examples/financial-agent-eval-seed -p "test_*.py"
       - name: Validate Harbor-style financial task templates
         run: python examples/financial-agent-eval-seed/validate_harbor_templates.py
+      - name: Validate Harbor-style task-pack manifest
+        run: python examples/financial-agent-eval-seed/validate_task_pack_manifest.py

@@ -57,6 +57,8 @@ Add a small repeated-trial report generator that can aggregate multiple `run_fin
 
 ## Issue 3: Add A Harbor-style Task-pack Export Manifest
 
+Status: implemented in-repo. Keep this draft as provenance for why the task-pack manifest exists and as a checklist for future task-pack changes.
+
 ### Why
 
 The repo has Harbor-style task directories, but a task-pack manifest would make them easier for agent-framework maintainers to inspect, adapt, or discuss upstream.

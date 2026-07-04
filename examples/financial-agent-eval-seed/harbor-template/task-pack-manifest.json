@@ -1,0 +1,205 @@
+{
+  "manifest_version": "1.0",
+  "task_pack": "financial-agent-eval-seed-harbor-style",
+  "status": "public-safe-example-not-official-harbor-adapter",
+  "generated_from": {
+    "task_specs": "task-specs/",
+    "templates": "harbor-template/",
+    "source_manifest": "data-sources/source-manifest.json"
+  },
+  "public_safety_boundary": "This manifest describes small Harbor-style task templates for evaluation engineering. It does not contain private company data, real user data, proprietary workflows, investment advice, trading signals, or production-readiness claims.",
+  "tasks": [
+    {
+      "task_id": "compliance-refusal",
+      "task_spec": "task-specs/compliance-refusal-guaranteed-return.json",
+      "template_path": "harbor-template/compliance-refusal",
+      "family": "compliance_boundary",
+      "risk_level": "high",
+      "source_refs": [
+        "synthetic_fixture"
+      ],
+      "fixture_paths": [
+        "harbor-template/compliance-refusal/fixtures/unsafe_request.txt"
+      ],
+      "solution_path": "harbor-template/compliance-refusal/solution/answer.json",
+      "verifier_paths": [
+        "harbor-template/compliance-refusal/tests/test_compliance_refusal.py"
+      ],
+      "task_metadata_path": "harbor-template/compliance-refusal/task.toml",
+      "safety_boundary": "public-safe example; no private company data, real user data, proprietary workflows, investment advice, trading signals, or production-readiness claims"
+    },
+    {
+      "task_id": "exact-data-lookup",
+      "task_spec": "task-specs/exact-data-lookup-public-filing.json",
+      "template_path": "harbor-template/exact-data-lookup",
+      "family": "data_lookup",
+      "risk_level": "low",
+      "source_refs": [
+        "sec_edgar_api"
+      ],
+      "fixture_paths": [
+        "harbor-template/exact-data-lookup/fixtures/financial_statement_excerpt.json"
+      ],
+      "solution_path": "harbor-template/exact-data-lookup/solution/answer.json",
+      "verifier_paths": [
+        "harbor-template/exact-data-lookup/tests/test_exact_data_lookup.py"
+      ],
+      "task_metadata_path": "harbor-template/exact-data-lookup/task.toml",
+      "safety_boundary": "public-safe example; no private company data, real user data, proprietary workflows, investment advice, trading signals, or production-readiness claims"
+    },
+    {
+      "task_id": "filing-citation-check",
+      "task_spec": "task-specs/filing-citation-check.json",
+      "template_path": "harbor-template/filing-citation-check",
+      "family": "filing_qa",
+      "risk_level": "medium",
+      "source_refs": [
+        "sec_edgar_api"
+      ],
+      "fixture_paths": [
+        "harbor-template/filing-citation-check/fixtures/filing_excerpt.json"
+      ],
+      "solution_path": "harbor-template/filing-citation-check/solution/answer.json",
+      "verifier_paths": [
+        "harbor-template/filing-citation-check/tests/test_filing_citation_check.py"
+      ],
+      "task_metadata_path": "harbor-template/filing-citation-check/task.toml",
+      "safety_boundary": "public-safe example; no private company data, real user data, proprietary workflows, investment advice, trading signals, or production-readiness claims"
+    },
+    {
+      "task_id": "filing-margin-explanation",
+      "task_spec": "task-specs/filing-grounded-margin-explanation.json",
+      "template_path": "harbor-template/filing-margin-explanation",
+      "family": "filing_qa",
+      "risk_level": "medium",
+      "source_refs": [
+        "sec_edgar_api"
+      ],
+      "fixture_paths": [
+        "harbor-template/filing-margin-explanation/fixtures/company_report_excerpt.md"
+      ],
+      "solution_path": "harbor-template/filing-margin-explanation/solution/answer.json",
+      "verifier_paths": [
+        "harbor-template/filing-margin-explanation/tests/test_finance_artifacts.py"
+      ],
+      "task_metadata_path": "harbor-template/filing-margin-explanation/task.toml",
+      "safety_boundary": "public-safe example; no private company data, real user data, proprietary workflows, investment advice, trading signals, or production-readiness claims"
+    },
+    {
+      "task_id": "financial-tool-use-trace",
+      "task_spec": "task-specs/financial-tool-use-trace.json",
+      "template_path": "harbor-template/financial-tool-use-trace",
+      "family": "tool_use",
+      "risk_level": "high",
+      "source_refs": [
+        "synthetic_fixture"
+      ],
+      "fixture_paths": [
+        "harbor-template/financial-tool-use-trace/fixtures/synthetic_tool_trace.json"
+      ],
+      "solution_path": "harbor-template/financial-tool-use-trace/solution/answer.json",
+      "verifier_paths": [
+        "harbor-template/financial-tool-use-trace/tests/test_financial_tool_use_trace.py"
+      ],
+      "task_metadata_path": "harbor-template/financial-tool-use-trace/task.toml",
+      "safety_boundary": "public-safe example; no private company data, real user data, proprietary workflows, investment advice, trading signals, or production-readiness claims"
+    },
+    {
+      "task_id": "forecasting-cutoff-check",
+      "task_spec": "task-specs/forecasting-cutoff-check.json",
+      "template_path": "harbor-template/forecasting-cutoff-check",
+      "family": "forecasting",
+      "risk_level": "high",
+      "source_refs": [
+        "synthetic_fixture"
+      ],
+      "fixture_paths": [
+        "harbor-template/forecasting-cutoff-check/fixtures/synthetic_revenue_timeline.json"
+      ],
+      "solution_path": "harbor-template/forecasting-cutoff-check/solution/answer.json",
+      "verifier_paths": [
+        "harbor-template/forecasting-cutoff-check/tests/test_forecasting_cutoff.py"
+      ],
+      "task_metadata_path": "harbor-template/forecasting-cutoff-check/task.toml",
+      "safety_boundary": "public-safe example; no private company data, real user data, proprietary workflows, investment advice, trading signals, or production-readiness claims"
+    },
+    {
+      "task_id": "portfolio-boundary-refusal",
+      "task_spec": "task-specs/portfolio-boundary-refusal.json",
+      "template_path": "harbor-template/portfolio-boundary-refusal",
+      "family": "compliance_boundary",
+      "risk_level": "high",
+      "source_refs": [
+        "synthetic_fixture"
+      ],
+      "fixture_paths": [
+        "harbor-template/portfolio-boundary-refusal/fixtures/synthetic_portfolio_request.json"
+      ],
+      "solution_path": "harbor-template/portfolio-boundary-refusal/solution/answer.json",
+      "verifier_paths": [
+        "harbor-template/portfolio-boundary-refusal/tests/test_portfolio_boundary_refusal.py"
+      ],
+      "task_metadata_path": "harbor-template/portfolio-boundary-refusal/task.toml",
+      "safety_boundary": "public-safe example; no private company data, real user data, proprietary workflows, investment advice, trading signals, or production-readiness claims"
+    },
+    {
+      "task_id": "public-source-search",
+      "task_spec": "task-specs/public-filing-search.json",
+      "template_path": "harbor-template/public-source-search",
+      "family": "financial_search",
+      "risk_level": "low",
+      "source_refs": [
+        "sec_edgar_api",
+        "hkexnews_title_search",
+        "cninfo_disclosure_portal"
+      ],
+      "fixture_paths": [
+        "harbor-template/public-source-search/fixtures/candidate_sources.json"
+      ],
+      "solution_path": "harbor-template/public-source-search/solution/answer.json",
+      "verifier_paths": [
+        "harbor-template/public-source-search/tests/test_public_source_search.py"
+      ],
+      "task_metadata_path": "harbor-template/public-source-search/task.toml",
+      "safety_boundary": "public-safe example; no private company data, real user data, proprietary workflows, investment advice, trading signals, or production-readiness claims"
+    },
+    {
+      "task_id": "risk-calculation-drawdown",
+      "task_spec": "task-specs/risk-calculation-drawdown.json",
+      "template_path": "harbor-template/risk-calculation-drawdown",
+      "family": "risk_calculation",
+      "risk_level": "medium",
+      "source_refs": [
+        "synthetic_fixture"
+      ],
+      "fixture_paths": [
+        "harbor-template/risk-calculation-drawdown/fixtures/synthetic_portfolio_values.csv"
+      ],
+      "solution_path": "harbor-template/risk-calculation-drawdown/solution/answer.json",
+      "verifier_paths": [
+        "harbor-template/risk-calculation-drawdown/tests/test_risk_calculation_drawdown.py"
+      ],
+      "task_metadata_path": "harbor-template/risk-calculation-drawdown/task.toml",
+      "safety_boundary": "public-safe example; no private company data, real user data, proprietary workflows, investment advice, trading signals, or production-readiness claims"
+    },
+    {
+      "task_id": "toy-backtest-moving-average",
+      "task_spec": "task-specs/toy-backtest-moving-average.json",
+      "template_path": "harbor-template/toy-backtest-moving-average",
+      "family": "backtesting",
+      "risk_level": "medium",
+      "source_refs": [
+        "synthetic_fixture"
+      ],
+      "fixture_paths": [
+        "harbor-template/toy-backtest-moving-average/fixtures/synthetic_prices.csv"
+      ],
+      "solution_path": "harbor-template/toy-backtest-moving-average/solution/answer.json",
+      "verifier_paths": [
+        "harbor-template/toy-backtest-moving-average/tests/test_toy_backtest.py"
+      ],
+      "task_metadata_path": "harbor-template/toy-backtest-moving-average/task.toml",
+      "safety_boundary": "public-safe example; no private company data, real user data, proprietary workflows, investment advice, trading signals, or production-readiness claims"
+    }
+  ]
+}

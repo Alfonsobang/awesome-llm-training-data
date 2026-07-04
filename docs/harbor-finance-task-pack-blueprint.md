@@ -111,6 +111,8 @@ Finance-agent evaluation should report more than a single pass rate:
 
 The repo already includes a small [Harbor repeated-trial metric example](../examples/harbor-repeated-trial-metric).
 
+The current finance seed also includes a machine-checkable [Harbor-style task-pack manifest](../examples/financial-agent-eval-seed/harbor-template/task-pack-manifest.json) covering all 10 local task templates. It is a public-safe example manifest, not an official Harbor adapter.
+
 ## Upstream-Friendly Contribution Path
 
 1. Keep the local examples runnable and small.
@@ -125,4 +127,5 @@ The repo already includes a small [Harbor repeated-trial metric example](../exam
 - [Harbor, OpenClaw, and ATIF for Financial Agent Evaluation](harbor-openclaw-atif-financial-evaluation.md)
 - [Financial Agent Eval Seed](../examples/financial-agent-eval-seed)
 - [Harbor-style Financial Task Templates](../examples/financial-agent-eval-seed/harbor-template)
+- [Harbor-style Task-pack Manifest](../examples/financial-agent-eval-seed/harbor-template/task-pack-manifest.json)
 - [Harbor OpenClaw Financial Trajectory Audit](../examples/harbor-openclaw-finance-trajectory-audit)

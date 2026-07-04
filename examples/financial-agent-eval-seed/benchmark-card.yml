@@ -132,6 +132,7 @@
     "reference_answers": "harbor-template/*/solution/answer.json",
     "known_bad_answers": "candidate-artifacts/bad-finance-agent/*/answer.json",
     "source_manifest": "data-sources/source-manifest.json",
+    "task_pack_manifest": "harbor-template/task-pack-manifest.json",
     "stable_reports": "results/"
   }
 }
