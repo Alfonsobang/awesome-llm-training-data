@@ -18,7 +18,7 @@ LLM 评测正在从只看答案，转向评估完整 Agent 运行过程：
 | 方向 | 为什么重要 | 公开入口 |
 | --- | --- | --- |
 | Harbor OpenClaw ATIF 轨迹 | 将 OpenClaw 风格用户消息、工具调用、observation 和元数据转成可检查的结构化证据。 | [Harbor OpenClaw 金融 ATIF 审计](../examples/harbor-openclaw-finance-trajectory-audit), [OpenClaw 集成源码](https://github.com/harbor-framework/harbor/blob/main/src/harbor/agents/installed/openclaw.py) |
-| 轨迹感知评分 | 评估完整过程，而不只是最终输出。 | [Claw-Eval](https://github.com/claw-eval/claw-eval), [Harbor ATIF docs](https://harborframework.com/docs/agents/trajectory-format) |
+| 轨迹感知评分 | 评估完整过程，而不只是最终输出。 | [Claw-Eval](https://github.com/claw-eval/claw-eval), [Harbor ATIF RFC](https://github.com/harbor-framework/harbor/blob/main/rfcs/0001-trajectory-format.md) |
 | 多次运行鲁棒性 | 区分偶然成功和稳定能力。 | [Harbor 多次运行指标示例](../examples/harbor-repeated-trial-metric), [Harbor pass@k utility](https://github.com/harbor-framework/harbor/blob/main/src/harbor/utils/pass_at_k.py) |
 | 沙箱化 Agent 环境 | 让工具型 Agent 运行可复现、可检查。 | [Harbor](https://github.com/harbor-framework/harbor), [Terminal-Bench](https://github.com/laude-institute/terminal-bench) |
 | 长程真实任务 | 测试 Agent 在短代码或聊天之外的能力。 | [WildClawBench](https://github.com/InternLM/WildClawBench), [OSWorld](https://github.com/xlang-ai/OSWorld), [WebArena](https://github.com/web-arena-x/webarena) |

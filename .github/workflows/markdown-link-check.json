@@ -1,5 +1,9 @@
 {
-  "ignorePatterns": [],
+  "ignorePatterns": [
+    {
+      "pattern": "^https://fred\\.stlouisfed\\.org/docs/api/fred/series_observations\\.html$"
+    }
+  ],
   "replacementPatterns": [
     {
       "pattern": "^README.zh-CN.md$",

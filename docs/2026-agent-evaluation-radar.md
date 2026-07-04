@@ -18,7 +18,7 @@ LLM evaluation is moving from answer-only grading to agent-run evaluation:
 | Topic | Why it matters | Public entry points |
 | --- | --- | --- |
 | Harbor OpenClaw ATIF trajectories | Makes OpenClaw-style user messages, tool calls, observations, and metadata inspectable as structured evidence. | [Harbor OpenClaw financial ATIF audit](../examples/harbor-openclaw-finance-trajectory-audit), [OpenClaw integration](https://github.com/harbor-framework/harbor/blob/main/src/harbor/agents/installed/openclaw.py) |
-| Trajectory-aware grading | Judges the full process, not only final output. | [Claw-Eval](https://github.com/claw-eval/claw-eval), [Harbor ATIF docs](https://harborframework.com/docs/agents/trajectory-format) |
+| Trajectory-aware grading | Judges the full process, not only final output. | [Claw-Eval](https://github.com/claw-eval/claw-eval), [Harbor ATIF RFC](https://github.com/harbor-framework/harbor/blob/main/rfcs/0001-trajectory-format.md) |
 | Repeated-trial robustness | Separates lucky success from consistent behavior. | [Harbor repeated-trial metric example](../examples/harbor-repeated-trial-metric), [Harbor pass@k utility](https://github.com/harbor-framework/harbor/blob/main/src/harbor/utils/pass_at_k.py) |
 | Sandboxed agent environments | Makes tool-using agent runs reproducible and inspectable. | [Harbor](https://github.com/harbor-framework/harbor), [Terminal-Bench](https://github.com/laude-institute/terminal-bench) |
 | Long-horizon real-world tasks | Tests agents beyond short coding or chat tasks. | [WildClawBench](https://github.com/InternLM/WildClawBench), [OSWorld](https://github.com/xlang-ai/OSWorld), [WebArena](https://github.com/web-arena-x/webarena) |
