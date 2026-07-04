@@ -17,7 +17,7 @@ python examples/financial-agent-eval-seed/run_finance_eval.py
 Expected result:
 
 ```text
-Pass rate: 6/6 (1.0)
+Pass rate: 9/9 (1.0)
 ```
 
 The command writes:
@@ -47,6 +47,9 @@ See the stable bad-candidate report:
 - Finance RAG citation checks that fail unsupported citations.
 - Filing-grounded margin explanation with calculation evidence.
 - Toy backtesting with cutoff discipline and non-advice framing.
+- Forecasting cutoff checks for future-data leakage.
+- Risk calculation for drawdown, volatility, units, and data windows.
+- Financial tool-use trace checks for tool order and observation linkage.
 - Source governance for public references, synthetic fixtures, citation fields, and redistribution boundaries.
 
 ## What To Customize First

@@ -47,6 +47,12 @@ These are the most useful gaps to turn into issues or PRs:
 
 ## Related Pages
 
+- [Financial Agent Evaluation Track Map](financial-agent-evaluation-track-map.md)
+- [Financial Search and Lookup Evaluation Playbook](financial-search-and-lookup-evaluation-playbook.md)
+- [Financial Backtesting Evaluation Playbook](financial-backtesting-evaluation-playbook.md)
+- [Financial Forecasting Evaluation Playbook](financial-forecasting-evaluation-playbook.md)
+- [Financial Tool-use Evaluation Playbook](financial-tool-use-evaluation-playbook.md)
+- [Financial Benchmark Card Template](financial-benchmark-card-template.md)
 - [Financial Agent Evaluation Agenda](financial-agent-evaluation-agenda.md)
 - [Financial Agent Failure Gallery](financial-agent-failure-gallery.md)
 - [Financial RAG Evaluation Playbook](financial-rag-evaluation-playbook.md)

@@ -29,6 +29,13 @@ python examples/financial-agent-eval-seed/run_finance_eval.py
 
 ## Project Pages
 
+- [Financial Agent Evaluation Track Map](docs/financial-agent-evaluation-track-map.md) / [中文](docs/financial-agent-evaluation-track-map.zh-CN.md) - 金融 Agent 评测多赛道地图，覆盖搜索、查数、回测、预测、工具调用、治理和偏好质量。
+- [Financial Search and Lookup Evaluation Playbook](docs/financial-search-and-lookup-evaluation-playbook.md) - 金融搜索、精确查数、来源选择、引用支撑和单位/期间检查。
+- [Financial Backtesting Evaluation Playbook](docs/financial-backtesting-evaluation-playbook.md) - Toy backtest、风险指标、假设审查和非投资建议边界。
+- [Financial Forecasting Evaluation Playbook](docs/financial-forecasting-evaluation-playbook.md) - 截止日期约束、未来数据泄漏、不确定性表达和证据窗口。
+- [Financial Tool-use Evaluation Playbook](docs/financial-tool-use-evaluation-playbook.md) - 工具调用顺序、观测结果引用、失败调用恢复和多次运行稳定性。
+- [Financial Benchmark Card Template](docs/financial-benchmark-card-template.md) - 面向来源、泄漏、治理、指标和限制说明的 benchmark card 模板。
+
 这个仓库不再只押一个页面，而是围绕金融 Agent 评测主线，拆成多个可以独立传播和复用的专题页：
 
 - [Project Pages Index](docs/README.md) - 仓库核心页面导航。

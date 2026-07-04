@@ -32,6 +32,12 @@ For AI coding agents and LLM-based repo readers, see [llms.txt](llms.txt) and [A
 This repo now has multiple useful surfaces instead of a single bet:
 
 - [Project Pages Index](docs/README.md) - A guided map of the strongest pages in the repo.
+- [Financial Agent Evaluation Track Map](docs/financial-agent-evaluation-track-map.md) / [Chinese](docs/financial-agent-evaluation-track-map.zh-CN.md) - Multi-track map for search, lookup, backtesting, forecasting, tool use, governance, and preference quality.
+- [Financial Search and Lookup Evaluation Playbook](docs/financial-search-and-lookup-evaluation-playbook.md) - Source selection, exact-field lookup, citation support, and period/unit checks.
+- [Financial Backtesting Evaluation Playbook](docs/financial-backtesting-evaluation-playbook.md) - Toy backtests, drawdown checks, assumptions, and non-advice boundaries.
+- [Financial Forecasting Evaluation Playbook](docs/financial-forecasting-evaluation-playbook.md) - Cutoff-bound forecasting, future-data leakage, and uncertainty checks.
+- [Financial Tool-use Evaluation Playbook](docs/financial-tool-use-evaluation-playbook.md) - Tool order, observation linkage, failed-call recovery, and repeated-trial stability.
+- [Financial Benchmark Card Template](docs/financial-benchmark-card-template.md) - A reusable card for provenance, leakage, source policy, metrics, and limitations.
 - [Impact Backlog](docs/impact-backlog.md) - Machine-checkable next artifacts for the multi-track strategy.
 - [Financial Agent Evaluation Task Matrix](docs/financial-agent-evaluation-task-matrix.md) - Task-family map for search, lookup, filing QA, backtesting, forecasting, tool use, refusal, preference review, and governance.
 - [Harbor Finance Task Pack Blueprint](docs/harbor-finance-task-pack-blueprint.md) - Practical blueprint for shaping finance tasks into Harbor-style task packs.
@@ -64,6 +70,7 @@ English first. Complete Chinese version: [README.zh-CN.md](README.zh-CN.md).
 The hottest evaluation shift right now is from static answer grading to trajectory-aware agent evaluation: repeated attempts, process safety, verifier evidence, artifacts, and auditable traces.
 
 - Read the [Financial Agent Evaluation Positioning Thesis](docs/financial-agent-eval-positioning.md).
+- Start from the [Financial Agent Evaluation Track Map](docs/financial-agent-evaluation-track-map.md).
 - Review the [FinAgentBench Seed Spec](docs/finagentbench-seed-spec.md).
 - Browse the [Project Pages Index](docs/README.md).
 - Use the [Financial Agent Evaluation Task Matrix](docs/financial-agent-evaluation-task-matrix.md) to choose the next runnable task family.

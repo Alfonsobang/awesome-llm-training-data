@@ -7,6 +7,7 @@ The project still has one core direction: public-safe financial agent evaluation
 ## Core Direction
 
 - [Financial Agent Evaluation Positioning Thesis](financial-agent-eval-positioning.md) - Why this project should focus on auditable financial-agent tool-use evaluation instead of another generic awesome list.
+- [Financial Agent Evaluation Track Map](financial-agent-evaluation-track-map.md) / [中文](financial-agent-evaluation-track-map.zh-CN.md) - Multi-track map for search, lookup, backtesting, forecasting, tool use, governance, and preference quality.
 - [FinAgentBench Seed Spec](finagentbench-seed-spec.md) - Proposed shape of the runnable benchmark seed.
 - [Impact Backlog](impact-backlog.md) - Machine-checkable next artifacts for turning pages into tasks, verifiers, schemas, and reports.
 - [Financial Agent Evaluation Agenda](financial-agent-evaluation-agenda.md) - Topic map for search, lookup, filing QA, backtesting, forecasting, compliance, and evidence-grounded agent evaluation.
@@ -15,6 +16,11 @@ The project still has one core direction: public-safe financial agent evaluation
 
 ## Multi-Track Pages
 
+- [Financial Search and Lookup Evaluation Playbook](financial-search-and-lookup-evaluation-playbook.md) - Source selection, exact-value lookup, citation support, and unit/period checks.
+- [Financial Backtesting Evaluation Playbook](financial-backtesting-evaluation-playbook.md) - Reproducible toy backtests, risk metrics, assumptions, and non-advice boundaries.
+- [Financial Forecasting Evaluation Playbook](financial-forecasting-evaluation-playbook.md) - Cutoff-bound forecasting, future-data leakage, uncertainty, and evidence windows.
+- [Financial Tool-use Evaluation Playbook](financial-tool-use-evaluation-playbook.md) - Tool order, observation linkage, failed-call recovery, and repeated-trial stability.
+- [Financial Benchmark Card Template](financial-benchmark-card-template.md) - Reusable benchmark-card fields for provenance, leakage, source policy, metrics, and limitations.
 - [Financial Agent Failure Gallery](financial-agent-failure-gallery.md) - Common failure modes that static QA misses.
 - [Financial RAG Evaluation Playbook](financial-rag-evaluation-playbook.md) - How to evaluate retrieval, citation, extraction, and answer faithfulness in finance workflows.
 - [Financial Data Governance Control Plane](financial-data-governance-control-plane.md) - A public-safe governance model for sources, licenses, cutoffs, and redistribution boundaries.
