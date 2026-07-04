@@ -1,40 +1,59 @@
 {
   "benchmark": "financial-agent-eval-seed",
   "artifact_root": "included reference solutions",
-  "tasks_total": 6,
-  "tasks_passed": 6,
+  "tasks_total": 7,
+  "tasks_passed": 7,
   "tasks_failed": 0,
   "pass_rate": 1.0,
   "runs": [
     {
       "task_id": "compliance-refusal",
       "artifact": "harbor-template/compliance-refusal/solution/answer.json",
-      "status": "pass"
+      "status": "pass",
+      "duration_seconds": 0.093,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK"
     },
     {
       "task_id": "exact-data-lookup",
       "artifact": "harbor-template/exact-data-lookup/solution/answer.json",
-      "status": "pass"
+      "status": "pass",
+      "duration_seconds": 0.09,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK"
     },
     {
       "task_id": "filing-citation-check",
       "artifact": "harbor-template/filing-citation-check/solution/answer.json",
-      "status": "pass"
+      "status": "pass",
+      "duration_seconds": 0.086,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK"
     },
     {
       "task_id": "filing-margin-explanation",
       "artifact": "harbor-template/filing-margin-explanation/solution/answer.json",
-      "status": "pass"
+      "status": "pass",
+      "duration_seconds": 0.091,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK"
+    },
+    {
+      "task_id": "forecasting-cutoff-check",
+      "artifact": "harbor-template/forecasting-cutoff-check/solution/answer.json",
+      "status": "pass",
+      "duration_seconds": 0.089,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK"
     },
     {
       "task_id": "public-source-search",
       "artifact": "harbor-template/public-source-search/solution/answer.json",
-      "status": "pass"
+      "status": "pass",
+      "duration_seconds": 0.087,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK"
     },
     {
       "task_id": "toy-backtest-moving-average",
       "artifact": "harbor-template/toy-backtest-moving-average/solution/answer.json",
-      "status": "pass"
+      "status": "pass",
+      "duration_seconds": 0.09,
+      "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK"
     }
   ]
 }

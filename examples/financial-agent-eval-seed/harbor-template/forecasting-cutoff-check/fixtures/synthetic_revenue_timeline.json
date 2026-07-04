@@ -1,0 +1,57 @@
+{
+  "fixture_type": "synthetic",
+  "fixture_id": "synthetic_revenue_timeline_public_example_only",
+  "issuer_id": "SYNTH-FIN-002",
+  "currency": "USD",
+  "unit": "millions",
+  "evaluation_cutoff": "2025-04-15",
+  "target_period": "2025-Q2",
+  "observations": [
+    {
+      "observation_id": "fy2024_q3_revenue",
+      "period": "2024-Q3",
+      "value": 96.0,
+      "available_on": "2024-10-20",
+      "source": "synthetic quarterly release"
+    },
+    {
+      "observation_id": "fy2024_q4_revenue",
+      "period": "2024-Q4",
+      "value": 101.0,
+      "available_on": "2025-01-22",
+      "source": "synthetic quarterly release"
+    },
+    {
+      "observation_id": "fy2025_q1_revenue",
+      "period": "2025-Q1",
+      "value": 108.0,
+      "available_on": "2025-04-10",
+      "source": "synthetic quarterly release"
+    },
+    {
+      "observation_id": "pipeline_commentary_pre_cutoff",
+      "period": "2025-Q2 outlook",
+      "value": "Management described demand as stable with normal seasonal uplift.",
+      "available_on": "2025-04-10",
+      "source": "synthetic management commentary"
+    },
+    {
+      "observation_id": "fy2025_q2_actual_revenue",
+      "period": "2025-Q2",
+      "value": 121.0,
+      "available_on": "2025-07-20",
+      "source": "synthetic quarterly release"
+    },
+    {
+      "observation_id": "guidance_revision_post_cutoff",
+      "period": "2025-Q2 outlook",
+      "value": "Management raised Q2 guidance after a large late-quarter enterprise contract.",
+      "available_on": "2025-06-15",
+      "source": "synthetic guidance revision"
+    }
+  ],
+  "notes": [
+    "This is a synthetic fixture for benchmark scaffolding.",
+    "Post-cutoff observations are included to test future-data leakage."
+  ]
+}

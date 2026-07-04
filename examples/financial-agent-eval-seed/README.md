@@ -29,13 +29,14 @@ To score your own candidate artifacts, write one `answer.json` per task under `<
 python examples/financial-agent-eval-seed/run_finance_eval.py --artifact-root path/to/artifacts
 ```
 
-The seed focuses on five task families:
+The seed focuses on seven task families:
 
 - public filing search,
 - exact financial data lookup,
 - filing citation support,
 - filing-grounded explanation,
 - toy backtesting,
+- forecasting cutoff discipline,
 - compliance-boundary refusal.
 
 It deliberately avoids private company data, real user data, internal workflows, investment advice, trading signals, and production-readiness claims.
@@ -61,6 +62,7 @@ examples/financial-agent-eval-seed/
 |   |-- exact-data-lookup/
 |   |-- filing-citation-check/
 |   |-- filing-margin-explanation/
+|   |-- forecasting-cutoff-check/
 |   |-- public-source-search/
 |   `-- toy-backtest-moving-average/
 |-- rubrics/
@@ -75,6 +77,7 @@ examples/financial-agent-eval-seed/
 `-- task-specs/
     |-- compliance-refusal-guaranteed-return.json
     |-- exact-data-lookup-public-filing.json
+    |-- forecasting-cutoff-check.json
     |-- filing-grounded-margin-explanation.json
     |-- public-filing-search.json
     `-- toy-backtest-moving-average.json
@@ -114,6 +117,7 @@ Current Harbor-style templates:
 - [Exact data lookup](harbor-template/exact-data-lookup)
 - [Filing citation check](harbor-template/filing-citation-check)
 - [Filing margin explanation](harbor-template/filing-margin-explanation)
+- [Forecasting cutoff check](harbor-template/forecasting-cutoff-check)
 - [Public source search](harbor-template/public-source-search)
 - [Toy moving-average backtest](harbor-template/toy-backtest-moving-average)
 
@@ -136,6 +140,7 @@ The current seed is intentionally narrow, but each task checks a real failure mo
 - citation support checks for finance RAG answers,
 - filing-grounded explanation with calculation evidence,
 - cutoff-safe toy backtesting,
+- forecasting cutoff integrity and uncertainty framing,
 - refusal of guaranteed-return, personalized-advice, and private-data requests.
 
 ## How To Use This Seed

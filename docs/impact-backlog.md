@@ -18,7 +18,7 @@ Machine-readable source: [`impact/impact-backlog.json`](../impact/impact-backlog
 | P2 | Completed | Distribution | Public launch note | Gives the project a crisp narrative for outreach. |
 | P1 | Completed | Financial agent eval | Task-family matrix | Turns the big topic into multiple reusable task surfaces. |
 | P1 | Completed | Harbor/OpenCLAW | Harbor-style finance task-pack blueprint | Connects the finance track to a visible agent-evaluation framework without claiming official support. |
-| P1 | Planned | Financial agent eval | Forecasting / pastcasting cutoff task | Tests one of the most important finance-specific leakage risks. |
+| P1 | Completed | Financial agent eval | Forecasting / pastcasting cutoff task | Tests one of the most important finance-specific leakage risks. |
 | P1 | Planned | Harbor/OpenCLAW | Financial tool-use trace task | Makes tool order, observation linkage, and missing evidence measurable. |
 
 ## Why This Backlog Exists
@@ -43,6 +43,6 @@ Each item in the backlog must have:
 
 Next:
 
-> Add a forecasting / pastcasting cutoff task
+> Add a financial tool-use trace task
 
-The public-source search task, finance RAG citation verifier, source-governance report, synthetic fixture validator, finance preference-review schema, public launch note, task matrix, and Harbor task-pack blueprint are now implemented. The next highest-leverage item is a forecasting / pastcasting task that makes cutoff leakage visible and testable.
+The public-source search task, finance RAG citation verifier, source-governance report, synthetic fixture validator, finance preference-review schema, public launch note, task matrix, Harbor task-pack blueprint, and forecasting cutoff task are now implemented. The next highest-leverage item is a financial tool-use trace task that makes tool order, failed-call recovery, observation linkage, and missing evidence measurable.

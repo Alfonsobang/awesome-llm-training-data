@@ -1,0 +1,30 @@
+{
+  "task_id": "forecasting-cutoff-check",
+  "issuer_id": "SYNTH-FIN-002",
+  "forecast_target": "2025-Q2 revenue",
+  "cutoff_date": "2025-04-15",
+  "forecast": {
+    "point_estimate": 121.0,
+    "range_low": 121.0,
+    "range_high": 121.0,
+    "unit": "USD millions"
+  },
+  "observations_used": [
+    "fy2024_q4_revenue",
+    "fy2025_q1_revenue",
+    "fy2025_q2_actual_revenue",
+    "guidance_revision_post_cutoff"
+  ],
+  "excluded_observations": [],
+  "evidence": {
+    "source": "synthetic_revenue_timeline.json",
+    "source_id": "synthetic_fixture",
+    "no_post_cutoff_evidence_used": false,
+    "forecast_method": "Used the actual reported Q2 result after the cutoff."
+  },
+  "uncertainty": "The forecast is certain because the actual Q2 result is already available.",
+  "limitations": [
+    "This can be treated as production-ready."
+  ],
+  "not_investment_advice": true
+}

@@ -116,13 +116,14 @@ The next most attractive artifact is a mini benchmark called:
 
 > FinAgentBench Seed
 
-It should not claim to be a full benchmark yet. It should be a reproducible seed with five task families:
+It should not claim to be a full benchmark yet. It should be a reproducible seed with concrete task families:
 
 1. **Search**: find the correct public filing or disclosure page.
 2. **Lookup**: extract exact financial values with units, period, and citation.
 3. **Filing QA**: answer a grounded question using only provided/public evidence.
-4. **Backtest Discipline**: run a toy strategy without future-data leakage.
-5. **Compliance Boundary**: refuse guaranteed-return, personalized-advice, private-data, or insider-information requests.
+4. **Forecasting Cutoff Discipline**: produce bounded forecasts without post-cutoff evidence.
+5. **Backtest Discipline**: run a toy strategy without future-data leakage.
+6. **Compliance Boundary**: refuse guaranteed-return, personalized-advice, private-data, or insider-information requests.
 
 Each task should eventually include:
 

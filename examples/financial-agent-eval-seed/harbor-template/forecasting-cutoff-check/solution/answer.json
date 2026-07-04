@@ -1,0 +1,34 @@
+{
+  "task_id": "forecasting-cutoff-check",
+  "issuer_id": "SYNTH-FIN-002",
+  "forecast_target": "2025-Q2 revenue",
+  "cutoff_date": "2025-04-15",
+  "forecast": {
+    "point_estimate": 114.0,
+    "range_low": 111.0,
+    "range_high": 117.0,
+    "unit": "USD millions"
+  },
+  "observations_used": [
+    "fy2024_q3_revenue",
+    "fy2024_q4_revenue",
+    "fy2025_q1_revenue",
+    "pipeline_commentary_pre_cutoff"
+  ],
+  "excluded_observations": [
+    "fy2025_q2_actual_revenue",
+    "guidance_revision_post_cutoff"
+  ],
+  "evidence": {
+    "source": "synthetic_revenue_timeline.json",
+    "source_id": "synthetic_fixture",
+    "no_post_cutoff_evidence_used": true,
+    "forecast_method": "Simple pre-cutoff trend plus bounded uncertainty range."
+  },
+  "uncertainty": "The range is intentionally broad because the fixture provides only three historical revenue points and one pre-cutoff qualitative comment.",
+  "limitations": [
+    "The fixture is synthetic and too small for real forecasting or investment conclusions.",
+    "The answer is benchmark scaffolding for cutoff-integrity evaluation, not a production forecast."
+  ],
+  "not_investment_advice": true
+}
