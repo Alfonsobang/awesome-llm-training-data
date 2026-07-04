@@ -33,6 +33,9 @@ This repo now has multiple useful surfaces instead of a single bet:
 
 - [Project Pages Index](docs/README.md) - A guided map of the strongest pages in the repo.
 - [Impact Backlog](docs/impact-backlog.md) - Machine-checkable next artifacts for the multi-track strategy.
+- [Financial Agent Evaluation Task Matrix](docs/financial-agent-evaluation-task-matrix.md) - Task-family map for search, lookup, filing QA, backtesting, forecasting, tool use, refusal, preference review, and governance.
+- [Harbor Finance Task Pack Blueprint](docs/harbor-finance-task-pack-blueprint.md) - Practical blueprint for shaping finance tasks into Harbor-style task packs.
+- [Public Launch Note](docs/public-launch-note.md) / [中文](docs/public-launch-note.zh-CN.md) - Shareable narrative for the finance-agent evaluation direction.
 - [Financial Agent Failure Gallery](docs/financial-agent-failure-gallery.md) - Source, unit, citation, cutoff, advice-boundary, and trace failures to turn into tests.
 - [Financial RAG Evaluation Playbook](docs/financial-rag-evaluation-playbook.md) - Retrieval, citation, extraction, calculation, and refusal checks for finance RAG.
 - [Financial Data Governance Control Plane](docs/financial-data-governance-control-plane.md) - Source manifest, packaging policy, cutoff, and redistribution controls.
@@ -63,6 +66,9 @@ The hottest evaluation shift right now is from static answer grading to trajecto
 - Read the [Financial Agent Evaluation Positioning Thesis](docs/financial-agent-eval-positioning.md).
 - Review the [FinAgentBench Seed Spec](docs/finagentbench-seed-spec.md).
 - Browse the [Project Pages Index](docs/README.md).
+- Use the [Financial Agent Evaluation Task Matrix](docs/financial-agent-evaluation-task-matrix.md) to choose the next runnable task family.
+- Read the [Harbor Finance Task Pack Blueprint](docs/harbor-finance-task-pack-blueprint.md) for framework-oriented packaging.
+- Share the [Public Launch Note](docs/public-launch-note.md) or [Chinese launch note](docs/public-launch-note.zh-CN.md).
 - Review the [Impact Backlog](docs/impact-backlog.md).
 - Run the [Financial Agent Eval Seed](examples/financial-agent-eval-seed): `python examples/financial-agent-eval-seed/run_finance_eval.py`.
 - Use the [60-second quickstart](QUICKSTART.md).
@@ -256,6 +262,7 @@ The repository also runs a lightweight [resource audit](tools/audit_resources.py
 
 - [Claw-style Agent Evaluation Notes](docs/claw-style-agent-evaluation-notes.md) - Notes on trajectory-aware grading, repeated trials, safety evidence, and how Harbor maps to this evaluation pattern.
 - [Financial Agent Evaluation Agenda](docs/financial-agent-evaluation-agenda.md) - A large-topic agenda for financial search, data lookup, backtesting, forecasting, compliance, and evidence-grounded agent evaluation.
+- [Financial Agent Evaluation Task Matrix](docs/financial-agent-evaluation-task-matrix.md) - Task-family map for turning finance-agent evaluation ideas into runnable checks.
 - [Financial Agent Evaluation Seed](examples/financial-agent-eval-seed) - Public-data-only task specs, dataset card, and trajectory-safety rubric for a finance-focused agent benchmark seed.
 - [Financial Evaluation Data Source Governance](docs/financial-evaluation-data-source-governance.md) - A machine-checkable source-manifest policy for public references, synthetic fixtures, temporal fields, citation evidence, and redistribution boundaries.
 - [Financial Agent Evaluation Roadmap](docs/financial-agent-evaluation-roadmap.md) - A staged public roadmap for turning the seed into a credible financial agent evaluation track.
@@ -263,6 +270,7 @@ The repository also runs a lightweight [resource audit](tools/audit_resources.py
 - [Harbor-style Financial Task Templates](examples/financial-agent-eval-seed/harbor-template) - Runnable-style task scaffolds for compliance refusal, exact data lookup, filing-grounded explanation, and toy backtesting with deterministic verifier tests.
 - [Harbor OpenClaw Financial Trajectory Audit](examples/harbor-openclaw-finance-trajectory-audit) - A synthetic ATIF-v1.7 trajectory, finance-specific audit script, repeated-trial aggregation, and deterministic evidence-boundary tests.
 - [Harbor, OpenClaw, and ATIF for Financial Agent Evaluation](docs/harbor-openclaw-atif-financial-evaluation.md) - Source-backed notes on using Harbor trajectory evidence for finance-specific agent audits.
+- [Harbor Finance Task Pack Blueprint](docs/harbor-finance-task-pack-blueprint.md) - Practical blueprint for shaping public-safe finance tasks into Harbor-style task packs.
 - [Financial Agent Evaluation Share Kit](docs/financial-agent-evaluation-share-kit.md) - Short English and Chinese copy for introducing the finance-focused evaluation track.
 - [Harbor Repeated-trial Metric Example](examples/harbor-repeated-trial-metric) - A small `metric.py` example for reporting mean reward, pass@k, Pass^k, and missing-evidence rate.
 - [LLM Training Data Operating Model](docs/llm-training-data-operating-model.md) - A practical operating loop for source review, profiling, filtering, annotation, evaluation, release, and governance.

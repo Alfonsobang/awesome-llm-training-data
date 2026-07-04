@@ -89,7 +89,7 @@
       "title": "Write the public launch note for the multi-track strategy",
       "track": "distribution",
       "priority": "P2",
-      "status": "planned",
+      "status": "completed",
       "source_page": "docs/agent-benchmark-lessons.md",
       "next_artifact": "docs/public-launch-note.md",
       "why_it_matters": "The project needs a crisp shareable narrative before outreach; the note should explain the gap without overclaiming.",
@@ -98,6 +98,68 @@
         "Link the runnable seed, failure gallery, RAG playbook, and governance control plane.",
         "Avoid leaderboard and production-readiness claims.",
         "Include a short call for issue/PR contributions."
+      ]
+    },
+    {
+      "id": "finance-task-family-matrix",
+      "title": "Publish a finance-agent evaluation task matrix",
+      "track": "financial-agent-eval",
+      "priority": "P1",
+      "status": "completed",
+      "source_page": "docs/financial-agent-evaluation-agenda.md",
+      "next_artifact": "docs/financial-agent-evaluation-task-matrix.md",
+      "why_it_matters": "A task matrix gives different audiences clear entry points instead of forcing every reader through one long README.",
+      "acceptance_criteria": [
+        "Map finance-agent task families to required evidence and failure modes.",
+        "Connect implemented artifacts to each task family.",
+        "List the next task gaps that can become issues."
+      ]
+    },
+    {
+      "id": "harbor-finance-task-pack-blueprint",
+      "title": "Draft a Harbor-style finance task-pack blueprint",
+      "track": "harbor-openclaw",
+      "priority": "P1",
+      "status": "completed",
+      "source_page": "docs/harbor-openclaw-atif-financial-evaluation.md",
+      "next_artifact": "docs/harbor-finance-task-pack-blueprint.md",
+      "why_it_matters": "Harbor is a visible agent-evaluation framework; a finance-domain task-pack blueprint gives this project a concrete way to participate without pretending to be official.",
+      "acceptance_criteria": [
+        "State that the blueprint is not an official Harbor adapter.",
+        "Define task-pack shape, required metadata, and finance-specific verifier checks.",
+        "Include an upstream-friendly contribution path."
+      ]
+    },
+    {
+      "id": "forecasting-cutoff-task",
+      "title": "Add a forecasting / pastcasting cutoff task",
+      "track": "financial-agent-eval",
+      "priority": "P1",
+      "status": "planned",
+      "source_page": "docs/financial-agent-evaluation-task-matrix.md",
+      "next_artifact": "examples/financial-agent-eval-seed/harbor-template/forecasting-cutoff-check/",
+      "why_it_matters": "Forecasting and pastcasting are high-interest financial-agent tasks, but they are only credible when future-data leakage is explicitly tested.",
+      "acceptance_criteria": [
+        "Add a synthetic or public-safe fixture with pre-cutoff and post-cutoff fields.",
+        "Add a verifier that fails use of post-cutoff evidence.",
+        "Add one passing answer and one known-bad answer.",
+        "Include uncertainty and non-advice boundary checks."
+      ]
+    },
+    {
+      "id": "financial-tool-use-trace-task",
+      "title": "Add a financial tool-use trace task",
+      "track": "harbor-openclaw",
+      "priority": "P1",
+      "status": "planned",
+      "source_page": "docs/harbor-finance-task-pack-blueprint.md",
+      "next_artifact": "examples/financial-agent-eval-seed/harbor-template/financial-tool-use-trace/",
+      "why_it_matters": "Tool order, failed-call recovery, and observation linkage are exactly where trajectory-aware frameworks can show value beyond final-answer grading.",
+      "acceptance_criteria": [
+        "Define a task that requires quote, filing, and fundamentals-style observations.",
+        "Add a synthetic trajectory fixture with linked tool calls and observations.",
+        "Add a verifier for required tool order, missing evidence, and prohibited tool calls.",
+        "Add repeated-trial reporting fields."
       ]
     }
   ]
