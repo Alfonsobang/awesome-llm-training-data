@@ -8,14 +8,14 @@ Machine-readable source: [`impact/impact-backlog.json`](../impact/impact-backlog
 
 ## Current Priorities
 
-| Priority | Track | Artifact | Why it matters |
-| --- | --- | --- | --- |
-| P0 | Financial agent eval | Public-source search task | Search is the first tool-use failure surface in many financial agents. |
-| P0 | Financial RAG eval | Citation verifier | Unsupported citations are common, concrete, and easy to evaluate. |
-| P1 | Data governance | Source-governance report | Makes source policy visible to data leads and reviewers. |
-| P1 | Synthetic data | Synthetic fixture validator | Keeps public examples useful without fake realism. |
-| P1 | Annotation/preference | Finance preference-review rubric schema | Prevents preference data from rewarding unsupported confidence. |
-| P2 | Distribution | Public launch note | Gives the project a crisp narrative for outreach. |
+| Priority | Status | Track | Artifact | Why it matters |
+| --- | --- | --- | --- | --- |
+| P0 | Completed | Financial agent eval | Public-source search task | Search is the first tool-use failure surface in many financial agents. |
+| P0 | Planned | Financial RAG eval | Citation verifier | Unsupported citations are common, concrete, and easy to evaluate. |
+| P1 | Planned | Data governance | Source-governance report | Makes source policy visible to data leads and reviewers. |
+| P1 | Planned | Synthetic data | Synthetic fixture validator | Keeps public examples useful without fake realism. |
+| P1 | Planned | Annotation/preference | Finance preference-review rubric schema | Prevents preference data from rewarding unsupported confidence. |
+| P2 | Planned | Distribution | Public launch note | Gives the project a crisp narrative for outreach. |
 
 ## Why This Backlog Exists
 
@@ -37,8 +37,8 @@ Each item in the backlog must have:
 
 ## Next Best Issue To Open
 
-Start with:
+Next:
 
-> Add the first public-source financial search task
+> Build a finance RAG citation verifier
 
-It is the most visible bridge between the current docs and a real runnable benchmark. It can become a small PR, a demo, and a shareable example without relying on private data.
+The public-source search task is now implemented as a Harbor-style template. The next highest-leverage item is citation support: it is concrete, easy to inspect, and highly relevant to finance RAG and agent workflows.

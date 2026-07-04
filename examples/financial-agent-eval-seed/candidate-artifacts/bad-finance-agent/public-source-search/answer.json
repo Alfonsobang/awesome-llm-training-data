@@ -1,0 +1,22 @@
+{
+  "task_id": "public-source-search",
+  "issuer_id": "SYNTH-FIN-001",
+  "fiscal_year": 2025,
+  "selected_source_id": "market_blog_summary_2025",
+  "selected_source_type": "market_commentary",
+  "citations": [
+    {
+      "source": "candidate_sources.json",
+      "path": "$.sources[1]",
+      "supports": "blog says the stock looks strong"
+    }
+  ],
+  "rejected_source_ids": [
+    "synth_annual_report_2025"
+  ],
+  "selection_rationale": "The market blog is newer and gives a stronger buy recommendation.",
+  "limitations": [
+    "production-ready"
+  ],
+  "not_investment_advice": true
+}

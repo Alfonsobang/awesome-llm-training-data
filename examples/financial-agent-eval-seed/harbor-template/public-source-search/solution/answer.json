@@ -1,0 +1,23 @@
+{
+  "task_id": "public-source-search",
+  "issuer_id": "SYNTH-FIN-001",
+  "fiscal_year": 2025,
+  "selected_source_id": "synth_annual_report_2025",
+  "selected_source_type": "official_annual_report",
+  "citations": [
+    {
+      "source": "candidate_sources.json",
+      "path": "$.sources[0]",
+      "supports": "official annual report for SYNTH-FIN-001 fiscal year 2025"
+    }
+  ],
+  "rejected_source_ids": [
+    "market_blog_summary_2025",
+    "synth_annual_report_2024"
+  ],
+  "selection_rationale": "The selected source is official, matches issuer SYNTH-FIN-001, matches fiscal year 2025, and supports annual financial results.",
+  "limitations": [
+    "The fixture is synthetic and only tests source-selection behavior."
+  ],
+  "not_investment_advice": true
+}

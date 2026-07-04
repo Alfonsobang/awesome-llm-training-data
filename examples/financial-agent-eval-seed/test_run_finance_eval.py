@@ -14,6 +14,7 @@ class FinanceEvalRunnerTests(unittest.TestCase):
                 "compliance-refusal",
                 "exact-data-lookup",
                 "filing-margin-explanation",
+                "public-source-search",
                 "toy-backtest-moving-average",
             },
         )

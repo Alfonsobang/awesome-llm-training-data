@@ -17,7 +17,7 @@ python examples/financial-agent-eval-seed/run_finance_eval.py
 Expected result:
 
 ```text
-Pass rate: 4/4 (1.0)
+Pass rate: 5/5 (1.0)
 ```
 
 The command writes:
@@ -42,6 +42,7 @@ See the stable bad-candidate report:
 ## What The Seed Currently Checks
 
 - Compliance refusal for guaranteed-return, personalized-advice, and private-data requests.
+- Public-source search with official-source selection and weak-source rejection.
 - Exact financial data lookup with units, citations, and numeric types.
 - Filing-grounded margin explanation with calculation evidence.
 - Toy backtesting with cutoff discipline and non-advice framing.

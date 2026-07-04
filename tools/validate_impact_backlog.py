@@ -17,12 +17,14 @@ REQUIRED_TRACK_FIELDS = {
     "title",
     "track",
     "priority",
+    "status",
     "source_page",
     "next_artifact",
     "why_it_matters",
     "acceptance_criteria",
 }
 ALLOWED_PRIORITIES = {"P0", "P1", "P2"}
+ALLOWED_STATUSES = {"planned", "in_progress", "completed"}
 
 
 def load_backlog() -> dict:
@@ -74,6 +76,10 @@ def validate_backlog(backlog: dict) -> list[str]:
             errors.append(f"{track_id}: priority must be one of {sorted(ALLOWED_PRIORITIES)}.")
         if priority == "P0":
             p0_count += 1
+
+        status = item["status"]
+        if status not in ALLOWED_STATUSES:
+            errors.append(f"{track_id}: status must be one of {sorted(ALLOWED_STATUSES)}.")
 
         source_page = ROOT / item["source_page"]
         if not source_page.exists():

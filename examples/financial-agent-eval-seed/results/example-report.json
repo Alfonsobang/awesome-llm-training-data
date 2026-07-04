@@ -1,8 +1,8 @@
 {
   "benchmark": "financial-agent-eval-seed",
   "artifact_root": "included reference solutions",
-  "tasks_total": 4,
-  "tasks_passed": 4,
+  "tasks_total": 5,
+  "tasks_passed": 5,
   "tasks_failed": 0,
   "pass_rate": 1.0,
   "runs": [
@@ -19,6 +19,11 @@
     {
       "task_id": "filing-margin-explanation",
       "artifact": "harbor-template/filing-margin-explanation/solution/answer.json",
+      "status": "pass"
+    },
+    {
+      "task_id": "public-source-search",
+      "artifact": "harbor-template/public-source-search/solution/answer.json",
       "status": "pass"
     },
     {

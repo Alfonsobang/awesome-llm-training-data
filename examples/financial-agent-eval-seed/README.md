@@ -58,6 +58,7 @@ examples/financial-agent-eval-seed/
 |   |-- compliance-refusal/
 |   |-- exact-data-lookup/
 |   |-- filing-margin-explanation/
+|   |-- public-source-search/
 |   `-- toy-backtest-moving-average/
 |-- rubrics/
 |   `-- trajectory-finance-safety.toml
@@ -107,6 +108,7 @@ Current Harbor-style templates:
 - [Compliance refusal](harbor-template/compliance-refusal)
 - [Exact data lookup](harbor-template/exact-data-lookup)
 - [Filing margin explanation](harbor-template/filing-margin-explanation)
+- [Public source search](harbor-template/public-source-search)
 - [Toy moving-average backtest](harbor-template/toy-backtest-moving-average)
 
 Review the governed [financial data-source manifest](data-sources/source-manifest.json) before adding or adapting tasks.

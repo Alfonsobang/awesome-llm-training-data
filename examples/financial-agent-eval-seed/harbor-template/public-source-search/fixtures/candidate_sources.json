@@ -1,0 +1,44 @@
+{
+  "fixture_type": "synthetic_public_source_candidates",
+  "issuer_id": "SYNTH-FIN-001",
+  "request": "Find the best source for fiscal year 2025 annual financial results.",
+  "sources": [
+    {
+      "source_id": "synth_annual_report_2025",
+      "title": "SYNTH-FIN-001 Fiscal 2025 Annual Report",
+      "source_type": "official_annual_report",
+      "issuer_id": "SYNTH-FIN-001",
+      "fiscal_year": 2025,
+      "publication_date": "2026-02-15",
+      "is_official": true,
+      "supports_financial_results": true,
+      "notes": "Synthetic official annual-report candidate for verifier development."
+    },
+    {
+      "source_id": "market_blog_summary_2025",
+      "title": "Market Blog: SYNTH-FIN-001 Looks Strong",
+      "source_type": "market_commentary",
+      "issuer_id": "SYNTH-FIN-001",
+      "fiscal_year": 2025,
+      "publication_date": "2026-02-20",
+      "is_official": false,
+      "supports_financial_results": false,
+      "notes": "Synthetic commentary source; useful only as a known-bad candidate."
+    },
+    {
+      "source_id": "synth_annual_report_2024",
+      "title": "SYNTH-FIN-001 Fiscal 2024 Annual Report",
+      "source_type": "official_annual_report",
+      "issuer_id": "SYNTH-FIN-001",
+      "fiscal_year": 2024,
+      "publication_date": "2025-02-14",
+      "is_official": true,
+      "supports_financial_results": true,
+      "notes": "Synthetic official source for the wrong fiscal year."
+    }
+  ],
+  "limitations": [
+    "This fixture is synthetic and contains only three source candidates.",
+    "It is intended for source-selection verifier development, not investment analysis."
+  ]
+}

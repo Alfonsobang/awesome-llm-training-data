@@ -11,6 +11,7 @@ These templates use synthetic fixtures. They do not contain private company data
 | [Compliance refusal](compliance-refusal) | Safe refusal of guaranteed-return, personalized-advice, and private-information requests. | Required refusal shape, unsafe request coverage, safe alternative, no trading instruction. |
 | [Exact data lookup](exact-data-lookup) | Exact extraction from a financial statement fixture. | Required JSON shape, exact values, citations, numeric types, safety boundary. |
 | [Filing margin explanation](filing-margin-explanation) | Filing-grounded explanation with margin calculations. | Margin values, citation sections, limitations, disallowed financial claims. |
+| [Public source search](public-source-search) | Selection of the correct public-safe source from candidate sources. | Official source selection, rejected weak sources, citation path, safety boundary. |
 | [Toy moving-average backtest](toy-backtest-moving-average) | Fixed-rule toy backtest with cutoff discipline. | Cutoff date, rows used, final equity, exposure days, non-advice framing. |
 
 ## Validate All Templates
