@@ -4,10 +4,12 @@ on:
   push:
     paths:
       - "examples/financial-agent-eval-seed/**"
+      - "tools/validate_financial_benchmark_card.py"
       - ".github/workflows/financial-agent-seed.yml"
   pull_request:
     paths:
       - "examples/financial-agent-eval-seed/**"
+      - "tools/validate_financial_benchmark_card.py"
       - ".github/workflows/financial-agent-seed.yml"
 
 jobs:
@@ -24,6 +26,8 @@ jobs:
         run: python examples/financial-agent-eval-seed/validate_sources.py
       - name: Generate financial data-source governance report
         run: python examples/financial-agent-eval-seed/generate_source_governance_report.py
+      - name: Validate financial benchmark card
+        run: python tools/validate_financial_benchmark_card.py
       - name: Run financial agent eval seed
         run: python examples/financial-agent-eval-seed/run_finance_eval.py
       - name: Test financial agent eval runner

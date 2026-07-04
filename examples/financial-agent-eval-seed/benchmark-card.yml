@@ -1,0 +1,136 @@
+{
+  "name": "Financial Agent Eval Seed",
+  "version": "0.2.0",
+  "owner": "awesome-llm-training-data maintainers",
+  "status": "active",
+  "last_reviewed": "2026-07-04",
+  "purpose": {
+    "summary": "A public-safe starter benchmark for evaluating financial LLM agents on source grounding, exact lookup, citation support, cutoff discipline, risk calculation, toy backtesting, tool-use traces, and refusal boundaries.",
+    "intended_users": [
+      "financial AI evaluation engineers",
+      "LLM data quality leads",
+      "RAG and agent engineers",
+      "data-governance reviewers",
+      "agent-framework maintainers"
+    ],
+    "out_of_scope": [
+      "investment advice",
+      "trading signals",
+      "model ranking leaderboard",
+      "customer account analysis",
+      "private company data",
+      "real user data",
+      "proprietary workflows",
+      "production-readiness claims"
+    ]
+  },
+  "task_scope": {
+    "task_families": [
+      "financial_search",
+      "data_lookup",
+      "filing_qa",
+      "forecasting",
+      "risk_calculation",
+      "backtesting",
+      "tool_use",
+      "compliance_boundary"
+    ],
+    "required_capabilities": [
+      "source selection",
+      "exact value extraction",
+      "citation support",
+      "numeric calculation",
+      "cutoff discipline",
+      "safe refusal",
+      "tool trajectory review",
+      "private-data minimization"
+    ],
+    "prohibited_behaviors": [
+      "personalized investment recommendation",
+      "guaranteed-return claim",
+      "future-data leakage",
+      "fabricated source or tool observation",
+      "request for private account data",
+      "unsupported citation",
+      "production-readiness claim"
+    ],
+    "safety_boundary": "The seed tests financial-agent evaluation patterns using synthetic fixtures and public-source references. It does not provide investment advice, trading signals, private data, real user data, or proprietary workflows."
+  },
+  "data": {
+    "source_type": "mixed",
+    "source_manifest": "data-sources/source-manifest.json",
+    "source_manifest_refs": [
+      "synthetic_fixture",
+      "sec_edgar_api",
+      "hkexnews_title_search",
+      "cninfo_disclosure_portal"
+    ],
+    "redistribution_policy": "Bundled examples use repository-owned synthetic fixtures. External public sources are reference-only unless terms are reviewed.",
+    "private_data_used": false,
+    "real_user_data_used": false,
+    "proprietary_workflow_used": false
+  },
+  "temporal_controls": {
+    "cutoff_date": "task-specific",
+    "evidence_window": "declared in each task fixture or task spec when relevant",
+    "known_leakage_risks": [
+      "future filing or post-cutoff fact use",
+      "revised macro or market data use without timestamp review",
+      "toy backtest look-ahead bias",
+      "forecast explanation using later outcomes"
+    ],
+    "revision_policy": "Task specs, fixtures, and stable reports should be updated together when task coverage changes."
+  },
+  "evaluation": {
+    "answer_schema": "one answer.json artifact per task",
+    "verifier": "python examples/financial-agent-eval-seed/run_finance_eval.py",
+    "metrics": [
+      "task pass/fail",
+      "pass rate",
+      "source mapping coverage",
+      "known-bad failure coverage",
+      "synthetic fixture boundary checks"
+    ],
+    "tolerance_policy": "Numeric tolerance and exact-field checks are task-specific and implemented in deterministic verifier tests.",
+    "known_failure_modes": [
+      "wrong source",
+      "wrong unit or period",
+      "unsupported citation",
+      "future-data leakage",
+      "look-ahead bias",
+      "unsafe personalized advice",
+      "private-data request",
+      "fabricated tool observation",
+      "missing limitation statement"
+    ],
+    "current_task_count": 10,
+    "known_bad_candidate": "candidate-artifacts/bad-finance-agent"
+  },
+  "reports": {
+    "passing_report": "results/example-report.md",
+    "known_bad_report": "results/bad-finance-agent-report.md",
+    "source_governance_report": "results/source-governance-report.md"
+  },
+  "limitations": {
+    "benchmark_limits": [
+      "small seed, not a comprehensive benchmark",
+      "synthetic fixtures are useful for verifier design but are not market evidence",
+      "does not measure live retrieval reliability or production latency",
+      "does not rank models"
+    ],
+    "domain_limits": [
+      "finance examples are public-safe and intentionally narrow",
+      "external source terms must be reviewed before redistribution",
+      "tasks are not investment recommendations"
+    ],
+    "non_advice_statement": "This benchmark seed is for evaluation engineering. It does not contain or provide investment advice, trading signals, private data, real user data, or proprietary workflows."
+  },
+  "visible_evidence": {
+    "task_specs": "task-specs/",
+    "harbor_style_templates": "harbor-template/",
+    "reference_answers": "harbor-template/*/solution/answer.json",
+    "known_bad_answers": "candidate-artifacts/bad-finance-agent/*/answer.json",
+    "source_manifest": "data-sources/source-manifest.json",
+    "stable_reports": "results/"
+  }
+}

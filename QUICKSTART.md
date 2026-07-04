@@ -12,12 +12,14 @@ The current direction is documented in:
 
 ```bash
 python examples/financial-agent-eval-seed/run_finance_eval.py
+python tools/validate_financial_benchmark_card.py
 ```
 
 Expected result:
 
 ```text
 Pass rate: 10/10 (1.0)
+Validated financial benchmark card with 10 task specs.
 ```
 
 The command writes:

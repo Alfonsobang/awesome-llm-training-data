@@ -199,7 +199,7 @@
       "title": "Add a benchmark-card validator and generated card",
       "track": "data-governance",
       "priority": "P1",
-      "status": "planned",
+      "status": "completed",
       "source_page": "docs/financial-benchmark-card-template.md",
       "next_artifact": "examples/financial-agent-eval-seed/benchmark-card.yml",
       "why_it_matters": "A benchmark card turns the runnable seed into a more shareable evaluation artifact with visible provenance, leakage controls, intended use, and limitations.",
@@ -208,6 +208,22 @@
         "Add a validator that checks required provenance, leakage, safety, and report fields.",
         "Link the benchmark card from the README and project pages index.",
         "Include the validator in local verification and CI."
+      ]
+    },
+    {
+      "id": "repeated-trial-reporting",
+      "title": "Add repeated-trial reporting for the financial-agent eval seed",
+      "track": "harbor-openclaw",
+      "priority": "P1",
+      "status": "planned",
+      "source_page": "docs/financial-tool-use-evaluation-playbook.md",
+      "next_artifact": "examples/financial-agent-eval-seed/aggregate_trial_reports.py",
+      "why_it_matters": "Repeated-trial reporting makes instability, missing evidence, and unsafe behavior visible beyond a single lucky pass.",
+      "acceptance_criteria": [
+        "Add a small report aggregator for multiple run_finance_eval.py outputs.",
+        "Report pass rate, pass@k, Pass^k, missing-evidence rate, and unsafe-output rate where applicable.",
+        "Add a stable repeated-trial example report.",
+        "Document the workflow without ranking models or claiming production readiness."
       ]
     }
   ]

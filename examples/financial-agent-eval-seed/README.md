@@ -15,6 +15,8 @@ The command writes:
 
 The repository also includes a stable [example report](results/example-report.md) generated from the reference solutions.
 
+The seed now has a machine-checkable [benchmark card](benchmark-card.yml) covering intended use, source policy, leakage risks, verifier coverage, reports, limitations, and the non-advice boundary.
+
 It also includes a known-bad candidate so you can inspect what the verifier catches:
 
 ```bash
@@ -112,6 +114,7 @@ Run the local validator:
 ```bash
 python examples/financial-agent-eval-seed/validate_specs.py
 python examples/financial-agent-eval-seed/validate_sources.py
+python tools/validate_financial_benchmark_card.py
 ```
 
 Validate all Harbor-style example verifiers against the included reference outputs:

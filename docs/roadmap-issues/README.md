@@ -6,6 +6,8 @@ The repository currently has runnable financial-agent evaluation tasks, source-g
 
 ## Issue 1: Add Benchmark-card Validator And Generated Seed Benchmark Card
 
+Status: implemented in-repo. Keep this draft as provenance for why the benchmark card exists and as a checklist for future benchmark-card changes.
+
 ### Why
 
 The financial-agent eval seed now has runnable tasks, source-governance reports, and known-good / known-bad reports. A benchmark card would make the artifact easier for evaluation engineers and governance reviewers to inspect quickly.
@@ -73,4 +75,3 @@ Add a manifest that lists each current Harbor-style task, its fixture, expected 
 - Validator fails if a task directory is missing a fixture, solution, tests, or task metadata.
 - Manifest includes source refs and non-advice/private-data boundaries.
 - The task-pack is explicitly positioned as a public-safe example, not an official Harbor adapter.
-

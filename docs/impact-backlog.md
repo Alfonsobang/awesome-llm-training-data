@@ -24,7 +24,8 @@ Roadmap issue drafts: [`docs/roadmap-issues/README.md`](roadmap-issues/README.md
 | P1 | Completed | Harbor/OpenCLAW | Financial tool-use trace task | Makes tool order, observation linkage, and missing evidence measurable. |
 | P1 | Completed | Financial agent eval | Risk calculation task | Adds deterministic finance math beyond lookup, RAG, forecasting, and backtesting. |
 | P1 | Completed | Financial agent eval | Portfolio boundary refusal task | Tests a realistic regulated-domain boundary without collecting private account data. |
-| P1 | Planned | Data governance | Benchmark-card validator and generated card | Makes the seed easier to inspect, cite, and adapt as a benchmark artifact. |
+| P1 | Completed | Data governance | Benchmark-card validator and generated card | Makes the seed easier to inspect, cite, and adapt as a benchmark artifact. |
+| P1 | Planned | Harbor/OpenCLAW | Repeated-trial reporting | Makes instability, missing evidence, and unsafe behavior visible beyond a single lucky pass. |
 
 ## Why This Backlog Exists
 
@@ -48,10 +49,10 @@ Each item in the backlog must have:
 
 Next:
 
-> Add a benchmark-card validator and generated card
+> Add repeated-trial reporting for the financial-agent eval seed
 
-The public-source search task, finance RAG citation verifier, source-governance report, synthetic fixture validator, finance preference-review schema, public launch note, task matrix, Harbor task-pack blueprint, forecasting cutoff task, financial tool-use trace task, risk calculation task, and portfolio-boundary refusal task are now implemented.
+The public-source search task, finance RAG citation verifier, source-governance report, synthetic fixture validator, finance preference-review schema, public launch note, task matrix, Harbor task-pack blueprint, forecasting cutoff task, financial tool-use trace task, risk calculation task, portfolio-boundary refusal task, and benchmark-card validator are now implemented.
 
-The next highest-leverage item is a benchmark card for the runnable seed. It should make provenance, leakage controls, intended use, reports, and limitations visible enough for evaluation engineers and governance reviewers to trust the artifact quickly.
+The next highest-leverage item is repeated-trial reporting for the runnable seed. It should make pass@k, Pass^k, missing-evidence rate, and unsafe-output rate visible without turning the repo into a model leaderboard.
 
 Issue-write permission was not available during the latest maintenance pass, so the next issues are kept as ready-to-open drafts in [Roadmap Issue Drafts](roadmap-issues/README.md).
