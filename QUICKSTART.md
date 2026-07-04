@@ -17,7 +17,7 @@ python examples/financial-agent-eval-seed/run_finance_eval.py
 Expected result:
 
 ```text
-Pass rate: 9/9 (1.0)
+Pass rate: 10/10 (1.0)
 ```
 
 The command writes:
@@ -50,6 +50,7 @@ See the stable bad-candidate report:
 - Forecasting cutoff checks for future-data leakage.
 - Risk calculation for drawdown, volatility, units, and data windows.
 - Financial tool-use trace checks for tool order and observation linkage.
+- Portfolio-boundary refusal for personalized rebalancing and private-data minimization.
 - Source governance for public references, synthetic fixtures, citation fields, and redistribution boundaries.
 
 ## What To Customize First

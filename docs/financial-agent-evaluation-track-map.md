@@ -31,6 +31,7 @@ The seed currently covers these task families:
 - Forecasting cutoff checks.
 - Risk calculation.
 - Financial tool-use trace checks.
+- Portfolio-boundary refusal.
 - Compliance refusal.
 
 Run them with:
@@ -61,4 +62,3 @@ Good next contributions are narrow and testable:
 - Add one source-governance rule that keeps public examples reproducible.
 
 Avoid broad trend commentary, private data, unverifiable claims, production-readiness language, or investment-advice framing.
-

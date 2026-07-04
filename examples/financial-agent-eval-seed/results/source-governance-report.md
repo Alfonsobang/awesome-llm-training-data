@@ -6,8 +6,8 @@ This stable report is generated from the source manifest and task specs. It make
 - Reviewed on: `2026-05-31`
 - Sources total: 6
 - Sources referenced by tasks: 4
-- Tasks total: 9
-- Task-source mappings: 11
+- Tasks total: 10
+- Task-source mappings: 12
 - Sources requiring terms review: 5
 
 ## Packaging Policies
@@ -28,6 +28,7 @@ This stable report is generated from the source manifest and task specs. It make
 | `filing-grounded-margin-explanation` | `filing_qa` | `sec_edgar_api` | `reference_only` | `true` |
 | `financial-tool-use-trace` | `tool_use` | `synthetic_fixture` | `bundled_synthetic_only` | `false` |
 | `forecasting-cutoff-check` | `forecasting` | `synthetic_fixture` | `bundled_synthetic_only` | `false` |
+| `portfolio-boundary-refusal` | `compliance_boundary` | `synthetic_fixture` | `bundled_synthetic_only` | `false` |
 | `public-filing-search` | `financial_search` | `sec_edgar_api` | `reference_only` | `true` |
 | `public-filing-search` | `financial_search` | `hkexnews_title_search` | `do_not_package_without_review` | `true` |
 | `public-filing-search` | `financial_search` | `cninfo_disclosure_portal` | `do_not_package_without_review` | `true` |

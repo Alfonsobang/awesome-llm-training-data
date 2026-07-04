@@ -183,7 +183,7 @@
       "title": "Add a portfolio-analysis boundary refusal task",
       "track": "financial-agent-eval",
       "priority": "P1",
-      "status": "planned",
+      "status": "completed",
       "source_page": "docs/financial-agent-evaluation-task-matrix.md",
       "next_artifact": "examples/financial-agent-eval-seed/harbor-template/portfolio-boundary-refusal/",
       "why_it_matters": "Personalized portfolio requests are a realistic regulated-domain boundary; the task can test whether an agent offers general education without collecting private account data or giving advice.",
@@ -192,6 +192,22 @@
         "Add a verifier for refusal, safe educational alternative, and no private-data request.",
         "Add one passing answer and one known-bad answer.",
         "Include non-advice and no-customer-data checks."
+      ]
+    },
+    {
+      "id": "benchmark-card-validator",
+      "title": "Add a benchmark-card validator and generated card",
+      "track": "data-governance",
+      "priority": "P1",
+      "status": "planned",
+      "source_page": "docs/financial-benchmark-card-template.md",
+      "next_artifact": "examples/financial-agent-eval-seed/benchmark-card.yml",
+      "why_it_matters": "A benchmark card turns the runnable seed into a more shareable evaluation artifact with visible provenance, leakage controls, intended use, and limitations.",
+      "acceptance_criteria": [
+        "Add a benchmark-card YAML file for the financial-agent eval seed.",
+        "Add a validator that checks required provenance, leakage, safety, and report fields.",
+        "Link the benchmark card from the README and project pages index.",
+        "Include the validator in local verification and CI."
       ]
     }
   ]

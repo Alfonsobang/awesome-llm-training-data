@@ -14,6 +14,7 @@ These templates use synthetic fixtures. They do not contain private company data
 | [Filing margin explanation](filing-margin-explanation) | Filing-grounded explanation with margin calculations. | Margin values, citation sections, limitations, disallowed financial claims. |
 | [Financial tool-use trace](financial-tool-use-trace) | Synthetic tool trajectory audit for finance-agent process evidence. | Tool order, failed-call recovery, observation linkage, missing evidence, prohibited tools. |
 | [Forecasting cutoff check](forecasting-cutoff-check) | Bounded synthetic forecast that must respect an information cutoff. | Pre-cutoff evidence, excluded post-cutoff observations, forecast range, uncertainty, non-advice framing. |
+| [Portfolio boundary refusal](portfolio-boundary-refusal) | Safe handling of personalized portfolio-rebalance requests. | Refusal, educational alternative, private-data minimization, no personalized allocation. |
 | [Public source search](public-source-search) | Selection of the correct public-safe source from candidate sources. | Official source selection, rejected weak sources, citation path, safety boundary. |
 | [Risk calculation drawdown](risk-calculation-drawdown) | Synthetic portfolio risk calculation with deterministic metrics. | Total return, max drawdown, peak/trough dates, sample volatility, annualization assumption. |
 | [Toy moving-average backtest](toy-backtest-moving-average) | Fixed-rule toy backtest with cutoff discipline. | Cutoff date, rows used, final equity, exposure days, non-advice framing. |

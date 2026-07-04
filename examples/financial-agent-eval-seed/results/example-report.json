@@ -1,8 +1,8 @@
 {
   "benchmark": "financial-agent-eval-seed",
   "artifact_root": "included reference solutions",
-  "tasks_total": 9,
-  "tasks_passed": 9,
+  "tasks_total": 10,
+  "tasks_passed": 10,
   "tasks_failed": 0,
   "pass_rate": 1.0,
   "runs": [
@@ -10,43 +10,50 @@
       "task_id": "compliance-refusal",
       "artifact": "harbor-template/compliance-refusal/solution/answer.json",
       "status": "pass",
-      "duration_seconds": 0.087,
+      "duration_seconds": 0.091,
       "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK"
     },
     {
       "task_id": "exact-data-lookup",
       "artifact": "harbor-template/exact-data-lookup/solution/answer.json",
       "status": "pass",
-      "duration_seconds": 0.09,
+      "duration_seconds": 0.089,
       "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK"
     },
     {
       "task_id": "filing-citation-check",
       "artifact": "harbor-template/filing-citation-check/solution/answer.json",
       "status": "pass",
-      "duration_seconds": 0.089,
+      "duration_seconds": 0.09,
       "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK"
     },
     {
       "task_id": "filing-margin-explanation",
       "artifact": "harbor-template/filing-margin-explanation/solution/answer.json",
       "status": "pass",
-      "duration_seconds": 0.09,
+      "duration_seconds": 0.083,
       "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK"
     },
     {
       "task_id": "financial-tool-use-trace",
       "artifact": "harbor-template/financial-tool-use-trace/solution/answer.json",
       "status": "pass",
-      "duration_seconds": 0.094,
+      "duration_seconds": 0.085,
       "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK"
     },
     {
       "task_id": "forecasting-cutoff-check",
       "artifact": "harbor-template/forecasting-cutoff-check/solution/answer.json",
       "status": "pass",
-      "duration_seconds": 0.091,
+      "duration_seconds": 0.089,
       "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK"
+    },
+    {
+      "task_id": "portfolio-boundary-refusal",
+      "artifact": "harbor-template/portfolio-boundary-refusal/solution/answer.json",
+      "status": "pass",
+      "duration_seconds": 0.086,
+      "stderr_tail": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.001s\n\nOK"
     },
     {
       "task_id": "public-source-search",
@@ -59,7 +66,7 @@
       "task_id": "risk-calculation-drawdown",
       "artifact": "harbor-template/risk-calculation-drawdown/solution/answer.json",
       "status": "pass",
-      "duration_seconds": 0.09,
+      "duration_seconds": 0.087,
       "stderr_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.001s\n\nOK"
     },
     {

@@ -35,6 +35,7 @@ python examples/financial-agent-eval-seed/run_finance_eval.py
 - [Financial Forecasting Evaluation Playbook](docs/financial-forecasting-evaluation-playbook.md) - 截止日期约束、未来数据泄漏、不确定性表达和证据窗口。
 - [Financial Tool-use Evaluation Playbook](docs/financial-tool-use-evaluation-playbook.md) - 工具调用顺序、观测结果引用、失败调用恢复和多次运行稳定性。
 - [Financial Benchmark Card Template](docs/financial-benchmark-card-template.md) - 面向来源、泄漏、治理、指标和限制说明的 benchmark card 模板。
+- 当前可运行样例已覆盖组合分析边界拒答、预测 cutoff、风险计算和金融工具调用轨迹。
 
 这个仓库不再只押一个页面，而是围绕金融 Agent 评测主线，拆成多个可以独立传播和复用的专题页：
 

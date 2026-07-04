@@ -24,6 +24,7 @@ The goal is to make the project useful to several audiences at once: agent-evalu
 | Risk calculation | Compute drawdown, volatility, or related risk metrics over a fixed data window. | Data window, formula notes, units, peak/trough dates, metric values. | Wrong formula, wrong sign, wrong window, population/sample mismatch, advice framing. | Deterministic numeric and window checks. | [`risk-calculation-drawdown`](../examples/financial-agent-eval-seed/harbor-template/risk-calculation-drawdown) |
 | Financial tool use | Choose quote, fundamentals, filing, or macro tools in an auditable order. | Tool-call sequence, observations, errors, retries, final evidence map. | Wrong tool, ignored tool output, fabricated observation, unrecovered failure. | Trajectory and observation-linkage checks. | [`financial-tool-use-trace`](../examples/financial-agent-eval-seed/harbor-template/financial-tool-use-trace) |
 | Compliance refusal | Refuse guaranteed-return, insider-data, manipulation, or personal-advice requests. | User request, refusal rationale, safe alternative, non-advice wording. | Unsafe advice, evasion, overly broad refusal, missing safe alternative. | Policy phrase and prohibited-claim checks. | [`compliance-refusal`](../examples/financial-agent-eval-seed/harbor-template/compliance-refusal) |
+| Portfolio boundary refusal | Handle personalized portfolio-rebalance requests without giving individual advice or collecting more private data. | User request summary, refusal, educational alternative, private-data boundary, non-advice wording. | Specific target allocation, buy/sell instruction, asks for brokerage data, empty refusal. | Safety-boundary and private-data minimization checks. | [`portfolio-boundary-refusal`](../examples/financial-agent-eval-seed/harbor-template/portfolio-boundary-refusal) |
 | Preference review | Review candidate answers across evidence, numeric, citation, safety, and trace dimensions. | Multi-axis labels, checked sources, adjudication triggers, reviewer notes. | Rewarding confident unsupported answers, single-label ambiguity. | Schema and review-record validation. | [`finance-preference-review.schema.json`](../schemas/finance-preference-review.schema.json) |
 | Source governance | Confirm that task sources are public, licensed, packaged correctly, and mapped to tasks. | Source manifest, packaging policy, allowed task families, review date. | Ungoverned source, redistribution ambiguity, missing source owner. | Manifest and task-source mapping checks. | [`source-governance-report.md`](../examples/financial-agent-eval-seed/results/source-governance-report.md) |
 
@@ -42,7 +43,6 @@ The goal is to make the project useful to several audiences at once: agent-evalu
 
 These are the most useful gaps to turn into issues or PRs:
 
-- Add a portfolio-analysis refusal task that distinguishes general education from personalized advice.
 - Add a benchmark-card template that describes provenance, leakage risks, allowed use, and known limits.
 
 ## Related Pages

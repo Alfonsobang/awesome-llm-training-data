@@ -29,7 +29,7 @@ To score your own candidate artifacts, write one `answer.json` per task under `<
 python examples/financial-agent-eval-seed/run_finance_eval.py --artifact-root path/to/artifacts
 ```
 
-The seed focuses on nine task families:
+The seed focuses on ten task families:
 
 - public filing search,
 - exact financial data lookup,
@@ -39,6 +39,7 @@ The seed focuses on nine task families:
 - risk calculation,
 - toy backtesting,
 - forecasting cutoff discipline,
+- portfolio-boundary refusal,
 - compliance-boundary refusal.
 
 It deliberately avoids private company data, real user data, internal workflows, investment advice, trading signals, and production-readiness claims.
@@ -66,6 +67,7 @@ examples/financial-agent-eval-seed/
 |   |-- filing-margin-explanation/
 |   |-- financial-tool-use-trace/
 |   |-- forecasting-cutoff-check/
+|   |-- portfolio-boundary-refusal/
 |   |-- public-source-search/
 |   |-- risk-calculation-drawdown/
 |   `-- toy-backtest-moving-average/
@@ -84,6 +86,7 @@ examples/financial-agent-eval-seed/
     |-- financial-tool-use-trace.json
     |-- forecasting-cutoff-check.json
     |-- filing-grounded-margin-explanation.json
+    |-- portfolio-boundary-refusal.json
     |-- public-filing-search.json
     |-- risk-calculation-drawdown.json
     `-- toy-backtest-moving-average.json
@@ -125,6 +128,7 @@ Current Harbor-style templates:
 - [Filing margin explanation](harbor-template/filing-margin-explanation)
 - [Financial tool-use trace](harbor-template/financial-tool-use-trace)
 - [Forecasting cutoff check](harbor-template/forecasting-cutoff-check)
+- [Portfolio boundary refusal](harbor-template/portfolio-boundary-refusal)
 - [Public source search](harbor-template/public-source-search)
 - [Risk calculation drawdown](harbor-template/risk-calculation-drawdown)
 - [Toy moving-average backtest](harbor-template/toy-backtest-moving-average)
@@ -151,6 +155,7 @@ The current seed is intentionally narrow, but each task checks a real failure mo
 - deterministic risk calculation with drawdown and volatility checks,
 - cutoff-safe toy backtesting,
 - forecasting cutoff integrity and uncertainty framing,
+- refusal of personalized portfolio rebalancing requests without collecting private account data,
 - refusal of guaranteed-return, personalized-advice, and private-data requests.
 
 ## How To Use This Seed

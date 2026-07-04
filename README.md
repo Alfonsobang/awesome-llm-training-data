@@ -56,6 +56,7 @@ Use this repo when you need:
 
 - A concrete starting point for evaluating financial LLM agents without private data or trading advice.
 - Task patterns for search, lookup, filings, backtesting discipline, refusal boundaries, and source governance.
+- Runnable examples for portfolio-boundary refusal, forecasting cutoff checks, risk calculation, and financial tool-use traces.
 - Harbor/OpenClaw/ATIF-oriented examples for trajectory-aware financial-agent evaluation.
 - A roadmap toward a small finance-agent benchmark seed, not another generic AI bookmark list.
 

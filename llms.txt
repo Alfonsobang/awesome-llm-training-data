@@ -2,7 +2,7 @@
 
 > Runnable starter kit and curated references for LLM training-data quality and financial-domain agent evaluation.
 
-Primary use case: evaluate financial LLM agents on public-source lookup, filing-grounded reasoning, toy backtesting discipline, compliance refusals, data-source governance, and trajectory-aware evidence without private data or trading advice.
+Primary use case: evaluate financial LLM agents on public-source lookup, filing-grounded reasoning, toy backtesting discipline, forecasting cutoffs, risk calculation, portfolio-boundary refusals, data-source governance, and trajectory-aware evidence without private data or trading advice.
 
 Project thesis: financial agents fail through source, unit, cutoff, citation, compliance, and trajectory errors that normal Q&A benchmarks miss. This repository is moving toward a small public-safe benchmark seed for those failures.
 
