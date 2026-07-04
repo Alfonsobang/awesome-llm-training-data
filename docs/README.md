@@ -10,6 +10,7 @@ The project still has one core direction: public-safe financial agent evaluation
 - [Financial Agent Evaluation Track Map](financial-agent-evaluation-track-map.md) / [中文](financial-agent-evaluation-track-map.zh-CN.md) - Multi-track map for search, lookup, backtesting, forecasting, tool use, governance, and preference quality.
 - [FinAgentBench Seed Spec](finagentbench-seed-spec.md) - Proposed shape of the runnable benchmark seed.
 - [Impact Backlog](impact-backlog.md) - Machine-checkable next artifacts for turning pages into tasks, verifiers, schemas, and reports.
+- [Roadmap Issue Drafts](roadmap-issues/README.md) - Ready-to-open issue drafts for benchmark cards, repeated-trial reports, and task-pack manifests.
 - [Financial Agent Evaluation Agenda](financial-agent-evaluation-agenda.md) - Topic map for search, lookup, filing QA, backtesting, forecasting, compliance, and evidence-grounded agent evaluation.
 - [Financial Agent Evaluation Task Matrix](financial-agent-evaluation-task-matrix.md) - Task-family map for turning finance-agent ideas into runnable checks.
 - [Financial Agent Evaluation Roadmap](financial-agent-evaluation-roadmap.md) - Longer project direction for the finance track.

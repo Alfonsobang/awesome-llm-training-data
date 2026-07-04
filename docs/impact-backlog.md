@@ -6,6 +6,8 @@ The repository has not shown strong external feedback yet. The response is not t
 
 Machine-readable source: [`impact/impact-backlog.json`](../impact/impact-backlog.json)
 
+Roadmap issue drafts: [`docs/roadmap-issues/README.md`](roadmap-issues/README.md)
+
 ## Current Priorities
 
 | Priority | Status | Track | Artifact | Why it matters |
@@ -51,3 +53,5 @@ Next:
 The public-source search task, finance RAG citation verifier, source-governance report, synthetic fixture validator, finance preference-review schema, public launch note, task matrix, Harbor task-pack blueprint, forecasting cutoff task, financial tool-use trace task, risk calculation task, and portfolio-boundary refusal task are now implemented.
 
 The next highest-leverage item is a benchmark card for the runnable seed. It should make provenance, leakage controls, intended use, reports, and limitations visible enough for evaluation engineers and governance reviewers to trust the artifact quickly.
+
+Issue-write permission was not available during the latest maintenance pass, so the next issues are kept as ready-to-open drafts in [Roadmap Issue Drafts](roadmap-issues/README.md).
