@@ -336,6 +336,23 @@
       ]
     },
     {
+      "id": "root-finagent-eval-cli",
+      "title": "Add a root-level financial-agent evaluation demo CLI",
+      "track": "financial-agent-eval",
+      "priority": "P0",
+      "status": "completed",
+      "source_page": "examples/financial-agent-eval-seed/README.md",
+      "next_artifact": "finagent_eval.py",
+      "why_it_matters": "A root-level demo command makes the project easier to try, share, and understand than deep example paths.",
+      "acceptance_criteria": [
+        "Expose a root-level demo command that runs the reference verifier suite and generates a scorecard.",
+        "Expose lower-level run and scorecard subcommands for candidate artifacts.",
+        "Expose a known-bad demo for red-flag behavior without treating it as a passing benchmark.",
+        "Document the CLI from the README, Quickstart, docs index, and llms.txt.",
+        "Add tests and CI coverage for the root entrypoint."
+      ]
+    },
+    {
       "id": "repo-metadata-repositioning",
       "title": "Reposition public repository metadata around financial-agent evaluation",
       "track": "distribution",

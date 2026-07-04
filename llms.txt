@@ -9,6 +9,7 @@ Project thesis: financial agents fail through source, unit, cutoff, citation, co
 ## Key Links
 
 - Quickstart: QUICKSTART.md
+- Root demo CLI: finagent_eval.py
 - Main README: README.md
 - Chinese README: README.zh-CN.md
 - Project pages index: docs/README.md
@@ -65,7 +66,7 @@ Project thesis: financial agents fail through source, unit, cutoff, citation, co
 ## One-Command Eval
 
 ```bash
-python examples/financial-agent-eval-seed/run_finance_eval.py
+python finagent_eval.py demo
 ```
 
 Known-bad candidate:

@@ -16,10 +16,12 @@
 仓库里最有复用价值的部分是可运行的 **Financial Agent Eval Seed**：它包含任务规格、合成 fixture、Harbor 风格任务模板、确定性 verifier、数据来源治理元数据和自动生成的评测报告。
 
 ```bash
-python examples/financial-agent-eval-seed/run_finance_eval.py
+python finagent_eval.py demo
 ```
 
-建议先看 [60-second quickstart](QUICKSTART.md)，再对比参考答案生成的 [example report](examples/financial-agent-eval-seed/results/example-report.md) 和已知坏样例的 [failure report](examples/financial-agent-eval-seed/results/bad-finance-agent-report.md)。
+这个 demo 会运行 10 个参考任务，并基于确定性 verifier 输出生成 Markdown/JSON scorecard。
+
+建议先看 [60-second quickstart](QUICKSTART.md)，再对比参考答案生成的 [example report](examples/financial-agent-eval-seed/results/example-report.md)、已知坏样例的 [failure report](examples/financial-agent-eval-seed/results/bad-finance-agent-report.md) 和 [reference scorecard](examples/financial-agent-eval-seed/results/example-scorecard.md)。
 
 如果你想理解这个项目接下来应该做成什么，请先看 [Financial Agent Evaluation Positioning Thesis](docs/financial-agent-eval-positioning.md) 和 [FinAgentBench Seed Spec](docs/finagentbench-seed-spec.md)。
 
@@ -29,6 +31,7 @@ python examples/financial-agent-eval-seed/run_finance_eval.py
 
 ## Project Pages
 
+- [Root Demo CLI](finagent_eval.py) - 根目录一条命令运行评测并生成 scorecard：`python finagent_eval.py demo`。
 - [Financial Agent Evaluation Portfolio](docs/financial-agent-evaluation-portfolio.md) / [中文](docs/financial-agent-evaluation-portfolio.zh-CN.md) - 面向可运行任务、scorecard、治理、Harbor 风格打包和对外定位的多入口策略。
 - [Financial Agent Evaluation Task Zoo](docs/financial-agent-evaluation-task-zoo.md) - 已实现和下一步可扩展的金融 Agent 任务家族，覆盖搜索、查数、RAG、预测、工具调用、风险、拒答和治理。
 - [Financial Agent Evaluation Scorecard](docs/financial-agent-evaluation-scorecard.md) - 不做 leaderboard 的金融 Agent 行为评审模板。
@@ -93,6 +96,7 @@ python examples/financial-agent-eval-seed/run_finance_eval.py
 - 阅读 [Harbor Finance Task Pack Blueprint](docs/harbor-finance-task-pack-blueprint.md) 了解面向框架的任务打包方式。
 - 分享 [Public Launch Note](docs/public-launch-note.md) 或 [中文发布说明](docs/public-launch-note.zh-CN.md)。
 - 查看 [Impact Backlog](docs/impact-backlog.md)。
+- 运行根目录 demo CLI：`python finagent_eval.py demo`。
 - 运行 [Financial Agent Eval Seed](examples/financial-agent-eval-seed)：`python examples/financial-agent-eval-seed/run_finance_eval.py`。
 - 使用 [60-second quickstart](QUICKSTART.md)。
 - 查看种子套件的 [example report](examples/financial-agent-eval-seed/results/example-report.md)。

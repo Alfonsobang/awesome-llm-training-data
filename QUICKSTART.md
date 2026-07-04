@@ -11,7 +11,29 @@ The current direction is documented in:
 ## Run The Passing Reference Suite
 
 ```bash
+python finagent_eval.py demo
+```
+
+Expected result:
+
+```text
+Pass rate: 10/10 (1.0)
+Dimension score: 12.0/12
+Recommendation: strong public-safe seed performance; still not production evidence
+```
+
+The command writes:
+
+- `examples/financial-agent-eval-seed/results/latest-report.json`
+- `examples/financial-agent-eval-seed/results/latest-report.md`
+- `examples/financial-agent-eval-seed/results/latest-scorecard.json`
+- `examples/financial-agent-eval-seed/results/latest-scorecard.md`
+
+You can also run the lower-level commands directly:
+
+```bash
 python examples/financial-agent-eval-seed/run_finance_eval.py
+python examples/financial-agent-eval-seed/build_scorecard.py --report examples/financial-agent-eval-seed/results/latest-report.json --candidate reference-solutions --output-prefix examples/financial-agent-eval-seed/results/latest-scorecard
 python examples/financial-agent-eval-seed/aggregate_trial_reports.py
 python examples/financial-agent-eval-seed/validate_task_pack_manifest.py
 python tools/validate_financial_benchmark_card.py
@@ -21,31 +43,26 @@ Expected result:
 
 ```text
 Pass rate: 10/10 (1.0)
+Dimension score: 12.0/12
 Repeated-trial report: 10 tasks, 20 task trials
 Validated task-pack manifest with 10 tasks.
 Validated financial benchmark card with 10 task specs.
 ```
-
-The command writes:
-
-- `examples/financial-agent-eval-seed/results/latest-report.json`
-- `examples/financial-agent-eval-seed/results/latest-report.md`
-- `examples/financial-agent-eval-seed/results/repeated-trial-example-report.json`
-- `examples/financial-agent-eval-seed/results/repeated-trial-example-report.md`
 
 ## Run A Known-Bad Candidate
 
 This shows what the verifier catches when an agent output is unsafe, weakly grounded, or numerically wrong.
 
 ```bash
-python examples/financial-agent-eval-seed/run_finance_eval.py --artifact-root examples/financial-agent-eval-seed/candidate-artifacts/bad-finance-agent
+python finagent_eval.py bad-demo
 ```
 
-Expected result: the command exits non-zero and reports failed tasks.
+Expected result: the command reports failed tasks and writes a known-bad scorecard with red flags.
 
 See the stable bad-candidate report:
 
 - `examples/financial-agent-eval-seed/results/bad-finance-agent-report.md`
+- `examples/financial-agent-eval-seed/results/bad-finance-agent-scorecard.md`
 
 ## What The Seed Currently Checks
 
