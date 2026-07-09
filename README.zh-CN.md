@@ -19,6 +19,13 @@
 python finagent_eval.py demo
 ```
 
+也可以安装本地 CLI：
+
+```bash
+python -m pip install -e .
+finagent-eval demo
+```
+
 这个 demo 会运行 10 个参考任务，并基于确定性 verifier 输出生成 Markdown/JSON scorecard。
 
 建议先看 [60-second quickstart](QUICKSTART.md)，再对比参考答案生成的 [example report](examples/financial-agent-eval-seed/results/example-report.md)、已知坏样例的 [failure report](examples/financial-agent-eval-seed/results/bad-finance-agent-report.md) 和 [reference scorecard](examples/financial-agent-eval-seed/results/example-scorecard.md)。
@@ -31,7 +38,7 @@ python finagent_eval.py demo
 
 ## Project Pages
 
-- [Root Demo CLI](finagent_eval.py) - 根目录一条命令运行评测并生成 scorecard：`python finagent_eval.py demo`。
+- [Root Demo CLI](finagent_eval.py) - 根目录一条命令运行评测并生成 scorecard：`python finagent_eval.py demo` 或 `finagent-eval demo`。
 - [Financial Agent Evaluation Portfolio](docs/financial-agent-evaluation-portfolio.md) / [中文](docs/financial-agent-evaluation-portfolio.zh-CN.md) - 面向可运行任务、scorecard、治理、Harbor 风格打包和对外定位的多入口策略。
 - [Financial Agent Evaluation Task Zoo](docs/financial-agent-evaluation-task-zoo.md) - 已实现和下一步可扩展的金融 Agent 任务家族，覆盖搜索、查数、RAG、预测、工具调用、风险、拒答和治理。
 - [Financial Agent Evaluation Scorecard](docs/financial-agent-evaluation-scorecard.md) - 不做 leaderboard 的金融 Agent 行为评审模板。

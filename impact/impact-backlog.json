@@ -353,6 +353,24 @@
       ]
     },
     {
+      "id": "installable-finagent-eval-cli",
+      "title": "Package the financial-agent evaluation seed as an installable local CLI",
+      "track": "financial-agent-eval",
+      "priority": "P0",
+      "status": "completed",
+      "source_page": "QUICKSTART.md",
+      "next_artifact": "setup.cfg",
+      "why_it_matters": "An installable console command makes the project feel like a reusable tool rather than a collection of scripts.",
+      "acceptance_criteria": [
+        "Add setup.cfg with conservative metadata and no third-party runtime dependencies.",
+        "Add a minimal setup.py compatibility shim for editable-install tooling.",
+        "Expose a finagent-eval console script for the existing root CLI.",
+        "Document editable install from README, Chinese README, Quickstart, docs index, and llms.txt.",
+        "Add CI coverage that installs the project and runs finagent-eval demo.",
+        "Avoid PyPI, adoption, production-readiness, or investment claims."
+      ]
+    },
+    {
       "id": "repo-metadata-repositioning",
       "title": "Reposition public repository metadata around financial-agent evaluation",
       "track": "distribution",

@@ -11,6 +11,13 @@ class FinAgentEvalCliTests(unittest.TestCase):
         self.assertIn("bad-demo", help_text)
         self.assertIn("scorecard", help_text)
 
+    def test_demo_defaults_to_latest_scorecard(self):
+        parser = finagent_eval.build_parser()
+        args = parser.parse_args(["demo"])
+        self.assertEqual(args.candidate, "reference-solutions")
+        self.assertEqual(args.report, finagent_eval.DEFAULT_LATEST_REPORT)
+        self.assertEqual(args.scorecard_prefix, finagent_eval.DEFAULT_LATEST_SCORECARD)
+
     def test_display_path_uses_repo_relative_paths(self):
         path = finagent_eval.SEED_DIR / "run_finance_eval.py"
         self.assertEqual(

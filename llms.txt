@@ -69,6 +69,13 @@ Project thesis: financial agents fail through source, unit, cutoff, citation, co
 python finagent_eval.py demo
 ```
 
+Installable local CLI:
+
+```bash
+python -m pip install -e .
+finagent-eval demo
+```
+
 Known-bad candidate:
 
 ```bash

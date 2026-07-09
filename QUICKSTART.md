@@ -14,6 +14,13 @@ The current direction is documented in:
 python finagent_eval.py demo
 ```
 
+Optional local install:
+
+```bash
+python -m pip install -e .
+finagent-eval demo
+```
+
 Expected result:
 
 ```text

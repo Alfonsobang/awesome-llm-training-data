@@ -19,6 +19,13 @@ The most useful part is the runnable **Financial Agent Eval Seed**: a small, pub
 python finagent_eval.py demo
 ```
 
+Or install the local CLI:
+
+```bash
+python -m pip install -e .
+finagent-eval demo
+```
+
 The demo runs the 10-task reference suite and generates a Markdown/JSON scorecard from deterministic verifier output.
 
 Start with the [60-second quickstart](QUICKSTART.md), inspect the passing [example report](examples/financial-agent-eval-seed/results/example-report.md), compare it with a known-bad [failure report](examples/financial-agent-eval-seed/results/bad-finance-agent-report.md), and review the generated [reference scorecard](examples/financial-agent-eval-seed/results/example-scorecard.md).
@@ -34,7 +41,7 @@ For AI coding agents and LLM-based repo readers, see [llms.txt](llms.txt) and [A
 This repo now has multiple useful surfaces instead of a single bet:
 
 - [Project Pages Index](docs/README.md) - A guided map of the strongest pages in the repo.
-- [Root Demo CLI](finagent_eval.py) - One-command entrypoint for running the seed and generating scorecards: `python finagent_eval.py demo`.
+- [Root Demo CLI](finagent_eval.py) - One-command entrypoint for running the seed and generating scorecards: `python finagent_eval.py demo` or `finagent-eval demo`.
 - [Financial Agent Evaluation Portfolio](docs/financial-agent-evaluation-portfolio.md) / [Chinese](docs/financial-agent-evaluation-portfolio.zh-CN.md) - Multi-entry strategy for runnable tasks, scorecards, governance, Harbor-style packaging, and public positioning.
 - [Financial Agent Evaluation Task Zoo](docs/financial-agent-evaluation-task-zoo.md) - Implemented and next finance-agent task families across search, lookup, RAG, forecasting, tool use, risk, refusal, and governance.
 - [Financial Agent Evaluation Scorecard](docs/financial-agent-evaluation-scorecard.md) - Reusable scorecard for reviewing public-safe financial-agent behavior without creating a leaderboard.
