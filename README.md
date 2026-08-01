@@ -15,7 +15,7 @@ A practical repo for LLM data and agent-evaluation teams, now being refocused ar
 
 This repo is moving toward a public-safe starter harness for testing those failures.
 
-The most useful part is the runnable **Financial Agent Eval Seed**: a small, public-safe starter kit with task specs, synthetic fixtures, Harbor-style task templates, deterministic verifiers, source-governance metadata, and generated reports.
+The most useful part is **[FinAgentBench Mini](FINAGENTBENCH.md)**: a small, public-safe starter benchmark with task specs, synthetic fixtures, Harbor-style task templates, deterministic verifiers, source-governance metadata, candidate-artifact scaffolding, and generated reports.
 
 ```bash
 python finagent_eval.py demo
@@ -30,7 +30,14 @@ finagent-eval demo
 
 The demo runs the 10-task reference suite and generates a Markdown/JSON scorecard from deterministic verifier output.
 
-Start with the [60-second quickstart](QUICKSTART.md), inspect the passing [example report](examples/financial-agent-eval-seed/results/example-report.md), compare it with a known-bad [failure report](examples/financial-agent-eval-seed/results/bad-finance-agent-report.md), and review the generated [reference scorecard](examples/financial-agent-eval-seed/results/example-scorecard.md).
+To evaluate your own finance agent output, scaffold candidate artifacts and run the same verifiers:
+
+```bash
+python finagent_eval.py init-candidate tmp/my-finance-agent
+python finagent_eval.py run --artifact-root tmp/my-finance-agent
+```
+
+Start with [FinAgentBench Mini](FINAGENTBENCH.md), the [60-second quickstart](QUICKSTART.md), the [candidate evaluation guide](docs/evaluate-your-finance-agent.md), the passing [example report](examples/financial-agent-eval-seed/results/example-report.md), the known-bad [failure report](examples/financial-agent-eval-seed/results/bad-finance-agent-report.md), and the generated [reference scorecard](examples/financial-agent-eval-seed/results/example-scorecard.md).
 
 Read the new [Financial Agent Evaluation Positioning Thesis](docs/financial-agent-eval-positioning.md) and [FinAgentBench Seed Spec](docs/finagentbench-seed-spec.md) if you want to understand where this project is going.
 
@@ -43,6 +50,9 @@ For AI coding agents and LLM-based repo readers, see [llms.txt](llms.txt) and [A
 This repo now has multiple useful surfaces instead of a single bet:
 
 - [Project Pages Index](docs/README.md) - A guided map of the strongest pages in the repo.
+- [FinAgentBench Mini](FINAGENTBENCH.md) - Runnable public-safe benchmark entrypoint for financial-agent evaluation.
+- [Evaluate Your Own Finance Agent](docs/evaluate-your-finance-agent.md) - Candidate-artifact workflow for running the seed against an external agent output.
+- [Submission and Leaderboard Policy](docs/submission-and-leaderboard-policy.md) - Conservative policy for future public submissions without unsupported ranking claims.
 - [Financial Agent Eval Toolkit Preview](docs/assets/finagent-eval-preview.svg) - Visual first-screen summary of the demo CLI, scorecard dimensions, and known-bad red flags.
 - [Root Demo CLI](finagent_eval.py) - One-command entrypoint for running the seed and generating scorecards: `python finagent_eval.py demo` or `finagent-eval demo`.
 - [Financial Agent Evaluation Portfolio](docs/financial-agent-evaluation-portfolio.md) / [Chinese](docs/financial-agent-evaluation-portfolio.zh-CN.md) - Multi-entry strategy for runnable tasks, scorecards, governance, Harbor-style packaging, and public positioning.
@@ -57,6 +67,8 @@ This repo now has multiple useful surfaces instead of a single bet:
 - [Financial Tool-use Evaluation Playbook](docs/financial-tool-use-evaluation-playbook.md) - Tool order, observation linkage, failed-call recovery, and repeated-trial stability.
 - [Financial Benchmark Card Template](docs/financial-benchmark-card-template.md) - A reusable card for provenance, leakage, source policy, metrics, and limitations.
 - [Financial Agent Eval Seed Benchmark Card](examples/financial-agent-eval-seed/benchmark-card.yml) - Machine-checkable benchmark card for intended use, source policy, leakage risks, reports, and limitations.
+- [Machine-readable Task Index](examples/financial-agent-eval-seed/tasks.jsonl) - JSONL index of the 10 seed task families, risk levels, and primary failure modes.
+- [Submission Template](examples/financial-agent-eval-seed/submission-template.json) - Public-safe template for future candidate-run disclosures.
 - [Harbor-style Task-pack Manifest](examples/financial-agent-eval-seed/harbor-template/task-pack-manifest.json) - Machine-checkable manifest for the 10 public-safe finance task templates.
 - [Impact Backlog](docs/impact-backlog.md) - Machine-checkable next artifacts for the multi-track strategy.
 - [Repository Metadata Update](docs/repo-metadata-update.md) - Desired GitHub description/topics plus a validator for the repo first screen.
@@ -79,6 +91,7 @@ This repo now has multiple useful surfaces instead of a single bet:
 Use this repo when you need:
 
 - A concrete starting point for evaluating financial LLM agents without private data or trading advice.
+- A candidate-artifact workflow for testing your own finance agent outputs locally.
 - Task patterns for search, lookup, filings, backtesting discipline, refusal boundaries, and source governance.
 - Runnable examples for portfolio-boundary refusal, forecasting cutoff checks, risk calculation, and financial tool-use traces.
 - Harbor/OpenClaw/ATIF-oriented examples for trajectory-aware financial-agent evaluation.
@@ -95,6 +108,9 @@ English first. Complete Chinese version: [README.zh-CN.md](README.zh-CN.md).
 The hottest evaluation shift right now is from static answer grading to trajectory-aware agent evaluation: repeated attempts, process safety, verifier evidence, artifacts, and auditable traces.
 
 - Read the [Financial Agent Evaluation Positioning Thesis](docs/financial-agent-eval-positioning.md).
+- Start from [FinAgentBench Mini](FINAGENTBENCH.md).
+- Evaluate your own agent with the [candidate workflow](docs/evaluate-your-finance-agent.md).
+- Review the [submission and leaderboard policy](docs/submission-and-leaderboard-policy.md).
 - Start from the [Financial Agent Evaluation Portfolio](docs/financial-agent-evaluation-portfolio.md).
 - Start from the [Financial Agent Evaluation Track Map](docs/financial-agent-evaluation-track-map.md).
 - Browse the [Financial Agent Evaluation Task Zoo](docs/financial-agent-evaluation-task-zoo.md).
@@ -109,6 +125,7 @@ The hottest evaluation shift right now is from static answer grading to trajecto
 - Share the [Public Launch Note](docs/public-launch-note.md) or [Chinese launch note](docs/public-launch-note.zh-CN.md).
 - Review the [Impact Backlog](docs/impact-backlog.md).
 - Run the root demo CLI: `python finagent_eval.py demo`.
+- Scaffold a candidate run: `python finagent_eval.py init-candidate tmp/my-finance-agent`.
 - Run the [Financial Agent Eval Seed](examples/financial-agent-eval-seed): `python examples/financial-agent-eval-seed/run_finance_eval.py`.
 - Use the [60-second quickstart](QUICKSTART.md).
 - Inspect the seed [example report](examples/financial-agent-eval-seed/results/example-report.md).

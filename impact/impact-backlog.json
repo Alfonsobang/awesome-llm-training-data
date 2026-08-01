@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_on": "2026-07-04",
+  "updated_on": "2026-08-02",
   "positioning": "A portfolio of public-safe financial AI evaluation assets, anchored by runnable financial agent evaluation.",
   "tracks": [
     {
@@ -384,6 +384,54 @@
         "Show the demo command, reference pass rate, scorecard score, and known-bad red-flag categories.",
         "Link the preview from English README, Chinese README, docs index, and llms.txt.",
         "Avoid private data, investment advice, trading signals, and production-readiness claims."
+      ]
+    },
+    {
+      "id": "finagentbench-mini-entrypoint",
+      "title": "Add a dedicated FinAgentBench Mini entrypoint",
+      "track": "distribution",
+      "priority": "P0",
+      "status": "completed",
+      "source_page": "README.md",
+      "next_artifact": "FINAGENTBENCH.md",
+      "why_it_matters": "A dedicated benchmark entrypoint makes the runnable seed easier to understand, cite, and share than a long Awesome-list README.",
+      "acceptance_criteria": [
+        "Explain the benchmark boundary in the first screen.",
+        "Show the one-minute demo command and candidate-artifact workflow.",
+        "Map all 10 task families to primary failure modes.",
+        "Link the benchmark card, task index, task-pack manifest, candidate guide, and submission policy."
+      ]
+    },
+    {
+      "id": "candidate-artifact-workflow",
+      "title": "Add a candidate-artifact workflow for evaluating external agents",
+      "track": "financial-agent-eval",
+      "priority": "P0",
+      "status": "completed",
+      "source_page": "docs/evaluate-your-finance-agent.md",
+      "next_artifact": "finagent_eval.py",
+      "why_it_matters": "Readers are more likely to reuse and star a benchmark when they can run it against their own agent output quickly.",
+      "acceptance_criteria": [
+        "Add a CLI command that scaffolds one answer.json file per task.",
+        "Document how to fill candidate outputs safely.",
+        "Document how to run verifiers and build scorecards.",
+        "Add tests for the scaffolding command."
+      ]
+    },
+    {
+      "id": "submission-policy-and-task-index",
+      "title": "Add submission policy, template, and machine-readable task index",
+      "track": "distribution",
+      "priority": "P1",
+      "status": "completed",
+      "source_page": "docs/submission-and-leaderboard-policy.md",
+      "next_artifact": "examples/financial-agent-eval-seed/tasks.jsonl",
+      "why_it_matters": "A conservative submission policy and JSONL task index make the project easier for benchmark builders and AI coding agents to consume without unsupported rankings.",
+      "acceptance_criteria": [
+        "Add a JSONL task index for the 10 seed tasks.",
+        "Add a public-safe candidate-run submission template.",
+        "State that public submissions and leaderboards are not open yet.",
+        "Avoid model ranking, investment quality, production-readiness, and adoption claims."
       ]
     },
     {

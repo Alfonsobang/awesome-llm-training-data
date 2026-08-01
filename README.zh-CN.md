@@ -15,7 +15,7 @@
 
 这个仓库正在朝一个公开安全、可运行、可审计的金融 Agent 评测 starter harness 演进。
 
-仓库里最有复用价值的部分是可运行的 **Financial Agent Eval Seed**：它包含任务规格、合成 fixture、Harbor 风格任务模板、确定性 verifier、数据来源治理元数据和自动生成的评测报告。
+仓库里最有复用价值的部分是 **[FinAgentBench Mini](FINAGENTBENCH.md)**：一个 public-safe 的金融 Agent 评测 starter benchmark，包含任务规格、合成 fixture、Harbor 风格任务模板、确定性 verifier、数据来源治理元数据、候选产物骨架和自动生成的评测报告。
 
 ```bash
 python finagent_eval.py demo
@@ -30,7 +30,14 @@ finagent-eval demo
 
 这个 demo 会运行 10 个参考任务，并基于确定性 verifier 输出生成 Markdown/JSON scorecard。
 
-建议先看 [60-second quickstart](QUICKSTART.md)，再对比参考答案生成的 [example report](examples/financial-agent-eval-seed/results/example-report.md)、已知坏样例的 [failure report](examples/financial-agent-eval-seed/results/bad-finance-agent-report.md) 和 [reference scorecard](examples/financial-agent-eval-seed/results/example-scorecard.md)。
+如果你想评测自己的金融 Agent 输出，可以先生成候选产物目录，再运行同一套 verifier：
+
+```bash
+python finagent_eval.py init-candidate tmp/my-finance-agent
+python finagent_eval.py run --artifact-root tmp/my-finance-agent
+```
+
+建议先看 [FinAgentBench Mini](FINAGENTBENCH.md)、[60-second quickstart](QUICKSTART.md)、[候选 Agent 评测指南](docs/evaluate-your-finance-agent.md)，再对比参考答案生成的 [example report](examples/financial-agent-eval-seed/results/example-report.md)、已知坏样例的 [failure report](examples/financial-agent-eval-seed/results/bad-finance-agent-report.md) 和 [reference scorecard](examples/financial-agent-eval-seed/results/example-scorecard.md)。
 
 如果你想理解这个项目接下来应该做成什么，请先看 [Financial Agent Evaluation Positioning Thesis](docs/financial-agent-eval-positioning.md) 和 [FinAgentBench Seed Spec](docs/finagentbench-seed-spec.md)。
 
@@ -40,6 +47,9 @@ finagent-eval demo
 
 ## Project Pages
 
+- [FinAgentBench Mini](FINAGENTBENCH.md) - 金融 Agent 评测的可运行 public-safe benchmark 入口。
+- [Evaluate Your Own Finance Agent](docs/evaluate-your-finance-agent.md) - 用候选产物工作流评测外部 Agent 输出。
+- [Submission and Leaderboard Policy](docs/submission-and-leaderboard-policy.md) - 面向未来公开提交的保守规则，避免没有依据的排名叙事。
 - [Financial Agent Eval Toolkit Preview](docs/assets/finagent-eval-preview.svg) - 首屏可视化说明 demo CLI、scorecard 维度和 known-bad 红旗。
 - [Root Demo CLI](finagent_eval.py) - 根目录一条命令运行评测并生成 scorecard：`python finagent_eval.py demo` 或 `finagent-eval demo`。
 - [Financial Agent Evaluation Portfolio](docs/financial-agent-evaluation-portfolio.md) / [中文](docs/financial-agent-evaluation-portfolio.zh-CN.md) - 面向可运行任务、scorecard、治理、Harbor 风格打包和对外定位的多入口策略。
@@ -54,6 +64,8 @@ finagent-eval demo
 - [Financial Tool-use Evaluation Playbook](docs/financial-tool-use-evaluation-playbook.md) - 工具调用顺序、观测结果引用、失败调用恢复和多次运行稳定性。
 - [Financial Benchmark Card Template](docs/financial-benchmark-card-template.md) - 面向来源、泄漏、治理、指标和限制说明的 benchmark card 模板。
 - [Financial Agent Eval Seed Benchmark Card](examples/financial-agent-eval-seed/benchmark-card.yml) - 可机器校验的 benchmark card，覆盖用途、来源策略、泄漏风险、报告和限制说明。
+- [Machine-readable Task Index](examples/financial-agent-eval-seed/tasks.jsonl) - 10 个 seed 任务族、风险等级和主要失败模式的 JSONL 索引。
+- [Submission Template](examples/financial-agent-eval-seed/submission-template.json) - 面向未来候选运行披露的 public-safe 模板。
 - [Harbor-style Task-pack Manifest](examples/financial-agent-eval-seed/harbor-template/task-pack-manifest.json) - 面向 10 个公开安全金融任务模板的机器可校验 manifest。
 - [Repeated-trial Report](examples/financial-agent-eval-seed/results/repeated-trial-example-report.md) - 展示 pass@k、Pass^k、缺失证据率和稳定性信号的聚合报告。
 - 当前可运行样例已覆盖组合分析边界拒答、预测 cutoff、风险计算和金融工具调用轨迹。
@@ -80,6 +92,7 @@ finagent-eval demo
 你可以用它来：
 
 - 快速搭建一个不依赖私有数据、不输出投资建议的金融 Agent 评测起点。
+- 在本地用候选产物工作流评测自己的金融 Agent 输出。
 - 复用搜索、查数、公告依据问答、回测纪律、合规拒答和数据来源治理的任务模式。
 - 参考 Harbor / OpenClaw / ATIF 方向下的金融 Agent 轨迹评测样例。
 - 沿着一个小而清晰的金融 Agent benchmark seed 方向继续扩展，而不是继续做泛泛的 AI 收藏夹。
@@ -95,6 +108,9 @@ finagent-eval demo
 当前最热的评测变化，是从静态答案评分转向轨迹感知的 Agent 评测：多次运行、过程安全、verifier 证据、artifact 和可审计 trace。
 
 - 阅读 [Financial Agent Evaluation Positioning Thesis](docs/financial-agent-eval-positioning.md)。
+- 从 [FinAgentBench Mini](FINAGENTBENCH.md) 开始。
+- 使用 [候选 Agent 评测流程](docs/evaluate-your-finance-agent.md) 评测自己的输出。
+- 阅读 [submission and leaderboard policy](docs/submission-and-leaderboard-policy.md)。
 - 先看 [Financial Agent Evaluation Portfolio](docs/financial-agent-evaluation-portfolio.zh-CN.md)。
 - 查看 [FinAgentBench Seed Spec](docs/finagentbench-seed-spec.md)。
 - 浏览 [Financial Agent Evaluation Task Zoo](docs/financial-agent-evaluation-task-zoo.md)。
@@ -107,6 +123,7 @@ finagent-eval demo
 - 分享 [Public Launch Note](docs/public-launch-note.md) 或 [中文发布说明](docs/public-launch-note.zh-CN.md)。
 - 查看 [Impact Backlog](docs/impact-backlog.md)。
 - 运行根目录 demo CLI：`python finagent_eval.py demo`。
+- 生成候选运行骨架：`python finagent_eval.py init-candidate tmp/my-finance-agent`。
 - 运行 [Financial Agent Eval Seed](examples/financial-agent-eval-seed)：`python examples/financial-agent-eval-seed/run_finance_eval.py`。
 - 使用 [60-second quickstart](QUICKSTART.md)。
 - 查看种子套件的 [example report](examples/financial-agent-eval-seed/results/example-report.md)。

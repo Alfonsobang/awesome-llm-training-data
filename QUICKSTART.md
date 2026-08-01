@@ -21,6 +21,13 @@ python -m pip install -e .
 finagent-eval demo
 ```
 
+To scaffold a candidate run for your own finance agent:
+
+```bash
+python finagent_eval.py init-candidate tmp/my-finance-agent
+python finagent_eval.py run --artifact-root tmp/my-finance-agent
+```
+
 Expected result:
 
 ```text

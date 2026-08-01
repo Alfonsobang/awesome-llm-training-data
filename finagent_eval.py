@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import subprocess
 import sys
 from pathlib import Path
@@ -147,6 +148,54 @@ def command_bad_demo(args: argparse.Namespace) -> int:
     return 0
 
 
+def command_init_candidate(args: argparse.Namespace) -> int:
+    output_dir = args.output_dir
+    task_dirs = sorted(
+        path
+        for path in (SEED_DIR / "harbor-template").iterdir()
+        if path.is_dir() and (path / "instruction.md").exists()
+    )
+    if not task_dirs:
+        print("No task templates found.", file=sys.stderr)
+        return 1
+
+    created = 0
+    skipped = 0
+    for task_dir in task_dirs:
+        candidate_dir = output_dir / task_dir.name
+        answer_path = candidate_dir / "answer.json"
+        if answer_path.exists() and not args.force:
+            skipped += 1
+            continue
+
+        candidate_dir.mkdir(parents=True, exist_ok=True)
+        instruction = (task_dir / "instruction.md").read_text(encoding="utf-8").strip()
+        skeleton = {
+            "task_id": task_dir.name,
+            "status": "todo",
+            "instruction": instruction,
+            "answer": None,
+            "citations": [],
+            "limitations": [
+                "Fill in source, data, and evaluation limitations before submitting this artifact."
+            ],
+            "not_investment_advice": True,
+        }
+        answer_path.write_text(json.dumps(skeleton, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        created += 1
+
+    print(f"Candidate artifact root: {display_path(output_dir)}")
+    print(f"Created {created} answer.json skeletons.")
+    if skipped:
+        print(f"Skipped {skipped} existing files. Use --force to overwrite.")
+    print("")
+    print("Next:")
+    print(f"1. Fill each {display_path(output_dir)}/<task-id>/answer.json.")
+    print(f"2. Run: python finagent_eval.py run --artifact-root {display_path(output_dir)}")
+    print("3. Build a scorecard from the generated report.")
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -173,6 +222,14 @@ def build_parser() -> argparse.ArgumentParser:
     bad_demo = subparsers.add_parser("bad-demo", help="Generate known-bad report and scorecard examples.")
     bad_demo.add_argument("--candidate", default="known-bad-finance-agent")
     bad_demo.set_defaults(func=command_bad_demo)
+
+    init_candidate = subparsers.add_parser(
+        "init-candidate",
+        help="Create answer.json skeletons for evaluating your own finance agent.",
+    )
+    init_candidate.add_argument("output_dir", type=Path, help="Directory to write <task-id>/answer.json files.")
+    init_candidate.add_argument("--force", action="store_true", help="Overwrite existing skeleton files.")
+    init_candidate.set_defaults(func=command_init_candidate)
 
     return parser
 

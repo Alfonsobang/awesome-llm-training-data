@@ -6,6 +6,7 @@ on:
       - "examples/financial-agent-eval-seed/**"
       - "finagent_eval.py"
       - "test_finagent_eval_cli.py"
+      - "test_finagent_eval_init_candidate.py"
       - "tools/validate_financial_benchmark_card.py"
       - ".github/workflows/financial-agent-seed.yml"
   pull_request:
@@ -13,6 +14,7 @@ on:
       - "examples/financial-agent-eval-seed/**"
       - "finagent_eval.py"
       - "test_finagent_eval_cli.py"
+      - "test_finagent_eval_init_candidate.py"
       - "tools/validate_financial_benchmark_card.py"
       - ".github/workflows/financial-agent-seed.yml"
 
@@ -40,10 +42,12 @@ jobs:
         run: python examples/financial-agent-eval-seed/run_finance_eval.py
       - name: Run root financial-agent demo CLI
         run: python finagent_eval.py demo
+      - name: Scaffold candidate artifacts
+        run: python finagent_eval.py init-candidate tmp/ci-finance-agent
       - name: Install and run finagent-eval console script
         run: python -m pip install -e . && finagent-eval demo
       - name: Test financial agent eval runner
-        run: python -m unittest discover -s examples/financial-agent-eval-seed -p "test_*.py" && python -m unittest test_finagent_eval_cli.py
+        run: python -m unittest discover -s examples/financial-agent-eval-seed -p "test_*.py" && python -m unittest test_finagent_eval_cli.py test_finagent_eval_init_candidate.py
       - name: Validate Harbor-style financial task templates
         run: python examples/financial-agent-eval-seed/validate_harbor_templates.py
       - name: Validate Harbor-style task-pack manifest

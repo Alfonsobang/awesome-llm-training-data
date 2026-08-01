@@ -2,6 +2,7 @@ __pycache__/
 *.py[cod]
 .venv*/
 *.egg-info/
+tmp/
 examples/financial-agent-eval-seed/results/latest-report.*
 examples/financial-agent-eval-seed/results/latest-scorecard.*
 examples/financial-agent-eval-seed/results/latest-bad-candidate-report.*

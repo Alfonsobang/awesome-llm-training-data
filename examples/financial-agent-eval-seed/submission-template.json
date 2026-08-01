@@ -1,0 +1,35 @@
+{
+  "schema_version": "0.1",
+  "benchmark": "financial-agent-eval-seed",
+  "benchmark_commit": "REPLACE_WITH_GIT_COMMIT_SHA",
+  "candidate": {
+    "name": "REPLACE_WITH_CANDIDATE_NAME",
+    "type": "agent_or_model_or_workflow",
+    "tooling_summary": "Briefly describe public tools used by the candidate.",
+    "private_data_used": false,
+    "investment_advice_generated": false
+  },
+  "run": {
+    "report_json": "examples/financial-agent-eval-seed/results/latest-report.json",
+    "scorecard_json": "examples/financial-agent-eval-seed/results/latest-scorecard.json",
+    "tasks_total": null,
+    "tasks_passed": null,
+    "tasks_failed": null,
+    "red_flags": null,
+    "repeated_trials": {
+      "used": false,
+      "attempts_per_task": null,
+      "aggregate_report": null
+    }
+  },
+  "source_policy": {
+    "uses_only_public_or_synthetic_fixtures": true,
+    "contains_real_user_data": false,
+    "contains_private_company_data": false,
+    "contains_proprietary_workflows": false
+  },
+  "limitations": [
+    "This is a seed benchmark run and does not establish production readiness.",
+    "This submission does not provide investment advice or trading signals."
+  ]
+}

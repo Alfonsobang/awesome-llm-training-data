@@ -9,6 +9,7 @@ Project thesis: financial agents fail through source, unit, cutoff, citation, co
 ## Key Links
 
 - Quickstart: QUICKSTART.md
+- FinAgentBench Mini: FINAGENTBENCH.md
 - Root demo CLI: finagent_eval.py
 - Visual preview: docs/assets/finagent-eval-preview.svg
 - Main README: README.md
@@ -18,6 +19,8 @@ Project thesis: financial agents fail through source, unit, cutoff, citation, co
 - Chinese Financial Agent Evaluation Portfolio: docs/financial-agent-evaluation-portfolio.zh-CN.md
 - Financial Agent Evaluation Task Zoo: docs/financial-agent-evaluation-task-zoo.md
 - Financial Agent Evaluation Scorecard: docs/financial-agent-evaluation-scorecard.md
+- Evaluate your own finance agent: docs/evaluate-your-finance-agent.md
+- Submission and leaderboard policy: docs/submission-and-leaderboard-policy.md
 - Financial Agent Evaluation Opportunity Map: docs/financial-agent-evaluation-opportunity-map.md
 - Impact backlog: docs/impact-backlog.md
 - Machine-readable impact backlog: impact/impact-backlog.json
@@ -37,6 +40,8 @@ Project thesis: financial agents fail through source, unit, cutoff, citation, co
 - Chinese public launch note: docs/public-launch-note.zh-CN.md
 - Financial Agent Eval Seed: examples/financial-agent-eval-seed/README.md
 - Financial Agent Eval Seed benchmark card: examples/financial-agent-eval-seed/benchmark-card.yml
+- Machine-readable task index: examples/financial-agent-eval-seed/tasks.jsonl
+- Submission template: examples/financial-agent-eval-seed/submission-template.json
 - Harbor-style task-pack manifest: examples/financial-agent-eval-seed/harbor-template/task-pack-manifest.json
 - Positioning thesis: docs/financial-agent-eval-positioning.md
 - FinAgentBench Seed spec: docs/finagentbench-seed-spec.md
@@ -81,6 +86,13 @@ Known-bad candidate:
 
 ```bash
 python examples/financial-agent-eval-seed/run_finance_eval.py --artifact-root examples/financial-agent-eval-seed/candidate-artifacts/bad-finance-agent
+```
+
+Candidate artifact scaffold:
+
+```bash
+python finagent_eval.py init-candidate tmp/my-finance-agent
+python finagent_eval.py run --artifact-root tmp/my-finance-agent
 ```
 
 ## Safety Rules

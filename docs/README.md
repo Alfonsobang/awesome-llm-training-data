@@ -6,6 +6,7 @@ The project still has one core direction: public-safe financial agent evaluation
 
 ## Core Direction
 
+- [FinAgentBench Mini](../FINAGENTBENCH.md) - Runnable public-safe benchmark entrypoint for financial-agent evaluation.
 - [Financial Agent Evaluation Positioning Thesis](financial-agent-eval-positioning.md) - Why this project should focus on auditable financial-agent tool-use evaluation instead of another generic awesome list.
 - [Financial Agent Evaluation Portfolio](financial-agent-evaluation-portfolio.md) / [中文](financial-agent-evaluation-portfolio.zh-CN.md) - Multi-entry strategy for runnable tasks, scorecards, governance, Harbor-style packaging, and public positioning.
 - [Financial Agent Evaluation Opportunity Map](financial-agent-evaluation-opportunity-map.md) - Where this project can contribute in the agent-evaluation market without overclaiming.
@@ -39,6 +40,10 @@ The project still has one core direction: public-safe financial agent evaluation
 
 ## Practical Assets
 
+- [Evaluate Your Own Finance Agent](evaluate-your-finance-agent.md) - Candidate-artifact workflow for running the seed against an external finance-agent output.
+- [Submission and Leaderboard Policy](submission-and-leaderboard-policy.md) - Conservative policy for public submissions, compatibility tables, and non-ranking scorecards.
+- [Machine-readable Task Index](../examples/financial-agent-eval-seed/tasks.jsonl) - JSONL index of task families, risk levels, and primary failure modes.
+- [Submission Template](../examples/financial-agent-eval-seed/submission-template.json) - Public-safe candidate-run disclosure template.
 - [Financial Agent Eval Toolkit Preview](assets/finagent-eval-preview.svg) - Visual first-screen summary of the demo CLI, scorecard dimensions, and known-bad red flags.
 - [Root Demo CLI](../finagent_eval.py) - One-command entrypoint for running the reference seed and generating scorecards, with optional `finagent-eval` console-script install.
 - [Financial Evaluation Data Source Governance](financial-evaluation-data-source-governance.md) - Source-manifest rules and public-source review.

@@ -15,9 +15,22 @@ The command writes:
 
 The repository also includes a stable [example report](results/example-report.md) generated from the reference solutions.
 
+To evaluate your own candidate output, scaffold one `answer.json` per task:
+
+```bash
+python finagent_eval.py init-candidate tmp/my-finance-agent
+python finagent_eval.py run --artifact-root tmp/my-finance-agent
+```
+
+See the root [FinAgentBench Mini](../../FINAGENTBENCH.md) entrypoint and the [candidate evaluation guide](../../docs/evaluate-your-finance-agent.md).
+
 The seed now has a machine-checkable [benchmark card](benchmark-card.yml) covering intended use, source policy, leakage risks, verifier coverage, reports, limitations, and the non-advice boundary.
 
 The Harbor-style task templates are summarized in a machine-checkable [task-pack manifest](harbor-template/task-pack-manifest.json). This is a public-safe example manifest, not an official Harbor adapter.
+
+The task families are also available as a compact machine-readable [tasks.jsonl](tasks.jsonl) index.
+
+Future candidate-run disclosures should follow the conservative [submission template](submission-template.json) and [submission policy](../../docs/submission-and-leaderboard-policy.md).
 
 It also includes a known-bad candidate so you can inspect what the verifier catches:
 
