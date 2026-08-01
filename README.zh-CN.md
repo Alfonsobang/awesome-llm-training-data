@@ -11,6 +11,8 @@
 
 > 金融 Agent 的失败，往往不是普通 Q&A 基准能发现的：错来源、错单位、未来数据泄漏、不安全投资建议、缺少引用、工具轨迹不稳定。
 
+![Financial Agent Eval Toolkit preview](docs/assets/finagent-eval-preview.svg)
+
 这个仓库正在朝一个公开安全、可运行、可审计的金融 Agent 评测 starter harness 演进。
 
 仓库里最有复用价值的部分是可运行的 **Financial Agent Eval Seed**：它包含任务规格、合成 fixture、Harbor 风格任务模板、确定性 verifier、数据来源治理元数据和自动生成的评测报告。
@@ -38,6 +40,7 @@ finagent-eval demo
 
 ## Project Pages
 
+- [Financial Agent Eval Toolkit Preview](docs/assets/finagent-eval-preview.svg) - 首屏可视化说明 demo CLI、scorecard 维度和 known-bad 红旗。
 - [Root Demo CLI](finagent_eval.py) - 根目录一条命令运行评测并生成 scorecard：`python finagent_eval.py demo` 或 `finagent-eval demo`。
 - [Financial Agent Evaluation Portfolio](docs/financial-agent-evaluation-portfolio.md) / [中文](docs/financial-agent-evaluation-portfolio.zh-CN.md) - 面向可运行任务、scorecard、治理、Harbor 风格打包和对外定位的多入口策略。
 - [Financial Agent Evaluation Task Zoo](docs/financial-agent-evaluation-task-zoo.md) - 已实现和下一步可扩展的金融 Agent 任务家族，覆盖搜索、查数、RAG、预测、工具调用、风险、拒答和治理。

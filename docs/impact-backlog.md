@@ -35,6 +35,7 @@ Roadmap issue drafts: [`docs/roadmap-issues/README.md`](roadmap-issues/README.md
 | P0 | Completed | Financial agent eval | Generated scorecard builder | Turns verifier output into shareable Markdown/JSON review artifacts. |
 | P0 | Completed | Financial agent eval | Root demo CLI | Makes the seed runnable from the repository root with one command. |
 | P0 | Completed | Financial agent eval | Installable finagent-eval CLI | Makes the seed runnable as a local console command after editable install. |
+| P1 | Completed | Distribution | README visual demo preview | Makes the CLI, scorecard, and red-flag behavior understandable before readers run commands. |
 | P0 | In progress | Distribution | Repo metadata repositioning | Fixes the public GitHub first-screen mismatch between the old Awesome-list description and the current finance-agent eval project. |
 
 ## Why This Backlog Exists
@@ -61,7 +62,7 @@ Next:
 
 > Reposition public repository metadata around financial-agent evaluation
 
-The public-source search task, finance RAG citation verifier, source-governance report, synthetic fixture validator, finance preference-review schema, public launch note, task matrix, Harbor task-pack blueprint, forecasting cutoff task, financial tool-use trace task, risk calculation task, portfolio-boundary refusal task, benchmark-card validator, repeated-trial reporting, task-pack manifest, Harbor upstream discussion brief, portfolio page, task zoo, scorecard, opportunity map, generated scorecard builder, root demo CLI, and installable `finagent-eval` CLI are now implemented.
+The public-source search task, finance RAG citation verifier, source-governance report, synthetic fixture validator, finance preference-review schema, public launch note, task matrix, Harbor task-pack blueprint, forecasting cutoff task, financial tool-use trace task, risk calculation task, portfolio-boundary refusal task, benchmark-card validator, repeated-trial reporting, task-pack manifest, Harbor upstream discussion brief, portfolio page, task zoo, scorecard, opportunity map, generated scorecard builder, root demo CLI, installable `finagent-eval` CLI, and README visual demo preview are now implemented.
 
 The next highest-leverage item is finishing repository metadata repositioning. The desired metadata is documented in [Repository Metadata Update](repo-metadata-update.md) and checked by `python tools/validate_repo_metadata.py`, but the live GitHub description still presents the repo as a generic curated list.
 

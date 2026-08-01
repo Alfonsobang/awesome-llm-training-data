@@ -371,6 +371,22 @@
       ]
     },
     {
+      "id": "readme-visual-demo-preview",
+      "title": "Add a first-screen visual demo preview",
+      "track": "distribution",
+      "priority": "P1",
+      "status": "completed",
+      "source_page": "README.md",
+      "next_artifact": "docs/assets/finagent-eval-preview.svg",
+      "why_it_matters": "A visual preview makes the runnable CLI, scorecard dimensions, and known-bad red flags understandable before readers run any command.",
+      "acceptance_criteria": [
+        "Add a public-safe SVG preview with no external assets.",
+        "Show the demo command, reference pass rate, scorecard score, and known-bad red-flag categories.",
+        "Link the preview from English README, Chinese README, docs index, and llms.txt.",
+        "Avoid private data, investment advice, trading signals, and production-readiness claims."
+      ]
+    },
+    {
       "id": "repo-metadata-repositioning",
       "title": "Reposition public repository metadata around financial-agent evaluation",
       "track": "distribution",

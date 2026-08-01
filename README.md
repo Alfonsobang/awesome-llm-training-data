@@ -11,6 +11,8 @@ A practical repo for LLM data and agent-evaluation teams, now being refocused ar
 
 > Financial agents fail in ways that normal Q&A benchmarks miss: wrong sources, wrong units, future-data leakage, unsafe advice, missing citations, and unstable tool trajectories.
 
+![Financial Agent Eval Toolkit preview](docs/assets/finagent-eval-preview.svg)
+
 This repo is moving toward a public-safe starter harness for testing those failures.
 
 The most useful part is the runnable **Financial Agent Eval Seed**: a small, public-safe starter kit with task specs, synthetic fixtures, Harbor-style task templates, deterministic verifiers, source-governance metadata, and generated reports.
@@ -41,6 +43,7 @@ For AI coding agents and LLM-based repo readers, see [llms.txt](llms.txt) and [A
 This repo now has multiple useful surfaces instead of a single bet:
 
 - [Project Pages Index](docs/README.md) - A guided map of the strongest pages in the repo.
+- [Financial Agent Eval Toolkit Preview](docs/assets/finagent-eval-preview.svg) - Visual first-screen summary of the demo CLI, scorecard dimensions, and known-bad red flags.
 - [Root Demo CLI](finagent_eval.py) - One-command entrypoint for running the seed and generating scorecards: `python finagent_eval.py demo` or `finagent-eval demo`.
 - [Financial Agent Evaluation Portfolio](docs/financial-agent-evaluation-portfolio.md) / [Chinese](docs/financial-agent-evaluation-portfolio.zh-CN.md) - Multi-entry strategy for runnable tasks, scorecards, governance, Harbor-style packaging, and public positioning.
 - [Financial Agent Evaluation Task Zoo](docs/financial-agent-evaluation-task-zoo.md) - Implemented and next finance-agent task families across search, lookup, RAG, forecasting, tool use, risk, refusal, and governance.

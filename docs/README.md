@@ -39,6 +39,7 @@ The project still has one core direction: public-safe financial agent evaluation
 
 ## Practical Assets
 
+- [Financial Agent Eval Toolkit Preview](assets/finagent-eval-preview.svg) - Visual first-screen summary of the demo CLI, scorecard dimensions, and known-bad red flags.
 - [Root Demo CLI](../finagent_eval.py) - One-command entrypoint for running the reference seed and generating scorecards, with optional `finagent-eval` console-script install.
 - [Financial Evaluation Data Source Governance](financial-evaluation-data-source-governance.md) - Source-manifest rules and public-source review.
 - [Source Governance Report](../examples/financial-agent-eval-seed/results/source-governance-report.md) - Generated source-policy and task-source mapping report.
