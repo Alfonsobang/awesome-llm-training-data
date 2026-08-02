@@ -74,6 +74,7 @@ This repo now has multiple useful surfaces instead of a single bet:
 - [Repository Metadata Update](docs/repo-metadata-update.md) - Desired GitHub description/topics plus a validator for the repo first screen.
 - [Financial Agent Evaluation Task Matrix](docs/financial-agent-evaluation-task-matrix.md) - Task-family map for search, lookup, filing QA, backtesting, forecasting, tool use, refusal, preference review, and governance.
 - [Harbor Finance Task Pack Blueprint](docs/harbor-finance-task-pack-blueprint.md) - Practical blueprint for shaping finance tasks into Harbor-style task packs.
+- [Harbor Task-pack Compatibility Note](docs/harbor-task-pack-compatibility-note.md) - Current mapping from the seed task pack to Harbor-style task packaging concepts.
 - [Harbor Upstream Discussion Brief](docs/harbor-upstream-discussion-brief.md) - Maintainer-friendly brief for asking how a public-safe finance task pack should align with Harbor.
 - [Public Launch Note](docs/public-launch-note.md) / [中文](docs/public-launch-note.zh-CN.md) - Shareable narrative for the finance-agent evaluation direction.
 - [Financial Agent Failure Gallery](docs/financial-agent-failure-gallery.md) - Source, unit, citation, cutoff, advice-boundary, and trace failures to turn into tests.

@@ -35,6 +35,7 @@ Project thesis: financial agents fail through source, unit, cutoff, citation, co
 - Financial Benchmark Card Template: docs/financial-benchmark-card-template.md
 - Financial Agent Evaluation Task Matrix: docs/financial-agent-evaluation-task-matrix.md
 - Harbor Finance Task Pack Blueprint: docs/harbor-finance-task-pack-blueprint.md
+- Harbor task-pack compatibility note: docs/harbor-task-pack-compatibility-note.md
 - Harbor Upstream Discussion Brief: docs/harbor-upstream-discussion-brief.md
 - Public launch note: docs/public-launch-note.md
 - Chinese public launch note: docs/public-launch-note.zh-CN.md

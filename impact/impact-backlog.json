@@ -435,6 +435,22 @@
       ]
     },
     {
+      "id": "harbor-task-pack-compatibility-note",
+      "title": "Publish a Harbor task-pack compatibility note",
+      "track": "harbor-openclaw",
+      "priority": "P1",
+      "status": "completed",
+      "source_page": "docs/harbor-finance-task-pack-blueprint.md",
+      "next_artifact": "docs/harbor-task-pack-compatibility-note.md",
+      "why_it_matters": "A compatibility note helps Harbor/OpenClaw readers inspect the finance task pack without mistaking it for an official adapter.",
+      "acceptance_criteria": [
+        "Map task-pack concepts to current seed artifacts.",
+        "State what remains adapter-specific.",
+        "Link the task-pack manifest, benchmark card, repeated-trial report, source-governance report, and candidate workflow.",
+        "Avoid official support, adoption, production-readiness, investment advice, or trading-signal claims."
+      ]
+    },
+    {
       "id": "repo-metadata-repositioning",
       "title": "Reposition public repository metadata around financial-agent evaluation",
       "track": "distribution",

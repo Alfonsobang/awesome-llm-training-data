@@ -8,6 +8,8 @@ Machine-readable source: [`impact/impact-backlog.json`](../impact/impact-backlog
 
 Roadmap issue drafts: [`docs/roadmap-issues/README.md`](roadmap-issues/README.md)
 
+Next public issue series: multi-document lookup, table-text reconciliation, source-conflict resolution, data-freshness disclosure, and Harbor task-pack compatibility.
+
 ## Current Priorities
 
 | Priority | Status | Track | Artifact | Why it matters |
@@ -39,6 +41,7 @@ Roadmap issue drafts: [`docs/roadmap-issues/README.md`](roadmap-issues/README.md
 | P0 | Completed | Distribution | FinAgentBench Mini entrypoint | Gives the runnable benchmark a short, citable front door. |
 | P0 | Completed | Financial agent eval | Candidate-artifact workflow | Lets readers evaluate their own finance-agent outputs locally. |
 | P1 | Completed | Distribution | Submission policy and task index | Makes future submissions conservative and machine-readable without premature rankings. |
+| P1 | Completed | Harbor/OpenCLAW | Harbor task-pack compatibility note | Clarifies current Harbor-style mapping without claiming official adapter support. |
 | P0 | In progress | Distribution | Repo metadata repositioning | Fixes the public GitHub first-screen mismatch between the old Awesome-list description and the current finance-agent eval project. |
 
 ## Why This Backlog Exists

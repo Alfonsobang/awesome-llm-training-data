@@ -45,6 +45,7 @@ python finagent_eval.py run --artifact-root tmp/my-finance-agent
 
 - [Evaluate Your Own Finance Agent](docs/evaluate-your-finance-agent.md)
 - [Submission and Leaderboard Policy](docs/submission-and-leaderboard-policy.md)
+- [Harbor Task-pack Compatibility Note](docs/harbor-task-pack-compatibility-note.md)
 - [Machine-readable task index](examples/financial-agent-eval-seed/tasks.jsonl)
 - [Submission template](examples/financial-agent-eval-seed/submission-template.json)
 - [Benchmark card](examples/financial-agent-eval-seed/benchmark-card.yml)

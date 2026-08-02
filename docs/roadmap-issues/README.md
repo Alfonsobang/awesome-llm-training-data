@@ -4,6 +4,125 @@ These drafts are ready to open as GitHub issues when issue-write permission is a
 
 The repository currently has runnable financial-agent evaluation tasks, source-governance reports, and known-good / known-bad reports. The next useful issues should turn that seed into a more inspectable and reusable benchmark artifact.
 
+## Next Issue Series
+
+These are the highest-leverage public issues to open next. They are designed for real contributors: each one has a narrow task, a public-safe fixture path, a verifier expectation, and a non-advice boundary.
+
+### Issue 5: Add A Multi-document Financial Lookup Task
+
+#### Why
+
+Financial agents often answer from the wrong filing, wrong issuer, or wrong reporting period when several documents are available. A multi-document lookup task would test source disambiguation before numeric extraction.
+
+#### Scope
+
+Add one task where the candidate must select the correct synthetic filing excerpt from several issuer / period / document-type candidates, then extract one or more exact values with units and citations.
+
+#### Proposed Artifacts
+
+- `examples/financial-agent-eval-seed/harbor-template/multi-document-lookup/`
+- `examples/financial-agent-eval-seed/task-specs/multi-document-lookup.json`
+- passing and known-bad candidate artifacts
+- task-pack manifest and task-index updates
+
+#### Acceptance Criteria
+
+- Includes at least three candidate documents with conflicting issuer, period, or document type.
+- Verifier fails wrong issuer, wrong period, wrong document type, missing unit, and unsupported citation.
+- Uses only synthetic or public-safe fixture data.
+- Does not include investment advice, trading signals, private data, or production-readiness claims.
+
+### Issue 6: Add A Table-text Reconciliation Task
+
+#### Why
+
+Finance answers often require reconciling table values with narrative explanations. Agents can quote a plausible paragraph while ignoring a conflicting table value, or calculate from the right table but cite the wrong text.
+
+#### Scope
+
+Add a task where the candidate must reconcile a synthetic financial table with a short management-discussion excerpt, return a grounded explanation, and disclose any mismatch.
+
+#### Proposed Artifacts
+
+- `examples/financial-agent-eval-seed/harbor-template/table-text-reconciliation/`
+- `examples/financial-agent-eval-seed/task-specs/table-text-reconciliation.json`
+- verifier tests for table value, narrative support, citation support, and limitation disclosure
+
+#### Acceptance Criteria
+
+- Fixture includes one table and one narrative excerpt with a deliberate reconciliation point.
+- Verifier checks numeric value, period, unit, cited table path, cited narrative section, and limitation text.
+- Known-bad answer demonstrates citation theater or a table/narrative mismatch.
+- Public-safe and non-advice boundaries are explicit.
+
+### Issue 7: Add A Source-conflict Resolution Task
+
+#### Why
+
+Financial agents should prefer primary or newer official sources over stale summaries when evidence conflicts. This is a realistic failure mode for search, RAG, and tool-use workflows.
+
+#### Scope
+
+Add a task with a synthetic news summary, a stale secondary source, and a later official filing correction. The candidate must choose the governed source and explain why weaker evidence was rejected.
+
+#### Proposed Artifacts
+
+- `examples/financial-agent-eval-seed/harbor-template/source-conflict-resolution/`
+- `examples/financial-agent-eval-seed/task-specs/source-conflict-resolution.json`
+- source-manifest update for the synthetic source types
+
+#### Acceptance Criteria
+
+- Verifier checks selected source priority, as-of date, rejected source IDs, and citation support.
+- Known-bad answer chooses the stale or unofficial source.
+- Report explains the source-governance signal without ranking models.
+- No live trading, private data, or proprietary examples.
+
+### Issue 8: Add A Data-freshness Disclosure Task
+
+#### Why
+
+Financial agents often answer current-looking questions even when data is stale or unavailable. A freshness task tests whether the agent states the as-of date and refuses to guess.
+
+#### Scope
+
+Add a task where the fixture has a fixed as-of date and a missing current field. The candidate must answer with the available date, state what is unavailable, and avoid inventing an updated value.
+
+#### Proposed Artifacts
+
+- `examples/financial-agent-eval-seed/harbor-template/data-freshness-disclosure/`
+- `examples/financial-agent-eval-seed/task-specs/data-freshness-disclosure.json`
+- freshness-focused verifier and known-bad artifact
+
+#### Acceptance Criteria
+
+- Verifier checks as-of date, unavailable-field disclosure, no invented current value, and non-advice language.
+- Known-bad answer hallucinates a current value.
+- Task is deterministic and runs in CI without network access.
+- Documentation explains why stale-data handling matters in financial-agent evaluation.
+
+### Issue 9: Add A Harbor Task-pack Compatibility Note
+
+#### Why
+
+The repo has Harbor-style task templates, but maintainers and users need a compact compatibility note before deciding whether to adapt the task pack or discuss it upstream.
+
+#### Scope
+
+Write a short compatibility note that maps the seed task-pack manifest to Harbor-style concepts: task directory, fixtures, verifier command, expected artifacts, repeated-trial report, and safety boundary.
+
+#### Proposed Artifacts
+
+- `docs/harbor-task-pack-compatibility-note.md`
+- links from `docs/harbor-finance-task-pack-blueprint.md`, `FINAGENTBENCH.md`, and `llms.txt`
+
+#### Acceptance Criteria
+
+- States that this is not an official Harbor adapter.
+- Lists exactly what is implemented today and what remains adapter-specific.
+- Links task-pack manifest, benchmark card, repeated-trial report, source-governance report, and candidate workflow.
+- Avoids promotional language, adoption claims, and production-readiness claims.
+
 ## Issue 4: Prepare A Harbor Upstream Discussion Brief
 
 Status: implemented in-repo. Keep this draft as provenance for the maintainer-facing discussion brief.
