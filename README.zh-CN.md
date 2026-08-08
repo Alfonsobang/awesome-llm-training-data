@@ -15,6 +15,8 @@
 
 这个仓库正在朝一个公开安全、可运行、可审计的金融 Agent 评测 starter harness 演进。
 
+如果需要面向 A 股的专用实现，请直接使用 [OpenMarketEval](https://github.com/Alfonsobang/open-market-eval)：可以[在线体检回测](https://alfonsobang.github.io/open-market-eval/#preflight)、[审计金融搜索证据](https://alfonsobang.github.io/open-market-eval/research-audit.html)，或运行其中三个符合 schema 1.3 的 [Harbor 任务](https://github.com/Alfonsobang/open-market-eval/tree/main/integrations/harbor)。
+
 仓库里最有复用价值的部分是 **[FinAgentBench Mini](FINAGENTBENCH.md)**：一个 public-safe 的金融 Agent 评测 starter benchmark，包含任务规格、合成 fixture、Harbor 风格任务模板、确定性 verifier、数据来源治理元数据、候选产物骨架和自动生成的评测报告。
 
 ```bash

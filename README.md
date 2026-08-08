@@ -15,6 +15,8 @@ A practical repo for LLM data and agent-evaluation teams, now being refocused ar
 
 This repo is moving toward a public-safe starter harness for testing those failures.
 
+For the A-share-specific implementation, use [OpenMarketEval](https://github.com/Alfonsobang/open-market-eval): [audit a backtest](https://alfonsobang.github.io/open-market-eval/#preflight), [audit financial-search evidence](https://alfonsobang.github.io/open-market-eval/research-audit.html), or run its three [Harbor schema 1.3 tasks](https://github.com/Alfonsobang/open-market-eval/tree/main/integrations/harbor).
+
 The most useful part is **[FinAgentBench Mini](FINAGENTBENCH.md)**: a small, public-safe starter benchmark with task specs, synthetic fixtures, Harbor-style task templates, deterministic verifiers, source-governance metadata, candidate-artifact scaffolding, and generated reports.
 
 ```bash
