@@ -15,7 +15,7 @@ A practical repo for LLM data and agent-evaluation teams, now being refocused ar
 
 This repo is moving toward a public-safe starter harness for testing those failures.
 
-For the A-share-specific implementation, use [OpenMarketEval](https://github.com/Alfonsobang/open-market-eval): [audit a backtest](https://alfonsobang.github.io/open-market-eval/#preflight), [audit financial-search evidence](https://alfonsobang.github.io/open-market-eval/research-audit.html), or run its three [Harbor schema 1.3 tasks](https://github.com/Alfonsobang/open-market-eval/tree/main/integrations/harbor).
+For the A-share-specific implementation, use [OpenMarketEval](https://github.com/Alfonsobang/open-market-eval): [audit a backtest](https://alfonsobang.github.io/open-market-eval/#preflight), [audit financial-search evidence](https://alfonsobang.github.io/open-market-eval/research-audit.html), [run point-in-time filing QA](https://alfonsobang.github.io/open-market-eval/filing-qa.html), or inspect its four [Harbor schema 1.3 tasks](https://github.com/Alfonsobang/open-market-eval/tree/main/integrations/harbor).
 
 The most useful part is **[FinAgentBench Mini](FINAGENTBENCH.md)**: a small, public-safe starter benchmark with task specs, synthetic fixtures, Harbor-style task templates, deterministic verifiers, source-governance metadata, candidate-artifact scaffolding, and generated reports.
 
@@ -304,6 +304,7 @@ The repository also runs a lightweight [resource audit](tools/audit_resources.py
 - [FinAgentBench](https://arxiv.org/abs/2508.14052) - Tag: [paper] - Benchmark paper for agentic retrieval in financial question answering with multi-step reasoning.
 - [QFBench](https://www.qfbench.com/) - Tag: [benchmark] - Quantitative finance benchmark for evaluating agents that write and execute numerical finance code.
 - [CryptoBench](https://cryptobench.space/) - Tag: [benchmark] - Dynamic benchmark for expert-level crypto and market-intelligence agent workflows.
+- [OpenMarketEval Point-in-Time Filing QA](https://github.com/Alfonsobang/open-market-eval/tree/main/benchmarks/a-share-point-in-time-qa) - Tag: [benchmark] - Public A-share development pack with 10 official-filing facts, source hashes, unit normalization, page provenance, and deterministic field scoring.
 - [OpenBB](https://github.com/openbb-finance/OpenBB) - Tag: [tool] - Open-source financial data platform useful for building public-data lookup and analysis agents.
 - [FinRL](https://github.com/AI4Finance-Foundation/FinRL) - Tag: [tool] - Open-source framework for financial reinforcement learning, market environments, and backtesting-style workflows.
 

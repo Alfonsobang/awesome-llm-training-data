@@ -15,7 +15,7 @@
 
 这个仓库正在朝一个公开安全、可运行、可审计的金融 Agent 评测 starter harness 演进。
 
-如果需要面向 A 股的专用实现，请直接使用 [OpenMarketEval](https://github.com/Alfonsobang/open-market-eval)：可以[在线体检回测](https://alfonsobang.github.io/open-market-eval/#preflight)、[审计金融搜索证据](https://alfonsobang.github.io/open-market-eval/research-audit.html)，或运行其中三个符合 schema 1.3 的 [Harbor 任务](https://github.com/Alfonsobang/open-market-eval/tree/main/integrations/harbor)。
+如果需要面向 A 股的专用实现，请直接使用 [OpenMarketEval](https://github.com/Alfonsobang/open-market-eval)：可以[在线体检回测](https://alfonsobang.github.io/open-market-eval/#preflight)、[审计金融搜索证据](https://alfonsobang.github.io/open-market-eval/research-audit.html)、[运行年报时点查数](https://alfonsobang.github.io/open-market-eval/filing-qa.html)，或检查其中四个符合 schema 1.3 的 [Harbor 任务](https://github.com/Alfonsobang/open-market-eval/tree/main/integrations/harbor)。
 
 仓库里最有复用价值的部分是 **[FinAgentBench Mini](FINAGENTBENCH.md)**：一个 public-safe 的金融 Agent 评测 starter benchmark，包含任务规格、合成 fixture、Harbor 风格任务模板、确定性 verifier、数据来源治理元数据、候选产物骨架和自动生成的评测报告。
 
@@ -300,6 +300,7 @@ LLM 的行为不仅由模型结构决定，也强烈受数据决策影响。数�
 - [FinAgentBench](https://arxiv.org/abs/2508.14052) - Tag: [paper] - 面向金融问答中 agentic retrieval 和多步推理的 benchmark 论文。
 - [QFBench](https://www.qfbench.com/) - Tag: [benchmark] - 用于评估 Agent 编写和执行量化金融代码能力的 benchmark。
 - [CryptoBench](https://cryptobench.space/) - Tag: [benchmark] - 面向加密资产和市场情报 Agent 工作流的动态 benchmark。
+- [OpenMarketEval Point-in-Time Filing QA](https://github.com/Alfonsobang/open-market-eval/tree/main/benchmarks/a-share-point-in-time-qa) - Tag: [benchmark] - 包含 10 个官方 A 股年报事实、来源哈希、单位归一化、页码证据与确定性逐字段评分的公开开发集。
 - [OpenBB](https://github.com/openbb-finance/OpenBB) - Tag: [tool] - 可用于构建公开数据查数和分析 Agent 的开源金融数据平台。
 - [FinRL](https://github.com/AI4Finance-Foundation/FinRL) - Tag: [tool] - 面向金融强化学习、市场环境和回测式工作流的开源框架。
 
